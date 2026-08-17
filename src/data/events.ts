@@ -13799,5 +13799,455 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
       "cultura"
     ],
     "score": 94
+  },
+  {
+    "id": "mamm-01",
+    "slug": "cine-barrio-triste-proyeccion-mamm",
+    "title": "Cine MAMM: Proyección de \"Barrio Triste\"",
+    "shortDescription": "Largometraje ambientado en el Medellín de finales de los 80 sobre misterio y periodismo local.",
+    "longDescription": "En las afueras de Medellín a finales de la década de 1980, mientras un reportero realiza una nota para la televisión local sobre unas extrañas luces que se han visto en el cielo, un joven deambula por las calles de Barrio Triste buscando respuestas. Proyección en sala de cine digital del MAMM.",
+    "startDate": "2026-08-17",
+    "startTime": "16:15",
+    "endTime": "18:00",
+    "venue": "Cine MAMM",
+    "neighborhood": "El Poblado",
+    "city": "Medellín",
+    "latitude": 6.2238,
+    "longitude": -75.5746,
+    "category": "cine",
+    "priceType": "paid",
+    "priceMin": 14000,
+    "priceMax": 14000,
+    "currency": "COP",
+    "organizer": "Cine MAMM",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Cine MAMM Oficial",
+        "url": "https://www.elmamm.org/producto/barrio-triste/"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T15:45:00-05:00",
+    "lastCheckedAt": "2026-08-17T15:45:00-05:00",
+    "tags": [
+      "cine mamm",
+      "cine colombiano",
+      "barrio triste",
+      "ciudad del río",
+      "el poblado"
+    ],
+    "score": 93
+  },
+  {
+    "id": "mamm-02",
+    "slug": "cine-el-dia-d-bajo-presion-mamm",
+    "title": "Cine MAMM: \"El Día D: Bajo Presión\"",
+    "shortDescription": "Thriller histórico contrarreloj sobre las 72 horas previas al desembarco de Normandía.",
+    "longDescription": "Thriller contrarreloj basado en hechos reales que sigue las 72 horas decisivas previas al Día D, cuando un grupo de figuras clave enfrenta una presión extrema para tomar una decisión que cambiará el rumbo de la Segunda Guerra Mundial.",
+    "startDate": "2026-08-17",
+    "startTime": "18:35",
+    "endTime": "20:20",
+    "venue": "Cine MAMM",
+    "neighborhood": "El Poblado",
+    "city": "Medellín",
+    "latitude": 6.2238,
+    "longitude": -75.5746,
+    "category": "cine",
+    "priceType": "paid",
+    "priceMin": 14000,
+    "priceMax": 14000,
+    "currency": "COP",
+    "organizer": "Cine MAMM",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Cine MAMM Oficial",
+        "url": "https://www.elmamm.org/producto/el-dia-d-bajo-presion/"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": false,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T15:45:00-05:00",
+    "lastCheckedAt": "2026-08-17T15:45:00-05:00",
+    "tags": [
+      "cine mamm",
+      "thriller",
+      "estreno",
+      "ciudad del río"
+    ],
+    "score": 89
+  },
+  {
+    "id": "mamm-03",
+    "slug": "cine-la-invitacion-estreno-mamm",
+    "title": "Cine MAMM: \"La Invitación\"",
+    "shortDescription": "Drama psicológico y tensión íntima sobre secretos y revelaciones vecinales.",
+    "longDescription": "Una pareja invita a sus vecinos a su casa, lo que desencadena una velada llena de giros inesperados, revelando emociones profundamente reprimidas y secretos que transforman la dinámica entre los asistentes.",
+    "startDate": "2026-08-17",
+    "startTime": "20:35",
+    "endTime": "22:15",
+    "venue": "Cine MAMM",
+    "neighborhood": "El Poblado",
+    "city": "Medellín",
+    "latitude": 6.2238,
+    "longitude": -75.5746,
+    "category": "cine",
+    "priceType": "paid",
+    "priceMin": 14000,
+    "priceMax": 14000,
+    "currency": "COP",
+    "organizer": "Cine MAMM",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Cine MAMM Oficial",
+        "url": "https://www.elmamm.org/producto/la-invitacion/"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": false,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T15:45:00-05:00",
+    "lastCheckedAt": "2026-08-17T15:45:00-05:00",
+    "tags": [
+      "cine mamm",
+      "drama",
+      "ciudad del río",
+      "noche"
+    ],
+    "score": 88
+  },
+  {
+    "id": "mamm-04",
+    "slug": "club-de-conversacion-en-ingles-mamm-colombo",
+    "title": "Club de Conversación en Inglés (MAMM x Colombo)",
+    "shortDescription": "Espacio participativo guiado para practicar y mejorar tu fluidez en inglés.",
+    "longDescription": "Nueva sesión del Club de Conversación en Inglés facilitado por la gestora cultural Erika Sosa en alianza con el Centro Colombo Americano. Práctica dialógica sobre cultura, arte y actualidad en un espacio distendido.",
+    "startDate": "2026-08-19",
+    "startTime": "17:30",
+    "endTime": "19:00",
+    "venue": "Centro Colombo Americano (Sede Centro)",
+    "neighborhood": "Centro",
+    "city": "Medellín",
+    "latitude": 6.2523,
+    "longitude": -75.5651,
+    "category": "comunidad",
+    "priceType": "free",
+    "currency": "COP",
+    "organizer": "MAMM & Centro Colombo Americano",
+    "sources": [
+      {
+        "type": "web",
+        "label": "MAMM Educación",
+        "url": "https://www.elmamm.org/producto/club-de-conversacion-en-ingles/"
+      }
+    ],
+    "sourceCount": 2,
+    "verified": true,
+    "isGem": false,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T15:45:00-05:00",
+    "lastCheckedAt": "2026-08-17T15:45:00-05:00",
+    "tags": [
+      "inglés",
+      "conversación",
+      "mamm",
+      "colombo",
+      "gratis"
+    ],
+    "score": 90
+  },
+  {
+    "id": "mamm-05",
+    "slug": "curadurias-pedagogicas-charla-marielsa-castro-mamm",
+    "title": "Curadurías Pedagógicas: Charla con Marielsa Castro",
+    "shortDescription": "Diálogo sobre proyectos curatoriales que activan procesos de aprendizaje y producción colectiva.",
+    "longDescription": "Las curadurías pedagógicas son proyectos que no se limitan a exhibir obras, sino que activan procesos de aprendizaje, intercambio y producción de conocimiento crítico. Marielsa Castro reflexiona sobre experiencias curatoriales contemporáneas en el Quinto Piso del MAMM.",
+    "startDate": "2026-08-19",
+    "startTime": "18:00",
+    "endTime": "19:45",
+    "venue": "Museo de Arte Moderno de Medellín (MAMM)",
+    "neighborhood": "El Poblado",
+    "city": "Medellín",
+    "latitude": 6.2238,
+    "longitude": -75.5746,
+    "category": "arte",
+    "priceType": "free",
+    "currency": "COP",
+    "organizer": "MAMM Curaduría",
+    "sources": [
+      {
+        "type": "web",
+        "label": "MAMM Charla",
+        "url": "https://www.elmamm.org/producto/curaduria-pedagogicas-charla-con-marielsa-castro/"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T15:45:00-05:00",
+    "lastCheckedAt": "2026-08-17T15:45:00-05:00",
+    "tags": [
+      "curaduría",
+      "arte contemporáneo",
+      "charla",
+      "mamm",
+      "gratis"
+    ],
+    "score": 95
+  },
+  {
+    "id": "mamm-06",
+    "slug": "cine-puntos-de-fuga-proyeccion-mamm",
+    "title": "Cine MAMM: \"Puntos de Fuga\"",
+    "shortDescription": "Cine de no-ficción y experimentación visual en la sala de cine del MAMM.",
+    "longDescription": "Proyección especial de la película Puntos de Fuga en la sala de cine del Museo de Arte Moderno de Medellín. Una exploración audiovisual sobre el espacio, las ausencias y las perspectivas urbanas contemporáneas.",
+    "startDate": "2026-08-20",
+    "startTime": "18:30",
+    "endTime": "20:00",
+    "venue": "Cine MAMM",
+    "neighborhood": "El Poblado",
+    "city": "Medellín",
+    "latitude": 6.2238,
+    "longitude": -75.5746,
+    "category": "cine",
+    "priceType": "paid",
+    "priceMin": 14000,
+    "priceMax": 14000,
+    "currency": "COP",
+    "organizer": "Cine MAMM",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Cine MAMM Oficial",
+        "url": "https://www.elmamm.org/producto/puntos-de-fuga/"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T15:45:00-05:00",
+    "lastCheckedAt": "2026-08-17T15:45:00-05:00",
+    "tags": [
+      "cine mamm",
+      "no-ficción",
+      "cine arte",
+      "ciudad del río"
+    ],
+    "score": 92
+  },
+  {
+    "id": "mamm-07",
+    "slug": "cine-una-cancion-para-mi-tierra-mamm",
+    "title": "Cine MAMM: \"Una Canción para mi Tierra\"",
+    "shortDescription": "Drama rural sobre un maestro de música que defiende su comunidad.",
+    "longDescription": "En un pueblo rural argentino, Ramiro, un carismático maestro de música, descubre una situación alarmante que afecta a su comunidad: aviones y fumigaciones tóxicas. Junto a sus alumnos, emprende una campaña sonora para defender la tierra.",
+    "startDate": "2026-08-21",
+    "startTime": "18:30",
+    "endTime": "20:15",
+    "venue": "Cine MAMM",
+    "neighborhood": "El Poblado",
+    "city": "Medellín",
+    "latitude": 6.2238,
+    "longitude": -75.5746,
+    "category": "cine",
+    "priceType": "paid",
+    "priceMin": 14000,
+    "priceMax": 14000,
+    "currency": "COP",
+    "organizer": "Cine MAMM",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Cine MAMM Oficial",
+        "url": "https://www.elmamm.org/producto/una-cancion-para-mi-tierra/"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T15:45:00-05:00",
+    "lastCheckedAt": "2026-08-17T15:45:00-05:00",
+    "tags": [
+      "cine mamm",
+      "cine latinoamericano",
+      "música",
+      "ciudad del río"
+    ],
+    "score": 94
+  },
+  {
+    "id": "mamm-08",
+    "slug": "ensamble-metales-percusion-orquesta-antioquia-plazoleta-mamm",
+    "title": "Concierto: Ensamble de Metales y Percusión (Orquesta de Antioquia)",
+    "shortDescription": "Viaje sonoro al aire libre por 4 siglos de música, desde danzas renacentistas hasta jazz.",
+    "longDescription": "Te invitamos a un viaje sonoro que recorre más de cuatro siglos de música en la Plazoleta MAMM. Desde las danzas renacentistas de Tielman Susato hasta las sonoridades contemporáneas del siglo XXI, a cargo de los solistas de metales y percusión de la Orquesta Departamental de Antioquia. Entrada libre.",
+    "startDate": "2026-08-22",
+    "startTime": "11:00",
+    "endTime": "12:30",
+    "venue": "Plazoleta MAMM",
+    "neighborhood": "El Poblado",
+    "city": "Medellín",
+    "latitude": 6.2238,
+    "longitude": -75.5746,
+    "category": "música",
+    "priceType": "free",
+    "currency": "COP",
+    "organizer": "MAMM & Orquesta Departamental de Antioquia",
+    "sources": [
+      {
+        "type": "web",
+        "label": "MAMM Música",
+        "url": "https://www.elmamm.org/producto/ensamble-de-metales-y-percusion-de-la-orquesta-departamantal-de-antioquia/"
+      }
+    ],
+    "sourceCount": 2,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T15:45:00-05:00",
+    "lastCheckedAt": "2026-08-17T15:45:00-05:00",
+    "tags": [
+      "concierto",
+      "orquesta de antioquia",
+      "metales",
+      "plazoleta mamm",
+      "gratis"
+    ],
+    "score": 97
+  },
+  {
+    "id": "mamm-09",
+    "slug": "club-de-conversacion-en-frances-biblioteca-mamm",
+    "title": "Club de Conversación en Francés en la Biblioteca MAMM",
+    "shortDescription": "Práctica distendida de francés con mediadores nativos en la biblioteca del museo.",
+    "longDescription": "¿Quieres practicar francés en un ambiente relajado y conocer nuevas personas interesadas en la francofonía? Sesión guiada por Léa Didier Valera, Amandine Martin y Alexiane Trapp en la Biblioteca MAMM. Entrada libre con inscripción previa.",
+    "startDate": "2026-08-26",
+    "startTime": "17:30",
+    "endTime": "19:00",
+    "venue": "Biblioteca MAMM",
+    "neighborhood": "El Poblado",
+    "city": "Medellín",
+    "latitude": 6.2238,
+    "longitude": -75.5746,
+    "category": "comunidad",
+    "priceType": "free",
+    "currency": "COP",
+    "organizer": "Biblioteca MAMM",
+    "sources": [
+      {
+        "type": "web",
+        "label": "MAMM Biblioteca",
+        "url": "https://www.elmamm.org/producto/club-de-conversacion-en-frances/"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": false,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T15:45:00-05:00",
+    "lastCheckedAt": "2026-08-17T15:45:00-05:00",
+    "tags": [
+      "francés",
+      "idiomas",
+      "biblioteca mamm",
+      "ciudad del río",
+      "gratis"
+    ],
+    "score": 91
+  },
+  {
+    "id": "mamm-10",
+    "slug": "exposicion-ivan-argote-sentir-tu-peso-mamm",
+    "title": "Exposición: \"Iván Argote — Sentir tu peso\"",
+    "shortDescription": "Gran muestra individual sobre monumentos, historia colonial y espacio público.",
+    "longDescription": "El MAMM presenta la exposición individual del artista colombiano Iván Argote. Una reflexión escultórica e instalativa de gran formato que cuestiona la permanencia de los monumentos históricos y las jerarquías en el espacio público.",
+    "startDate": "2026-08-17",
+    "startTime": "11:00",
+    "endTime": "18:00",
+    "venue": "Museo de Arte Moderno de Medellín (MAMM)",
+    "neighborhood": "El Poblado",
+    "city": "Medellín",
+    "latitude": 6.2238,
+    "longitude": -75.5746,
+    "category": "arte",
+    "priceType": "paid",
+    "priceMin": 18000,
+    "priceMax": 18000,
+    "currency": "COP",
+    "organizer": "MAMM Exposiciones",
+    "sources": [
+      {
+        "type": "web",
+        "label": "MAMM Exposiciones",
+        "url": "https://www.elmamm.org/exposiciones/exposiciones-actuales/"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T15:45:00-05:00",
+    "lastCheckedAt": "2026-08-17T15:45:00-05:00",
+    "tags": [
+      "exposición",
+      "iván argote",
+      "arte contemporáneo",
+      "mamm",
+      "el poblado"
+    ],
+    "score": 96
+  },
+  {
+    "id": "mamm-11",
+    "slug": "exposicion-el-susurro-del-barro-ceramica-mamm",
+    "title": "Exposición Colectiva: \"El Susurro del Barro\"",
+    "shortDescription": "Muestra de cerámica contemporánea, tierra y saberes ancestrales de Colombia.",
+    "longDescription": "Una mirada colectiva al uso del barro, la arcilla y las técnicas alfareras en el arte colombiano actual. La exposición reúne piezas de artistas indígenas, campesinos y contemporáneos dialogando sobre la tierra y la memoria.",
+    "startDate": "2026-08-17",
+    "startTime": "11:00",
+    "endTime": "18:00",
+    "venue": "Museo de Arte Moderno de Medellín (MAMM)",
+    "neighborhood": "El Poblado",
+    "city": "Medellín",
+    "latitude": 6.2238,
+    "longitude": -75.5746,
+    "category": "arte",
+    "priceType": "paid",
+    "priceMin": 18000,
+    "priceMax": 18000,
+    "currency": "COP",
+    "organizer": "MAMM Exposiciones",
+    "sources": [
+      {
+        "type": "web",
+        "label": "MAMM Exposiciones",
+        "url": "https://www.elmamm.org/exposiciones/exposiciones-actuales/"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T15:45:00-05:00",
+    "lastCheckedAt": "2026-08-17T15:45:00-05:00",
+    "tags": [
+      "cerámica",
+      "barro",
+      "exposición",
+      "arte contemporáneo",
+      "mamm"
+    ],
+    "score": 94
   }
 ];
