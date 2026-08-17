@@ -17,7 +17,7 @@ export function EventCard({ event }: EventCardProps) {
   const categoryIcon = CATEGORY_ICONS[event.category as keyof typeof CATEGORY_ICONS] || '◉';
 
   return (
-    <article className="relative flex flex-col border border-border rounded-xl p-5 bg-surface/30 hover:bg-surface/70 hover:border-[#FFDE21]/50 hover:shadow-md transition-all group">
+    <article className="relative flex flex-col justify-between border border-border/80 rounded-2xl p-5 bg-surface/30 hover:bg-surface/70 hover:border-accent/60 hover:shadow-sm transition-all duration-200 group">
       {/* Top Bar: Category Pill + Save Button */}
       <div className="flex items-center justify-between gap-2 mb-3">
         <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface border border-border text-[11px] font-bold uppercase tracking-wider text-text">
@@ -30,14 +30,14 @@ export function EventCard({ event }: EventCardProps) {
       {/* Clickable Card Body */}
       <Link
         href={`/evento/${event.slug}`}
-        className="flex flex-col flex-grow focus:outline-none focus-visible:ring-2 focus-visible:ring-[#FFDE21] rounded-lg"
+        className="flex flex-col flex-grow focus:outline-none focus-visible:ring-2 focus-visible:ring-text rounded-lg"
       >
-        <div className="text-xs font-semibold text-[#FFDE21] flex items-center gap-1.5 mb-1.5">
+        <div className="text-xs font-bold text-accent uppercase tracking-wider flex items-center gap-1.5 mb-1.5 tabular-nums">
           <span aria-hidden="true">📅</span>
           <span>{formatDateFull(event.startDate)} · {event.startTime}</span>
         </div>
 
-        <h3 className="text-lg font-bold text-text line-clamp-2 leading-snug group-hover:text-[#FFDE21] transition-colors">
+        <h3 className="text-base sm:text-lg font-bold text-text line-clamp-2 leading-snug group-hover:text-accent transition-colors tracking-tight">
           {event.title}
         </h3>
 

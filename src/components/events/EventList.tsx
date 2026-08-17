@@ -38,7 +38,7 @@ export function EventList({ events, viewMode, title }: EventListProps) {
       
       {dates.map((date) => (
         <div key={date} className="mb-8">
-          <h3 className="text-sm font-semibold text-secondary uppercase tracking-wider px-4 py-2 bg-surface/50 sticky top-0 z-10 backdrop-blur-sm">
+          <h3 className="text-xs font-bold text-secondary uppercase tracking-wider px-4 py-2 bg-bg/95 border-b border-border/60 sticky top-14 z-10 backdrop-blur-md">
             {getDateLabel(date)}
           </h3>
           
@@ -49,7 +49,7 @@ export function EventList({ events, viewMode, title }: EventListProps) {
               ))}
             </div>
           ) : (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 px-4 pt-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 px-4 pt-4">
               {groupedEvents[date].map(event => (
                 <EventCard key={event.id} event={event} />
               ))}

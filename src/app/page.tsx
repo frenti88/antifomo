@@ -7,7 +7,7 @@ import { DateTabs } from '@/components/filters/DateTabs';
 import { FilterChip } from '@/components/filters/FilterChip';
 import { FilterSheet } from '@/components/filters/FilterSheet';
 import { EventList } from '@/components/events/EventList';
-import { EventRow } from '@/components/events/EventRow';
+import { EventCard } from '@/components/events/EventCard';
 import { EditorialSection } from '@/components/sections/EditorialSection';
 import { GemSection } from '@/components/sections/GemSection';
 import { NewlyFoundSection } from '@/components/sections/NewlyFoundSection';
@@ -102,45 +102,45 @@ export default function HomePage() {
         </div>
         
         <EventList 
-          events={isDefaultView ? filteredEvents.slice(0, 5) : filteredEvents} 
-          viewMode="agenda" 
+          events={isDefaultView ? filteredEvents.slice(0, 6) : filteredEvents} 
+          viewMode="explorar" 
         />
 
         {isDefaultView && (
-          <div className="px-4 sm:px-0">
+          <div className="px-4 sm:px-0 space-y-8">
             <EditorialSection title="Para ti" subtitle="Cosas que creemos que vale la pena mirar.">
-              <div className="flex flex-col">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
                 {paraTiEvents.map(event => (
-                  <EventRow key={event.id} event={event} />
+                  <EventCard key={event.id} event={event} />
                 ))}
               </div>
             </EditorialSection>
 
-            <div className="py-4">
+            <div className="py-2">
               <GemSection events={DEMO_EVENTS} />
             </div>
 
-            <div className="py-4">
+            <div className="py-2">
               <NewlyFoundSection events={DEMO_EVENTS} />
             </div>
 
             <EditorialSection title="Esta noche" subtitle="Para los que no quieren dormir.">
-              <div className="flex flex-col">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
                 {estaNocheEvents.map(event => (
-                  <EventRow key={event.id} event={event} />
+                  <EventCard key={event.id} event={event} />
                 ))}
               </div>
             </EditorialSection>
 
             <EditorialSection title="Gratis" subtitle="Planes que no cuestan un peso.">
-              <div className="flex flex-col">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
                 {freeEvents.map(event => (
-                  <EventRow key={event.id} event={event} />
+                  <EventCard key={event.id} event={event} />
                 ))}
               </div>
             </EditorialSection>
 
-            <div className="py-4">
+            <div className="py-2">
               <NearbySection events={DEMO_EVENTS} />
             </div>
           </div>
