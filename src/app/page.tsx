@@ -54,14 +54,14 @@ export default function HomePage() {
       <h1 className="sr-only">AntiFOMO — Radar cultural de Medellín</h1>
 
       <section className="pt-6 pb-4">
-        <div className="px-4 max-w-3xl mx-auto mb-3">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 mb-3">
           <h2 className="text-2xl font-bold tracking-tight text-text">
             ¿Qué está pasando?
           </h2>
         </div>
 
         {/* Integrated Search Bar */}
-        <div id="buscador" className="px-4 max-w-3xl mx-auto mb-4 scroll-mt-20">
+        <div id="buscador" className="max-w-6xl mx-auto px-4 sm:px-6 mb-4 scroll-mt-20">
           <SearchBar 
             query={filters.query || ''} 
             onQueryChange={(q) => setFilter({ query: q })}
@@ -69,10 +69,10 @@ export default function HomePage() {
           />
         </div>
 
-        <div className="max-w-3xl mx-auto space-y-2">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 space-y-2">
           <DateTabs activeDate={filters.date} onDateChange={handleDateChange} />
           
-          <div className="flex overflow-x-auto gap-2 px-4 py-2 no-scrollbar w-full">
+          <div className="flex flex-nowrap overflow-x-auto md:flex-wrap md:overflow-visible gap-2 py-2 no-scrollbar w-full">
             <FilterChip
               label="Todo"
               active={!isFiltering}
@@ -110,14 +110,14 @@ export default function HomePage() {
               label="+ Filtros"
               active={isFilterSheetOpen}
               onClick={() => setIsFilterSheetOpen(true)}
-              className="ml-auto flex-shrink-0"
+              className="ml-auto md:ml-0 flex-shrink-0"
             />
           </div>
         </div>
       </section>
 
-      <div className="max-w-3xl mx-auto space-y-6">
-        <div className="px-4 mb-2 flex items-center gap-2">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 space-y-8">
+        <div className="mb-2 flex items-center gap-2">
           <span className="relative flex h-2 w-2">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#D7FF3F] opacity-75"></span>
             <span className="relative inline-flex rounded-full h-2 w-2 bg-[#D7FF3F]"></span>
@@ -133,9 +133,9 @@ export default function HomePage() {
         />
 
         {isDefaultView && (
-          <div className="px-4 sm:px-0 space-y-8">
+          <div className="space-y-10">
             <EditorialSection title="Para ti" subtitle="Cosas que creemos que vale la pena mirar.">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 pt-2">
                 {paraTiEvents.map(event => (
                   <EventCard key={event.id} event={event} />
                 ))}
@@ -143,7 +143,7 @@ export default function HomePage() {
             </EditorialSection>
 
             <EditorialSection title="Ciencia" subtitle="Astronomía, biotecnología, neurociencias y divulgación científica.">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 pt-2">
                 {cienciaEvents.map(event => (
                   <EventCard key={event.id} event={event} />
                 ))}
@@ -151,7 +151,7 @@ export default function HomePage() {
             </EditorialSection>
 
             <EditorialSection title="Tecnología" subtitle="Inteligencia artificial, código abierto, robótica y hardware libre.">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 pt-2">
                 {tecnologiaEvents.map(event => (
                   <EventCard key={event.id} event={event} />
                 ))}
@@ -167,7 +167,7 @@ export default function HomePage() {
             </div>
 
             <EditorialSection title="Esta noche" subtitle="Para los que no quieren dormir.">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 pt-2">
                 {estaNocheEvents.map(event => (
                   <EventCard key={event.id} event={event} />
                 ))}
@@ -175,7 +175,7 @@ export default function HomePage() {
             </EditorialSection>
 
             <EditorialSection title="Gratis" subtitle="Planes que no cuestan un peso.">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 pt-2">
                 {freeEvents.map(event => (
                   <EventCard key={event.id} event={event} />
                 ))}

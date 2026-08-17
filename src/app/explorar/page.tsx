@@ -66,11 +66,11 @@ export default function ExplorarPage() {
         </div>
       </div>
 
-      <div className="max-w-3xl mx-auto">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="space-y-2 py-4">
           <DateTabs activeDate={filters.date} onDateChange={handleDateChange} />
           
-          <div className="flex overflow-x-auto gap-2 px-4 py-2 no-scrollbar w-full">
+          <div className="flex flex-nowrap overflow-x-auto md:flex-wrap md:overflow-visible gap-2 py-2 no-scrollbar w-full">
             <FilterChip
               label="Todo"
               active={!isFiltering}
@@ -108,7 +108,7 @@ export default function ExplorarPage() {
               label="+ Filtros"
               active={isFilterSheetOpen}
               onClick={() => setIsFilterSheetOpen(true)}
-              className="ml-auto flex-shrink-0"
+              className="ml-auto md:ml-0 flex-shrink-0"
             />
           </div>
         </div>

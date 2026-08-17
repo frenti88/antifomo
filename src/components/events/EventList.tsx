@@ -49,7 +49,7 @@ export function EventList({ events, viewMode, title }: EventListProps) {
               ))}
             </div>
           ) : (
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 px-4 pt-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 px-4 sm:px-0 pt-4">
               {groupedEvents[date].map(event => (
                 <EventCard key={event.id} event={event} />
               ))}

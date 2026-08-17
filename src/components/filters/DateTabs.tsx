@@ -11,7 +11,7 @@ interface DateTabsProps {
 
 export function DateTabs({ activeDate, onDateChange }: DateTabsProps) {
   return (
-    <nav role="tablist" className="flex overflow-x-auto gap-2 px-4 py-2 no-scrollbar w-full">
+    <nav role="tablist" className="flex flex-nowrap overflow-x-auto md:flex-wrap md:overflow-visible gap-2 px-4 sm:px-0 py-2 no-scrollbar w-full">
       {DATE_FILTERS.map((filter) => {
         const isActive = activeDate === filter.value;
         return (
