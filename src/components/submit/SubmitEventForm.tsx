@@ -63,8 +63,26 @@ export function SubmitEventForm() {
     setStep('review');
   };
 
-  const handleReviewSubmit = (e: React.FormEvent) => {
+  const handleReviewSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    try {
+      await fetch('/api/events/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          title: formData.title,
+          description: formData.description,
+          sourceUrl: url || undefined,
+          date: formData.date,
+          time: formData.time,
+          venue: formData.venue,
+          category: formData.category,
+          price: formData.price,
+        }),
+      });
+    } catch (err) {
+      console.error('Error submitting event to API:', err);
+    }
     setStep('success');
   };
 
