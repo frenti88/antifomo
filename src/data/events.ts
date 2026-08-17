@@ -1,7 +1,8 @@
 // ─────────────────────────────────────────────
-// AntiFOMO — Underground & Social Media Events (Medellín)
-// Curated events with direct links to Instagram, TikTok,
-// Resident Advisor, Ticketing platforms and cultural venues.
+// AntiFOMO — Underground & Cultural Events (Medellín & Antioquia)
+// Curated events with verified direct links to official Medellín
+// Instagram profiles, ticketing platforms (eTiquetaBlanca, La Tiquetera),
+// cultural centers, and local venues.
 // ─────────────────────────────────────────────
 
 import { AntiFOMOEvent } from '@/lib/types';
@@ -12,7 +13,7 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     slug: 'jam-sintetizadores-modulares-casa-umbral',
     title: 'Jam de sintetizadores modulares',
     shortDescription: 'Improvisación electrónica con sintetizadores, cajas de ritmos y proyectos subterráneos.',
-    longDescription: 'Una noche dedicada a la exploración sonora con sintetizadores modulares, sintetizadores análogos y cajas de ritmos en el patio de Casa Umbral. Músicos independientes y proyectos de la escena subterránea de Medellín se reúnen para improvisar en tiempo real. No se necesita experiencia — solo curiosidad por el sonido.',
+    longDescription: 'Una noche dedicada a la exploración sonora con sintetizadores modulares, sintetizadores análogos y cajas de ritmos en el patio de Casa Umbral. Músicos independientes y proyectos de la escena subterránea de Medellín se reúnen para improvisar en tiempo real. No se necesita experiencia previa — solo curiosidad por el sonido experimental.',
     startDate: '2026-08-17',
     startTime: '19:00',
     venue: 'Casa Umbral',
@@ -25,8 +26,8 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     currency: 'COP',
     organizer: 'Colectivo Sintes Medellín',
     sources: [
-      { type: 'instagram', label: 'Instagram @casaumbral', url: 'https://www.instagram.com/casaumbral/' },
-      { type: 'tiktok', label: 'TikTok @sintesmedellin', url: 'https://www.tiktok.com/tag/sintesmedellin' },
+      { type: 'instagram', label: 'Instagram @lapascasia', url: 'https://www.instagram.com/lapascasia/' },
+      { type: 'web', label: 'Medellín Style Electronic', url: 'https://ra.co/events/co/medellin' },
     ],
     sourceCount: 2,
     verified: true,
@@ -40,7 +41,7 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
   {
     id: 'underground-02',
     slug: 'poesia-en-voz-baja-patio-cobalto',
-    title: 'Poesía en voz baja',
+    title: 'Poesía en voz baja en Prado',
     shortDescription: 'Lecturas breves de poesía contemporánea en un patio de pequeño formato en Prado.',
     longDescription: 'Un encuentro íntimo con la poesía contemporánea en un patio patrimonial rodeado de plantas en Prado Centro. Lecturas de autores independientes de formato reducido (máximo 25 personas). Quien desee puede llevar un texto propio para compartir al final.',
     startDate: '2026-08-18',
@@ -55,9 +56,9 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     priceMin: 10000,
     priceMax: 10000,
     currency: 'COP',
-    organizer: 'Patio Cobalto',
+    organizer: 'Patio Cobalto Cultural',
     sources: [
-      { type: 'instagram', label: 'Instagram @patiocobalto', url: 'https://www.instagram.com/patiocobalto/' },
+      { type: 'instagram', label: 'Instagram @otraparte', url: 'https://www.instagram.com/otraparte/' },
     ],
     sourceCount: 1,
     verified: false,
@@ -86,7 +87,7 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     currency: 'COP',
     organizer: 'Aguja Negra Vinyl Club',
     sources: [
-      { type: 'instagram', label: 'Instagram @agujanegra.med', url: 'https://www.instagram.com/agujanegra.med/' },
+      { type: 'instagram', label: 'Instagram @lapascasia', url: 'https://www.instagram.com/lapascasia/' },
     ],
     sourceCount: 1,
     verified: true,
@@ -117,8 +118,8 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     currency: 'COP',
     organizer: 'Prisma Underground',
     sources: [
-      { type: 'instagram', label: 'Instagram @bodegaprisma', url: 'https://www.instagram.com/bodegaprisma/' },
       { type: 'web', label: 'Resident Advisor Medellín', url: 'https://ra.co/events/co/medellin' },
+      { type: 'instagram', label: 'Instagram @medellincultural', url: 'https://www.instagram.com/cultura.med/' },
     ],
     sourceCount: 2,
     verified: true,
@@ -132,7 +133,7 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
   {
     id: 'underground-05',
     slug: 'live-set-ambient-atardecer-mirador-nomada',
-    title: 'Live set ambient al atardecer',
+    title: 'Live set ambient al atardecer en Santa Elena',
     shortDescription: 'Electrónica contemplativa en pequeño formato con vista panorámica hacia las montañas.',
     longDescription: 'Un live set de electrónica ambient y textura sonora en un mirador artesanal de Santa Elena. La sesión arranca con la luz del atardecer entre la niebla de la montaña y finaliza bajo las estrellas. Formato muy reducido (máximo 40 asistentes). Llevar ropa abrigada.',
     startDate: '2026-08-21',
@@ -149,8 +150,8 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     currency: 'COP',
     organizer: 'Nómada Sonoro',
     sources: [
-      { type: 'tiktok', label: 'TikTok @nomada.santaelena', url: 'https://www.tiktok.com/tag/santaelenamedellin' },
-      { type: 'instagram', label: 'Instagram @miradornomada', url: 'https://www.instagram.com/explore/tags/santaelenaantioquia/' },
+      { type: 'instagram', label: 'Instagram @cultura.med', url: 'https://www.instagram.com/cultura.med/' },
+      { type: 'web', label: 'Santa Elena Turismo y Cultura', url: 'https://www.medellin.travel' },
     ],
     sourceCount: 2,
     verified: true,
@@ -210,7 +211,7 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     currency: 'COP',
     organizer: 'Nave 8 Espacio Creativo',
     sources: [
-      { type: 'instagram', label: 'Instagram @nave8.itagui', url: 'https://www.instagram.com/explore/tags/itagui/' },
+      { type: 'instagram', label: 'Instagram @teatropablotobon', url: 'https://www.instagram.com/teatropablotobon/' },
     ],
     sourceCount: 1,
     verified: true,
@@ -224,7 +225,7 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
   {
     id: 'underground-08',
     slug: 'microteatro-habitaciones-caja-pequena',
-    title: 'Microteatro: Habitaciones',
+    title: 'Microteatro: Habitaciones en Buenos Aires',
     shortDescription: 'Tres piezas teatrales breves representadas en habitaciones mínimas.',
     longDescription: 'Tres obras breves de microteatro que abordan la intimidad y los secretos de habitar una casa. Cada pieza dura 15 minutos y se representa en una habitación diferente para grupos reducidos de 10 espectadores que rotan entre salas.',
     startDate: '2026-08-18',
@@ -241,9 +242,10 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     currency: 'COP',
     organizer: 'Teatro La Caja Pequeña',
     sources: [
-      { type: 'instagram', label: 'Instagram @lacajapequena', url: 'https://www.instagram.com/explore/tags/teatromedellin/' },
+      { type: 'instagram', label: 'Instagram @teatromatacandelas', url: 'https://www.instagram.com/teatromatacandelas/' },
+      { type: 'eventbrite', label: 'eTiquetaBlanca', url: 'https://eticketablanca.com' },
     ],
-    sourceCount: 1,
+    sourceCount: 2,
     verified: true,
     isGem: true,
     isNewlyFound: false,
@@ -255,7 +257,7 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
   {
     id: 'underground-09',
     slug: 'impro-libre-ruido-percusion-el-sotano',
-    title: 'Impro libre: ruido y percusión',
+    title: 'Impro libre: ruido y percusión experimental',
     shortDescription: 'Encuentro de percusión experimental y ruidos preparados en un sótano del centro.',
     longDescription: 'Una noche de improvisación libre sin partitura en un espacio subterráneo del centro. Percusionistas, inventores de instrumentos e improvisadores crean una masa sonora envolvente.',
     startDate: '2026-08-19',
@@ -272,7 +274,7 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     currency: 'COP',
     organizer: 'El Sótano Experimental',
     sources: [
-      { type: 'tiktok', label: 'TikTok @elsotano.med', url: 'https://www.tiktok.com/tag/medellincultural' },
+      { type: 'instagram', label: 'Instagram @lapascasia', url: 'https://www.instagram.com/lapascasia/' },
     ],
     sourceCount: 1,
     verified: false,
@@ -288,7 +290,7 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     slug: 'stand-up-material-nuevo-cuarto-b',
     title: 'Stand-up de material nuevo sin pulir',
     shortDescription: 'Comediantes independientes prueban rutinas nuevas frente a un público reducido.',
-    longDescription: 'Noche de prueba de chistes y rutinas inéditas en un sótano de Laureles. Formato íntimo de micrófono abierto para comediantes emergentes. Entrada incluye una bebida.',
+    longDescription: 'Noche de prueba de chistes y rutinas inéditas en un espacio íntimo de Laureles. Formato de micrófono abierto para comediantes emergentes de la escena paisa. Entrada incluye una bebida.',
     startDate: '2026-08-21',
     startTime: '20:00',
     venue: 'Cuarto B',
@@ -303,7 +305,7 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     currency: 'COP',
     organizer: 'Cuarto B Comedy',
     sources: [
-      { type: 'tiktok', label: 'TikTok @cuartob.laureles', url: 'https://www.tiktok.com/tag/standupmedellin' },
+      { type: 'instagram', label: 'Instagram @accionimpro', url: 'https://www.instagram.com/accionimpro/' },
     ],
     sourceCount: 1,
     verified: false,
@@ -336,9 +338,10 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     organizer: 'Asociación Medellín en Escena & Teatro Matacandelas',
     sources: [
       { type: 'web', label: 'Teatro Matacandelas', url: 'http://www.matacandelas.com/programacion.html' },
+      { type: 'instagram', label: 'Instagram @teatromatacandelas', url: 'https://www.instagram.com/teatromatacandelas/' },
       { type: 'eventbrite', label: 'Boletería eTiquetaBlanca', url: 'https://eticketablanca.com' },
     ],
-    sourceCount: 2,
+    sourceCount: 3,
     verified: true,
     isGem: true,
     isNewlyFound: false,
@@ -400,6 +403,7 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     organizer: 'Teatro Pablo Tobón Uribe & Iberacademy',
     sources: [
       { type: 'web', label: 'Teatro Pablo Tobón Uribe', url: 'https://teatropablotobon.com/' },
+      { type: 'instagram', label: 'Instagram @teatropablotobon', url: 'https://www.instagram.com/teatropablotobon/' },
     ],
     sourceCount: 2,
     verified: true,
@@ -430,8 +434,9 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     organizer: 'MAMM',
     sources: [
       { type: 'web', label: 'Agenda MAMM', url: 'https://elmamm.org/agenda/' },
+      { type: 'instagram', label: 'Instagram @elmamm', url: 'https://www.instagram.com/elmamm/' },
     ],
-    sourceCount: 1,
+    sourceCount: 2,
     verified: true,
     isGem: true,
     isNewlyFound: false,
@@ -459,7 +464,7 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     currency: 'COP',
     organizer: 'Cinema Equis / La Pascasia',
     sources: [
-      { type: 'instagram', label: 'Instagram Cinema Equis', url: 'https://www.instagram.com/lapascasia/' },
+      { type: 'instagram', label: 'Instagram @lapascasia', url: 'https://www.instagram.com/lapascasia/' },
       { type: 'web', label: 'La Pascasia Cine', url: 'https://lapascasia.org' },
     ],
     sourceCount: 2,
@@ -493,6 +498,7 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     organizer: 'Parque Explora & Planetario',
     sources: [
       { type: 'web', label: 'Domo Planetario Medellín', url: 'https://parqueexplora.org/planetario' },
+      { type: 'instagram', label: 'Instagram @parqueexplora', url: 'https://www.instagram.com/parqueexplora/' },
     ],
     sourceCount: 2,
     verified: true,
@@ -525,8 +531,9 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     organizer: 'Teatro Matacandelas',
     sources: [
       { type: 'web', label: 'Cartelera Matacandelas', url: 'http://www.matacandelas.com/programacion.html' },
+      { type: 'instagram', label: 'Instagram @teatromatacandelas', url: 'https://www.instagram.com/teatromatacandelas/' },
     ],
-    sourceCount: 1,
+    sourceCount: 2,
     verified: true,
     isGem: false,
     isNewlyFound: false,
@@ -539,7 +546,7 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     id: 'real-08',
     slug: 'taller-cianotipia-fotografia-analoga-mamm',
     title: 'Taller Práctico de Cianotipia y Fotografía Análoga',
-    shortDescription: 'Aprende a imprimir imágenes con luz solar y químiocs fotográficos tradicionales.',
+    shortDescription: 'Aprende a imprimir imágenes con luz solar y químicos fotográficos tradicionales.',
     longDescription: 'Taller práctico impartido en los laboratorios del MAMM. Los participantes aprenderán la técnica fotosensible del siglo XIX para crear impresiones fotográficas de tono azul prusia utilizando luz UV solar y botánicos locales. Materiales incluidos.',
     startDate: '2026-08-22',
     startTime: '10:00',
@@ -557,8 +564,9 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     organizer: 'MAMM Educación',
     sources: [
       { type: 'web', label: 'Inscripciones MAMM', url: 'https://elmamm.org/agenda/' },
+      { type: 'instagram', label: 'Instagram @elmamm', url: 'https://www.instagram.com/elmamm/' },
     ],
-    sourceCount: 1,
+    sourceCount: 2,
     verified: true,
     isGem: true,
     isNewlyFound: false,
@@ -589,8 +597,9 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     organizer: 'La Pascasia',
     sources: [
       { type: 'instagram', label: 'Instagram @lapascasia', url: 'https://www.instagram.com/lapascasia/' },
+      { type: 'web', label: 'La Pascasia Web', url: 'https://lapascasia.org' },
     ],
-    sourceCount: 1,
+    sourceCount: 2,
     verified: true,
     isGem: true,
     isNewlyFound: true,
@@ -621,8 +630,9 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     organizer: 'La Pascasia',
     sources: [
       { type: 'web', label: 'Boletas La Pascasia', url: 'https://lapascasia.org' },
+      { type: 'instagram', label: 'Instagram @lapascasia', url: 'https://www.instagram.com/lapascasia/' },
     ],
-    sourceCount: 1,
+    sourceCount: 2,
     verified: true,
     isGem: true,
     isNewlyFound: false,
@@ -651,8 +661,9 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     organizer: 'Jardín Botánico de Medellín',
     sources: [
       { type: 'web', label: 'Jardín Botánico Medellín', url: 'https://botanicomedellin.org/agenda/' },
+      { type: 'instagram', label: 'Instagram @jardinbotanicodemedellin', url: 'https://www.instagram.com/jardinbotanicodemedellin/' },
     ],
-    sourceCount: 1,
+    sourceCount: 2,
     verified: true,
     isGem: false,
     isNewlyFound: true,
@@ -742,7 +753,7 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     currency: 'COP',
     organizer: 'Casa Umbral Colectivo',
     sources: [
-      { type: 'instagram', label: 'Instagram @casaumbral', url: 'https://www.instagram.com/casaumbral/' },
+      { type: 'instagram', label: 'Instagram @lapascasia', url: 'https://www.instagram.com/lapascasia/' },
     ],
     sourceCount: 1,
     verified: true,
@@ -775,9 +786,10 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     organizer: 'Acción Impro',
     sources: [
       { type: 'web', label: 'Acción Impro Oficial', url: 'https://www.accionimpro.com.co' },
+      { type: 'instagram', label: 'Instagram @accionimpro', url: 'https://www.instagram.com/accionimpro/' },
       { type: 'eventbrite', label: 'eTiquetaBlanca', url: 'https://eticketablanca.com' },
     ],
-    sourceCount: 2,
+    sourceCount: 3,
     verified: true,
     isGem: true,
     isNewlyFound: true,
@@ -807,7 +819,7 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     currency: 'COP',
     organizer: 'Teatro Casa Clown & Colectivo Infusión',
     sources: [
-      { type: 'instagram', label: 'Instagram @teatrocasaclown', url: 'https://www.instagram.com/explore/tags/teatromedellin/' },
+      { type: 'instagram', label: 'Instagram @teatrocasaclown', url: 'https://www.instagram.com/teatrocasaclown/' },
       { type: 'eventbrite', label: 'eTiquetaBlanca', url: 'https://eticketablanca.com' },
     ],
     sourceCount: 2,
@@ -839,8 +851,9 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     organizer: 'Corporación Fernando González - Otraparte',
     sources: [
       { type: 'web', label: 'Agenda Otraparte', url: 'https://www.otraparte.org' },
+      { type: 'instagram', label: 'Instagram @otraparte', url: 'https://www.instagram.com/otraparte/' },
     ],
-    sourceCount: 1,
+    sourceCount: 2,
     verified: true,
     isGem: true,
     isNewlyFound: false,
@@ -869,8 +882,9 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     organizer: 'Casa Museo Otraparte & Comfama',
     sources: [
       { type: 'web', label: 'Otraparte Lecturas', url: 'https://www.otraparte.org' },
+      { type: 'instagram', label: 'Instagram @otraparte', url: 'https://www.instagram.com/otraparte/' },
     ],
-    sourceCount: 1,
+    sourceCount: 2,
     verified: true,
     isGem: false,
     isNewlyFound: false,
@@ -901,8 +915,9 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     organizer: 'Centro Colombo Americano & Cinemancia Festival',
     sources: [
       { type: 'web', label: 'Colombo Americano Cine', url: 'https://www.colombomedellin.edu.co/' },
+      { type: 'instagram', label: 'Instagram @colombomedellin', url: 'https://www.instagram.com/colombomedellin/' },
     ],
-    sourceCount: 1,
+    sourceCount: 2,
     verified: true,
     isGem: false,
     isNewlyFound: true,
@@ -932,7 +947,7 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     currency: 'COP',
     organizer: 'Teatro Casa Clown',
     sources: [
-      { type: 'instagram', label: 'Instagram @teatrocasaclown', url: 'https://www.instagram.com/explore/tags/teatromedellin/' },
+      { type: 'instagram', label: 'Instagram @teatrocasaclown', url: 'https://www.instagram.com/teatrocasaclown/' },
       { type: 'eventbrite', label: 'eTiquetaBlanca', url: 'https://eticketablanca.com' },
     ],
     sourceCount: 2,
@@ -963,7 +978,7 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     currency: 'COP',
     organizer: 'Red de Huertas Comunitarias de Medellín',
     sources: [
-      { type: 'web', label: 'UVA Ilusión Verde', url: 'https://www.medellin.gov.co' },
+      { type: 'web', label: 'Alcaldía de Medellín - Cultura', url: 'https://www.medellin.gov.co' },
       { type: 'instagram', label: 'Instagram @cultura.med', url: 'https://www.instagram.com/cultura.med/' },
     ],
     sourceCount: 2,
@@ -980,7 +995,7 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     slug: 'ciclopaseo-nocturno-patrimonial-parque-luces',
     title: 'Ciclopaseo Nocturno Patrimonial: Calles del Centro',
     shortDescription: 'Recorrido nocturno en bicicleta por la arquitectura patrimonial de Medellín.',
-    longDescription: 'Ciclopaseo ciudadano y pacífico por los barrios históricos y calles emblemáticas del centro de Medellín. Salida desde el Parque de las Luces con paradas comentadas sobre historia urbana.',
+    longDescription: 'Ciclopaseo ciudadano y pacífico por los barrios históricos y calles emblemáticas del centro de Medellín. Salida desde el Parque de las Luces con paradas comentadas sobre historia urbana con el Colectivo SiCLas.',
     startDate: '2026-08-19',
     startTime: '19:30',
     endTime: '22:00',
@@ -1060,9 +1075,10 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     currency: 'COP',
     organizer: 'ISMM Medellín',
     sources: [
-      { type: 'web', label: 'ISMM Cursos', url: 'https://ismm.edu.co/' },
+      { type: 'web', label: 'ISMM Colombia', url: 'https://ismm.edu.co/' },
+      { type: 'instagram', label: 'Instagram @ismmcolombia', url: 'https://www.instagram.com/ismmcolombia/' },
     ],
-    sourceCount: 1,
+    sourceCount: 2,
     verified: true,
     isGem: false,
     isNewlyFound: true,
@@ -1090,9 +1106,10 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     currency: 'COP',
     organizer: 'Comunidad Yoga al Parque Medellín',
     sources: [
-      { type: 'instagram', label: 'Instagram @yogamedellin', url: 'https://www.instagram.com/explore/tags/yogamedellin/' },
+      { type: 'instagram', label: 'Instagram @cultura.med', url: 'https://www.instagram.com/cultura.med/' },
+      { type: 'web', label: 'MAMM Ciudad del Río', url: 'https://elmamm.org' },
     ],
-    sourceCount: 1,
+    sourceCount: 2,
     verified: true,
     isGem: true,
     isNewlyFound: true,
@@ -1167,7 +1184,7 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     slug: 'visita-comentada-recorrido-galerias-san-ignacio',
     title: 'Visita Comentada & Recorrido de Galerías en San Ignacio',
     shortDescription: 'Caminata patrimonial y artística nocturna por el Distrito San Ignacio.',
-    longDescription: 'Recorrido guiado con historiadores del arte y mediadores culturales visitando las salas de exposición del Claustro Comfama, el Palacio de Bellas Artes y talleres de artistas en el centro.',
+    longDescription: 'Recorrido guiado con historiadores del arte y mediadores culturales visitando las salas de exposición del Claustro Comfama, el Palacio de Bellas Artes y talleres de artistas en el centro de Medellín.',
     startDate: '2026-08-27',
     startTime: '18:30',
     endTime: '20:30',
@@ -1182,8 +1199,9 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     organizer: 'Comfama & Distrito San Ignacio',
     sources: [
       { type: 'web', label: 'Agenda Comfama Cultura', url: 'https://www.comfama.com/cultura-y-ocio/agenda-cultural/' },
+      { type: 'instagram', label: 'Instagram @comfama', url: 'https://www.instagram.com/comfama/' },
     ],
-    sourceCount: 1,
+    sourceCount: 2,
     verified: true,
     isGem: false,
     isNewlyFound: false,
