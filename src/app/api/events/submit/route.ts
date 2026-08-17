@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import { supabase, isSupabaseConfigured } from '@/lib/supabase';
+import { sendEventNotificationEmail } from '@/lib/email';
 
 export async function POST(request: Request) {
   try {
@@ -16,7 +17,7 @@ export async function POST(request: Request) {
 
     // If Supabase is connected, store in submitted_events table for moderation
     if (isSupabaseConfigured && supabase) {
-      const { data, error } = await supabase
+      const { error } = await supabase
         .from('submitted_events')
         .insert([
           {
@@ -31,13 +32,26 @@ export async function POST(request: Request) {
             submitter_email: email || null,
             status: 'pending_review',
           },
-        ])
-        .select();
+        ]);
 
       if (error) {
         console.error('Supabase submission error:', error);
       }
     }
+
+    // Send instant email notification to admin
+    await sendEventNotificationEmail({
+      title: title || 'Nuevo enlace propuesto',
+      description,
+      sourceUrl,
+      startDate: date,
+      startTime: time,
+      venue,
+      category,
+      price,
+      submitterEmail: email,
+      type: 'community_submission',
+    });
 
     return NextResponse.json({
       success: true,

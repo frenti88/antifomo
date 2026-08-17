@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 import { getServiceSupabase } from '@/lib/supabase';
 import { DEMO_EVENTS } from '@/data/events';
+import { sendEventNotificationEmail } from '@/lib/email';
 
 // Route Handler for Vercel Cron Job
 export async function GET(request: Request) {
@@ -51,6 +52,15 @@ export async function GET(request: Request) {
 
         if (!error) syncedCount++;
       }
+
+      // Send email notification on cron execution
+      await sendEventNotificationEmail({
+        title: `Sincronización diaria del radar completada`,
+        description: `Se verificaron y sincronizaron ${syncedCount} eventos en la base de datos de Supabase.`,
+        venue: 'Medellín & Valle de Aburrá',
+        category: 'Sincronización Automática',
+        type: 'cron_summary',
+      });
     }
 
     return NextResponse.json({
