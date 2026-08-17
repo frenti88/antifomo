@@ -52,7 +52,7 @@ export default function BottomNavigation() {
 
   return (
     <nav 
-      className="fixed bottom-0 left-0 right-0 lg:hidden bg-bg border-t border-border z-50 pb-[env(safe-area-inset-bottom)]"
+      className="fixed bottom-0 left-0 right-0 lg:hidden bg-bg/95 backdrop-blur-md border-t border-border z-50 pb-[env(safe-area-inset-bottom)] transition-colors"
       aria-label="Navegación principal"
     >
       <ul className="flex h-16 items-center justify-around px-2">
@@ -63,7 +63,7 @@ export default function BottomNavigation() {
             <li key={item.href} className="flex-1">
               <Link 
                 href={item.href}
-                className={`flex flex-col items-center justify-center w-full h-full space-y-1 ${
+                className={`flex flex-col items-center justify-center w-full h-full space-y-1 active:scale-95 transition-all duration-150 ${
                   isActive ? 'text-text' : 'text-secondary hover:text-text'
                 }`}
                 aria-current={isActive ? 'page' : undefined}
@@ -71,7 +71,7 @@ export default function BottomNavigation() {
                 <div className={isActive ? 'bg-accent text-black rounded-full p-1' : ''}>
                   {item.icon}
                 </div>
-                <span className={`text-[10px] uppercase tracking-wider ${isActive ? 'font-bold text-accent' : 'font-medium'}`}>{item.label}</span>
+                <span className={`text-[10px] uppercase tracking-wider ${isActive ? 'font-bold text-text' : 'font-medium'}`}>{item.label}</span>
               </Link>
             </li>
           );
