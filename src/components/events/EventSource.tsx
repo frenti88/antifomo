@@ -41,7 +41,8 @@ export function EventSource({ sources, className = '', interactive = true }: Eve
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface hover:bg-[#FFDE21] text-text hover:text-black border border-border transition-all text-xs font-medium group"
-              title={`Abrir fuente original en ${source.label}`}
+              title={`Conocer más en ${source.label}`}
+              aria-label={`Conocer más en ${source.label}`}
             >
               <span>{icon}</span>
               <span>{source.label}</span>

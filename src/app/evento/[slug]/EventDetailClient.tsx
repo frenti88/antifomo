@@ -137,9 +137,10 @@ export default function EventDetailClient({ event }: { event: AntiFOMOEvent }) {
               target="_blank"
               rel="noopener noreferrer"
               className="flex-1 bg-accent text-black rounded-full px-6 py-3 font-bold text-center hover:brightness-95 transition-all min-h-[44px] flex items-center justify-center gap-2 shadow-sm"
+              title={`Conocer más en ${mainSource.label} (${mainSource.url})`}
             >
-              <span>Ver en {mainSource.label}</span>
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <span>Conocer más</span>
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
               </svg>
             </a>
