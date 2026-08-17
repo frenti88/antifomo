@@ -24374,5 +24374,250 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
       "agenda oriente"
     ],
     "score": 94
+  },
+  {
+    "id": "otraparte-cineclub-ciclo-clasicos",
+    "slug": "otraparte-cineclub-ciclo-de-cine-al-parque",
+    "title": "Cineclub Otraparte: Ciclo de Cine y Memoria",
+    "shortDescription": "Proyección al aire libre en el Parque Cultural Otraparte seguida de conversación y análisis cinematográfico.",
+    "longDescription": "El tradicional Cineclub de Otraparte ofrece proyecciones cinematográficas de autor en los jardines y auditorio del Parque Cultural Otraparte. Cada función incluye una charla introductoria y un cineforo abierto sobre estética, sociedad y narrativa.",
+    "startDate": "2026-08-19",
+    "startTime": "18:30",
+    "venue": "Parque Cultural Otraparte (Auditorio)",
+    "neighborhood": "Envigado",
+    "city": "Envigado",
+    "latitude": 6.1764,
+    "longitude": -75.5901,
+    "category": "cine",
+    "priceType": "free",
+    "priceMin": 0,
+    "priceMax": 0,
+    "currency": "COP",
+    "organizer": "Corporación Fernando González – Otraparte",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Otraparte Agenda Cultural",
+        "url": "https://www.otraparte.org/agenda-cultural/cine/"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:40:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:40:00-05:00",
+    "tags": [
+      "cine",
+      "cineclub",
+      "otraparte",
+      "envigado",
+      "gratis"
+    ],
+    "score": 95
+  },
+  {
+    "id": "otraparte-club-lectura-yo-leo",
+    "slug": "otraparte-club-de-lectura-yo-leo-fernando-gonzalez",
+    "title": "Club de Lectura «Yo leo»: Filosofía y Literatura",
+    "shortDescription": "Lectura colectiva, diálogo socrático y análisis de obras universales y el pensamiento de Fernando González.",
+    "longDescription": "Un espacio de encuentro donde la lectura compartida se convierte en pretexto para pensar la vida y el territorio. Coordinado por mediadores de lectura de la Casa Museo Otraparte bajo los mangos y corredores coloniales.",
+    "startDate": "2026-08-20",
+    "startTime": "17:00",
+    "venue": "Casa Museo Otraparte",
+    "neighborhood": "Envigado",
+    "city": "Envigado",
+    "latitude": 6.1764,
+    "longitude": -75.5901,
+    "category": "literatura",
+    "priceType": "free",
+    "priceMin": 0,
+    "priceMax": 0,
+    "currency": "COP",
+    "organizer": "Corporación Fernando González – Otraparte",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Otraparte Agenda Cultural",
+        "url": "https://www.otraparte.org/agenda-cultural/literatura/"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:40:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:40:00-05:00",
+    "tags": [
+      "literatura",
+      "lectura",
+      "filosofía",
+      "envigado",
+      "gratis"
+    ],
+    "score": 94
+  },
+  {
+    "id": "otraparte-catedra-humanismo-civilidad",
+    "slug": "otraparte-catedra-de-humanismo-y-civilidad",
+    "title": "Cátedra de Humanismo y Civilidad: Ética, IA y Sociedad",
+    "shortDescription": "Panel interdisciplinario sobre el impacto ético de la tecnología y los retos de la civilidad contemporánea.",
+    "longDescription": "La Cátedra de Humanismo y Civilidad de Otraparte reúne a académicos, científicos y pensadores sociales para debatir dilemas bioéticos, transformaciones urbanas e inteligencia artificial desde una perspectiva humanista.",
+    "startDate": "2026-08-21",
+    "startTime": "18:00",
+    "venue": "Parque Cultural Otraparte (Auditorio)",
+    "neighborhood": "Envigado",
+    "city": "Envigado",
+    "latitude": 6.1764,
+    "longitude": -75.5901,
+    "category": "talleres",
+    "priceType": "free",
+    "priceMin": 0,
+    "priceMax": 0,
+    "currency": "COP",
+    "organizer": "Corporación Fernando González – Otraparte",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Otraparte Agenda Cultural",
+        "url": "https://www.otraparte.org/agenda-cultural/catedra-de-humanismo-y-civilidad/"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:40:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:40:00-05:00",
+    "tags": [
+      "filosofía",
+      "humanismo",
+      "conversación",
+      "envigado",
+      "gratis"
+    ],
+    "score": 93
+  },
+  {
+    "id": "otraparte-musica-acustica-cafe",
+    "slug": "otraparte-musica-en-el-cafe-de-otraparte",
+    "title": "Música en El Café de Otraparte: Concierto Acústico al Aire Libre",
+    "shortDescription": "Tarde de jazz, canción de autor y cuerdas en el patio y jardines del café cultural más emblemático de Envigado.",
+    "longDescription": "Disfruta de una tarde sonora bajo la sombra de los árboles centenarios de Otraparte. Músicos locales e internacionales presentan propuestas acústicas de jazz, bossa nova y folklore latinoamericano.",
+    "startDate": "2026-08-22",
+    "startTime": "17:30",
+    "venue": "El Café de Otraparte",
+    "neighborhood": "Envigado",
+    "city": "Envigado",
+    "latitude": 6.1764,
+    "longitude": -75.5901,
+    "category": "música",
+    "priceType": "free",
+    "priceMin": 0,
+    "priceMax": 0,
+    "currency": "COP",
+    "organizer": "El Café de Otraparte / Corporación Otraparte",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Otraparte Agenda Cultural",
+        "url": "https://www.otraparte.org/agenda-cultural/musica/"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:40:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:40:00-05:00",
+    "tags": [
+      "música",
+      "jazz",
+      "acústico",
+      "envigado",
+      "gratis"
+    ],
+    "score": 96
+  },
+  {
+    "id": "otraparte-erase-una-vez-lecturas-infantiles",
+    "slug": "otraparte-erase-una-vez-kamishibai-y-cuentos-en-otraparte",
+    "title": "Érase una vez… en Otraparte: Kamishibai y Teatro de Papel",
+    "shortDescription": "Cuentacuentos infantil, taller de kamishibai y exploración creativa en los jardines de la Casa Museo.",
+    "longDescription": "Un espacio lúdico diseñado para niñas, niños y familias. A través del teatro de papel japonés (Kamishibai), títeres y narración oral, los pequeños descubren historias fascinantes en un entorno verde y patrimonial.",
+    "startDate": "2026-08-23",
+    "startTime": "11:00",
+    "venue": "Jardines de la Casa Museo Otraparte",
+    "neighborhood": "Envigado",
+    "city": "Envigado",
+    "latitude": 6.1764,
+    "longitude": -75.5901,
+    "category": "talleres",
+    "priceType": "free",
+    "priceMin": 0,
+    "priceMax": 0,
+    "currency": "COP",
+    "organizer": "Corporación Fernando González – Otraparte",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Otraparte Agenda Cultural",
+        "url": "https://www.otraparte.org/agenda-cultural/talleres/"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": false,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:40:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:40:00-05:00",
+    "tags": [
+      "infantil",
+      "cuentos",
+      "talleres",
+      "envigado",
+      "gratis"
+    ],
+    "score": 91
+  },
+  {
+    "id": "otraparte-sofos-filosofia-para-vivir",
+    "slug": "otraparte-sofos-filosofia-para-la-vida-cotidiana",
+    "title": "Sofos: Filosofía Práctica y Vida Cotidiana",
+    "shortDescription": "Encuentro de diálogo socrático y reflexión sobre el arte de vivir, la soledad y la autenticidad.",
+    "longDescription": "Ciclo de pensamiento coordinado por investigadores de la Corporación Otraparte para poner la filosofía al alcance de la vida diaria, inspirado en el pensamiento vitalista y contestatario de Fernando González Ochoa.",
+    "startDate": "2026-08-25",
+    "startTime": "18:30",
+    "venue": "Casa Museo Otraparte",
+    "neighborhood": "Envigado",
+    "city": "Envigado",
+    "latitude": 6.1764,
+    "longitude": -75.5901,
+    "category": "literatura",
+    "priceType": "free",
+    "priceMin": 0,
+    "priceMax": 0,
+    "currency": "COP",
+    "organizer": "Corporación Fernando González – Otraparte",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Otraparte Agenda Cultural",
+        "url": "https://www.otraparte.org/agenda-cultural/sofos/"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:40:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:40:00-05:00",
+    "tags": [
+      "filosofía",
+      "sofos",
+      "envigado",
+      "gratis"
+    ],
+    "score": 94
   }
 ];
