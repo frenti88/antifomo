@@ -9,8 +9,12 @@ export default function Header() {
     <header className="sticky top-0 bg-bg/95 backdrop-blur-md border-b border-border z-50 h-14 transition-colors" aria-label="Navegación principal">
       <div className="max-w-6xl mx-auto h-full px-4 flex items-center justify-between">
         <div className="flex-1">
-          <Link href="/" className="font-bold text-lg inline-flex items-center gap-1 text-text">
-            ANTIFOMO <span className="text-accent text-xl leading-none">◉</span>
+          <Link href="/" className="font-extrabold text-lg inline-flex items-center gap-1.5 text-text group tracking-tight">
+            <span>ANTIFOMO</span>
+            <span className="relative flex h-2.5 w-2.5 items-center justify-center">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#D7FF3F] opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-[#D7FF3F]"></span>
+            </span>
           </Link>
         </div>
         

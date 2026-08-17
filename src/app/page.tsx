@@ -91,9 +91,13 @@ export default function HomePage() {
       </section>
 
       <div className="max-w-3xl mx-auto space-y-6">
-        <div className="px-4 mb-2">
-          <p className="text-sm font-medium text-secondary">
-            Encontramos {resultCount} cosas{filters.date ? ` para ${filters.date}` : ' hoy'}.
+        <div className="px-4 mb-2 flex items-center gap-2">
+          <span className="relative flex h-2 w-2">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#D7FF3F] opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-2 w-2 bg-[#D7FF3F]"></span>
+          </span>
+          <p className="text-sm font-semibold text-secondary">
+            {resultCount} planes activos{filters.date ? ` para ${filters.date}` : ' rastreados hoy en el radar'}.
           </p>
         </div>
         

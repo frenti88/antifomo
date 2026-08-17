@@ -38,12 +38,12 @@ export function SaveButton({ eventId, size = 'md', className = '' }: SaveButtonP
       <button
         type="button"
         onClick={handleToggle}
-        aria-label={saved ? 'Eliminar de guardados' : 'Guardar evento'}
+        aria-label={saved ? 'Eliminar de guardados' : 'Guardar en mi radar'}
         aria-pressed={saved}
-        className={`${dimensions} flex items-center justify-center rounded-full hover:bg-surface transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-text`}
+        className={`${dimensions} flex items-center justify-center rounded-full hover:bg-surface active:scale-90 transition-all duration-150 focus:outline-none focus-visible:ring-2 focus-visible:ring-text`}
       >
         {saved ? (
-          <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
+          <svg className="w-5 h-5 fill-current text-[#D7FF3F] drop-shadow-xs transition-transform transform scale-110" viewBox="0 0 24 24">
             <path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z" />
           </svg>
         ) : (
@@ -54,7 +54,7 @@ export function SaveButton({ eventId, size = 'md', className = '' }: SaveButtonP
       </button>
       
       {toastMessage && (
-        <div className="absolute top-full right-0 mt-2 whitespace-nowrap bg-text text-bg text-xs px-3 py-1.5 rounded shadow-lg z-50 animate-in fade-in slide-in-from-top-2">
+        <div className="absolute top-full right-0 mt-2 whitespace-nowrap bg-text text-bg text-xs font-semibold px-3 py-1.5 rounded-full shadow-lg z-50 animate-in fade-in slide-in-from-top-1">
           {toastMessage}
         </div>
       )}

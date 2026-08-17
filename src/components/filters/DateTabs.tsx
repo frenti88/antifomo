@@ -20,7 +20,7 @@ export function DateTabs({ activeDate, onDateChange }: DateTabsProps) {
             role="tab"
             aria-selected={isActive}
             onClick={() => onDateChange(isActive ? null : filter.value)}
-            className={`min-w-fit h-11 px-5 rounded-full text-sm transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-text ${
+            className={`min-w-fit h-11 px-5 rounded-full text-sm active:scale-95 transition-all duration-150 focus:outline-none focus-visible:ring-2 focus-visible:ring-text ${
               isActive 
                 ? 'bg-accent text-black font-bold shadow-xs' 
                 : 'bg-surface text-text hover:bg-surface/80 font-medium'
