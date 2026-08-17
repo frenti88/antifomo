@@ -1,4 +1,5 @@
 import { Resend } from 'resend';
+import type { AntiFOMOEvent } from './types';
 
 const resendApiKey = process.env.RESEND_API_KEY;
 const adminEmail = process.env.ADMIN_NOTIFICATION_EMAIL || process.env.ADMIN_EMAIL || 'fredyarroyave88@gmail.com';
@@ -120,6 +121,106 @@ export async function sendEventNotificationEmail(payload: EventEmailPayload) {
     return { success: true, data };
   } catch (error) {
     console.error('Error sending event notification email:', error);
+    return { success: false, error: String(error) };
+  }
+}
+
+export async function sendWeeklyDigestEmail(events: AntiFOMOEvent[], targetEmail?: string) {
+  const recipient = targetEmail || adminEmail;
+  const topEvents = events.slice(0, 5);
+
+  const subject = `⚡ Radar AntiFOMO: 5 Planes Recomendados para esta Semana en Medellín`;
+
+  const eventsHtml = topEvents.map((event, index) => {
+    const priceText = event.priceType === 'free'
+      ? 'Gratis'
+      : event.priceMin ? `$${event.priceMin.toLocaleString('es-CO')}` : 'Boletería';
+    
+    return `
+      <div style="background-color: #17191E; border: 1px solid #282B33; border-radius: 14px; padding: 20px; margin-bottom: 18px;">
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px;">
+          <span style="background-color: #FFDE21; color: #000000; font-size: 11px; font-weight: 800; padding: 3px 8px; border-radius: 12px; text-transform: uppercase;">
+            #${index + 1} · ${event.category}
+          </span>
+          ${event.isGem ? '<span style="color: #FFDE21; font-size: 12px; font-weight: 700;">◉ Joyita</span>' : ''}
+        </div>
+        
+        <h2 style="font-size: 18px; font-weight: 700; color: #FFFFFF; margin: 0 0 8px 0; line-height: 1.3;">
+          <a href="https://antifomo-app.vercel.app/evento/${event.slug}" style="color: #FFFFFF; text-decoration: none;" target="_blank">
+            ${event.title}
+          </a>
+        </h2>
+        
+        <p style="font-size: 14px; color: #A2A098; line-height: 1.4; margin: 0 0 14px 0;">
+          ${event.shortDescription}
+        </p>
+
+        <div style="background-color: #0D0E11; border-radius: 8px; padding: 10px 14px; font-size: 13px; color: #D4D0C5; margin-bottom: 14px;">
+          <div>📅 <strong>Fecha:</strong> ${event.startDate} · ${event.startTime}</div>
+          <div style="margin-top: 4px;">📍 <strong>Lugar:</strong> ${event.venue} (${event.neighborhood})</div>
+          <div style="margin-top: 4px;">💰 <strong>Precio:</strong> ${priceText}</div>
+        </div>
+
+        <a href="https://antifomo-app.vercel.app/evento/${event.slug}" style="display: inline-block; color: #FFDE21; font-size: 13px; font-weight: 700; text-decoration: none;" target="_blank">
+          Ver detalles y mapa →
+        </a>
+      </div>
+    `;
+  }).join('');
+
+  const fullHtml = `
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+      <meta charset="utf-8">
+      <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: #0D0E11; color: #F4F4EE; margin: 0; padding: 24px; }
+        .container { max-width: 600px; margin: 0 auto; }
+        .header { text-align: center; margin-bottom: 28px; }
+        .logo { font-size: 24px; font-weight: 800; color: #FFFFFF; letter-spacing: 1px; text-decoration: none; }
+        .dot { color: #FFDE21; font-size: 26px; }
+        .subtitle { font-size: 15px; color: #A2A098; margin-top: 6px; }
+        .btn-main { display: block; background-color: #FFDE21; color: #000000; font-weight: 800; text-decoration: none; padding: 16px 28px; border-radius: 30px; font-size: 15px; text-align: center; margin: 28px 0; }
+        .footer { font-size: 12px; color: #666660; text-align: center; margin-top: 32px; border-top: 1px solid #282B33; padding-top: 20px; }
+      </style>
+    </head>
+    <body>
+      <div class="container">
+        <div class="header">
+          <a href="https://antifomo-app.vercel.app" class="logo" target="_blank">ANTIFOMO <span class="dot">◉</span></a>
+          <p class="subtitle">Los 5 planes recomendados de la semana en Medellín</p>
+        </div>
+
+        ${eventsHtml}
+
+        <a href="https://antifomo-app.vercel.app/explorar" class="btn-main" target="_blank">
+          Explorar todos los 50+ planes de la semana →
+        </a>
+
+        <div class="footer">
+          <p>Radar cultural y de planes independientes de Medellín.</p>
+          <p>Este boletín semanal se envía cada lunes para que no te pierdas lo que está pasando en la ciudad.</p>
+        </div>
+      </div>
+    </body>
+    </html>
+  `;
+
+  if (!resend) {
+    console.log(`[Weekly Digest Simulated]\nTo: ${recipient}\nSubject: ${subject}\nTop Events: ${topEvents.length}`);
+    return { success: true, simulated: true, count: topEvents.length };
+  }
+
+  try {
+    const data = await resend.emails.send({
+      from: fromEmail,
+      to: recipient,
+      subject,
+      html: fullHtml,
+    });
+    return { success: true, data, count: topEvents.length };
+  } catch (error) {
+    console.error('Error sending weekly digest email:', error);
     return { success: false, error: String(error) };
   }
 }
