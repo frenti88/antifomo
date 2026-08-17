@@ -14,5 +14,5 @@ export function EventPrice({ event, className = '' }: EventPriceProps) {
   }
   
   const priceFormatted = formatPrice(event);
-  return <span className={`font-semibold text-text ${className}`}>{priceFormatted}</span>;
+  return <span className={`font-bold tabular-nums tracking-tight text-xs sm:text-sm text-text ${className}`}>{priceFormatted}</span>;
 }
