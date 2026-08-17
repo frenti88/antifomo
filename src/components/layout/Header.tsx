@@ -22,7 +22,7 @@ export default function Header() {
           <ThemeToggle />
           <Link 
             href="/explorar?search=true" 
-            className="p-2 rounded-full hover:bg-surface text-text transition-colors" 
+            className="w-11 h-11 flex items-center justify-center rounded-full hover:bg-surface text-text transition-colors focus-visible:ring-2 focus-visible:ring-text" 
             aria-label="Buscar eventos"
             title="Buscar eventos"
           >
@@ -33,7 +33,7 @@ export default function Header() {
           </Link>
           <Link 
             href="/guardados" 
-            className="p-2 rounded-full hover:bg-surface text-text transition-colors" 
+            className="w-11 h-11 flex items-center justify-center rounded-full hover:bg-surface text-text transition-colors focus-visible:ring-2 focus-visible:ring-text" 
             aria-label="Eventos guardados"
             title="Eventos guardados"
           >

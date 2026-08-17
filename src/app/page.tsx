@@ -43,7 +43,7 @@ export default function HomePage() {
   };
 
   return (
-    <main className="pb-24">
+    <div className="pb-24">
       <h1 className="sr-only">AntiFOMO — Radar cultural de Medellín</h1>
 
       <section className="pt-6 pb-4">
@@ -150,6 +150,6 @@ export default function HomePage() {
         onFiltersChange={setFilter}
         eventCount={resultCount}
       />
-    </main>
+    </div>
   );
 }
