@@ -157,7 +157,7 @@ export function FilterSheet({ open, onClose, filters, onFiltersChange, eventCoun
           <button
             type="button"
             onClick={onClose}
-            className="bg-accent text-text font-bold px-6 py-3 rounded-full hover:bg-accent/90 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-text min-h-[44px]"
+            className="bg-accent text-black font-bold px-6 py-3 rounded-full hover:bg-accent/90 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-text min-h-[44px]"
           >
             Ver {eventCount} eventos
           </button>
