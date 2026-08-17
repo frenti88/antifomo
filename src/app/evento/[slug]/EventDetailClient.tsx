@@ -7,26 +7,10 @@ import { SaveButton } from '@/components/events/SaveButton';
 import { ShareButton } from '@/components/events/ShareButton';
 import { EventBadge } from '@/components/events/EventBadge';
 import { EventSource } from '@/components/events/EventSource';
+import { EventCover } from '@/components/events/EventCover';
 import Link from 'next/link';
 
-const CATEGORY_GRADIENTS: Record<string, string> = {
-  'música': 'from-violet-300 to-indigo-400',
-  'arte': 'from-rose-300 to-pink-400',
-  'cine': 'from-amber-300 to-orange-400',
-  'teatro': 'from-red-300 to-rose-400',
-  'fiesta': 'from-fuchsia-300 to-purple-400',
-  'talleres': 'from-emerald-300 to-teal-400',
-  'literatura': 'from-sky-300 to-blue-400',
-  'comunidad': 'from-lime-300 to-green-400',
-  'gastronomía': 'from-orange-300 to-red-400',
-  'bienestar': 'from-teal-300 to-cyan-400',
-  'mercados': 'from-yellow-300 to-amber-400',
-  'comedia': 'from-pink-300 to-fuchsia-400',
-  'performance': 'from-indigo-300 to-violet-400',
-};
-
 export default function EventDetailClient({ event }: { event: AntiFOMOEvent }) {
-  const categoryGradient = CATEGORY_GRADIENTS[event.category] || 'from-neutral-200 to-neutral-300';
   const mainSource = event.sources?.[0];
   const price = formatPrice(event);
 
@@ -45,14 +29,8 @@ export default function EventDetailClient({ event }: { event: AntiFOMOEvent }) {
         </Link>
       </nav>
 
-      {/* Image placeholder */}
-      <div
-        className={`w-full aspect-video rounded-xl mb-6 bg-gradient-to-br ${categoryGradient} flex items-center justify-center`}
-        role="img"
-        aria-label={`Imagen del evento: ${event.title}`}
-      >
-        <span className="text-4xl opacity-30" aria-hidden="true">◉</span>
-      </div>
+      {/* Radar Cover Artwork */}
+      <EventCover event={event} className="mb-6" aspectRatio="banner" />
 
       {/* Category + Title */}
       <div className="mb-6">
