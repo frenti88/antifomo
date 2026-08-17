@@ -22219,5 +22219,360 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
       "compas urbano"
     ],
     "score": 97
+  },
+  {
+    "id": "mt-81578",
+    "slug": "mt-el-cielo-esta-noche-un-cielo-cantado-para-toto-la-momposina",
+    "title": "El cielo esta noche: un cielo cantado para Totó La Momposina",
+    "shortDescription": "El Planetario de Medell&iacute;n presentar&aacute; el pr&oacute;ximo 21 de agosto una experiencia astron&oacute;mica y musical que combina l...",
+    "longDescription": "El Planetario de Medell&iacute;n presentar&aacute; el pr&oacute;ximo 21 de agosto una experiencia astron&oacute;mica y musical que combina la observaci&oacute;n del cielo nocturno con la obra de Tot&oacute; La Momposina (1940-2026). La actividad invita a identificar a Venus, la Luna gibosa creciente, la constelaci&oacute;n de Piscis y los planetas Saturno, J&uacute;piter y Marte al ritmo de cumbia, bullerengue y sones palenqueros. El encuentro rinde homenaje a la ic&oacute;nica cantante caribe&ntilde;a, referente internacional del folclor colombiano galardonada con el Grammy Latino a la Excelencia Musical. La jornada concluir&aacute; con una sesi&oacute;n de observaci&oacute;n mediante telescopios desde la terraza del recinto, sujeta a condiciones atmosf&eacute;ricas favorables. El Planetario de Medell&iacute;n presentar&aacute; el pr&oacute;ximo 21 de agosto una experiencia astron&oacute;mica y musical que combina la observaci&oacute;n del cielo nocturno con la obra de Tot&oacute; La Momposina (1940-2026). La actividad invita a identificar a Venus, la Luna gibosa creciente, la constelaci&oacute;n de Piscis y los planetas Saturno, J&uacute;piter y Marte al ritmo de cumbia, bullerengue y sones palenqueros. El encuentro rinde homenaje a la ic&oacute;nica cantante caribe&ntilde;a, referente internacional del folclor colombiano galardonada con el Grammy Latino a la Excelencia Musical. La jornada concluir&aacute; con una sesi&oacute;n de observaci&oacute;n mediante telescopios desde la terraza del recinto, sujeta a condiciones atmosf&eacute;ricas favorables.",
+    "startDate": "2026-08-21",
+    "startTime": "19:00",
+    "venue": "Planetario de Medellín",
+    "neighborhood": "Aranjuez",
+    "city": "Medellín",
+    "latitude": 6.2442,
+    "longitude": -75.5812,
+    "category": "música",
+    "priceType": "paid",
+    "priceMin": 30000,
+    "priceMax": 30000,
+    "currency": "COP",
+    "organizer": "Planetario de Medellín",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Medellín Travel Oficial",
+        "url": "https://www.medellin.travel/caleventos/el-cielo-esta-noche-un-cielo-cantado-para-toto-la-momposina-994/"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:10:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:10:00-05:00",
+    "tags": [
+      "música",
+      "aranjuez",
+      "medellin travel"
+    ],
+    "score": 91
+  },
+  {
+    "id": "mt-80660",
+    "slug": "mt-zarzuela-los-gavilanes",
+    "title": "Zarzuela Los Gavilanes",
+    "shortDescription": "La magia de la zarzuela regresa al escenario con Los Gavilanes, una de las obras m&aacute;s emblem&aacute;ticas del repertorio l&iacute;rico...",
+    "longDescription": "La magia de la zarzuela regresa al escenario con Los Gavilanes, una de las obras m&aacute;s emblem&aacute;ticas del repertorio l&iacute;rico en espa&ntilde;ol. Esta producci&oacute;n re&uacute;ne m&uacute;sica, teatro y emoci&oacute;n para contar la historia de un hombre que regresa a su tierra despu&eacute;s de alcanzar la riqueza, solo para descubrir que el tiempo ha transformado los sue&ntilde;os que dej&oacute; atr&aacute;s. Entre pasiones, desencuentros y decisiones que pondr&aacute;n a prueba el coraz&oacute;n de sus protagonistas, la obra reflexiona sobre el amor aut&eacute;ntico, el paso del tiempo, el poder del perd&oacute;n y la posibilidad de cambiar. Con un destacado elenco nacional e internacional, el Coro Prol&iacute;rica de Antioquia y la Orquesta Sinf&oacute;nica EAFIT, esta puesta en escena ofrece una experiencia art&iacute;stica de gran calidad que cautiva tanto a amantes de la l&iacute;rica como a nuevos espectadores. Una zarzuela llena de sensibilidad, humor y momentos inolvidables que celebra la fuerza de los sentimientos humanos a trav&eacute;s de una m&uacute;sica que sigue emocionando generaciones. Elenco Los Gavilanes Adriana: Mariana Isaza (soprano, Colombia)Juan, &ldquo;El Indiano&rdquo;: Antonio Torres (bar&iacute;tono, Espa&ntilde;a)Rosaura: Angie Mu&ntilde;oz (soprano, Colombia)Gustavo: Eduardo Escolar (tenor, Colombia)Renata: Adriana Ospina (actriz, Colombia)Leontina: Catalina Hincapi&eacute; (actriz, Colombia)Nita: Vanessa R&iacute;os y Mariana &Aacute;ngel (Colombia)Emma: Fanet Laed Lora y Paola Andrea &Aacute;lvarez (Colombia)Triquet: Adri&aacute;n Parada (actor y comediante, Colombia)Clariv&aacute;n: Jairo Pinz&oacute;n (actor, Colombia)Camilo: Juan Fernando Pel&aacute;ez (actor, Colombia)Coro Prol&iacute;rica de AntioquiaOrquesta Sinf&oacute;nica EAFIT Director de escena: Federico Figueroa (Espa&ntilde;a)Director musical: C&eacute;sar Baldovino (Colombia) Informes: Fecha: 3 y 4 de septiembre de 2026 Hora: 8:00 p. m. Lugar: Teatro Pablo Tob&oacute;n Uribe Contacto: 3113341279 Costo: $75.000 COP Balc&oacute;n | $135.000 COP Luneta Comprar Boleta DESCUENTOS Los descuentos no son acumulables, deber&aacute;s seleccionar solo uno, seg&uacute;n el que m&aacute;s te favorezca. 50% en la segunda boleta pagando con tarjetas Bancolombia. Descuento v&aacute;lido del 18 de noviembre de 2025 al 4 de septiembre de 2026 en el Punto de venta de Prol&iacute;rica.35% &ndash; Abonado. Descuento v&aacute;lido del 18 de noviembre de 2025 al 17 de abril de 2026 en el Punto de venta de Prol&iacute;rica.30% &ndash; Factura EPM estrato 1, 2 y 3. Descuento v&aacute;lido del 18 de noviembre de 2025 al 17 de abril de 2026 en el Punto de venta de Prol&iacute;rica.30% &ndash; Preventa. Descuento v&aacute;lido del 18 de noviembre de 2025 al 19 de diciembre de 2025 en todos los puntos de venta de TuBoleta con cualquier medio de pago.30% &ndash; Corporativos. Descuento v&aacute;lido en el Punto de venta de Prol&iacute;rica del del 18 de noviembre de 2025 al 4 de septiembre de 2026 en el Punto de venta de Prol&iacute;rica.25% &ndash; Elenco. V&aacute;lido en el Punto de venta de Prol&iacute;rica del del 18 de noviembre de 2025 al 4 de septiembre de 2026.20% &ndash; Tarjeta habientes Bancolombia. Descuento v&aacute;lido en todos los puntos de venta de TuBoleta del 18 de noviembre de 2025 al 4 de septiembre de 2026.20% &ndash; Factura estrato 4, 5 y 6. Descuento v&aacute;lido del 17 de febrero al 6 de septiembre en el Punto de venta de Prol&iacute;rica. La magia de la zarzuela regresa al escenario con Los Gavilanes, una de las obras m&aacute;s emblem&aacute;ticas del repertorio l&iacute;rico en espa&ntilde;ol. Esta producci&oacute;n re&uacute;ne m&uacute;sica, teatro y emoci&oacute;n para contar la historia de un hombre que regresa a su tierra despu&eacute;s de alcanzar la riqueza, solo para descubrir que el tiempo ha transformado los sue&ntilde;os que dej&oacute; atr&aacute;s. Entre pasiones, desencuentros y decisiones que pondr&aacute;n a prueba el coraz&oacute;n de sus protagonistas, la obra reflexiona sobre el amor aut&eacute;ntico, el paso del tiempo, el poder del perd&oacute;n y la posibilidad de cambiar. Con un destacado elenco nacional e internacional, el Coro Prol&iacute;rica de Antioquia y la Orquesta Sinf&oacute;nica EAFIT, esta puesta en escena ofrece una experiencia art&iacute;stica de gran calidad que cautiva tanto a amantes de la l&iacute;rica como a nuevos espectadores. Una zarzuela llena de sensibilidad, humor y momentos inolvidables que celebra la fuerza de los sentimientos humanos a trav&eacute;s de una m&uacute;sica que sigue emocionando generaciones. Elenco Los Gavilanes Adriana: Mariana Isaza (soprano, Colombia)Juan, &ldquo;El Indiano&rdquo;: Antonio Torres (bar&iacute;tono, Espa&ntilde;a)Rosaura: Angie Mu&ntilde;oz (soprano, Colombia)Gustavo: Eduardo Escolar (tenor, Colombia)Renata: Adriana Ospina (actriz, Colombia)Leontina: Catalina Hincapi&eacute; (actriz, Colombia)Nita: Vanessa R&iacute;os y Mariana &Aacute;ngel (Colombia)Emma: Fanet Laed Lora y Paola Andrea &Aacute;lvarez (Colombia)Triquet: Adri&aacute;n Parada (actor y comediante, Colombia)Clariv&aacute;n: Jairo Pinz&oacute;n (actor, Colombia)Camilo: Juan Fernando Pel&aacute;ez (actor, Colombia)Coro Prol&iacute;rica de AntioquiaOrquesta Sinf&oacute;nica EAFIT Director de escena: Federico Figueroa (Espa&ntilde;a)Director musical: C&eacute;sar Baldovino (Colombia) Informes: Fecha: 3 y 4 de septiembre de 2026 Hora: 8:00 p. m. Lugar: Teatro Pablo Tob&oacute;n Uribe Contacto: 3113341279 Costo: $75.000 COP Balc&oacute;n | $135.000 COP Luneta Comprar Boleta DESCUENTOS Los descuentos no son acumulables, deber&aacute;s seleccionar solo uno, seg&uacute;n el que m&aacute;s te favorezca. 50% en la segunda boleta pagando con tarjetas Bancolombia. Descuento v&aacute;lido del 18 de noviembre de 2025 al 4 de septiembre de 2026 en el Punto de venta de Prol&iacute;rica.35% &ndash; Abonado. Descuento v&aacute;lido del 18 de noviembre de 2025 al 17 de abril de 2026 en el Punto de venta de Prol&iacute;rica.30% &ndash; Factura EPM estrato 1, 2 y 3. Descuento v&aacute;lido del 18 de noviembre de 2025 al 17 de abril de 2026 en el Punto de venta de Prol&iacute;rica.30% &ndash; Preventa. Descuento v&aacute;lido del 18 de noviembre de 2025 al 19 de diciembre de 2025 en todos los puntos de venta de TuBoleta con cualquier medio de pago.30% &ndash; Corporativos. Descuento v&aacute;lido en el Punto de venta de Prol&iacute;rica del del 18 de noviembre de 2025 al 4 de septiembre de 2026 en el Punto de venta de Prol&iacute;rica.25% &ndash; Elenco. V&aacute;lido en el Punto de venta de Prol&iacute;rica del del 18 de noviembre de 2025 al 4 de septiembre de 2026.20% &ndash; Tarjeta habientes Bancolombia. Descuento v&aacute;lido en todos los puntos de venta de TuBoleta del 18 de noviembre de 2025 al 4 de septiembre de 2026.20% &ndash; Factura estrato 4, 5 y 6. Descuento v&aacute;lido del 17 de febrero al 6 de septiembre en el Punto de venta de Prol&iacute;rica.",
+    "startDate": "2026-09-04",
+    "startTime": "19:00",
+    "venue": "Fundación Prolírica de Antioquia",
+    "neighborhood": "Medellín",
+    "city": "Medellín",
+    "latitude": 6.2442,
+    "longitude": -75.5812,
+    "category": "música",
+    "priceType": "paid",
+    "priceMin": 30000,
+    "priceMax": 30000,
+    "currency": "COP",
+    "organizer": "Fundación Prolírica de Antioquia",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Medellín Travel Oficial",
+        "url": "https://www.medellin.travel/caleventos/zarzuela-los-gavilanes-905/"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:10:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:10:00-05:00",
+    "tags": [
+      "música",
+      "medellín",
+      "medellin travel"
+    ],
+    "score": 96
+  },
+  {
+    "id": "mt-80476",
+    "slug": "mt-el-palacio-del-pecado",
+    "title": "El Palacio del Pecado",
+    "shortDescription": "Juan D&aacute;vila, el fen&oacute;meno de la comedia que ha revolucionado la escena con «La Capital del Pecado 2.0» y m&aacute;s de 100.000 ...",
+    "longDescription": "Juan D&aacute;vila, el fen&oacute;meno de la comedia que ha revolucionado la escena con «La Capital del Pecado 2.0» y m&aacute;s de 100.000 entradas vendidas en Espa&ntilde;a, aterriza en Medell&iacute;n con su nueva propuesta: «El Palacio del Pecado». Conocido por agotar taquilla en cuesti&oacute;n de minutos, D&aacute;vila se prepara para una noche &uacute;nica donde el p&uacute;blico ser&aacute; el protagonista de un ritual para liberar sus instintos m&aacute;s profundos. El espect&aacute;culo, que se llevar&aacute; a cabo en el Teatro Pablo Tob&oacute;n Uribe el 23 de agosto de 2026, promete un formato innovador dise&ntilde;ado para que nadie se quede sin sentir la fuerza del pecado. Es una invitaci&oacute;n a dejar de lado las inhibiciones y sumergirse en una din&aacute;mica irrepetible donde el humor negro y la improvisaci&oacute;n se mezclan para crear un ambiente electrizante. &iquest;Te vas a resistir a entrar en el palacio m&aacute;s pecaminoso del mundo? Juan D&aacute;vila, el fen&oacute;meno de la comedia que ha revolucionado la escena con «La Capital del Pecado 2.0» y m&aacute;s de 100.000 entradas vendidas en Espa&ntilde;a, aterriza en Medell&iacute;n con su nueva propuesta: «El Palacio del Pecado». Conocido por agotar taquilla en cuesti&oacute;n de minutos, D&aacute;vila se prepara para una noche &uacute;nica donde el p&uacute;blico ser&aacute; el protagonista de un ritual para liberar sus instintos m&aacute;s profundos. El espect&aacute;culo, que se llevar&aacute; a cabo en el Teatro Pablo Tob&oacute;n Uribe el 23 de agosto de 2026, promete un formato innovador dise&ntilde;ado para que nadie se quede sin sentir la fuerza del pecado. Es una invitaci&oacute;n a dejar de lado las inhibiciones y sumergirse en una din&aacute;mica irrepetible donde el humor negro y la improvisaci&oacute;n se mezclan para crear un ambiente electrizante. &iquest;Te vas a resistir a entrar en el palacio m&aacute;s pecaminoso del mundo?",
+    "startDate": "2026-08-23",
+    "startTime": "19:00",
+    "venue": "Teatro Pablo Tobón Uribe",
+    "neighborhood": "Centro",
+    "city": "Medellín",
+    "latitude": 6.2442,
+    "longitude": -75.5812,
+    "category": "teatro",
+    "priceType": "paid",
+    "priceMin": 30000,
+    "priceMax": 30000,
+    "currency": "COP",
+    "organizer": "Teatro Pablo Tobón Uribe",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Medellín Travel Oficial",
+        "url": "https://www.medellin.travel/caleventos/el-palacio-del-pecado-902/"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:10:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:10:00-05:00",
+    "tags": [
+      "teatro",
+      "centro",
+      "medellin travel"
+    ],
+    "score": 92
+  },
+  {
+    "id": "mt-80242",
+    "slug": "mt-20-fiesta-del-libro-y-la-cultura-2026",
+    "title": "20.ª Fiesta del Libro y la Cultura 2026",
+    "shortDescription": "La 20.ª Fiesta del Libro y la Cultura de Medellín celebra su edición número 20 con una travesía colectiva que hará vibrar las palabras, los ...",
+    "longDescription": "La 20.ª Fiesta del Libro y la Cultura de Medellín celebra su edición número 20 con una travesía colectiva que hará vibrar las palabras, los libros y los sentidos. Este 2026, bajo el tema central “Las travesías de la lectura”, volveremos a encontrarnos para pensar la ciudad como un territorio imaginado, narrado y compartido. Leer nos pone en movimiento interior, expande nuestra mirada y traza puentes entre memorias, culturas y generaciones. Cada libro abre rutas posibles, y cada feria nos recuerda que los libros no viajan solos: nos encuentran, nos convocan, nos transforman. Durante diez días, el Jardín Botánico, el Parque Explora y la zona norte de Medellín se convertirán en puertos de llegada para autorxs, editoriales, lectorxs, artistas y comunidades que han hecho de la lectura una forma de vivir. Conversaciones, conciertos, exposiciones, programación infantil, talleres, cine, rutas guiadas y muchas formas de leer el mundo harán parte de esta gran celebración. Veinte años después, seguimos navegando con el viento y las palabras a favor.Medellín es un libro abierto. ¡Y tú haces parte de esta historia! Pronto publicaremos la programación oficial Informes: Fecha: 11 al 20 de septiembre de 2026 Hora: 10:00 a. m. a 9:00 p. m. Lugar: Jardín Botánico de Medellín Contacto: Esta dirección de correo electrónico está siendo protegida contra los robots de spam. Necesita tener JavaScript habilitado para poder verlo. / fiestadellibroylacultura.com Costo: Gratuito",
+    "startDate": "2026-09-20",
+    "startTime": "19:00",
+    "venue": "Medellín",
+    "neighborhood": "Aranjuez",
+    "city": "Medellín",
+    "latitude": 6.2442,
+    "longitude": -75.5812,
+    "category": "música",
+    "priceType": "free",
+    "priceMin": 0,
+    "priceMax": 0,
+    "currency": "COP",
+    "organizer": "Medellín Travel",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Medellín Travel Oficial",
+        "url": "https://www.medellin.travel/caleventos/20a-fiesta-del-libro-y-la-cultura-2026-540/"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:10:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:10:00-05:00",
+    "tags": [
+      "música",
+      "aranjuez",
+      "medellin travel"
+    ],
+    "score": 95
+  },
+  {
+    "id": "mt-fiesta-vinilo-sandiego",
+    "slug": "mt-fiesta-de-vinilo-centro-comercial-sandiego",
+    "title": "Fiesta de Vinilo: Venta, DJs y Sonidos Análogos",
+    "shortDescription": "Tres días en la Zona Gastrobar La T de Sandiego con venta de vinilos, selectores en vivo y rock, salsa, funk y disco.",
+    "longDescription": "Durante tres días en la Zona Gastrobar La T del Centro Comercial Sandiego, disfruta de venta de vinilos, DJs en vivo y una programación sonora diversa, con ritmos que van desde el rock en español, baladas y salsa hasta latin funk, cumbia y disco.",
+    "startDate": "2026-08-30",
+    "startTime": "14:00",
+    "venue": "Centro Comercial Sandiego (Zona Gastrobar La T)",
+    "neighborhood": "El Poblado",
+    "city": "Medellín",
+    "latitude": 6.2307,
+    "longitude": -75.5701,
+    "category": "música",
+    "priceType": "free",
+    "priceMin": 0,
+    "priceMax": 0,
+    "currency": "COP",
+    "organizer": "Centro Comercial Sandiego",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Medellín Travel",
+        "url": "https://www.medellin.travel/calendario-de-eventos-busqueda/"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:15:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:15:00-05:00",
+    "tags": [
+      "música",
+      "vinilos",
+      "el poblado",
+      "gratis"
+    ],
+    "score": 92
+  },
+  {
+    "id": "mt-zarzuela-los-gavilanes",
+    "slug": "mt-zarzuela-los-gavilanes-fundacion-prolirica",
+    "title": "Zarzuela Los Gavilanes: Temporada Prolírica 2026",
+    "shortDescription": "La magia de la zarzuela regresa al escenario con Los Gavilanes, una de las obras más emblemáticas de Jacinto Guerrero.",
+    "longDescription": "La magia de la zarzuela regresa al escenario con Los Gavilanes, una de las obras más emblemáticas y queridas del repertorio lírico español, presentada por la Fundación Prolírica de Antioquia con solistas invitados, coro y orquesta en vivo.",
+    "startDate": "2026-09-04",
+    "startTime": "20:00",
+    "venue": "Teatro Metropolitano José Gutiérrez Gómez",
+    "neighborhood": "Centro",
+    "city": "Medellín",
+    "latitude": 6.2415,
+    "longitude": -75.5786,
+    "category": "teatro",
+    "priceType": "paid",
+    "priceMin": 45000,
+    "priceMax": 120000,
+    "currency": "COP",
+    "organizer": "Fundación Prolírica de Antioquia",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Medellín Travel",
+        "url": "https://www.medellin.travel/calendario-de-eventos-busqueda/"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:15:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:15:00-05:00",
+    "tags": [
+      "teatro",
+      "ópera",
+      "zarzuela",
+      "centro"
+    ],
+    "score": 94
+  },
+  {
+    "id": "mt-el-palacio-del-pecado-juan-davila",
+    "slug": "mt-el-palacio-del-pecado-juan-davila-pablo-tobon",
+    "title": "El Palacio del Pecado: Juan Dávila en Medellín",
+    "shortDescription": "Juan Dávila, el fenómeno de la comedia y la improvisación sin filtros, llega al Teatro Pablo Tobón Uribe.",
+    "longDescription": "Juan Dávila, el fenómeno de la comedia que ha revolucionado la escena internacional con «La Capital del Pecado», llega al Teatro Pablo Tobón Uribe para presentar una noche cargada de risas, interacción directa y el humor más audaz.",
+    "startDate": "2026-08-23",
+    "startTime": "20:00",
+    "venue": "Teatro Pablo Tobón Uribe",
+    "neighborhood": "Centro",
+    "city": "Medellín",
+    "latitude": 6.2494,
+    "longitude": -75.5606,
+    "category": "comedia",
+    "priceType": "paid",
+    "priceMin": 80000,
+    "priceMax": 190000,
+    "currency": "COP",
+    "organizer": "Teatro Pablo Tobón Uribe",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Medellín Travel",
+        "url": "https://www.medellin.travel/calendario-de-eventos-busqueda/"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": false,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:15:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:15:00-05:00",
+    "tags": [
+      "comedia",
+      "stand up",
+      "centro"
+    ],
+    "score": 89
+  },
+  {
+    "id": "mt-operas-cavalleria-rusticana-pagliacci",
+    "slug": "mt-operas-cavalleria-rusticana-pagliacci-teatro-metropolitano",
+    "title": "Óperas: Cavalleria Rusticana & Pagliacci",
+    "shortDescription": "Doble función operática del verismo italiano con orquesta, coro y puesta en escena monumental.",
+    "longDescription": "El Teatro Metropolitano y la Fundación Prolírica presentan la emblemática doble función del verismo italiano: Cavalleria Rusticana de Pietro Mascagni y Pagliacci de Ruggero Leoncavallo, con un elenco de primer nivel y orquesta sinfónica en vivo.",
+    "startDate": "2026-11-18",
+    "startTime": "19:30",
+    "venue": "Teatro Metropolitano José Gutiérrez Gómez",
+    "neighborhood": "Centro",
+    "city": "Medellín",
+    "latitude": 6.2415,
+    "longitude": -75.5786,
+    "category": "teatro",
+    "priceType": "paid",
+    "priceMin": 60000,
+    "priceMax": 180000,
+    "currency": "COP",
+    "organizer": "Fundación Prolírica de Antioquia",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Medellín Travel",
+        "url": "https://www.medellin.travel/caleventos/operas-cavalleria-rusticana-pagliacci/"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:15:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:15:00-05:00",
+    "tags": [
+      "ópera",
+      "teatro",
+      "centro",
+      "música clásica"
+    ],
+    "score": 95
+  },
+  {
+    "id": "mt-core-medellin-tomorrowland",
+    "slug": "mt-core-medellin-tomorrowland-jardin-botanico",
+    "title": "CORE Medellín by Tomorrowland: Edición 2026",
+    "shortDescription": "El legendario escenario CORE de Tomorrowland regresa a Medellín con su experiencia audiovisual inmersiva en medio de la naturaleza.",
+    "longDescription": "Tomorrowland presenta una nueva edición de CORE Medellín, trayendo su icónico escenario botánico y una curaduría de música electrónica de vanguardia (house, melodic techno e indie dance) al Jardín Botánico de Medellín.",
+    "startDate": "2026-11-20",
+    "startTime": "16:00",
+    "venue": "Jardín Botánico de Medellín",
+    "neighborhood": "Aranjuez",
+    "city": "Medellín",
+    "latitude": 6.2704,
+    "longitude": -75.5645,
+    "category": "fiesta",
+    "priceType": "paid",
+    "priceMin": 180000,
+    "priceMax": 350000,
+    "currency": "COP",
+    "organizer": "Tomorrowland / Breakfast Club",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Medellín Travel",
+        "url": "https://www.medellin.travel/conciertos/core-medellin-tomorrowland/"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:15:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:15:00-05:00",
+    "tags": [
+      "electrónica",
+      "tomorrowland",
+      "fiesta",
+      "aranjuez"
+    ],
+    "score": 97
   }
 ];
