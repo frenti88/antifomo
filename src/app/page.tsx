@@ -137,7 +137,7 @@ export default function HomePage() {
             </EditorialSection>
 
             <div className="py-4">
-              <NearbySection />
+              <NearbySection events={DEMO_EVENTS} />
             </div>
           </div>
         )}
