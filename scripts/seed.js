@@ -86,7 +86,7 @@ async function seed() {
     last_checked_at: event.lastCheckedAt || new Date().toISOString(),
   }));
 
-  const result = await postgrestRequest('events', 'POST', rows);
+  const result = await postgrestRequest('events?on_conflict=slug', 'POST', rows);
   console.log(`✅ Successfully seeded ${result?.length || rows.length} events into Supabase!`);
 }
 
