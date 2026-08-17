@@ -23574,5 +23574,805 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
       "el poblado"
     ],
     "score": 91
+  },
+  {
+    "id": "ao-14730",
+    "slug": "ao-semana-del-adulto-mayor",
+    "title": "Semana del Adulto Mayor",
+    "shortDescription": "¡Vivamos en comunidad la semana del Adulto Mayor! Prepárate para participar en las actividades pensadas para el bienestar y recreación de to...",
+    "longDescription": "¡Vivamos en comunidad la semana del Adulto Mayor! Prepárate para participar en las actividades pensadas para el bienestar y recreación de todos nuestros adultos mayores. ¡Te esperamos!",
+    "startDate": "2026-08-22",
+    "startTime": "19:00",
+    "venue": "Oriente Antioqueño",
+    "neighborhood": "Oriente Antioqueño",
+    "city": "Oriente Antioqueño",
+    "latitude": 6.1552,
+    "longitude": -75.3736,
+    "category": "comunidad",
+    "priceType": "paid",
+    "priceMin": 20000,
+    "priceMax": 20000,
+    "currency": "COP",
+    "organizer": "Alcaldía / Casa de la Cultura de Oriente Antioqueño",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Agenda Oriente",
+        "url": "https://agendaoriente.com/events/semana-del-adulto-mayor-2/"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": false,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:30:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:30:00-05:00",
+    "tags": [
+      "comunidad",
+      "oriente antioqueño",
+      "oriente antioqueño",
+      "agenda oriente"
+    ],
+    "score": 90
+  },
+  {
+    "id": "ao-14720",
+    "slug": "ao-mes-del-adulto-mayor",
+    "title": "Mes del Adulto Mayor",
+    "shortDescription": "En el marco del Mes del Adulto Mayor, desde la Alcaldía de El Peñol hemos preparado una programación especial, dedicada a reconocer, valorar...",
+    "longDescription": "En el marco del Mes del Adulto Mayor, desde la Alcaldía de El Peñol hemos preparado una programación especial, dedicada a reconocer, valorar y celebrar a nuestros adultos mayores. ¡El Peñol Sobresale cuando reconoce y celebra a quienes hacen parte de su historia!",
+    "startDate": "2026-08-22",
+    "startTime": "19:00",
+    "venue": "Centro Cultural / Parque Principal de El Peñol",
+    "neighborhood": "El Peñol",
+    "city": "El Peñol",
+    "latitude": 6.2189,
+    "longitude": -75.2428,
+    "category": "arte",
+    "priceType": "paid",
+    "priceMin": 20000,
+    "priceMax": 20000,
+    "currency": "COP",
+    "organizer": "Alcaldía / Casa de la Cultura de El Peñol",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Agenda Oriente",
+        "url": "https://agendaoriente.com/events/mes-del-adulto-mayor-2/"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:30:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:30:00-05:00",
+    "tags": [
+      "arte",
+      "el peñol",
+      "oriente antioqueño",
+      "agenda oriente"
+    ],
+    "score": 94
+  },
+  {
+    "id": "ao-14718",
+    "slug": "ao-cometas-que-vuelan-con-amor-por-el-planeta",
+    "title": "Cometas que vuelan, con amor por el planeta",
+    "shortDescription": "¡Es momento de dejar volar la creatividad y el amor por nuestro planeta! En El Santuario nos preparamos para vivir nuestro Festival de Comet...",
+    "longDescription": "¡Es momento de dejar volar la creatividad y el amor por nuestro planeta! En El Santuario nos preparamos para vivir nuestro Festival de Cometas Ambientales: “Cometas que vuelan, con amor por el planeta”. Una invitación para crear, compartir y demostrar que también podemos cuidar nuestro medio ambiente mientras disfrutamos de una tradición llena de color y alegría. ¡Prepara tu cometa y ven a hacerla volar con nosotros!",
+    "startDate": "2026-08-22",
+    "startTime": "19:00",
+    "venue": "Centro Cultural / Parque Principal de El Santuario",
+    "neighborhood": "El Santuario",
+    "city": "El Santuario",
+    "latitude": 6.1367,
+    "longitude": -75.2636,
+    "category": "comunidad",
+    "priceType": "paid",
+    "priceMin": 20000,
+    "priceMax": 20000,
+    "currency": "COP",
+    "organizer": "Alcaldía / Casa de la Cultura de El Santuario",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Agenda Oriente",
+        "url": "https://agendaoriente.com/events/cometas-que-vuelan-con-amor-por-el-planeta/"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": false,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:30:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:30:00-05:00",
+    "tags": [
+      "comunidad",
+      "el santuario",
+      "oriente antioqueño",
+      "agenda oriente"
+    ],
+    "score": 92
+  },
+  {
+    "id": "ao-14712",
+    "slug": "ao-marinilla-y-el-santuario-pedalean",
+    "title": "Marinilla y El Santuario pedalean",
+    "shortDescription": "Este domingo 16 de agosto vivimos un ciclopaseo regional que une nuestros municipios a través del deporte, la recreación y la vida saludable...",
+    "longDescription": "Este domingo 16 de agosto vivimos un ciclopaseo regional que une nuestros municipios a través del deporte, la recreación y la vida saludable. Desde el Inderma seguimos promoviendo espacios de integración regional y el uso de la bicicleta. ¡Prepara tu bici y súmate a esta gran jornada!",
+    "startDate": "2026-08-22",
+    "startTime": "19:00",
+    "venue": "Centro Cultural / Parque Principal de Marinilla",
+    "neighborhood": "Marinilla",
+    "city": "Marinilla",
+    "latitude": 6.1758,
+    "longitude": -75.3378,
+    "category": "comunidad",
+    "priceType": "paid",
+    "priceMin": 20000,
+    "priceMax": 20000,
+    "currency": "COP",
+    "organizer": "Alcaldía / Casa de la Cultura de Marinilla",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Agenda Oriente",
+        "url": "https://agendaoriente.com/events/marinilla-y-el-santuario-pedalean/"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": false,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:30:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:30:00-05:00",
+    "tags": [
+      "comunidad",
+      "marinilla",
+      "oriente antioqueño",
+      "agenda oriente"
+    ],
+    "score": 91
+  },
+  {
+    "id": "ao-14710",
+    "slug": "ao-exposicion-retrospectivas-2015-2026",
+    "title": "Exposición Retrospectivas 2015 - 2026",
+    "shortDescription": "El próximo viernes inauguramos la exposición 𝐑𝐞𝐭𝐫𝐨𝐬𝐩𝐞𝐜𝐭𝐢𝐯𝐚 𝟐𝟎𝟏𝟓 - 𝟐𝟎𝟐𝟔 del artista Pablo Cardona Ramírez, en el marco d...",
+    "longDescription": "El próximo viernes inauguramos la exposición 𝐑𝐞𝐭𝐫𝐨𝐬𝐩𝐞𝐜𝐭𝐢𝐯𝐚 𝟐𝟎𝟏𝟓 - 𝟐𝟎𝟐𝟔 del artista Pablo Cardona Ramírez, en el marco de las 48.ª Fiestas del Toldo, las Bicicletas y las Flores. 🗓️ Viernes 14 de agosto 🕣 7:00 p.m. 📍 Galería de Arte La Ceja Exposición hasta el viernes 4 de septiembre.",
+    "startDate": "2026-08-22",
+    "startTime": "19:00",
+    "venue": "Centro Cultural / Parque Principal de La Ceja",
+    "neighborhood": "La Ceja",
+    "city": "La Ceja",
+    "latitude": 6.0336,
+    "longitude": -75.4294,
+    "category": "arte",
+    "priceType": "paid",
+    "priceMin": 20000,
+    "priceMax": 20000,
+    "currency": "COP",
+    "organizer": "Alcaldía / Casa de la Cultura de La Ceja",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Agenda Oriente",
+        "url": "https://agendaoriente.com/events/exposicion-retrospectivas-2015-2026/"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:30:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:30:00-05:00",
+    "tags": [
+      "arte",
+      "la ceja",
+      "oriente antioqueño",
+      "agenda oriente"
+    ],
+    "score": 92
+  },
+  {
+    "id": "ao-14708",
+    "slug": "ao-festival-de-cometas",
+    "title": "Festival de Cometas",
+    "shortDescription": "Este 29 de agosto el cielo de La Ceja se llena de color. Te invitamos a disfrutar del Festival de Cometas de Monte Sereno La Sagrada, un día...",
+    "longDescription": "Este 29 de agosto el cielo de La Ceja se llena de color. Te invitamos a disfrutar del Festival de Cometas de Monte Sereno La Sagrada, un día para compartir en familia, disfrutar de la naturaleza y vivir una experiencia inolvidable. 📍 Monte Sereno La Sagrada – La Ceja 🗓️ 29 de agosto 🕙 10:00 a. m. – 5:00 p. m. ¡Trae tu cometa, invita a quienes más quieres y acompáñanos a vivir un día lleno de diversión! Déjanos tus datos",
+    "startDate": "2026-08-29",
+    "startTime": "19:00",
+    "venue": "Centro Cultural / Parque Principal de La Ceja",
+    "neighborhood": "La Ceja",
+    "city": "La Ceja",
+    "latitude": 6.0336,
+    "longitude": -75.4294,
+    "category": "comunidad",
+    "priceType": "free",
+    "priceMin": 0,
+    "priceMax": 0,
+    "currency": "COP",
+    "organizer": "Alcaldía / Casa de la Cultura de La Ceja",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Agenda Oriente",
+        "url": "https://agendaoriente.com/events/festival-de-cometas-4/"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:30:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:30:00-05:00",
+    "tags": [
+      "comunidad",
+      "la ceja",
+      "oriente antioqueño",
+      "agenda oriente"
+    ],
+    "score": 90
+  },
+  {
+    "id": "ao-14704",
+    "slug": "ao-2-festival-de-la-trova-de-las-personas-mayores",
+    "title": "2.º Festival de la Trova de las Personas Mayores",
+    "shortDescription": "¡La agudeza, el verso y la tradición de nuestros mayores se toman la pista! En el marco del Mes del Adulto Mayor, la Secretaría de Cultura, ...",
+    "longDescription": "¡La agudeza, el verso y la tradición de nuestros mayores se toman la pista! En el marco del Mes del Adulto Mayor, la Secretaría de Cultura, la Secretaría de Familia y la Escuela de Trova de Marinilla invitan a toda la comunidad al 2.º Festival de la Trova de las Personas Mayores. Un espacio muy especial donde los estudiantes mayores de 55 años de nuestro proceso de formación nos demostrarán que la chispa, el repentismo y el amor por nuestras raíces no tienen edad. 🗓️ Fecha: Miércoles 19 de agosto 🕑 Hora: 2:00 p. m. 📍 Lugar: Pista de Patinaje Ven con tu familia a disfrutar de una tarde llena de trovas, risas y orgullo por nuestro talento local. ¡Te esperamos!",
+    "startDate": "2026-08-19",
+    "startTime": "19:00",
+    "venue": "Centro Cultural / Parque Principal de Marinilla",
+    "neighborhood": "Marinilla",
+    "city": "Marinilla",
+    "latitude": 6.1758,
+    "longitude": -75.3378,
+    "category": "música",
+    "priceType": "paid",
+    "priceMin": 20000,
+    "priceMax": 20000,
+    "currency": "COP",
+    "organizer": "Alcaldía / Casa de la Cultura de Marinilla",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Agenda Oriente",
+        "url": "https://agendaoriente.com/events/2-o-festival-de-la-trova-de-las-personas-mayores/"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:30:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:30:00-05:00",
+    "tags": [
+      "música",
+      "marinilla",
+      "oriente antioqueño",
+      "agenda oriente"
+    ],
+    "score": 94
+  },
+  {
+    "id": "ao-14702",
+    "slug": "ao-concierto-de-cuerdas-frotadas",
+    "title": "Concierto de Cuerdas Frotadas",
+    "shortDescription": "Este sábado en nuestra sala un concierto maravilloso que será una muestra del proceso de Cuerdas Frotadas del Instituto de Cultura de El Car...",
+    "longDescription": "Este sábado en nuestra sala un concierto maravilloso que será una muestra del proceso de Cuerdas Frotadas del Instituto de Cultura de El Carmen, con sus dos agrupaciones de proyección, la Pre Orquesta y el Ensamble de violonchelos. En esta ocasión los violines, violas, chelo y contrabajos se salen de su aura clásica para interpretar temas más contemporáneos y reconocibles en ritmos de rock, son y balada. ¡No se lo pierdan!",
+    "startDate": "2026-08-22",
+    "startTime": "19:00",
+    "venue": "Centro Cultural / Parque Principal de El Carmen de Viboral",
+    "neighborhood": "El Carmen de Viboral",
+    "city": "El Carmen de Viboral",
+    "latitude": 6.0839,
+    "longitude": -75.3347,
+    "category": "música",
+    "priceType": "paid",
+    "priceMin": 20000,
+    "priceMax": 20000,
+    "currency": "COP",
+    "organizer": "Alcaldía / Casa de la Cultura de El Carmen de Viboral",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Agenda Oriente",
+        "url": "https://agendaoriente.com/events/concierto-de-cuerdas-frotadas/"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:30:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:30:00-05:00",
+    "tags": [
+      "música",
+      "el carmen de viboral",
+      "oriente antioqueño",
+      "agenda oriente"
+    ],
+    "score": 93
+  },
+  {
+    "id": "ao-14699",
+    "slug": "ao-la-historia-mas-tierna-del-mundo",
+    "title": "La historia más tierna del mundo",
+    "shortDescription": "Este 16 de agosto te invitamos a vivir La historia más tierna del mundo, un espectáculo de teatro de objetos presentado por Espada de Madera...",
+    "longDescription": "Este 16 de agosto te invitamos a vivir La historia más tierna del mundo, un espectáculo de teatro de objetos presentado por Espada de Madera (Ecuador), donde los títeres, los gestos y los pequeños detalles nos recuerdan el poder de la ternura y la imaginación. Una experiencia para grandes y chicos, donde cada objeto cobra vida y cada movimiento cuenta una historia. 🗓 16 de agosto 🕓 4:00 p. m. 📍 Casa Cultural Acordes – Marinilla 🌿 Vereda El Chagualo, Finca 127A, sector Los Eugenios 🎟️ Entrada libre con aporte voluntario 📲 Información y reservas: 321 535 2533 Porque algunas historias no se cuentan: se sienten Proyecto apoyado por @culturamarinilla @culturantioquia y su programa de salas concertadas",
+    "startDate": "2026-08-22",
+    "startTime": "19:00",
+    "venue": "Centro Cultural / Parque Principal de Marinilla",
+    "neighborhood": "Marinilla",
+    "city": "Marinilla",
+    "latitude": 6.1758,
+    "longitude": -75.3378,
+    "category": "teatro",
+    "priceType": "free",
+    "priceMin": 0,
+    "priceMax": 0,
+    "currency": "COP",
+    "organizer": "Alcaldía / Casa de la Cultura de Marinilla",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Agenda Oriente",
+        "url": "https://agendaoriente.com/events/la-historia-mas-tierna-del-mundo/"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:30:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:30:00-05:00",
+    "tags": [
+      "teatro",
+      "marinilla",
+      "oriente antioqueño",
+      "agenda oriente"
+    ],
+    "score": 90
+  },
+  {
+    "id": "ao-14676",
+    "slug": "ao-48-fiestas-del-toldo-las-bicicletas-y-las-flores",
+    "title": "48 Fiestas del Toldo, las Bicicletas y las Flores",
+    "shortDescription": "¡Llegaron las 48 Fiestas del Toldo, las Bicicletas y las Flores! Del 6 al 17 de agosto de 2026 viviremos doce días llenos de música, cultura...",
+    "longDescription": "¡Llegaron las 48 Fiestas del Toldo, las Bicicletas y las Flores! Del 6 al 17 de agosto de 2026 viviremos doce días llenos de música, cultura, tradición, gastronomía, desfiles, flores y el mejor talento cejeño. Reúne a tu familia, invita a tus amigos y prepárate para disfrutar de las fiestas que nos unen, nos llenan de orgullo y nos recuerdan por qué La Ceja es un territorio que cuida sus tradiciones ¡Nos vemos en La Ceja para vivir unas fiestas inolvidables!",
+    "startDate": "2026-08-17",
+    "startTime": "19:00",
+    "venue": "Centro Cultural / Parque Principal de La Ceja",
+    "neighborhood": "La Ceja",
+    "city": "La Ceja",
+    "latitude": 6.0336,
+    "longitude": -75.4294,
+    "category": "música",
+    "priceType": "paid",
+    "priceMin": 20000,
+    "priceMax": 20000,
+    "currency": "COP",
+    "organizer": "Alcaldía / Casa de la Cultura de La Ceja",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Agenda Oriente",
+        "url": "https://agendaoriente.com/events/48-fiestas-del-toldo-las-bicicletas-y-las-flores/"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:30:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:30:00-05:00",
+    "tags": [
+      "música",
+      "la ceja",
+      "oriente antioqueño",
+      "agenda oriente"
+    ],
+    "score": 89
+  },
+  {
+    "id": "ao-14643",
+    "slug": "ao-xviii-festival-internacional-de-teatro-mil-caras",
+    "title": "XVIII Festival Internacional de Teatro «Mil Caras»",
+    "shortDescription": "Entre el 10 y el 21 de agosto tendrá lugar en el Municipio de El Retiro el XVIII Festival Internacional de Teatro «Mil Caras», ¡Te esperamos...",
+    "longDescription": "Entre el 10 y el 21 de agosto tendrá lugar en el Municipio de El Retiro el XVIII Festival Internacional de Teatro «Mil Caras», ¡Te esperamos!",
+    "startDate": "2026-08-21",
+    "startTime": "19:00",
+    "venue": "Centro Cultural / Parque Principal de El Retiro",
+    "neighborhood": "El Retiro",
+    "city": "El Retiro",
+    "latitude": 6.0594,
+    "longitude": -75.5028,
+    "category": "teatro",
+    "priceType": "paid",
+    "priceMin": 20000,
+    "priceMax": 20000,
+    "currency": "COP",
+    "organizer": "Alcaldía / Casa de la Cultura de El Retiro",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Agenda Oriente",
+        "url": "https://agendaoriente.com/events/xviii-festival-internacional-de-teatro-mil-caras/"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:30:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:30:00-05:00",
+    "tags": [
+      "teatro",
+      "el retiro",
+      "oriente antioqueño",
+      "agenda oriente"
+    ],
+    "score": 95
+  },
+  {
+    "id": "ao-14611",
+    "slug": "ao-7-fiesta-del-libro-y-la-cultura-rioleo",
+    "title": "7ª Fiesta del Libro y la Cultura - RIOLEO",
+    "shortDescription": "¡Rionegro se viste de letras, arte y cultura! Se acerca la 7ª Fiesta del Libro y la Cultura - RIOLEO con Palabras Vivas. 📅 27, 28 y 29 de a...",
+    "longDescription": "¡Rionegro se viste de letras, arte y cultura! Se acerca la 7ª Fiesta del Libro y la Cultura - RIOLEO con Palabras Vivas. 📅 27, 28 y 29 de agosto 📍 Centro Histórico de Rionegro 🎟️ Entrada libre para toda la comunidad",
+    "startDate": "2026-08-29",
+    "startTime": "19:00",
+    "venue": "Centro Cultural / Parque Principal de Rionegro",
+    "neighborhood": "Rionegro",
+    "city": "Rionegro",
+    "latitude": 6.1552,
+    "longitude": -75.3736,
+    "category": "literatura",
+    "priceType": "free",
+    "priceMin": 0,
+    "priceMax": 0,
+    "currency": "COP",
+    "organizer": "Alcaldía / Casa de la Cultura de Rionegro",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Agenda Oriente",
+        "url": "https://agendaoriente.com/events/7a-fiesta-del-libro-y-la-cultura-rioleo/"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": false,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:30:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:30:00-05:00",
+    "tags": [
+      "literatura",
+      "rionegro",
+      "oriente antioqueño",
+      "agenda oriente"
+    ],
+    "score": 91
+  },
+  {
+    "id": "ao-14595",
+    "slug": "ao-xli-encuentro-departamentales-de-bandas-musicales",
+    "title": "XLI Encuentro Departamentales de Bandas Musicales",
+    "shortDescription": "La música vuelve a unir a Antioquia en El Peñol. Del 15 al 17 de agosto celebraremos el XLI Encuentro Departamentales de Bandas Musicales, u...",
+    "longDescription": "La música vuelve a unir a Antioquia en El Peñol. Del 15 al 17 de agosto celebraremos el XLI Encuentro Departamentales de Bandas Musicales, un evento que durante más de cuatro décadas ha fortalecido la cultura, el talento y la tradición bandística de nuestro departamento. Serán 2 días de conciertos, desfiles, presentaciones oficiales, integración y mucho orgullo por la música que nos identifica como territorio. Además, recibiremos delegaciones de diferentes municipios para compartir escenarios, experiencias y el amor por este arte que une generaciones. Desliza este carrusel y conoce toda la programación para que no te pierdas ninguna de las actividades. Los esperamos para vivir juntos una gran fiesta musical en El Peñol.",
+    "startDate": "2026-08-17",
+    "startTime": "19:00",
+    "venue": "Centro Cultural / Parque Principal de El Peñol",
+    "neighborhood": "El Peñol",
+    "city": "El Peñol",
+    "latitude": 6.2189,
+    "longitude": -75.2428,
+    "category": "música",
+    "priceType": "paid",
+    "priceMin": 20000,
+    "priceMax": 20000,
+    "currency": "COP",
+    "organizer": "Alcaldía / Casa de la Cultura de El Peñol",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Agenda Oriente",
+        "url": "https://agendaoriente.com/events/xli-encuentro-departamentales-de-bandas-musicales/"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:30:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:30:00-05:00",
+    "tags": [
+      "música",
+      "el peñol",
+      "oriente antioqueño",
+      "agenda oriente"
+    ],
+    "score": 96
+  },
+  {
+    "id": "ao-14587",
+    "slug": "ao-vi-congreso-internacional-de-seguridad-turistica",
+    "title": "VI Congreso Internacional de Seguridad Turística",
+    "shortDescription": "Durante los días los días 14, 15 y 16 de septiembre, Guatapé será la sede del VI Congreso Internacional de Seguridad Turística, un evento or...",
+    "longDescription": "Durante los días los días 14, 15 y 16 de septiembre, Guatapé será la sede del VI Congreso Internacional de Seguridad Turística, un evento organizado por la Dirección de Protección y Servicios Especiales de la Policía Nacional. Será la primera vez que este congreso se realiza fuera de ciudades como Bogotá y Cartagena, convirtiéndose en un reconocimiento al modelo de seguridad que ha desarrollado el municipio. Durante las jornadas académicas participarán 14 conferencistas, representantes de 18 países, autoridades nacionales, gremios del sector turístico y delegaciones especializadas en seguridad. La elección de Guatapé como anfitrión del congreso también responde a las herramientas tecnológicas que actualmente fortalecen la seguridad del municipio. Entre las estrategias mencionadas por el secretario de Gobierno se encuentran: Cámaras con reconocimiento facial. Cámaras lectoras de placas para controlar el ingreso de vehículos. Cámara térmica instalada en el embalse para supervisar la navegación nocturna. Caracterización de operadores turísticos y empresas náuticas. Próximo lanzamiento de la estrategia de Botones de Pánico.",
+    "startDate": "2026-09-16",
+    "startTime": "19:00",
+    "venue": "Centro Cultural / Parque Principal de Guatapé",
+    "neighborhood": "Guatapé",
+    "city": "Guatapé",
+    "latitude": 6.2333,
+    "longitude": -75.1611,
+    "category": "comunidad",
+    "priceType": "paid",
+    "priceMin": 20000,
+    "priceMax": 20000,
+    "currency": "COP",
+    "organizer": "Alcaldía / Casa de la Cultura de Guatapé",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Agenda Oriente",
+        "url": "https://agendaoriente.com/events/vi-congreso-internacional-de-seguridad-turistica/"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": false,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:30:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:30:00-05:00",
+    "tags": [
+      "comunidad",
+      "guatapé",
+      "oriente antioqueño",
+      "agenda oriente"
+    ],
+    "score": 91
+  },
+  {
+    "id": "ao-14579",
+    "slug": "ao-marinilla-esta-de-moda-2026",
+    "title": "Marinilla está de Moda 2026",
+    "shortDescription": "La moda tiene una cita en Marinilla. Del 28 al 30 de agosto, nuestro municipio será el punto de encuentro del talento, la creatividad y el t...",
+    "longDescription": "La moda tiene una cita en Marinilla. Del 28 al 30 de agosto, nuestro municipio será el punto de encuentro del talento, la creatividad y el trabajo de quienes hacen de la moda una forma de inspirar. Guarda la fecha y prepárate para vivir Marinilla está de Moda 2026.",
+    "startDate": "2026-08-30",
+    "startTime": "19:00",
+    "venue": "Centro Cultural / Parque Principal de Marinilla",
+    "neighborhood": "Marinilla",
+    "city": "Marinilla",
+    "latitude": 6.1758,
+    "longitude": -75.3378,
+    "category": "comunidad",
+    "priceType": "paid",
+    "priceMin": 20000,
+    "priceMax": 20000,
+    "currency": "COP",
+    "organizer": "Alcaldía / Casa de la Cultura de Marinilla",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Agenda Oriente",
+        "url": "https://agendaoriente.com/events/marinilla-esta-de-moda-2026/"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": false,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:30:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:30:00-05:00",
+    "tags": [
+      "comunidad",
+      "marinilla",
+      "oriente antioqueño",
+      "agenda oriente"
+    ],
+    "score": 89
+  },
+  {
+    "id": "ao-14559",
+    "slug": "ao-gran-cabalgata-pro-asilo-2026",
+    "title": "Gran Cabalgata Pro Asilo 2026",
+    "shortDescription": "Cocorná se prepara para vivir una nueva versión de la cabalgata en favor del Centro de Bienestar del Anciano. El sábado 29 de agosto los esp...",
+    "longDescription": "Cocorná se prepara para vivir una nueva versión de la cabalgata en favor del Centro de Bienestar del Anciano. El sábado 29 de agosto los esperamos en nuestro municipio, rodeado de hermosos paisajes y aguas cristalinas, para disfrutar de un evento maravilloso.",
+    "startDate": "2026-08-29",
+    "startTime": "19:00",
+    "venue": "Oriente Antioqueño",
+    "neighborhood": "Oriente Antioqueño",
+    "city": "Oriente Antioqueño",
+    "latitude": 6.1552,
+    "longitude": -75.3736,
+    "category": "comunidad",
+    "priceType": "paid",
+    "priceMin": 20000,
+    "priceMax": 20000,
+    "currency": "COP",
+    "organizer": "Alcaldía / Casa de la Cultura de Oriente Antioqueño",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Agenda Oriente",
+        "url": "https://agendaoriente.com/events/gran-cabalgata-pro-asilo-2026/"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": false,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:30:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:30:00-05:00",
+    "tags": [
+      "comunidad",
+      "oriente antioqueño",
+      "oriente antioqueño",
+      "agenda oriente"
+    ],
+    "score": 93
+  },
+  {
+    "id": "ao-14557",
+    "slug": "ao-xxxiii-fiestas-del-agua-la-magia-de-lo-nuestro",
+    "title": "XXXIII Fiestas del Agua: “La magia de lo nuestro”",
+    "shortDescription": "San Carlos se viste de fiesta del 10 al 17 de agosto. Nos preparamos para celebrar: la riqueza de nuestras aguas, la calidez de nuestra gent...",
+    "longDescription": "San Carlos se viste de fiesta del 10 al 17 de agosto. Nos preparamos para celebrar: la riqueza de nuestras aguas, la calidez de nuestra gente, nuestro campo y nuestras tradiciones. Agéndate y ven a disfrutar de la magia de lo nuestro.",
+    "startDate": "2026-08-17",
+    "startTime": "19:00",
+    "venue": "Oriente Antioqueño",
+    "neighborhood": "Oriente Antioqueño",
+    "city": "Oriente Antioqueño",
+    "latitude": 6.1552,
+    "longitude": -75.3736,
+    "category": "comunidad",
+    "priceType": "paid",
+    "priceMin": 20000,
+    "priceMax": 20000,
+    "currency": "COP",
+    "organizer": "Alcaldía / Casa de la Cultura de Oriente Antioqueño",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Agenda Oriente",
+        "url": "https://agendaoriente.com/events/xxxiii-fiestas-del-agua-la-magia-de-lo-nuestro/"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": false,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:30:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:30:00-05:00",
+    "tags": [
+      "comunidad",
+      "oriente antioqueño",
+      "oriente antioqueño",
+      "agenda oriente"
+    ],
+    "score": 93
+  },
+  {
+    "id": "ao-14454",
+    "slug": "ao-el-paso-del-arriero-trail-running",
+    "title": "El Paso del Arriero - Trail running",
+    "shortDescription": "Alejandría recibe un evento soñado. Sí señores, ¡llega @elpaso_delarriero ! Más que una carrera de trail running, es una travesía por nuestr...",
+    "longDescription": "Alejandría recibe un evento soñado. Sí señores, ¡llega @elpaso_delarriero ! Más que una carrera de trail running, es una travesía por nuestra historia, donde cada corredor vive la montaña como lo hicieron aquellos hombres y mujeres que abrieron caminos entre trochas, bosques y sueños. Cada paso será un encuentro con la naturaleza, la cultura campesina, las cascadas, los paisajes que enamoran y la esencia de un territorio que guarda historias en cada sendero. Prepárense para vivir una experiencia única de aventura, resistencia y conexión con nuestras raíces. 📅 27 de septiembre 📍 Alejandría, Antioquia ¡Nos vemos en los caminos del arriero!",
+    "startDate": "2026-09-27",
+    "startTime": "19:00",
+    "venue": "Oriente Antioqueño",
+    "neighborhood": "Oriente Antioqueño",
+    "city": "Oriente Antioqueño",
+    "latitude": 6.1552,
+    "longitude": -75.3736,
+    "category": "comunidad",
+    "priceType": "paid",
+    "priceMin": 20000,
+    "priceMax": 20000,
+    "currency": "COP",
+    "organizer": "Alcaldía / Casa de la Cultura de Oriente Antioqueño",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Agenda Oriente",
+        "url": "https://agendaoriente.com/events/dialogo-en-defensa-del-territorio/"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": false,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:30:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:30:00-05:00",
+    "tags": [
+      "comunidad",
+      "oriente antioqueño",
+      "oriente antioqueño",
+      "agenda oriente"
+    ],
+    "score": 94
+  },
+  {
+    "id": "ao-14429",
+    "slug": "ao-iii-media-maraton-de-guatape-2026",
+    "title": "III Media Maratón de Guatapé 2026",
+    "shortDescription": "La III Media Maratón de Guatapé 2026 abre oficialmente sus inscripciones para que vivas una carrera única entre montañas, embalse, calles co...",
+    "longDescription": "La III Media Maratón de Guatapé 2026 abre oficialmente sus inscripciones para que vivas una carrera única entre montañas, embalse, calles coloridas y la energía de uno de los pueblos más lindos del mundo. Elige tu distancia, desafía tus límites y prepárate para cruzar la meta en un recorrido inolvidable: 5K | 10K | 21K - Domingo 27 de septiembre de 2026- Inscríbete aquí: https://www.biciq.com/info-event/iii-media-maraton-de-guatape-2026-211b6fc6 ¡El reto ya comenzó y tú puedes ser parte de esta gran experiencia!",
+    "startDate": "2026-09-27",
+    "startTime": "19:00",
+    "venue": "Centro Cultural / Parque Principal de Guatapé",
+    "neighborhood": "Guatapé",
+    "city": "Guatapé",
+    "latitude": 6.2333,
+    "longitude": -75.1611,
+    "category": "comunidad",
+    "priceType": "paid",
+    "priceMin": 20000,
+    "priceMax": 20000,
+    "currency": "COP",
+    "organizer": "Alcaldía / Casa de la Cultura de Guatapé",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Agenda Oriente",
+        "url": "https://agendaoriente.com/events/iii-media-maraton-de-guatape-2026/"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": false,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:30:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:30:00-05:00",
+    "tags": [
+      "comunidad",
+      "guatapé",
+      "oriente antioqueño",
+      "agenda oriente"
+    ],
+    "score": 94
+  },
+  {
+    "id": "ao-14084",
+    "slug": "ao-fiestas-del-maiz-2026",
+    "title": "Fiestas del Maíz 2026",
+    "shortDescription": "La tradición, la memoria y la cultura campesina se encuentran en la versión 67 de las Fiestas del Maíz 2026 en Sonsón , Antioquia , una de l...",
+    "longDescription": "La tradición, la memoria y la cultura campesina se encuentran en la versión 67 de las Fiestas del Maíz 2026 en Sonsón , Antioquia , una de las celebraciones más emblemáticas del Oriente antioqueño . Del 13 al 17 de agosto de 2026, el municipio abre sus calles y plazas para rendir homenaje al maíz como símbolo de identidad, alimento, paisaje y herencia colectiva. Esta edición conmemora además los 200 años del nacimiento del poeta Gregorio Gutiérrez González (1826–2026), figura fundamental de la literatura colombiana que convirtió el maíz y la vida rural en inspiración poética y memoria cultural. La fiesta se proyecta como un espacio para reencontrarse con las raíces sonsonesas a través de expresiones artísticas, gastronomía tradicional, encuentros comunitarios y manifestaciones populares que mantienen viva la esencia del territorio. Las Fiestas del Maíz es un encuentro de historia, tradición y memoria para toda la familia.",
+    "startDate": "2026-08-17",
+    "startTime": "19:00",
+    "venue": "Centro Cultural / Parque Principal de Sonsón",
+    "neighborhood": "Sonsón",
+    "city": "Sonsón",
+    "latitude": 5.7108,
+    "longitude": -75.3108,
+    "category": "literatura",
+    "priceType": "paid",
+    "priceMin": 20000,
+    "priceMax": 20000,
+    "currency": "COP",
+    "organizer": "Alcaldía / Casa de la Cultura de Sonsón",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Agenda Oriente",
+        "url": "https://agendaoriente.com/events/fiestas-del-maiz-2026/"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": false,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:30:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:30:00-05:00",
+    "tags": [
+      "literatura",
+      "sonsón",
+      "oriente antioqueño",
+      "agenda oriente"
+    ],
+    "score": 94
   }
 ];
