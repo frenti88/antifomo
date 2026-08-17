@@ -57,20 +57,22 @@ export function FilterSheet({ open, onClose, filters, onFiltersChange, eventCoun
       ref={dialogRef}
       onClick={handleBackdropClick}
       onClose={onClose}
-      className="fixed inset-0 m-0 w-full max-w-none h-full bg-transparent backdrop:bg-black/50 p-0 open:flex open:justify-end lg:open:justify-end lg:p-4 lg:bg-black/20"
+      className="fixed inset-0 m-0 w-full max-w-none h-full bg-transparent backdrop:bg-black/60 backdrop:backdrop-blur-xs p-0 open:flex open:justify-end lg:open:justify-end lg:p-4 lg:bg-black/30"
     >
       <div 
-        className="mt-auto bg-bg w-full h-[85vh] lg:h-full lg:w-[400px] lg:mt-0 rounded-t-2xl lg:rounded-xl shadow-xl flex flex-col overflow-hidden animate-in slide-in-from-bottom-full lg:slide-in-from-right-full duration-300"
+        className="mt-auto bg-bg w-full max-h-[90vh] lg:max-h-full lg:w-[420px] lg:mt-0 rounded-t-3xl lg:rounded-2xl shadow-2xl flex flex-col overflow-hidden border-t lg:border border-border animate-in slide-in-from-bottom-full lg:slide-in-from-right-full duration-300 transition-colors"
         onClick={e => e.stopPropagation()}
       >
-        <div className="flex items-center justify-between p-4 border-b border-border">
-          <h2 className="text-lg font-bold text-text">Filtros</h2>
+        <div className="w-10 h-1 bg-border rounded-full mx-auto mt-3 mb-1 lg:hidden select-none" aria-hidden="true" />
+        
+        <div className="flex items-center justify-between px-5 py-3.5 border-b border-border/80">
+          <h2 className="text-lg font-bold text-text tracking-tight">Filtros</h2>
           <button
             onClick={onClose}
-            className="w-11 h-11 flex items-center justify-center rounded-full hover:bg-surface transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-text"
+            className="w-10 h-10 flex items-center justify-center rounded-full hover:bg-surface text-secondary hover:text-text transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-text"
             aria-label="Cerrar filtros"
           >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
             </svg>
           </button>
