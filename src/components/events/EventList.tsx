@@ -38,7 +38,7 @@ export function EventList({ events, viewMode, title }: EventListProps) {
       
       {dates.map((date) => (
         <div key={date} className="mb-8">
-          <h3 className="text-xs font-bold text-secondary uppercase tracking-wider px-4 py-2 bg-bg/95 border-b border-border/60 sticky top-14 z-10 backdrop-blur-md">
+          <h3 className="text-xs font-bold text-secondary uppercase tracking-wider px-4 sm:px-0 py-2 border-b border-border/60 mb-2">
             {getDateLabel(date)}
           </h3>
           

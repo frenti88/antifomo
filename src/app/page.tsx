@@ -53,65 +53,70 @@ export default function HomePage() {
     <div className="pb-24">
       <h1 className="sr-only">AntiFOMO — Radar cultural de Medellín</h1>
 
-      <section className="pt-6 pb-4">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 mb-3">
-          <h2 className="text-2xl font-bold tracking-tight text-text">
-            ¿Qué está pasando?
-          </h2>
-        </div>
+      {/* Heading */}
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 pt-5 pb-2">
+        <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-text">
+          ¿Qué está pasando?
+        </h2>
+      </div>
 
-        {/* Integrated Search Bar */}
-        <div id="buscador" className="max-w-6xl mx-auto px-4 sm:px-6 mb-4 scroll-mt-20">
-          <SearchBar 
-            query={filters.query || ''} 
-            onQueryChange={(q) => setFilter({ query: q })}
-            placeholder="Busca por plan, artista, lugar o categoría..."
-          />
-        </div>
+      {/* Sticky Fixed Filter Control Bar (Search + Dates + Categories) */}
+      <section className="sticky top-14 z-40 bg-bg/95 backdrop-blur-md border-b border-border/80 py-3 mb-6 transition-colors shadow-xs">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 space-y-2.5">
+          {/* Integrated Search Bar */}
+          <div id="buscador" className="w-full">
+            <SearchBar 
+              query={filters.query || ''} 
+              onQueryChange={(q) => setFilter({ query: q })}
+              placeholder="Busca por plan, artista, lugar o categoría..."
+            />
+          </div>
 
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 space-y-2">
-          <DateTabs activeDate={filters.date} onDateChange={handleDateChange} />
-          
-          <div className="flex flex-nowrap overflow-x-auto md:flex-wrap md:overflow-visible gap-2 py-2 no-scrollbar w-full">
-            <FilterChip
-              label="Todo"
-              active={!isFiltering}
-              onClick={clearFilters}
-            />
-            <FilterChip
-              label="Gratis"
-              active={filters.showFree}
-              onClick={() => setFilter({ showFree: !filters.showFree })}
-            />
-            <FilterChip
-              label="Joyitas"
-              active={filters.showGems}
-              onClick={() => setFilter({ showGems: !filters.showGems })}
-            />
-            <FilterChip
-              label="Ciencia"
-              active={filters.category === 'ciencia'}
-              onClick={() => setFilter({ category: filters.category === 'ciencia' ? null : 'ciencia' })}
-            />
-            <FilterChip
-              label="Tecnología"
-              active={filters.category === 'tecnología'}
-              onClick={() => setFilter({ category: filters.category === 'tecnología' ? null : 'tecnología' })}
-            />
-            {['música', 'arte', 'cine', 'fiesta', 'talleres'].map(cat => (
+          {/* Date and Category Tabs */}
+          <div className="space-y-1.5">
+            <DateTabs activeDate={filters.date} onDateChange={handleDateChange} />
+            
+            <div className="flex flex-nowrap overflow-x-auto md:flex-wrap md:overflow-visible gap-2 py-1 no-scrollbar w-full">
               <FilterChip
-                key={cat}
-                label={cat.charAt(0).toUpperCase() + cat.slice(1)}
-                active={filters.category === cat}
-                onClick={() => setFilter({ category: filters.category === cat ? null : cat as Category })}
+                label="Todo"
+                active={!isFiltering}
+                onClick={clearFilters}
               />
-            ))}
-            <FilterChip
-              label="+ Filtros"
-              active={isFilterSheetOpen}
-              onClick={() => setIsFilterSheetOpen(true)}
-              className="ml-auto md:ml-0 flex-shrink-0"
-            />
+              <FilterChip
+                label="Gratis"
+                active={filters.showFree}
+                onClick={() => setFilter({ showFree: !filters.showFree })}
+              />
+              <FilterChip
+                label="Joyitas"
+                active={filters.showGems}
+                onClick={() => setFilter({ showGems: !filters.showGems })}
+              />
+              <FilterChip
+                label="Ciencia"
+                active={filters.category === 'ciencia'}
+                onClick={() => setFilter({ category: filters.category === 'ciencia' ? null : 'ciencia' })}
+              />
+              <FilterChip
+                label="Tecnología"
+                active={filters.category === 'tecnología'}
+                onClick={() => setFilter({ category: filters.category === 'tecnología' ? null : 'tecnología' })}
+              />
+              {['música', 'arte', 'cine', 'fiesta', 'talleres'].map(cat => (
+                <FilterChip
+                  key={cat}
+                  label={cat.charAt(0).toUpperCase() + cat.slice(1)}
+                  active={filters.category === cat}
+                  onClick={() => setFilter({ category: filters.category === cat ? null : cat as Category })}
+                />
+              ))}
+              <FilterChip
+                label="+ Filtros"
+                active={isFilterSheetOpen}
+                onClick={() => setIsFilterSheetOpen(true)}
+                className="ml-auto md:ml-0 flex-shrink-0"
+              />
+            </div>
           </div>
         </div>
       </section>
