@@ -32,6 +32,9 @@ export default function HomePage() {
   // "Para ti" events
   const paraTiEvents = [...DEMO_EVENTS].sort((a, b) => b.score - a.score).slice(0, 4);
   
+  // "Ciencia & Tech" events
+  const cienciaTechEvents = DEMO_EVENTS.filter(e => e.category === 'ciencia-tecnologia').slice(0, 4);
+
   // "Esta noche" events
   const estaNocheEvents = DEMO_EVENTS.filter(e => e.tags?.includes('noche') || (e.startTime >= '18:00')).slice(0, 4);
   
@@ -72,6 +75,11 @@ export default function HomePage() {
               active={filters.showGems}
               onClick={() => setFilter({ showGems: !filters.showGems })}
             />
+            <FilterChip
+              label="Ciencia & Tech"
+              active={filters.category === 'ciencia-tecnologia'}
+              onClick={() => setFilter({ category: filters.category === 'ciencia-tecnologia' ? null : 'ciencia-tecnologia' })}
+            />
             {['música', 'arte', 'cine', 'fiesta', 'talleres'].map(cat => (
               <FilterChip
                 key={cat}
@@ -111,6 +119,14 @@ export default function HomePage() {
             <EditorialSection title="Para ti" subtitle="Cosas que creemos que vale la pena mirar.">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
                 {paraTiEvents.map(event => (
+                  <EventCard key={event.id} event={event} />
+                ))}
+              </div>
+            </EditorialSection>
+
+            <EditorialSection title="Ciencia & Tecnología" subtitle="Astronomía, inteligencia artificial, robótica y código creativo.">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                {cienciaTechEvents.map(event => (
                   <EventCard key={event.id} event={event} />
                 ))}
               </div>

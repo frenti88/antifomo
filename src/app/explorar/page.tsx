@@ -86,6 +86,11 @@ export default function ExplorarPage() {
               active={filters.showGems}
               onClick={() => setFilter({ showGems: !filters.showGems })}
             />
+            <FilterChip
+              label="Ciencia & Tech"
+              active={filters.category === 'ciencia-tecnologia'}
+              onClick={() => setFilter({ category: filters.category === 'ciencia-tecnologia' ? null : 'ciencia-tecnologia' })}
+            />
             {['música', 'arte', 'cine', 'fiesta', 'talleres'].map(cat => (
               <FilterChip
                 key={cat}

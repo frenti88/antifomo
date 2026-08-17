@@ -19,7 +19,8 @@ export type Category =
   | 'bienestar'
   | 'mercados'
   | 'comedia'
-  | 'performance';
+  | 'performance'
+  | 'ciencia-tecnologia';
 
 export type Zone =
   | 'Centro'
