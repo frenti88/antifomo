@@ -6,39 +6,61 @@ import type { AntiFOMOEvent } from '@/lib/types';
 import { EventPrice } from './EventPrice';
 import { EventBadge } from './EventBadge';
 import { SaveButton } from './SaveButton';
-import { EventCover } from './EventCover';
 import { formatDateFull } from '@/lib/dates';
+import { CATEGORY_ICONS } from '@/data/categories';
 
 interface EventCardProps {
   event: AntiFOMOEvent;
 }
 
 export function EventCard({ event }: EventCardProps) {
+  const categoryIcon = CATEGORY_ICONS[event.category as keyof typeof CATEGORY_ICONS] || '◉';
+
   return (
-    <article className="relative flex flex-col border border-border rounded-xl overflow-hidden hover:shadow-md hover:-translate-y-0.5 transition-all bg-bg group">
-      <div className="absolute top-2 right-2 z-20">
+    <article className="relative flex flex-col border border-border rounded-xl p-5 bg-surface/30 hover:bg-surface/70 hover:border-[#FFDE21]/50 hover:shadow-md transition-all group">
+      {/* Top Bar: Category Pill + Save Button */}
+      <div className="flex items-center justify-between gap-2 mb-3">
+        <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface border border-border text-[11px] font-bold uppercase tracking-wider text-text">
+          <span aria-hidden="true">{categoryIcon}</span>
+          <span>{event.category}</span>
+        </span>
         <SaveButton eventId={event.id} />
       </div>
       
-      <Link href={`/evento/${event.slug}`} className="flex flex-col h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-text">
-        <EventCover event={event} aspectRatio="card" showCategoryLabel={false} className="rounded-b-none" />
-        
-        <div className="p-4 flex flex-col flex-grow">
-          <div className="text-xs font-semibold text-secondary mb-1 uppercase tracking-wider">
-            {formatDateFull(event.startDate)} · {event.startTime}
-          </div>
-          <h3 className="text-lg font-semibold text-text line-clamp-2 leading-tight mb-2 group-hover:text-[#FFDE21] transition-colors">
-            {event.title}
-          </h3>
-          <div className="text-sm text-secondary mb-4 mt-auto">
-            {event.venue}
-          </div>
-          <div className="flex items-center justify-between border-t border-border pt-3">
-            <EventPrice event={event} />
-            {event.isGem && <EventBadge type="gem" />}
-          </div>
+      {/* Clickable Card Body */}
+      <Link
+        href={`/evento/${event.slug}`}
+        className="flex flex-col flex-grow focus:outline-none focus-visible:ring-2 focus-visible:ring-[#FFDE21] rounded-lg"
+      >
+        <div className="text-xs font-semibold text-[#FFDE21] flex items-center gap-1.5 mb-1.5">
+          <span aria-hidden="true">📅</span>
+          <span>{formatDateFull(event.startDate)} · {event.startTime}</span>
+        </div>
+
+        <h3 className="text-lg font-bold text-text line-clamp-2 leading-snug group-hover:text-[#FFDE21] transition-colors">
+          {event.title}
+        </h3>
+
+        {event.shortDescription && (
+          <p className="text-sm text-secondary line-clamp-2 mt-2 leading-relaxed">
+            {event.shortDescription}
+          </p>
+        )}
+
+        <div className="flex items-center gap-1.5 text-xs text-secondary mt-3 font-medium">
+          <span aria-hidden="true">📍</span>
+          <span className="truncate">{event.venue} · {event.neighborhood}</span>
         </div>
       </Link>
+
+      {/* Bottom Footer: Price + Badges */}
+      <div className="flex items-center justify-between border-t border-border mt-4 pt-3">
+        <EventPrice event={event} />
+        <div className="flex items-center gap-1.5">
+          {event.isGem && <EventBadge type="gem" />}
+          {event.isNewlyFound && !event.isGem && <EventBadge type="newly-found" />}
+        </div>
+      </div>
     </article>
   );
 }

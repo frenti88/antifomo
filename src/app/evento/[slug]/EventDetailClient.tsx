@@ -7,102 +7,113 @@ import { SaveButton } from '@/components/events/SaveButton';
 import { ShareButton } from '@/components/events/ShareButton';
 import { EventBadge } from '@/components/events/EventBadge';
 import { EventSource } from '@/components/events/EventSource';
-import { EventCover } from '@/components/events/EventCover';
+import { CATEGORY_ICONS } from '@/data/categories';
 import Link from 'next/link';
 
 export default function EventDetailClient({ event }: { event: AntiFOMOEvent }) {
   const mainSource = event.sources?.[0];
   const price = formatPrice(event);
+  const categoryIcon = CATEGORY_ICONS[event.category as keyof typeof CATEGORY_ICONS] || '◉';
 
   return (
-    <div className="max-w-2xl mx-auto px-4 pb-40 lg:pb-24">
+    <div className="max-w-2xl mx-auto px-4 pb-40 lg:pb-24 pt-2">
       {/* Breadcrumb / Back */}
-      <nav aria-label="Breadcrumb" className="py-4">
+      <nav aria-label="Breadcrumb" className="py-3">
         <Link
           href="/"
-          className="text-sm flex items-center gap-1 text-secondary hover:text-text transition-colors"
+          className="text-sm font-medium flex items-center gap-1.5 text-secondary hover:text-[#FFDE21] transition-colors inline-flex"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
             <path d="M19 12H5M12 19l-7-7 7-7" />
           </svg>
-          Volver
+          <span>Volver al radar</span>
         </Link>
       </nav>
 
-      {/* Radar Cover Artwork */}
-      <EventCover event={event} className="mb-6" aspectRatio="banner" />
+      {/* Top Header Card */}
+      <div className="bg-surface/40 border border-border rounded-2xl p-6 mb-6">
+        {/* Category Pill + Status */}
+        <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
+          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface border border-border text-xs font-bold uppercase tracking-wider text-text">
+            <span aria-hidden="true">{categoryIcon}</span>
+            <span>{event.category}</span>
+          </span>
 
-      {/* Category + Title */}
-      <div className="mb-6">
-        <span className="inline-block px-3 py-1 rounded-full bg-surface text-xs font-semibold uppercase tracking-wider mb-3">
-          {event.category}
-        </span>
-        <h1 className="text-2xl font-bold mb-2 text-text">{event.title}</h1>
-        <p className="text-lg text-secondary leading-snug">{event.shortDescription}</p>
+          <div className="flex items-center gap-1.5">
+            {event.isGem && <EventBadge type="gem" />}
+            {event.isNewlyFound && !event.isGem && <EventBadge type="newly-found" />}
+            {event.priceType === 'free' && <EventBadge type="free" />}
+          </div>
+        </div>
+
+        {/* Title */}
+        <h1 className="text-2xl sm:text-3xl font-extrabold mb-3 text-text leading-tight">
+          {event.title}
+        </h1>
+
+        {/* Short Description */}
+        {event.shortDescription && (
+          <p className="text-base sm:text-lg text-secondary leading-relaxed">
+            {event.shortDescription}
+          </p>
+        )}
       </div>
 
-      {/* Badges */}
-      <div className="flex flex-wrap gap-2 mb-6">
-        {event.priceType === 'free' && <EventBadge type="free" />}
-        {event.isGem && <EventBadge type="gem" />}
-        {event.isNewlyFound && <EventBadge type="newly-found" />}
-        {event.verified && <EventBadge type="verified" />}
-      </div>
-
-      {/* Event Details */}
-      <div className="space-y-4 mb-8">
-        <div className="flex items-start gap-3">
+      {/* Event Details Grid */}
+      <div className="space-y-4 mb-8 bg-surface/20 border border-border/70 rounded-xl p-5">
+        <div className="flex items-start gap-3.5">
           <span className="text-xl mt-0.5" aria-hidden="true">📅</span>
           <div>
-            <p className="font-medium text-text capitalize">{formatDateFull(event.startDate)}</p>
-            <p className="text-secondary">
+            <p className="font-semibold text-text capitalize">{formatDateFull(event.startDate)}</p>
+            <p className="text-secondary text-sm">
               {formatTime(event.startTime)}
               {event.endTime ? ` — ${formatTime(event.endTime)}` : ''}
             </p>
           </div>
         </div>
 
-        <div className="flex items-start gap-3">
+        <div className="flex items-start gap-3.5">
           <span className="text-xl mt-0.5" aria-hidden="true">📍</span>
           <div>
-            <p className="font-medium text-text">{event.venue}</p>
-            <p className="text-secondary">{event.neighborhood} · {event.city}</p>
+            <p className="font-semibold text-text">{event.venue}</p>
+            <p className="text-secondary text-sm">{event.neighborhood} · {event.city}</p>
           </div>
         </div>
 
-        <div className="flex items-start gap-3">
+        <div className="flex items-start gap-3.5">
           <span className="text-xl mt-0.5" aria-hidden="true">💰</span>
           <div>
-            <p className={`font-semibold ${event.priceType === 'free' ? 'text-accent' : 'text-text'}`}>
+            <p className={`font-bold ${event.priceType === 'free' ? 'text-black font-extrabold bg-[#FFDE21] px-2 py-0.5 rounded-md inline-block text-xs uppercase' : 'text-text'}`}>
               {price}
             </p>
           </div>
         </div>
 
         {event.organizer && (
-          <div className="flex items-start gap-3">
+          <div className="flex items-start gap-3.5">
             <span className="text-xl mt-0.5" aria-hidden="true">👤</span>
             <div>
-              <p className="font-medium text-text">{event.organizer}</p>
+              <p className="font-semibold text-text">{event.organizer}</p>
+              <p className="text-secondary text-xs">Organizador / Colectivo</p>
             </div>
           </div>
         )}
       </div>
 
-      <hr className="border-border my-8" />
-
       {/* Long description */}
       {event.longDescription && (
         <>
-          <div className="text-base leading-relaxed text-text mb-8 whitespace-pre-line">
+          <div className="text-base leading-relaxed text-text mb-8 whitespace-pre-line bg-surface/10 p-5 rounded-xl border border-border/50">
+            <h2 className="text-sm font-bold uppercase tracking-wider text-secondary mb-3">
+              Sobre este plan
+            </h2>
             {event.longDescription}
           </div>
-          <hr className="border-border my-8" />
         </>
       )}
 
       {/* Source info */}
-      <div className="mb-12 bg-surface/40 p-4 rounded-xl border border-border">
+      <div className="mb-12 bg-surface/40 p-5 rounded-xl border border-border">
         <h2 className="text-sm font-bold uppercase tracking-wider text-secondary mb-3">
           Fuentes y Detección en el Radar
         </h2>

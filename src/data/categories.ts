@@ -25,6 +25,22 @@ export const CATEGORIES: FilterOption<Category>[] = [
   { value: 'performance', label: 'Performance' },
 ];
 
+export const CATEGORY_ICONS: Record<Category, string> = {
+  música: '🎵',
+  arte: '🎨',
+  cine: '🎬',
+  teatro: '🎭',
+  fiesta: '⚡',
+  talleres: '🏺',
+  literatura: '📖',
+  comunidad: '🏛️',
+  gastronomía: '🍻',
+  bienestar: '🧘',
+  mercados: '🛍️',
+  comedia: '🎙️',
+  performance: '💃',
+};
+
 export const ZONES: FilterOption<Zone>[] = [
   { value: 'Centro', label: 'Centro' },
   { value: 'Laureles', label: 'Laureles' },
