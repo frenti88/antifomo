@@ -30,10 +30,10 @@ export default function ExplorarPage() {
   };
 
   return (
-    <main className="pb-24">
+    <div className="pb-24">
       <h1 className="sr-only">Explorar eventos en Medellín</h1>
 
-      <div className="sticky top-0 z-20 bg-bg border-b border-border">
+      <div className="sticky top-14 z-20 bg-bg/95 backdrop-blur-md border-b border-border transition-colors">
         <div className="max-w-3xl mx-auto flex flex-col sm:flex-row sm:items-center">
           <div className="flex-1">
             <SearchBar 
@@ -119,6 +119,6 @@ export default function ExplorarPage() {
         onFiltersChange={setFilter}
         eventCount={resultCount}
       />
-    </main>
+    </div>
   );
 }
