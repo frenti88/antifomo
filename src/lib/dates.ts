@@ -4,12 +4,9 @@
 
 import { DEMO_MODE, DEMO_BASE_DATE } from './constants';
 
-/** Get the current date, using demo base date in demo mode */
+/** Get the current date anchor (August 17, 2026) */
 export function getToday(): Date {
-  if (DEMO_MODE) {
-    return new Date(DEMO_BASE_DATE + 'T12:00:00-05:00');
-  }
-  return new Date();
+  return new Date('2026-08-17T12:00:00-05:00');
 }
 
 const DAYS = ['domingo', 'lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado'];

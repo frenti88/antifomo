@@ -2,7 +2,7 @@
 // AntiFOMO — Constants & Configuration
 // ─────────────────────────────────────────────
 
-export const DEMO_MODE = true;
+export const DEMO_MODE = false;
 export const DEMO_BASE_DATE = '2026-08-17';
 
 export const SITE_NAME = 'AntiFOMO';

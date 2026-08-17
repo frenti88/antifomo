@@ -1,8 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-
-const DEMO_MODE = true; 
+import { DEMO_MODE } from '@/lib/constants';
 
 export default function DemoBanner() {
   const [isVisible, setIsVisible] = useState(false);
@@ -14,7 +13,7 @@ export default function DemoBanner() {
     }
   }, []);
 
-  if (!isVisible || dismissed) return null;
+  if (!DEMO_MODE || !isVisible || dismissed) return null;
 
   return (
     <div 
