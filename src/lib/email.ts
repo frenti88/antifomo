@@ -2,7 +2,7 @@ import { Resend } from 'resend';
 
 const resendApiKey = process.env.RESEND_API_KEY;
 const adminEmail = process.env.ADMIN_NOTIFICATION_EMAIL || process.env.ADMIN_EMAIL || 'fredyarroyave@gmail.com';
-const fromEmail = process.env.FROM_EMAIL || 'AntiFOMO Radar <radar@antifomo.app>';
+const fromEmail = process.env.FROM_EMAIL || 'AntiFOMO Radar <onboarding@resend.dev>';
 
 const resend = resendApiKey ? new Resend(resendApiKey) : null;
 
