@@ -12,15 +12,15 @@ export function EventBadge({ type, className = '' }: EventBadgeProps) {
   
   switch (type) {
     case 'free':
-      return <span className={`${baseClasses} bg-accent text-black font-bold shadow-xs ${className}`}>Gratis</span>;
+      return <span title="Entrada libre / Sin costo" className={`${baseClasses} bg-accent text-black font-bold shadow-xs ${className}`}>Gratis</span>;
     case 'gem':
-      return <span className={`${baseClasses} border border-accent/80 text-text bg-accent/10 ${className}`}>◉ Joyita</span>;
+      return <span title="Joyita: Plan alternativo o espacio cultural independiente" className={`${baseClasses} border border-accent/80 text-text bg-accent/10 ${className}`}>◉ Joyita</span>;
     case 'newly-found':
-      return <span className={`${baseClasses} text-secondary bg-surface/50 border border-border/50 ${className}`}>◎ Recién encontrado</span>;
+      return <span title="Recién encontrado: Detectado e indexado por el radar" className={`${baseClasses} text-secondary bg-surface/50 border border-border/50 ${className}`}>◎ Recién encontrado</span>;
     case 'verified':
-      return <span className={`${baseClasses} bg-surface text-text border border-border ${className}`}>✓ Verificado</span>;
+      return <span title="Verificado con el organizador o espacio cultural oficial" className={`${baseClasses} bg-surface text-text border border-border ${className}`}>✓ Verificado</span>;
     case 'last-spots':
-      return <span className={`${baseClasses} bg-red-500/15 text-red-600 dark:text-red-400 border border-red-500/30 ${className}`}>Últimos cupos</span>;
+      return <span title="Últimos cupos disponibles reportados" className={`${baseClasses} bg-red-500/15 text-red-600 dark:text-red-400 border border-red-500/30 ${className}`}>Últimos cupos</span>;
     default:
       return null;
   }
