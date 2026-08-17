@@ -30,9 +30,9 @@ export default function EventDetailClient({ event }: { event: AntiFOMOEvent }) {
         </Link>
       </nav>
 
-      {/* Top Header Card */}
-      <div className="bg-surface/40 border border-border rounded-2xl p-6 mb-6">
-        {/* Category Pill + Status */}
+      {/* Main Header */}
+      <header className="pb-6 border-b border-border/70">
+        {/* Category Pill + Badges */}
         <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
           <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface border border-border text-xs font-bold uppercase tracking-wider text-text">
             <span aria-hidden="true">{categoryIcon}</span>
@@ -47,24 +47,25 @@ export default function EventDetailClient({ event }: { event: AntiFOMOEvent }) {
         </div>
 
         {/* Title */}
-        <h1 className="text-2xl sm:text-3xl font-extrabold mb-3 text-text leading-tight">
+        <h1 className="text-2xl sm:text-4xl font-extrabold text-text leading-tight tracking-tight mb-4">
           {event.title}
         </h1>
 
-        {/* Short Description */}
+        {/* Short Description / Lead */}
         {event.shortDescription && (
-          <p className="text-base sm:text-lg text-secondary leading-relaxed">
+          <p className="text-base sm:text-lg text-secondary leading-relaxed font-medium">
             {event.shortDescription}
           </p>
         )}
-      </div>
+      </header>
 
-      {/* Event Details Grid */}
-      <div className="space-y-4 mb-8 bg-surface/20 border border-border/70 rounded-xl p-5">
-        <div className="flex items-start gap-3.5">
+      {/* Key Details Strip */}
+      <section aria-label="Detalles clave" className="py-6 border-b border-border/70 grid grid-cols-1 sm:grid-cols-2 gap-5">
+        <div className="flex items-start gap-3">
           <span className="text-xl mt-0.5" aria-hidden="true">📅</span>
           <div>
-            <p className="font-semibold text-text capitalize">{formatDateFull(event.startDate)}</p>
+            <p className="text-xs font-bold uppercase tracking-wider text-secondary">Fecha y Hora</p>
+            <p className="font-semibold text-text capitalize text-base">{formatDateFull(event.startDate)}</p>
             <p className="text-secondary text-sm">
               {formatTime(event.startTime)}
               {event.endTime ? ` — ${formatTime(event.endTime)}` : ''}
@@ -72,58 +73,60 @@ export default function EventDetailClient({ event }: { event: AntiFOMOEvent }) {
           </div>
         </div>
 
-        <div className="flex items-start gap-3.5">
+        <div className="flex items-start gap-3">
           <span className="text-xl mt-0.5" aria-hidden="true">📍</span>
           <div>
-            <p className="font-semibold text-text">{event.venue}</p>
+            <p className="text-xs font-bold uppercase tracking-wider text-secondary">Lugar y Zona</p>
+            <p className="font-semibold text-text text-base">{event.venue}</p>
             <p className="text-secondary text-sm">{event.neighborhood} · {event.city}</p>
           </div>
         </div>
 
-        <div className="flex items-start gap-3.5">
+        <div className="flex items-start gap-3">
           <span className="text-xl mt-0.5" aria-hidden="true">💰</span>
           <div>
-            <p className={`font-bold ${event.priceType === 'free' ? 'text-black font-extrabold bg-[#FFDE21] px-2 py-0.5 rounded-md inline-block text-xs uppercase' : 'text-text'}`}>
+            <p className="text-xs font-bold uppercase tracking-wider text-secondary">Entrada</p>
+            <p className={`font-bold text-base ${event.priceType === 'free' ? 'text-black font-extrabold bg-[#D7FF3F] px-2 py-0.5 rounded-md inline-block text-xs uppercase mt-0.5' : 'text-text'}`}>
               {price}
             </p>
           </div>
         </div>
 
         {event.organizer && (
-          <div className="flex items-start gap-3.5">
+          <div className="flex items-start gap-3">
             <span className="text-xl mt-0.5" aria-hidden="true">👤</span>
             <div>
-              <p className="font-semibold text-text">{event.organizer}</p>
-              <p className="text-secondary text-xs">Organizador / Colectivo</p>
+              <p className="text-xs font-bold uppercase tracking-wider text-secondary">Organiza</p>
+              <p className="font-semibold text-text text-base">{event.organizer}</p>
             </div>
           </div>
         )}
-      </div>
+      </section>
 
-      {/* Long description */}
+      {/* Long Description (Prose) */}
       {event.longDescription && (
-        <>
-          <div className="text-base leading-relaxed text-text mb-8 whitespace-pre-line bg-surface/10 p-5 rounded-xl border border-border/50">
-            <h2 className="text-sm font-bold uppercase tracking-wider text-secondary mb-3">
-              Sobre este plan
-            </h2>
+        <section aria-label="Descripción completa" className="py-6 border-b border-border/70">
+          <h2 className="text-xs font-bold uppercase tracking-wider text-secondary mb-3">
+            Sobre este plan
+          </h2>
+          <div className="text-base sm:text-lg leading-relaxed text-text whitespace-pre-line font-normal">
             {event.longDescription}
           </div>
-        </>
+        </section>
       )}
 
-      {/* Source info */}
-      <div className="mb-12 bg-surface/40 p-5 rounded-xl border border-border">
-        <h2 className="text-sm font-bold uppercase tracking-wider text-secondary mb-3">
-          Fuentes y Detección en el Radar
+      {/* Verification & Radar Source */}
+      <section aria-label="Verificación de fuentes" className="py-6 mb-8">
+        <h2 className="text-xs font-bold uppercase tracking-wider text-secondary mb-3">
+          Verificación en el Radar
         </h2>
         <div className="mb-4">
           <EventSource sources={event.sources} interactive={true} />
         </div>
-        <ul className="text-xs text-secondary space-y-1.5 pt-2 border-t border-border/50">
+        <ul className="text-xs text-secondary space-y-1.5">
           {event.verified && (
             <li className="flex items-center gap-1.5 text-text font-medium">
-              <span className="text-[#FFDE21] font-bold">✓</span> Verificado con el organizador o espacio
+              <span className="text-[#D7FF3F] font-bold">✓</span> Verificado con el organizador o espacio
             </li>
           )}
           {event.sourceCount > 1 && (
@@ -133,11 +136,11 @@ export default function EventDetailClient({ event }: { event: AntiFOMOEvent }) {
           )}
           {event.lastCheckedAt && (
             <li className="flex items-center gap-1.5">
-              <span>⏱</span> Última comprobación: {new Date(event.lastCheckedAt).toLocaleTimeString('es-CO', { hour: '2-digit', minute: '2-digit' })} ({new Date(event.lastCheckedAt).toLocaleDateString('es-CO')})
+              <span>⏱</span> Última comprobación: {new Date(event.lastCheckedAt).toLocaleTimeString('es-CO', { hour: '2-digit', minute: '2-digit' })}
             </li>
           )}
         </ul>
-      </div>
+      </section>
 
       {/* Action Bar */}
       <div className="fixed bottom-16 lg:bottom-0 left-0 right-0 lg:static bg-bg/95 backdrop-blur-md border-t border-border p-4 z-40">
