@@ -35,7 +35,7 @@ export async function sendEventNotificationEmail(payload: EventEmailPayload) {
   } = payload;
 
   const subject = type === 'community_submission'
-    ? `🚨 Nuevo plan propuesto por la comunidad: ${title}`
+    ? `🚨 Nuevo plan propuesto en Medellín: ${title}`
     : `📡 Radar AntiFOMO: Nuevo evento detectado — ${title}`;
 
   const htmlContent = `
@@ -46,7 +46,7 @@ export async function sendEventNotificationEmail(payload: EventEmailPayload) {
       <style>
         body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: #0D0E11; color: #F4F4EE; margin: 0; padding: 24px; }
         .card { background-color: #17191E; border: 1px solid #282B33; border-radius: 16px; padding: 28px; max-width: 580px; margin: 0 auto; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
-        .logo { font-size: 20px; font-weight: 800; color: #F4F4EE; letter-spacing: 0.5px; margin-bottom: 20px; display: inline-block; }
+        .logo { font-size: 20px; font-weight: 800; color: #F4F4EE; letter-spacing: 0.5px; margin-bottom: 20px; display: inline-block; text-decoration: none; }
         .dot { color: #FFDE21; font-size: 22px; }
         .badge { display: inline-block; background-color: #FFDE21; color: #000000; font-size: 11px; font-weight: 800; padding: 4px 10px; border-radius: 20px; text-transform: uppercase; margin-bottom: 16px; }
         h1 { font-size: 22px; font-weight: 700; color: #FFFFFF; margin: 0 0 12px 0; line-height: 1.3; }
@@ -56,15 +56,15 @@ export async function sendEventNotificationEmail(payload: EventEmailPayload) {
         .detail-row:last-child { border-bottom: none; }
         .label { color: #A2A098; font-weight: 500; }
         .val { color: #F4F4EE; font-weight: 600; text-align: right; }
-        .btn { display: inline-block; background-color: #FFDE21; color: #000000; font-weight: 700; text-decoration: none; padding: 12px 24px; border-radius: 30px; font-size: 14px; text-align: center; }
-        .footer { font-size: 12px; color: #666; margin-top: 24px; text-align: center; }
+        .btn { display: inline-block; background-color: #FFDE21; color: #000000; font-weight: 800; text-decoration: none; padding: 14px 28px; border-radius: 30px; font-size: 14px; text-align: center; }
+        .footer { font-size: 12px; color: #77756E; margin-top: 24px; text-align: center; }
       </style>
     </head>
     <body>
       <div class="card">
-        <div class="logo">ANTIFOMO <span class="dot">◉</span></div>
+        <a href="https://antifomo-app.vercel.app" class="logo" target="_blank">ANTIFOMO <span class="dot">◉</span></a>
         <br />
-        <span class="badge">${type === 'community_submission' ? 'Propuesta Comunitaria' : 'Radar Automático'}</span>
+        <span class="badge">${type === 'community_submission' ? 'Plan Propuesto' : 'Radar AntiFOMO'}</span>
         <h1>${title}</h1>
         ${description ? `<p class="desc">${description}</p>` : ''}
         
@@ -88,18 +88,18 @@ export async function sendEventNotificationEmail(payload: EventEmailPayload) {
           ${sourceUrl ? `
           <div class="detail-row">
             <span class="label">🔗 Enlace de Origen</span>
-            <span class="val"><a href="${sourceUrl}" style="color: #FFDE21; text-decoration: underline;" target="_blank">Ver enlace original</a></span>
+            <span class="val"><a href="${sourceUrl}" style="color: #FFDE21; text-decoration: underline;" target="_blank">Ver fuente original</a></span>
           </div>
           ` : ''}
         </div>
 
-        <div style="text-align: center; margin-top: 20px;">
-          <a href="https://supabase.com/dashboard/project/hiadblaoxgfbfceiwqbo/editor" class="btn" target="_blank">
-            Revisar en Supabase →
+        <div style="text-align: center; margin-top: 24px;">
+          <a href="https://antifomo-app.vercel.app" class="btn" target="_blank">
+            Ver en el Radar AntiFOMO →
           </a>
         </div>
 
-        <p class="footer">Este es un aviso automático generado por el motor de eventos de AntiFOMO Medellín.</p>
+        <p class="footer">El radar de eventos culturales, independientes y alternativos de Medellín.</p>
       </div>
     </body>
     </html>
