@@ -68,10 +68,10 @@ export default function BottomNavigation() {
                 }`}
                 aria-current={isActive ? 'page' : undefined}
               >
-                <div className={isActive ? 'bg-accent text-text rounded-full p-1' : ''}>
+                <div className={isActive ? 'bg-accent text-black rounded-full p-1' : ''}>
                   {item.icon}
                 </div>
-                <span className={`text-[10px] uppercase tracking-wider ${isActive ? 'font-bold' : 'font-medium'}`}>{item.label}</span>
+                <span className={`text-[10px] uppercase tracking-wider ${isActive ? 'font-bold text-accent' : 'font-medium'}`}>{item.label}</span>
               </Link>
             </li>
           );

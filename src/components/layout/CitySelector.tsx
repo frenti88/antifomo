@@ -49,7 +49,7 @@ export default function CitySelector() {
       </button>
 
       {isOpen && (
-        <div className="absolute top-full left-1/2 -translate-x-1/2 mt-1 w-48 bg-bg border border-border rounded-lg shadow-lg overflow-hidden py-1 z-50">
+        <div className="absolute top-full left-1/2 -translate-x-1/2 mt-1 w-48 bg-surface border border-border rounded-lg shadow-xl overflow-hidden py-1 z-50">
           <ul role="menu">
             {CITIES.map((city) => (
               <li key={city.id} role="none">
