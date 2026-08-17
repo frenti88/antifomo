@@ -87,9 +87,14 @@ export default function ExplorarPage() {
               onClick={() => setFilter({ showGems: !filters.showGems })}
             />
             <FilterChip
-              label="Ciencia & Tech"
-              active={filters.category === 'ciencia-tecnologia'}
-              onClick={() => setFilter({ category: filters.category === 'ciencia-tecnologia' ? null : 'ciencia-tecnologia' })}
+              label="Ciencia"
+              active={filters.category === 'ciencia'}
+              onClick={() => setFilter({ category: filters.category === 'ciencia' ? null : 'ciencia' })}
+            />
+            <FilterChip
+              label="Tecnología"
+              active={filters.category === 'tecnología'}
+              onClick={() => setFilter({ category: filters.category === 'tecnología' ? null : 'tecnología' })}
             />
             {['música', 'arte', 'cine', 'fiesta', 'talleres'].map(cat => (
               <FilterChip

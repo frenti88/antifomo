@@ -20,7 +20,8 @@ export type Category =
   | 'mercados'
   | 'comedia'
   | 'performance'
-  | 'ciencia-tecnologia';
+  | 'ciencia'
+  | 'tecnología';
 
 export type Zone =
   | 'Centro'

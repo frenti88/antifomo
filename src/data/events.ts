@@ -2,7 +2,7 @@ import type { AntiFOMOEvent } from '@/lib/types';
 
 export const DEMO_EVENTS: AntiFOMOEvent[] = [
   {
-    "id": "ciencia-tech-01",
+    "id": "ciencia-01",
     "slug": "noche-de-astronomia-y-domo-360-planetario-medellin",
     "title": "Noche de Astronomía y Proyección Fulldome en el Domo 360°",
     "shortDescription": "Observación con telescopios, astrofotografía y viaje inmersivo por el cosmos en el Planetario de Medellín.",
@@ -14,7 +14,7 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     "city": "Medellín",
     "latitude": 6.2711,
     "longitude": -75.5661,
-    "category": "ciencia-tecnologia",
+    "category": "ciencia",
     "priceType": "paid",
     "priceMin": 24000,
     "currency": "COP",
@@ -42,202 +42,7 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     "score": 98
   },
   {
-    "id": "ciencia-tech-02",
-    "slug": "conversatorio-inteligencia-artificial-y-datos-abiertos-parque-explora",
-    "title": "Inteligencia Artificial y Datos Abiertos para la Ciudad",
-    "shortDescription": "Conversatorio sobre modelos de lenguaje, ética algorítmica y ciencia de datos ciudadana en el Exploratorio.",
-    "longDescription": "El Exploratorio de Parque Explora invita a investigadores, tecnólogos y ciudadanía a debatir el impacto de los sistemas de Inteligencia Artificial generativa en la cultura, la toma de decisiones urbanas y la soberanía tecnológica. Se presentarán casos reales de análisis de datos abiertos en Medellín y herramientas libres para experimentación.",
-    "startDate": "2026-08-18",
-    "startTime": "17:00",
-    "venue": "Exploratorio — Parque Explora",
-    "neighborhood": "Aranjuez",
-    "city": "Medellín",
-    "latitude": 6.2705,
-    "longitude": -75.5652,
-    "category": "ciencia-tecnologia",
-    "priceType": "free",
-    "currency": "COP",
-    "organizer": "Exploratorio Taller Público",
-    "sources": [
-      {
-        "type": "web",
-        "label": "Exploratorio Parque Explora",
-        "url": "https://www.parqueexplora.org/exploratorio"
-      }
-    ],
-    "sourceCount": 2,
-    "verified": true,
-    "isGem": true,
-    "isNewlyFound": true,
-    "detectedAt": "2026-08-17T12:30:00-05:00",
-    "lastCheckedAt": "2026-08-17T17:00:00-05:00",
-    "tags": [
-      "inteligencia artificial",
-      "datos abiertos",
-      "software libre",
-      "explora"
-    ],
-    "score": 97
-  },
-  {
-    "id": "ciencia-tech-03",
-    "slug": "meetup-python-ai-agentes-autonomos-rutan",
-    "title": "Meetup Python Medellín: Agentes Autónomos y Modelos Locales",
-    "shortDescription": "Charlas técnicas de desarrollo con Python, LLMs locales y despliegue de agentes en el Complejo Ruta N.",
-    "longDescription": "Encuentro mensual de la comunidad de Python y Machine Learning de Medellín. En esta edición exploraremos la construcción de agentes autónomos con herramientas open-source, ejecución de modelos locales y optimización de pipelines de datos en servidores de alto rendimiento. Espacio abierto para networking y preguntas y respuestas.",
-    "startDate": "2026-08-19",
-    "startTime": "18:30",
-    "venue": "Complejo Ruta N (Auditorio Principal)",
-    "neighborhood": "Centro",
-    "city": "Medellín",
-    "latitude": 6.2647,
-    "longitude": -75.5681,
-    "category": "ciencia-tecnologia",
-    "priceType": "free",
-    "currency": "COP",
-    "organizer": "Python Medellín & Ruta N",
-    "sources": [
-      {
-        "type": "web",
-        "label": "Ruta N Medellín",
-        "url": "https://www.rutanmedellin.org"
-      }
-    ],
-    "sourceCount": 3,
-    "verified": true,
-    "isGem": false,
-    "isNewlyFound": true,
-    "detectedAt": "2026-08-17T13:00:00-05:00",
-    "lastCheckedAt": "2026-08-17T17:00:00-05:00",
-    "tags": [
-      "python",
-      "inteligencia artificial",
-      "ruta n",
-      "programacion",
-      "tech"
-    ],
-    "score": 95
-  },
-  {
-    "id": "ciencia-tech-04",
-    "slug": "taller-fabricacion-digital-e-impresion-3d-fablab",
-    "title": "Taller Práctico de Fabricación Digital e Impresión 3D",
-    "shortDescription": "Aprende diseño paramétrico en CAD, corte láser y manejo de impresoras 3D en el laboratorio FabLab.",
-    "longDescription": "Sesión intensiva para aprender a prototipar objetos físicos utilizando tecnologías de manufactura aditiva y corte por control numérico. Desde la concepción en software CAD paramétrico hasta la calibración y extrusión en impresoras FDM y SLA. Cupos limitados para garantizar estaciones individuales de trabajo.",
-    "startDate": "2026-08-20",
-    "startTime": "15:00",
-    "venue": "FabLab Medellín / ITM Boston",
-    "neighborhood": "Centro",
-    "city": "Medellín",
-    "latitude": 6.2425,
-    "longitude": -75.5562,
-    "category": "ciencia-tecnologia",
-    "priceType": "free",
-    "currency": "COP",
-    "organizer": "FabLab Medellín",
-    "sources": [
-      {
-        "type": "web",
-        "label": "FabLab Medellín",
-        "url": "https://fablabmedellin.org"
-      }
-    ],
-    "sourceCount": 2,
-    "verified": true,
-    "isGem": true,
-    "isNewlyFound": false,
-    "detectedAt": "2026-08-17T10:00:00-05:00",
-    "lastCheckedAt": "2026-08-17T17:00:00-05:00",
-    "tags": [
-      "impresion 3d",
-      "fabricacion digital",
-      "maker",
-      "corte laser",
-      "tecnologia"
-    ],
-    "score": 94
-  },
-  {
-    "id": "ciencia-tech-05",
-    "slug": "creative-coding-shaders-glsl-arte-generativo-casa-umbral",
-    "title": "Laboratorio de Código Creativo y Shaders GLSL",
-    "shortDescription": "Taller de programación gráfica interactiva y matemáticas visuales para artistas digitales y desarrolladores.",
-    "longDescription": "Aprende a programar la GPU directamente con fragment shaders en GLSL y JavaScript (Three.js/p5.js). Exploraremos algoritmos de ruido Simplex, fractales de Mandelbrot y deformaciones de mallas poligonales en tiempo real para visuales de directo y proyecciones mapeadas. No requiere matemáticas avanzadas.",
-    "startDate": "2026-08-21",
-    "startTime": "18:00",
-    "venue": "Casa Umbral",
-    "neighborhood": "Centro",
-    "city": "Medellín",
-    "latitude": 6.2476,
-    "longitude": -75.5658,
-    "category": "ciencia-tecnologia",
-    "priceType": "paid",
-    "priceMin": 30000,
-    "currency": "COP",
-    "organizer": "Colectivo Código y Arte Medellín",
-    "sources": [
-      {
-        "type": "instagram",
-        "label": "Instagram @casaumbral",
-        "url": "https://www.instagram.com/casaumbral/"
-      }
-    ],
-    "sourceCount": 2,
-    "verified": true,
-    "isGem": true,
-    "isNewlyFound": true,
-    "detectedAt": "2026-08-17T14:00:00-05:00",
-    "lastCheckedAt": "2026-08-17T17:00:00-05:00",
-    "tags": [
-      "creative coding",
-      "glsl",
-      "arte generativo",
-      "programacion",
-      "shaders"
-    ],
-    "score": 96
-  },
-  {
-    "id": "ciencia-tech-06",
-    "slug": "noche-de-robotica-educativa-y-drones-laureles",
-    "title": "Demostración de Drones Autónomos y Robótica Abierta",
-    "shortDescription": "Showcase de robots bípedos, controladores de vuelo DIY y visión por computador en Laureles.",
-    "longDescription": "Una tarde-noche interactiva donde ingenieros, makers y entusiastas muestran sus proyectos de robótica móvil, vehículos aéreos no tripulados configurados con ArduPilot y sistemas de navegación autónoma por visión artificial (OpenCV). Actividad apta para todas las edades.",
-    "startDate": "2026-08-22",
-    "startTime": "16:00",
-    "venue": "MakerSpace Laureles",
-    "neighborhood": "Laureles",
-    "city": "Medellín",
-    "latitude": 6.2452,
-    "longitude": -75.5921,
-    "category": "ciencia-tecnologia",
-    "priceType": "free",
-    "currency": "COP",
-    "organizer": "Club de Robótica Antioquia",
-    "sources": [
-      {
-        "type": "web",
-        "label": "MakerSpace Laureles",
-        "url": "https://makerspacemedellin.co"
-      }
-    ],
-    "sourceCount": 2,
-    "verified": true,
-    "isGem": false,
-    "isNewlyFound": false,
-    "detectedAt": "2026-08-17T11:00:00-05:00",
-    "lastCheckedAt": "2026-08-17T17:00:00-05:00",
-    "tags": [
-      "robotica",
-      "drones",
-      "makerspace",
-      "laureles",
-      "ingenieria"
-    ],
-    "score": 92
-  },
-  {
-    "id": "ciencia-tech-07",
+    "id": "ciencia-02",
     "slug": "simposio-biotecnologia-hongos-y-biomateriales-udea",
     "title": "Simposio de Biotecnología Fúngica y Biomateriales del Futuro",
     "shortDescription": "Investigación sobre micelio como sustituto ecológico del plástico y cuero sintético en la UdeA.",
@@ -249,7 +54,7 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     "city": "Medellín",
     "latitude": 6.2635,
     "longitude": -75.5689,
-    "category": "ciencia-tecnologia",
+    "category": "ciencia",
     "priceType": "free",
     "currency": "COP",
     "organizer": "Grupo de Biotecnología y Materiales UdeA",
@@ -276,7 +81,283 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     "score": 98
   },
   {
-    "id": "ciencia-tech-08",
+    "id": "ciencia-03",
+    "slug": "observacion-solar-h-alfa-parque-explora",
+    "title": "Observación Solar con Telescopios de Hidrógeno Alfa",
+    "shortDescription": "Visualización de llamaradas solares, manchas y granulaciones en la plaza abierta de Parque Explora.",
+    "longDescription": "Taller al aire libre de divulgación astronómica en el que los asistentes observan la cromosfera solar en tiempo real utilizando filtros H-Alfa de banda estrecha. Divulgadores científicos explican la física de las eyecciones de masa coronal y el ciclo solar de 11 años.",
+    "startDate": "2026-08-20",
+    "startTime": "11:00",
+    "venue": "Plaza Pública Parque Explora",
+    "neighborhood": "Aranjuez",
+    "city": "Medellín",
+    "latitude": 6.2708,
+    "longitude": -75.5658,
+    "category": "ciencia",
+    "priceType": "free",
+    "currency": "COP",
+    "organizer": "Sociedad Julio Garavito de Astronomía",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Parque Explora",
+        "url": "https://www.parqueexplora.org"
+      }
+    ],
+    "sourceCount": 2,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T15:00:00-05:00",
+    "lastCheckedAt": "2026-08-17T17:00:00-05:00",
+    "tags": [
+      "astronomia",
+      "sol",
+      "telescopios",
+      "ciencia",
+      "explora"
+    ],
+    "score": 95
+  },
+  {
+    "id": "ciencia-04",
+    "slug": "coloquio-neurociencia-memoria-y-lenguaje-udea",
+    "title": "Coloquio de Neurociencia, Memoria y Plasticidad Cerebral",
+    "shortDescription": "Debate científico sobre neuroplasticidad, sinapsis y cómo el cerebro procesa el lenguaje y la música.",
+    "longDescription": "Encuentro de divulgación neurocientífica en el auditorio de la Facultad de Medicina. Investigadores de neurobiología exponen sobre la formación de recuerdos, la recuperación funcional tras lesiones y el impacto de los patrones rítmicos en la corteza auditiva.",
+    "startDate": "2026-08-22",
+    "startTime": "14:30",
+    "venue": "Facultad de Medicina — UdeA",
+    "neighborhood": "Centro",
+    "city": "Medellín",
+    "latitude": 6.2625,
+    "longitude": -75.567,
+    "category": "ciencia",
+    "priceType": "free",
+    "currency": "COP",
+    "organizer": "Grupo de Neurociencias de Antioquia (GNA)",
+    "sources": [
+      {
+        "type": "web",
+        "label": "UdeA Medicina",
+        "url": "https://www.udea.edu.co"
+      }
+    ],
+    "sourceCount": 2,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": false,
+    "detectedAt": "2026-08-17T14:00:00-05:00",
+    "lastCheckedAt": "2026-08-17T17:00:00-05:00",
+    "tags": [
+      "neurociencia",
+      "cerebro",
+      "medicina",
+      "udea",
+      "ciencia"
+    ],
+    "score": 94
+  },
+  {
+    "id": "tech-01",
+    "slug": "conversatorio-inteligencia-artificial-y-datos-abiertos-parque-explora",
+    "title": "Inteligencia Artificial y Datos Abiertos para la Ciudad",
+    "shortDescription": "Conversatorio sobre modelos de lenguaje, ética algorítmica y ciencia de datos ciudadana en el Exploratorio.",
+    "longDescription": "El Exploratorio de Parque Explora invita a investigadores, tecnólogos y ciudadanía a debatir el impacto de los sistemas de Inteligencia Artificial generativa en la cultura, la toma de decisiones urbanas y la soberanía tecnológica. Se presentarán casos reales de análisis de datos abiertos en Medellín y herramientas libres para experimentación.",
+    "startDate": "2026-08-18",
+    "startTime": "17:00",
+    "venue": "Exploratorio — Parque Explora",
+    "neighborhood": "Aranjuez",
+    "city": "Medellín",
+    "latitude": 6.2705,
+    "longitude": -75.5652,
+    "category": "tecnología",
+    "priceType": "free",
+    "currency": "COP",
+    "organizer": "Exploratorio Taller Público",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Exploratorio Parque Explora",
+        "url": "https://www.parqueexplora.org/exploratorio"
+      }
+    ],
+    "sourceCount": 2,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T12:30:00-05:00",
+    "lastCheckedAt": "2026-08-17T17:00:00-05:00",
+    "tags": [
+      "inteligencia artificial",
+      "datos abiertos",
+      "software libre",
+      "explora",
+      "tecnologia"
+    ],
+    "score": 97
+  },
+  {
+    "id": "tech-02",
+    "slug": "meetup-python-ai-agentes-autonomos-rutan",
+    "title": "Meetup Python Medellín: Agentes Autónomos y Modelos Locales",
+    "shortDescription": "Charlas técnicas de desarrollo con Python, LLMs locales y despliegue de agentes en el Complejo Ruta N.",
+    "longDescription": "Encuentro mensual de la comunidad de Python y Machine Learning de Medellín. En esta edición exploraremos la construcción de agentes autónomos con herramientas open-source, ejecución de modelos locales y optimización de pipelines de datos en servidores de alto rendimiento. Espacio abierto para networking y preguntas y respuestas.",
+    "startDate": "2026-08-19",
+    "startTime": "18:30",
+    "venue": "Complejo Ruta N (Auditorio Principal)",
+    "neighborhood": "Centro",
+    "city": "Medellín",
+    "latitude": 6.2647,
+    "longitude": -75.5681,
+    "category": "tecnología",
+    "priceType": "free",
+    "currency": "COP",
+    "organizer": "Python Medellín & Ruta N",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Ruta N Medellín",
+        "url": "https://www.rutanmedellin.org"
+      }
+    ],
+    "sourceCount": 3,
+    "verified": true,
+    "isGem": false,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T13:00:00-05:00",
+    "lastCheckedAt": "2026-08-17T17:00:00-05:00",
+    "tags": [
+      "python",
+      "inteligencia artificial",
+      "ruta n",
+      "programacion",
+      "tecnologia"
+    ],
+    "score": 95
+  },
+  {
+    "id": "tech-03",
+    "slug": "taller-fabricacion-digital-e-impresion-3d-fablab",
+    "title": "Taller Práctico de Fabricación Digital e Impresión 3D",
+    "shortDescription": "Aprende diseño paramétrico en CAD, corte láser y manejo de impresoras 3D en el laboratorio FabLab.",
+    "longDescription": "Sesión intensiva para aprender a prototipar objetos físicos utilizando tecnologías de manufactura aditiva y corte por control numérico. Desde la concepción en software CAD paramétrico hasta la calibración y extrusión en impresoras FDM y SLA. Cupos limitados para garantizar estaciones individuales de trabajo.",
+    "startDate": "2026-08-20",
+    "startTime": "15:00",
+    "venue": "FabLab Medellín / ITM Boston",
+    "neighborhood": "Centro",
+    "city": "Medellín",
+    "latitude": 6.2425,
+    "longitude": -75.5562,
+    "category": "tecnología",
+    "priceType": "free",
+    "currency": "COP",
+    "organizer": "FabLab Medellín",
+    "sources": [
+      {
+        "type": "web",
+        "label": "FabLab Medellín",
+        "url": "https://fablabmedellin.org"
+      }
+    ],
+    "sourceCount": 2,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": false,
+    "detectedAt": "2026-08-17T10:00:00-05:00",
+    "lastCheckedAt": "2026-08-17T17:00:00-05:00",
+    "tags": [
+      "impresion 3d",
+      "fabricacion digital",
+      "maker",
+      "corte laser",
+      "tecnologia"
+    ],
+    "score": 94
+  },
+  {
+    "id": "tech-04",
+    "slug": "creative-coding-shaders-glsl-arte-generativo-casa-umbral",
+    "title": "Laboratorio de Código Creativo y Shaders GLSL",
+    "shortDescription": "Taller de programación gráfica interactiva y matemáticas visuales para artistas digitales y desarrolladores.",
+    "longDescription": "Aprende a programar la GPU directamente con fragment shaders en GLSL y JavaScript (Three.js/p5.js). Exploraremos algoritmos de ruido Simplex, fractales de Mandelbrot y deformaciones de mallas poligonales en tiempo real para visuales de directo y proyecciones mapeadas. No requiere matemáticas avanzadas.",
+    "startDate": "2026-08-21",
+    "startTime": "18:00",
+    "venue": "Casa Umbral",
+    "neighborhood": "Centro",
+    "city": "Medellín",
+    "latitude": 6.2476,
+    "longitude": -75.5658,
+    "category": "tecnología",
+    "priceType": "paid",
+    "priceMin": 30000,
+    "currency": "COP",
+    "organizer": "Colectivo Código y Arte Medellín",
+    "sources": [
+      {
+        "type": "instagram",
+        "label": "Instagram @casaumbral",
+        "url": "https://www.instagram.com/casaumbral/"
+      }
+    ],
+    "sourceCount": 2,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T14:00:00-05:00",
+    "lastCheckedAt": "2026-08-17T17:00:00-05:00",
+    "tags": [
+      "creative coding",
+      "glsl",
+      "arte generativo",
+      "programacion",
+      "shaders",
+      "tecnologia"
+    ],
+    "score": 96
+  },
+  {
+    "id": "tech-05",
+    "slug": "noche-de-robotica-educativa-y-drones-laureles",
+    "title": "Demostración de Drones Autónomos y Robótica Abierta",
+    "shortDescription": "Showcase de robots bípedos, controladores de vuelo DIY y visión por computador en Laureles.",
+    "longDescription": "Una tarde-noche interactiva donde ingenieros, makers y entusiastas muestran sus proyectos de robótica móvil, vehículos aéreos no tripulados configurados con ArduPilot y sistemas de navegación autónoma por visión artificial (OpenCV). Actividad apta para todas las edades.",
+    "startDate": "2026-08-22",
+    "startTime": "16:00",
+    "venue": "MakerSpace Laureles",
+    "neighborhood": "Laureles",
+    "city": "Medellín",
+    "latitude": 6.2452,
+    "longitude": -75.5921,
+    "category": "tecnología",
+    "priceType": "free",
+    "currency": "COP",
+    "organizer": "Club de Robótica Antioquia",
+    "sources": [
+      {
+        "type": "web",
+        "label": "MakerSpace Laureles",
+        "url": "https://makerspacemedellin.co"
+      }
+    ],
+    "sourceCount": 2,
+    "verified": true,
+    "isGem": false,
+    "isNewlyFound": false,
+    "detectedAt": "2026-08-17T11:00:00-05:00",
+    "lastCheckedAt": "2026-08-17T17:00:00-05:00",
+    "tags": [
+      "robotica",
+      "drones",
+      "makerspace",
+      "laureles",
+      "ingenieria",
+      "tecnologia"
+    ],
+    "score": 92
+  },
+  {
+    "id": "tech-06",
     "slug": "hackathon-de-hardware-esp32-iot-rionegro-valle-de-san-nicolas",
     "title": "Encuentro IoT & Hardware ESP32 para el Agro en Rionegro",
     "shortDescription": "Sensores de suelo, estaciones meteorológicas LoRaWAN y telemetría rural en el Oriente Antioqueño.",
@@ -288,7 +369,7 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     "city": "Rionegro",
     "latitude": 6.1551,
     "longitude": -75.3736,
-    "category": "ciencia-tecnologia",
+    "category": "tecnología",
     "priceType": "free",
     "currency": "COP",
     "organizer": "Comunidad Tech Oriente Antioqueño",
@@ -311,7 +392,8 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
       "esp32",
       "rionegro",
       "oriente",
-      "agricultura tech"
+      "agricultura tech",
+      "tecnologia"
     ],
     "score": 95
   },

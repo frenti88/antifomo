@@ -32,8 +32,11 @@ export default function HomePage() {
   // "Para ti" events
   const paraTiEvents = [...DEMO_EVENTS].sort((a, b) => b.score - a.score).slice(0, 4);
   
-  // "Ciencia & Tech" events
-  const cienciaTechEvents = DEMO_EVENTS.filter(e => e.category === 'ciencia-tecnologia').slice(0, 4);
+  // "Ciencia" events
+  const cienciaEvents = DEMO_EVENTS.filter(e => e.category === 'ciencia').slice(0, 4);
+
+  // "Tecnología" events
+  const tecnologiaEvents = DEMO_EVENTS.filter(e => e.category === 'tecnología').slice(0, 4);
 
   // "Esta noche" events
   const estaNocheEvents = DEMO_EVENTS.filter(e => e.tags?.includes('noche') || (e.startTime >= '18:00')).slice(0, 4);
@@ -76,9 +79,14 @@ export default function HomePage() {
               onClick={() => setFilter({ showGems: !filters.showGems })}
             />
             <FilterChip
-              label="Ciencia & Tech"
-              active={filters.category === 'ciencia-tecnologia'}
-              onClick={() => setFilter({ category: filters.category === 'ciencia-tecnologia' ? null : 'ciencia-tecnologia' })}
+              label="Ciencia"
+              active={filters.category === 'ciencia'}
+              onClick={() => setFilter({ category: filters.category === 'ciencia' ? null : 'ciencia' })}
+            />
+            <FilterChip
+              label="Tecnología"
+              active={filters.category === 'tecnología'}
+              onClick={() => setFilter({ category: filters.category === 'tecnología' ? null : 'tecnología' })}
             />
             {['música', 'arte', 'cine', 'fiesta', 'talleres'].map(cat => (
               <FilterChip
@@ -124,9 +132,17 @@ export default function HomePage() {
               </div>
             </EditorialSection>
 
-            <EditorialSection title="Ciencia & Tecnología" subtitle="Astronomía, inteligencia artificial, robótica y código creativo.">
+            <EditorialSection title="Ciencia" subtitle="Astronomía, biotecnología, neurociencias y divulgación científica.">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
-                {cienciaTechEvents.map(event => (
+                {cienciaEvents.map(event => (
+                  <EventCard key={event.id} event={event} />
+                ))}
+              </div>
+            </EditorialSection>
+
+            <EditorialSection title="Tecnología" subtitle="Inteligencia artificial, código abierto, robótica y hardware libre.">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                {tecnologiaEvents.map(event => (
                   <EventCard key={event.id} event={event} />
                 ))}
               </div>
