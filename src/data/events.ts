@@ -14249,5 +14249,733 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
       "mamm"
     ],
     "score": 94
+  },
+  {
+    "id": "infolocal-01",
+    "slug": "mercado-parisino-en-el-castillo",
+    "title": "Mercado Parisino en el Museo El Castillo",
+    "shortDescription": "Gastronomía francesa, arte, diseño independiente y picnic en los jardines del castillo.",
+    "longDescription": "El Museo El Castillo acoge el Mercado Parisino con stands de repostería francesa, quesos artesanales, arte, música en vivo y diseño en sus jardines patrimoniales.",
+    "startDate": "2026-08-17",
+    "startTime": "11:00",
+    "endTime": "18:00",
+    "venue": "Museo El Castillo",
+    "neighborhood": "El Poblado",
+    "city": "Medellín",
+    "latitude": 6.1932,
+    "longitude": -75.5768,
+    "category": "mercados",
+    "priceType": "paid",
+    "priceMin": 22000,
+    "priceMax": 22000,
+    "currency": "COP",
+    "organizer": "Museo El Castillo",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Infolocal Comfenalco",
+        "url": "https://infolocal.comfenalcoantioquia.com/index.php/agenda/mercado-parisino-2026"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T15:50:00-05:00",
+    "lastCheckedAt": "2026-08-17T15:50:00-05:00",
+    "tags": [
+      "mercado",
+      "el castillo",
+      "gastronomía",
+      "el poblado",
+      "picnic"
+    ],
+    "score": 95
+  },
+  {
+    "id": "infolocal-02",
+    "slug": "35-fiestas-industria-comercio-cultura-itagui",
+    "title": "35.ᵃ Fiestas de la Industria, el Comercio y la Cultura de Itagüí",
+    "shortDescription": "Gran festival municipal con conciertos al aire libre, muestras gastronómicas y comparsas.",
+    "longDescription": "La fiesta tradicional de Itagüí celebra su 35.ª edición con tarimas musicales, muestras artesanales, desfiles y actividades culturales gratuitas para toda la familia.",
+    "startDate": "2026-08-17",
+    "startTime": "14:00",
+    "endTime": "23:00",
+    "venue": "Parque Principal de Itagüí",
+    "neighborhood": "Itagüí",
+    "city": "Itagüí",
+    "latitude": 6.1728,
+    "longitude": -75.6094,
+    "category": "fiesta",
+    "priceType": "free",
+    "currency": "COP",
+    "organizer": "Alcaldía de Itagüí & Comfenalco",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Infolocal Comfenalco",
+        "url": "https://infolocal.comfenalcoantioquia.com/index.php/agenda/fiestas-industria-comercio-2026"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": false,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T15:50:00-05:00",
+    "lastCheckedAt": "2026-08-17T15:50:00-05:00",
+    "tags": [
+      "fiestas de itagüí",
+      "conciertos",
+      "cultura",
+      "gratis"
+    ],
+    "score": 92
+  },
+  {
+    "id": "infolocal-03",
+    "slug": "la-hora-del-cuento-teatro-barra-del-silencio",
+    "title": "La Hora del Cuento en el Teatro Barra del Silencio",
+    "shortDescription": "Cuentacuentos y narración oral infantil en una emblemática sala de Prado.",
+    "longDescription": "Espacio de narración oral escénica para niños y familias. Relatos fantásticos, fábulas y literatura infantil compartida en la intimidad del Teatro Barra del Silencio.",
+    "startDate": "2026-08-18",
+    "startTime": "16:00",
+    "endTime": "17:30",
+    "venue": "Teatro Barra del Silencio",
+    "neighborhood": "Centro",
+    "city": "Medellín",
+    "latitude": 6.2558,
+    "longitude": -75.5642,
+    "category": "literatura",
+    "priceType": "free",
+    "currency": "COP",
+    "organizer": "Teatro Barra del Silencio",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Infolocal Comfenalco",
+        "url": "https://infolocal.comfenalcoantioquia.com/index.php/agenda/hora-cuento-teatro-barra-3"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": false,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T15:50:00-05:00",
+    "lastCheckedAt": "2026-08-17T15:50:00-05:00",
+    "tags": [
+      "cuentacuentos",
+      "narración oral",
+      "barra del silencio",
+      "prado",
+      "gratis"
+    ],
+    "score": 89
+  },
+  {
+    "id": "infolocal-04",
+    "slug": "club-de-lectura-informacion-al-dia-comfenalco-la-playa",
+    "title": "Club de Lectura: Información al Día (Comfenalco La Playa)",
+    "shortDescription": "Tertulia semanal de análisis de prensa, crónicas y actualidad en El Puerto.",
+    "longDescription": "Encuentro participativo para debatir artículos de opinión, crónicas periodísticas y temas de coyuntura cultural en la Biblioteca Comfenalco La Playa (Piso 2, El Puerto).",
+    "startDate": "2026-08-18",
+    "startTime": "14:00",
+    "endTime": "16:00",
+    "venue": "Club Comfenalco La Playa (El Puerto, Piso 2)",
+    "neighborhood": "Centro",
+    "city": "Medellín",
+    "latitude": 6.2492,
+    "longitude": -75.5658,
+    "category": "literatura",
+    "priceType": "free",
+    "currency": "COP",
+    "organizer": "Comfenalco Antioquia Bibliotecas",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Infolocal Comfenalco",
+        "url": "https://infolocal.comfenalcoantioquia.com/index.php/agenda/informacion-al-dia-2"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": false,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T15:50:00-05:00",
+    "lastCheckedAt": "2026-08-17T15:50:00-05:00",
+    "tags": [
+      "club de lectura",
+      "comfenalco la playa",
+      "prensa",
+      "centro",
+      "gratis"
+    ],
+    "score": 88
+  },
+  {
+    "id": "infolocal-05",
+    "slug": "festival-lorca-en-pequeno-teatro",
+    "title": "Festival Lorca en Pequeño Teatro de Medellín",
+    "shortDescription": "Temporada teatral dedicada a las obras cumbres y poesías de Federico García Lorca.",
+    "longDescription": "El Pequeño Teatro presenta su tradicional Festival Lorca con montajes de Bodas de Sangre, La Casa de Bernarda Alba y Yerma, bajo la dirección de Rodrigo Saldarriaga. Entrada libre con aporte voluntario.",
+    "startDate": "2026-08-19",
+    "startTime": "19:30",
+    "endTime": "21:30",
+    "venue": "Pequeño Teatro de Medellín",
+    "neighborhood": "Centro",
+    "city": "Medellín",
+    "latitude": 6.2505,
+    "longitude": -75.5608,
+    "category": "teatro",
+    "priceType": "free",
+    "currency": "COP",
+    "organizer": "Pequeño Teatro de Medellín",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Infolocal Comfenalco",
+        "url": "https://infolocal.comfenalcoantioquia.com/index.php/agenda/festival-lorca"
+      }
+    ],
+    "sourceCount": 2,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T15:50:00-05:00",
+    "lastCheckedAt": "2026-08-17T15:50:00-05:00",
+    "tags": [
+      "garcía lorca",
+      "pequeño teatro",
+      "teatro clásico",
+      "centro",
+      "gratis"
+    ],
+    "score": 97
+  },
+  {
+    "id": "infolocal-06",
+    "slug": "jero-munoz-trio-el-club-del-jazz",
+    "title": "Jero Muñoz Trío en Concierto (El Club del Jazz)",
+    "shortDescription": "Jazz moderno, improvisación y composiciones originales en formato trío.",
+    "longDescription": "El guitarrista y compositor Jero Muñoz lidera su trío de jazz acústico y eléctrico en el ambiente bohemio del Centro Cultural El Club del Jazz Medellín.",
+    "startDate": "2026-08-19",
+    "startTime": "20:00",
+    "endTime": "22:30",
+    "venue": "Centro Cultural El Club del Jazz",
+    "neighborhood": "Laureles",
+    "city": "Medellín",
+    "latitude": 6.2468,
+    "longitude": -75.5891,
+    "category": "música",
+    "priceType": "paid",
+    "priceMin": 40000,
+    "priceMax": 40000,
+    "currency": "COP",
+    "organizer": "El Club del Jazz Medellín",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Infolocal Comfenalco",
+        "url": "https://infolocal.comfenalcoantioquia.com/index.php/agenda/jero-munoz-trio"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T15:50:00-05:00",
+    "lastCheckedAt": "2026-08-17T15:50:00-05:00",
+    "tags": [
+      "jazz en vivo",
+      "el club del jazz",
+      "laureles",
+      "jero muñoz"
+    ],
+    "score": 94
+  },
+  {
+    "id": "infolocal-07",
+    "slug": "el-duende-del-circo-teatro-oficina-central-suenos",
+    "title": "Obra de Teatro: \"El Duende del Circo\"",
+    "shortDescription": "Montaje de magia, títeres y clown para público familiar en Jesús Nazareno.",
+    "longDescription": "La emblemática compañía Oficina Central de los Sueños presenta una historia fantástica sobre duendes, equilibristas y la magia del circo ambulante. Entrada libre con inscripción previa.",
+    "startDate": "2026-08-19",
+    "startTime": "16:00",
+    "endTime": "17:30",
+    "venue": "Teatro Oficina Central de los Sueños",
+    "neighborhood": "Centro",
+    "city": "Medellín",
+    "latitude": 6.2571,
+    "longitude": -75.5684,
+    "category": "teatro",
+    "priceType": "free",
+    "currency": "COP",
+    "organizer": "Oficina Central de los Sueños",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Infolocal Comfenalco",
+        "url": "https://infolocal.comfenalcoantioquia.com/index.php/agenda/el-duende-del-circo-2"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": false,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T15:50:00-05:00",
+    "lastCheckedAt": "2026-08-17T15:50:00-05:00",
+    "tags": [
+      "teatro infantil",
+      "circo",
+      "oficina central de los sueños",
+      "gratis"
+    ],
+    "score": 91
+  },
+  {
+    "id": "infolocal-08",
+    "slug": "josefina-y-sus-libros-agite-teatro",
+    "title": "Obra de Títeres: \"Josefina y sus libros\" (Agité Teatro)",
+    "shortDescription": "Espectáculo escénico sobre el amor por la lectura, la imaginación y los libros vivos.",
+    "longDescription": "Josefina descubre que los libros de su abuelo cobran vida propia cada vez que se abren sus páginas. Una tierna obra de títeres de mesa en la Sala Agité Teatro.",
+    "startDate": "2026-08-19",
+    "startTime": "11:00",
+    "endTime": "12:15",
+    "venue": "Sala Agité Teatro",
+    "neighborhood": "Centro",
+    "city": "Medellín",
+    "latitude": 6.2512,
+    "longitude": -75.5631,
+    "category": "teatro",
+    "priceType": "free",
+    "currency": "COP",
+    "organizer": "Agité Teatro",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Infolocal Comfenalco",
+        "url": "https://infolocal.comfenalcoantioquia.com/index.php/agenda/josefina-y-sus-libros"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": false,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T15:50:00-05:00",
+    "lastCheckedAt": "2026-08-17T15:50:00-05:00",
+    "tags": [
+      "títeres",
+      "agité teatro",
+      "infantil",
+      "libros",
+      "gratis"
+    ],
+    "score": 89
+  },
+  {
+    "id": "infolocal-09",
+    "slug": "cine-foro-apple-cider-vinegar-teatro-caribe",
+    "title": "Cine Foro Ambiental: \"Apple Cider Vinegar\" (Teatro Caribe)",
+    "shortDescription": "Proyección documental y foro ecológico sobre la crisis climática en el Centro Cultural Caribe.",
+    "longDescription": "Documental hipnótico narrado desde la perspectiva de las piedras y los volcanes sobre la relación entre el ser humano y el planeta Tierra. Entrada libre con reserva previa.",
+    "startDate": "2026-08-20",
+    "startTime": "18:00",
+    "endTime": "20:15",
+    "venue": "Teatro Caribe (Centro Cultural Caribe)",
+    "neighborhood": "Itagüí",
+    "city": "Itagüí",
+    "latitude": 6.1731,
+    "longitude": -75.6088,
+    "category": "cine",
+    "priceType": "free",
+    "currency": "COP",
+    "organizer": "Centro Cultural Caribe & Comfenalco",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Infolocal Comfenalco",
+        "url": "https://infolocal.comfenalcoantioquia.com/index.php/agenda/apple-cider-vinegar"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T15:50:00-05:00",
+    "lastCheckedAt": "2026-08-17T15:50:00-05:00",
+    "tags": [
+      "cine documental",
+      "ecología",
+      "teatro caribe",
+      "itagüí",
+      "gratis"
+    ],
+    "score": 93
+  },
+  {
+    "id": "infolocal-10",
+    "slug": "antologia-de-la-zarzuela-teatro-metropolitano",
+    "title": "Gran Gala Lírica: \"Antología de la Zarzuela\"",
+    "shortDescription": "Solistas líricos, coro y orquesta sinfónica interpretando las romanzas más célebres.",
+    "longDescription": "El Teatro Metropolitano se viste de gala con las romanzas y coros más famosos del género lírico español: La del Soto del Parral, Luisa Fernanda y Doña Francisquita.",
+    "startDate": "2026-08-20",
+    "startTime": "20:00",
+    "endTime": "22:30",
+    "venue": "Teatro Metropolitano José Gutiérrez Gómez",
+    "neighborhood": "Centro",
+    "city": "Medellín",
+    "latitude": 6.243,
+    "longitude": -75.5775,
+    "category": "música",
+    "priceType": "paid",
+    "priceMin": 75000,
+    "priceMax": 135000,
+    "currency": "COP",
+    "organizer": "Teatro Metropolitano",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Infolocal Comfenalco",
+        "url": "https://infolocal.comfenalcoantioquia.com/index.php/agenda/antologia-zarzuela"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T15:50:00-05:00",
+    "lastCheckedAt": "2026-08-17T15:50:00-05:00",
+    "tags": [
+      "zarzuela",
+      "ópera",
+      "teatro metropolitano",
+      "concierto gala"
+    ],
+    "score": 95
+  },
+  {
+    "id": "infolocal-11",
+    "slug": "jueves-de-jazz-jam-session-el-club-del-jazz",
+    "title": "Jueves de Jazz Jam Session en El Club del Jazz",
+    "shortDescription": "Músicos locales e internacionales improvisando en directo en el escenario.",
+    "longDescription": "La tradicional Jam Session de los jueves en El Club del Jazz. Tarima abierta para instrumentistas y vocalistas de jazz de la ciudad con banda base en vivo.",
+    "startDate": "2026-08-20",
+    "startTime": "20:00",
+    "endTime": "23:30",
+    "venue": "Centro Cultural El Club del Jazz",
+    "neighborhood": "Laureles",
+    "city": "Medellín",
+    "latitude": 6.2468,
+    "longitude": -75.5891,
+    "category": "música",
+    "priceType": "paid",
+    "priceMin": 40000,
+    "priceMax": 40000,
+    "currency": "COP",
+    "organizer": "El Club del Jazz Medellín",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Infolocal Comfenalco",
+        "url": "https://infolocal.comfenalcoantioquia.com/index.php/agenda/jueves-jam-20ago"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T15:50:00-05:00",
+    "lastCheckedAt": "2026-08-17T15:50:00-05:00",
+    "tags": [
+      "jam session",
+      "jazz",
+      "improvisación",
+      "laureles"
+    ],
+    "score": 95
+  },
+  {
+    "id": "infolocal-12",
+    "slug": "lunada-artistica-cultural-venga-parchemos-robledo",
+    "title": "Lunada Artística y Cultural: Venga, Parchemos en Robledo",
+    "shortDescription": "Encuentro comunitario nocturno con fogata, música acústica, poesía y canelazo.",
+    "longDescription": "La Corporación Robledo Venga Parchemos convoca a vecinos y visitantes a una lunada cultural con micrófono abierto, cantautores locales y tertulia comunitaria al aire libre.",
+    "startDate": "2026-08-20",
+    "startTime": "18:30",
+    "endTime": "22:00",
+    "venue": "Sede Corporación Robledo Venga Parchemos",
+    "neighborhood": "Centro",
+    "city": "Medellín",
+    "latitude": 6.2751,
+    "longitude": -75.5921,
+    "category": "comunidad",
+    "priceType": "free",
+    "currency": "COP",
+    "organizer": "Corporación Robledo Venga Parchemos",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Infolocal Comfenalco",
+        "url": "https://infolocal.comfenalcoantioquia.com/index.php/agenda/lunada-artistica-y-cultural"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T15:50:00-05:00",
+    "lastCheckedAt": "2026-08-17T15:50:00-05:00",
+    "tags": [
+      "lunada",
+      "fogata",
+      "robledo",
+      "comunidad",
+      "gratis"
+    ],
+    "score": 93
+  },
+  {
+    "id": "infolocal-13",
+    "slug": "chuliando-lista-stand-up-teatro-accion-impro",
+    "title": "Chuliando Lista: Show de Stand-Up Comedy (Acción Impro)",
+    "shortDescription": "Comedia en vivo y rutinas ácidas sobre la vida cotidiana y las metas no cumplidas.",
+    "longDescription": "Show de stand-up comedy en el Teatro Acción Impro de El Poblado con una selección de comediantes emergentes y consagrados de la escena local.",
+    "startDate": "2026-08-20",
+    "startTime": "20:00",
+    "endTime": "22:00",
+    "venue": "Teatro Acción Impro",
+    "neighborhood": "El Poblado",
+    "city": "Medellín",
+    "latitude": 6.2088,
+    "longitude": -75.5672,
+    "category": "comedia",
+    "priceType": "paid",
+    "priceMin": 45000,
+    "priceMax": 45000,
+    "currency": "COP",
+    "organizer": "Acción Impro",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Infolocal Comfenalco",
+        "url": "https://infolocal.comfenalcoantioquia.com/index.php/agenda/chuliando-lista-2"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": false,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T15:50:00-05:00",
+    "lastCheckedAt": "2026-08-17T15:50:00-05:00",
+    "tags": [
+      "stand-up comedy",
+      "acción impro",
+      "el poblado",
+      "comedia"
+    ],
+    "score": 91
+  },
+  {
+    "id": "infolocal-14",
+    "slug": "tomates-secos-exprimidos-casa-del-teatro",
+    "title": "Obra Teatral: \"Tomates Secos Exprimidos\" (Casa del Teatro)",
+    "shortDescription": "Dramaturgia contemporánea paisa sobre vínculos familiares, ausencias y secretos.",
+    "longDescription": "La Casa del Teatro Medellín presenta la aclamada obra Tomates Secos Exprimidos. Una puesta en escena intensa sobre las relaciones humanas en un barrio tradicional.",
+    "startDate": "2026-08-20",
+    "startTime": "19:30",
+    "endTime": "21:00",
+    "venue": "Casa del Teatro Medellín",
+    "neighborhood": "Centro",
+    "city": "Medellín",
+    "latitude": 6.2588,
+    "longitude": -75.5661,
+    "category": "teatro",
+    "priceType": "paid",
+    "priceMin": 30000,
+    "priceMax": 30000,
+    "currency": "COP",
+    "organizer": "Casa del Teatro Medellín",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Infolocal Comfenalco",
+        "url": "https://infolocal.comfenalcoantioquia.com/index.php/agenda/tomates-secos-exprimidos-2"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T15:50:00-05:00",
+    "lastCheckedAt": "2026-08-17T15:50:00-05:00",
+    "tags": [
+      "teatro independiente",
+      "casa del teatro",
+      "prado centro"
+    ],
+    "score": 94
+  },
+  {
+    "id": "infolocal-15",
+    "slug": "el-atravesado-obra-musical-matacandelas",
+    "title": "Obra de Teatro: \"El Atravesado\" de Andrés Caicedo (Matacandelas)",
+    "shortDescription": "Adaptación mítica del Teatro Matacandelas con salsa brava y rock en vivo.",
+    "longDescription": "Uno de los montajes más legendarios del Teatro Matacandelas. Basado en el relato de Andrés Caicedo sobre la juventud, la rumba, la violencia callejera y la salsa dura de los 70.",
+    "startDate": "2026-08-20",
+    "startTime": "20:00",
+    "endTime": "21:45",
+    "venue": "Teatro Matacandelas",
+    "neighborhood": "Centro",
+    "city": "Medellín",
+    "latitude": 6.2449,
+    "longitude": -75.5583,
+    "category": "teatro",
+    "priceType": "paid",
+    "priceMin": 30000,
+    "priceMax": 30000,
+    "currency": "COP",
+    "organizer": "Teatro Matacandelas",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Infolocal Comfenalco",
+        "url": "https://infolocal.comfenalcoantioquia.com/index.php/agenda/el-atravesado"
+      }
+    ],
+    "sourceCount": 2,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T15:50:00-05:00",
+    "lastCheckedAt": "2026-08-17T15:50:00-05:00",
+    "tags": [
+      "matacandelas",
+      "andrés caicedo",
+      "salsa",
+      "teatro clásico paisa"
+    ],
+    "score": 99
+  },
+  {
+    "id": "infolocal-16",
+    "slug": "xxvii-festival-de-titeres-mamimuti-la-fanfarria",
+    "title": "XXVII Festival de Títeres Mamimuti en La Fanfarria",
+    "shortDescription": "Temporada internacional de teatro de títeres, marionetas y sombras chinescas.",
+    "longDescription": "La Corporación Teatral La Fanfarria celebra la 27.ª edición del Festival Mamimuti con compañías titiriteras invitadas de Argentina, México y Colombia en su acogedora sede de Laureles.",
+    "startDate": "2026-08-21",
+    "startTime": "17:00",
+    "endTime": "18:30",
+    "venue": "Corporación La Fanfarria",
+    "neighborhood": "Laureles",
+    "city": "Medellín",
+    "latitude": 6.2445,
+    "longitude": -75.5962,
+    "category": "teatro",
+    "priceType": "paid",
+    "priceMin": 30000,
+    "priceMax": 50000,
+    "currency": "COP",
+    "organizer": "Corporación La Fanfarria",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Infolocal Comfenalco",
+        "url": "https://infolocal.comfenalcoantioquia.com/index.php/agenda/mamimuti-2026"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T15:50:00-05:00",
+    "lastCheckedAt": "2026-08-17T15:50:00-05:00",
+    "tags": [
+      "mamimuti",
+      "títeres",
+      "la fanfarria",
+      "laureles",
+      "festival"
+    ],
+    "score": 96
+  },
+  {
+    "id": "infolocal-17",
+    "slug": "historias-del-abuelo-tito-manicomio-de-munecos",
+    "title": "Títeres: \"Historias del Abuelo Tito\" (Manicomio de Muñecos)",
+    "shortDescription": "Obra tierna de títeres sobre la memoria, los abuelos y los viajes imaginarios.",
+    "longDescription": "Manicomio de Muñecos presenta su obra clásica con marionetas de hilo y títeres de guante. Una experiencia mágica para niños y adultos en su sede del barrio El Poblado.",
+    "startDate": "2026-08-21",
+    "startTime": "19:00",
+    "endTime": "20:15",
+    "venue": "Teatro Manicomio de Muñecos",
+    "neighborhood": "El Poblado",
+    "city": "Medellín",
+    "latitude": 6.2114,
+    "longitude": -75.5701,
+    "category": "teatro",
+    "priceType": "paid",
+    "priceMin": 42000,
+    "priceMax": 42000,
+    "currency": "COP",
+    "organizer": "Teatro Manicomio de Muñecos",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Infolocal Comfenalco",
+        "url": "https://infolocal.comfenalcoantioquia.com/index.php/agenda/historias-del-abuelo-tito-4"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": false,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T15:50:00-05:00",
+    "lastCheckedAt": "2026-08-17T15:50:00-05:00",
+    "tags": [
+      "manicomio de muñecos",
+      "títeres",
+      "el poblado",
+      "familiar"
+    ],
+    "score": 92
+  },
+  {
+    "id": "infolocal-18",
+    "slug": "20-fiesta-del-libro-y-la-cultura-medellin-2026",
+    "title": "20.ª Fiesta del Libro y la Cultura de Medellín 2026",
+    "shortDescription": "El mayor evento literario y cultural de la ciudad bajo los árboles del Jardín Botánico.",
+    "longDescription": "La 20.ª Fiesta del Libro y la Cultura transforma la Zona Norte en el epicentro de la literatura: más de 300 autores invitados, lanzamientos editoriales, charlas, talleres infantiles y conciertos gratuitos.",
+    "startDate": "2026-09-11",
+    "startTime": "10:00",
+    "endTime": "21:00",
+    "venue": "Jardín Botánico de Medellín",
+    "neighborhood": "Aranjuez",
+    "city": "Medellín",
+    "latitude": 6.2706,
+    "longitude": -75.5638,
+    "category": "literatura",
+    "priceType": "free",
+    "currency": "COP",
+    "organizer": "Alcaldía de Medellín & Eventos del Libro",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Infolocal Comfenalco",
+        "url": "https://infolocal.comfenalcoantioquia.com/index.php/agenda/fiesta-libro-cultura-2026"
+      }
+    ],
+    "sourceCount": 2,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T15:50:00-05:00",
+    "lastCheckedAt": "2026-08-17T15:50:00-05:00",
+    "tags": [
+      "fiesta del libro",
+      "jardín botánico",
+      "literatura",
+      "zona norte",
+      "gratis"
+    ],
+    "score": 99
   }
 ];
