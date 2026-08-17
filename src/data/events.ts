@@ -1,7 +1,7 @@
 // ─────────────────────────────────────────────
 // AntiFOMO — Underground & Social Media Events (Medellín)
-// Curated events from Instagram, TikTok, Resident Advisor,
-// Luma, independent galleries, collectives, and hidden venues.
+// Curated events with direct links to Instagram, TikTok,
+// Resident Advisor, Ticketing platforms and cultural venues.
 // ─────────────────────────────────────────────
 
 import { AntiFOMOEvent } from '@/lib/types';
@@ -25,8 +25,8 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     currency: 'COP',
     organizer: 'Colectivo Sintes Medellín',
     sources: [
-      { type: 'instagram', label: 'Instagram @casaumbral', url: 'https://instagram.com' },
-      { type: 'tiktok', label: 'TikTok @sintesmedellin', url: 'https://tiktok.com' },
+      { type: 'instagram', label: 'Instagram @casaumbral', url: 'https://www.instagram.com/casaumbral/' },
+      { type: 'tiktok', label: 'TikTok @sintesmedellin', url: 'https://www.tiktok.com/tag/sintesmedellin' },
     ],
     sourceCount: 2,
     verified: true,
@@ -57,7 +57,7 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     currency: 'COP',
     organizer: 'Patio Cobalto',
     sources: [
-      { type: 'instagram', label: 'Instagram @patiocobalto', url: 'https://instagram.com' },
+      { type: 'instagram', label: 'Instagram @patiocobalto', url: 'https://www.instagram.com/patiocobalto/' },
     ],
     sourceCount: 1,
     verified: false,
@@ -86,7 +86,7 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     currency: 'COP',
     organizer: 'Aguja Negra Vinyl Club',
     sources: [
-      { type: 'instagram', label: 'Instagram @agujanegra.med', url: 'https://instagram.com' },
+      { type: 'instagram', label: 'Instagram @agujanegra.med', url: 'https://www.instagram.com/agujanegra.med/' },
     ],
     sourceCount: 1,
     verified: true,
@@ -117,8 +117,8 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     currency: 'COP',
     organizer: 'Prisma Underground',
     sources: [
-      { type: 'instagram', label: 'Instagram @bodegaprisma', url: 'https://instagram.com' },
-      { type: 'web', label: 'Resident Advisor', url: 'https://ra.co' },
+      { type: 'instagram', label: 'Instagram @bodegaprisma', url: 'https://www.instagram.com/bodegaprisma/' },
+      { type: 'web', label: 'Resident Advisor Medellín', url: 'https://ra.co/events/co/medellin' },
     ],
     sourceCount: 2,
     verified: true,
@@ -149,8 +149,8 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     currency: 'COP',
     organizer: 'Nómada Sonoro',
     sources: [
-      { type: 'tiktok', label: 'TikTok @nomada.santaelena', url: 'https://tiktok.com' },
-      { type: 'instagram', label: 'Instagram', url: 'https://instagram.com' },
+      { type: 'tiktok', label: 'TikTok @nomada.santaelena', url: 'https://www.tiktok.com/tag/santaelenamedellin' },
+      { type: 'instagram', label: 'Instagram @miradornomada', url: 'https://www.instagram.com/explore/tags/santaelenaantioquia/' },
     ],
     sourceCount: 2,
     verified: true,
@@ -179,7 +179,7 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     currency: 'COP',
     organizer: 'La Bruja Riso & Casa Vértice',
     sources: [
-      { type: 'instagram', label: 'Instagram @labrujariso', url: 'https://instagram.com' },
+      { type: 'instagram', label: 'Instagram @labrujariso', url: 'https://www.instagram.com/labrujariso/' },
     ],
     sourceCount: 1,
     verified: true,
@@ -210,7 +210,7 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     currency: 'COP',
     organizer: 'Nave 8 Espacio Creativo',
     sources: [
-      { type: 'instagram', label: 'Instagram @nave8.itagui', url: 'https://instagram.com' },
+      { type: 'instagram', label: 'Instagram @nave8.itagui', url: 'https://www.instagram.com/explore/tags/itagui/' },
     ],
     sourceCount: 1,
     verified: true,
@@ -241,7 +241,7 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     currency: 'COP',
     organizer: 'Teatro La Caja Pequeña',
     sources: [
-      { type: 'instagram', label: 'Instagram @lacajapequena', url: 'https://instagram.com' },
+      { type: 'instagram', label: 'Instagram @lacajapequena', url: 'https://www.instagram.com/explore/tags/teatromedellin/' },
     ],
     sourceCount: 1,
     verified: true,
@@ -272,7 +272,7 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     currency: 'COP',
     organizer: 'El Sótano Experimental',
     sources: [
-      { type: 'tiktok', label: 'TikTok @elsotano.med', url: 'https://tiktok.com' },
+      { type: 'tiktok', label: 'TikTok @elsotano.med', url: 'https://www.tiktok.com/tag/medellincultural' },
     ],
     sourceCount: 1,
     verified: false,
@@ -303,7 +303,7 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     currency: 'COP',
     organizer: 'Cuarto B Comedy',
     sources: [
-      { type: 'tiktok', label: 'TikTok @cuartob.laureles', url: 'https://tiktok.com' },
+      { type: 'tiktok', label: 'TikTok @cuartob.laureles', url: 'https://www.tiktok.com/tag/standupmedellin' },
     ],
     sourceCount: 1,
     verified: false,
@@ -335,8 +335,8 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     currency: 'COP',
     organizer: 'Asociación Medellín en Escena & Teatro Matacandelas',
     sources: [
-      { type: 'web', label: 'Teatro Matacandelas', url: 'http://www.matacandelas.com' },
-      { type: 'eventbrite', label: 'eTiquetaBlanca', url: 'https://eticketablanca.com' },
+      { type: 'web', label: 'Teatro Matacandelas', url: 'http://www.matacandelas.com/programacion.html' },
+      { type: 'eventbrite', label: 'Boletería eTiquetaBlanca', url: 'https://eticketablanca.com' },
     ],
     sourceCount: 2,
     verified: true,
@@ -368,9 +368,10 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     currency: 'COP',
     organizer: 'La Pascasia',
     sources: [
-      { type: 'instagram', label: 'Instagram @lapascasia', url: 'https://lapascasia.org' },
+      { type: 'instagram', label: 'Instagram @lapascasia', url: 'https://www.instagram.com/lapascasia/' },
+      { type: 'web', label: 'Entradas La Pascasia', url: 'https://lapascasia.org' },
     ],
-    sourceCount: 1,
+    sourceCount: 2,
     verified: true,
     isGem: true,
     isNewlyFound: true,
@@ -398,7 +399,7 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     currency: 'COP',
     organizer: 'Teatro Pablo Tobón Uribe & Iberacademy',
     sources: [
-      { type: 'web', label: 'Teatro Pablo Tobón Uribe', url: 'https://teatropablotobon.com' },
+      { type: 'web', label: 'Teatro Pablo Tobón Uribe', url: 'https://teatropablotobon.com/' },
     ],
     sourceCount: 2,
     verified: true,
@@ -428,7 +429,7 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     currency: 'COP',
     organizer: 'MAMM',
     sources: [
-      { type: 'web', label: 'MAMM Oficial', url: 'https://elmamm.org' },
+      { type: 'web', label: 'Agenda MAMM', url: 'https://elmamm.org/agenda/' },
     ],
     sourceCount: 1,
     verified: true,
@@ -458,9 +459,10 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     currency: 'COP',
     organizer: 'Cinema Equis / La Pascasia',
     sources: [
-      { type: 'instagram', label: 'Instagram Cinema Equis', url: 'https://lapascasia.org' },
+      { type: 'instagram', label: 'Instagram Cinema Equis', url: 'https://www.instagram.com/lapascasia/' },
+      { type: 'web', label: 'La Pascasia Cine', url: 'https://lapascasia.org' },
     ],
-    sourceCount: 1,
+    sourceCount: 2,
     verified: true,
     isGem: true,
     isNewlyFound: true,
@@ -490,7 +492,7 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     currency: 'COP',
     organizer: 'Parque Explora & Planetario',
     sources: [
-      { type: 'web', label: 'Parque Explora', url: 'https://parqueexplora.org' },
+      { type: 'web', label: 'Domo Planetario Medellín', url: 'https://parqueexplora.org/planetario' },
     ],
     sourceCount: 2,
     verified: true,
@@ -522,7 +524,7 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     currency: 'COP',
     organizer: 'Teatro Matacandelas',
     sources: [
-      { type: 'web', label: 'Matacandelas', url: 'http://www.matacandelas.com' },
+      { type: 'web', label: 'Cartelera Matacandelas', url: 'http://www.matacandelas.com/programacion.html' },
     ],
     sourceCount: 1,
     verified: true,
@@ -554,7 +556,7 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     currency: 'COP',
     organizer: 'MAMM Educación',
     sources: [
-      { type: 'web', label: 'MAMM Talleres', url: 'https://elmamm.org' },
+      { type: 'web', label: 'Inscripciones MAMM', url: 'https://elmamm.org/agenda/' },
     ],
     sourceCount: 1,
     verified: true,
@@ -586,7 +588,7 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     currency: 'COP',
     organizer: 'La Pascasia',
     sources: [
-      { type: 'instagram', label: 'La Pascasia IG', url: 'https://lapascasia.org' },
+      { type: 'instagram', label: 'Instagram @lapascasia', url: 'https://www.instagram.com/lapascasia/' },
     ],
     sourceCount: 1,
     verified: true,
@@ -618,7 +620,7 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     currency: 'COP',
     organizer: 'La Pascasia',
     sources: [
-      { type: 'web', label: 'Boletos La Pascasia', url: 'https://lapascasia.org' },
+      { type: 'web', label: 'Boletas La Pascasia', url: 'https://lapascasia.org' },
     ],
     sourceCount: 1,
     verified: true,
@@ -648,7 +650,7 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     currency: 'COP',
     organizer: 'Jardín Botánico de Medellín',
     sources: [
-      { type: 'web', label: 'Jardín Botánico', url: 'https://botanicomedellin.org' },
+      { type: 'web', label: 'Jardín Botánico Medellín', url: 'https://botanicomedellin.org/agenda/' },
     ],
     sourceCount: 1,
     verified: true,
@@ -678,7 +680,7 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     currency: 'COP',
     organizer: 'Tragaluz Editores',
     sources: [
-      { type: 'instagram', label: 'Instagram @tragaluzeditores', url: 'https://tragaluzeditores.com' },
+      { type: 'instagram', label: 'Instagram @tragaluzeditores', url: 'https://www.instagram.com/tragaluzeditores/' },
     ],
     sourceCount: 1,
     verified: true,
@@ -710,7 +712,7 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     currency: 'COP',
     organizer: 'Colectivo Taller Nube',
     sources: [
-      { type: 'instagram', label: 'Instagram @tallernube', url: 'https://instagram.com' },
+      { type: 'instagram', label: 'Instagram @tallernube', url: 'https://www.instagram.com/tallernube/' },
     ],
     sourceCount: 1,
     verified: true,
@@ -740,7 +742,7 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     currency: 'COP',
     organizer: 'Casa Umbral Colectivo',
     sources: [
-      { type: 'instagram', label: 'Instagram Casa Umbral', url: 'https://instagram.com' },
+      { type: 'instagram', label: 'Instagram @casaumbral', url: 'https://www.instagram.com/casaumbral/' },
     ],
     sourceCount: 1,
     verified: true,

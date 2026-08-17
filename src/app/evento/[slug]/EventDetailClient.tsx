@@ -102,29 +102,46 @@ export default function EventDetailClient({ event }: { event: AntiFOMOEvent }) {
       )}
 
       {/* Source info */}
-      <div className="mb-12">
-        <h2 className="text-lg font-bold mb-4">Información de origen</h2>
-        <EventSource sources={event.sources} className="mb-3" />
-        <ul className="text-sm text-secondary space-y-1">
-          {event.verified && <li>✓ Verificado por el organizador</li>}
-          {event.sourceCount > 1 && <li>✓ Confirmado en {event.sourceCount} fuentes</li>}
+      <div className="mb-12 bg-surface/40 p-4 rounded-xl border border-border">
+        <h2 className="text-sm font-bold uppercase tracking-wider text-secondary mb-3">
+          Fuentes y Detección en el Radar
+        </h2>
+        <div className="mb-4">
+          <EventSource sources={event.sources} interactive={true} />
+        </div>
+        <ul className="text-xs text-secondary space-y-1.5 pt-2 border-t border-border/50">
+          {event.verified && (
+            <li className="flex items-center gap-1.5 text-text font-medium">
+              <span className="text-[#FFDE21] font-bold">✓</span> Verificado con el organizador o espacio
+            </li>
+          )}
+          {event.sourceCount > 1 && (
+            <li className="flex items-center gap-1.5">
+              <span>●</span> Confirmado y cruzado en {event.sourceCount} fuentes independientes
+            </li>
+          )}
           {event.lastCheckedAt && (
-            <li>Última comprobación: {new Date(event.lastCheckedAt).toLocaleDateString('es-CO')}</li>
+            <li className="flex items-center gap-1.5">
+              <span>⏱</span> Última comprobación: {new Date(event.lastCheckedAt).toLocaleTimeString('es-CO', { hour: '2-digit', minute: '2-digit' })} ({new Date(event.lastCheckedAt).toLocaleDateString('es-CO')})
+            </li>
           )}
         </ul>
       </div>
 
       {/* Action Bar */}
-      <div className="fixed bottom-16 lg:bottom-0 left-0 right-0 lg:static bg-bg border-t border-border p-4 z-40">
+      <div className="fixed bottom-16 lg:bottom-0 left-0 right-0 lg:static bg-bg/95 backdrop-blur-md border-t border-border p-4 z-40">
         <div className="max-w-2xl mx-auto flex gap-3 items-center">
           {mainSource?.url && (
             <a
               href={mainSource.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 bg-accent text-text rounded-full px-6 py-3 font-semibold text-center hover:brightness-95 transition-all min-h-[44px] flex items-center justify-center"
+              className="flex-1 bg-accent text-black rounded-full px-6 py-3 font-bold text-center hover:brightness-95 transition-all min-h-[44px] flex items-center justify-center gap-2 shadow-sm"
             >
-              Ver fuente original
+              <span>Ver en {mainSource.label}</span>
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
             </a>
           )}
           <a
