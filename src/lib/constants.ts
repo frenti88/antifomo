@@ -15,7 +15,7 @@ export const DEFAULT_CITY = 'Medellín';
 export const COLORS = {
   bg: '#F6F3EA',
   text: '#111111',
-  accent: '#D7FF3F',
+  accent: '#FFDE21',
   secondary: '#5F5F58',
   surface: '#ECE9DF',
   border: '#D4D0C5',
