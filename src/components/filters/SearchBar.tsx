@@ -6,9 +6,17 @@ interface SearchBarProps {
   query: string;
   onQueryChange: (q: string) => void;
   onClose?: () => void;
+  autoFocus?: boolean;
+  placeholder?: string;
 }
 
-export function SearchBar({ query, onQueryChange, onClose }: SearchBarProps) {
+export function SearchBar({ 
+  query, 
+  onQueryChange, 
+  onClose,
+  autoFocus = false,
+  placeholder = "Busca por plan, artista, lugar o categoría..."
+}: SearchBarProps) {
   const [localQuery, setLocalQuery] = useState(query);
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -17,23 +25,23 @@ export function SearchBar({ query, onQueryChange, onClose }: SearchBarProps) {
   }, [query]);
 
   useEffect(() => {
-    if (inputRef.current) {
+    if (autoFocus && inputRef.current) {
       inputRef.current.focus();
     }
-  }, []);
+  }, [autoFocus]);
 
   useEffect(() => {
     const handler = setTimeout(() => {
       if (localQuery !== query) {
         onQueryChange(localQuery);
       }
-    }, 300);
+    }, 250);
     return () => clearTimeout(handler);
   }, [localQuery, onQueryChange, query]);
 
   return (
-    <div className="relative flex items-center w-full px-4 py-2 bg-bg border-b border-border">
-      <div className="absolute left-7 text-secondary">
+    <div className="relative flex items-center w-full">
+      <div className="absolute left-4 text-secondary pointer-events-none">
         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
         </svg>
@@ -44,9 +52,9 @@ export function SearchBar({ query, onQueryChange, onClose }: SearchBarProps) {
         type="search"
         value={localQuery}
         onChange={(e) => setLocalQuery(e.target.value)}
-        placeholder="Busca un plan, lugar o categoría"
+        placeholder={placeholder}
         aria-label="Buscar eventos"
-        className="w-full bg-surface text-text rounded-full py-2.5 pl-10 pr-10 outline-none focus:ring-2 focus:ring-accent transition-shadow text-base"
+        className="w-full bg-surface/70 hover:bg-surface/90 border border-border text-text rounded-2xl py-3 pl-11 pr-10 outline-none focus:border-accent focus:ring-2 focus:ring-accent transition-all text-sm sm:text-base placeholder:text-secondary/70 shadow-xs"
       />
       
       {localQuery && (

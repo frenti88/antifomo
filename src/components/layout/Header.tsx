@@ -25,23 +25,17 @@ export default function Header() {
         <div className="flex-1 flex justify-end items-center gap-1 sm:gap-2">
           {/* Desktop Navigation Links */}
           <nav aria-label="Navegación de escritorio" className="hidden md:flex items-center gap-1 mr-2 text-xs font-bold uppercase tracking-wider text-secondary">
-            <Link href="/" className="px-3 py-1.5 rounded-full hover:bg-surface hover:text-text transition-colors">
-              Radar
-            </Link>
-            <Link href="/explorar" className="px-3 py-1.5 rounded-full hover:bg-surface hover:text-text transition-colors">
-              Explorar
-            </Link>
             <Link href="/guardados" className="px-3 py-1.5 rounded-full hover:bg-surface hover:text-text transition-colors">
               Guardados
             </Link>
-            <Link href="/enviar" className="px-3 py-1.5 rounded-full bg-surface border border-border hover:border-accent text-text transition-colors">
+            <Link href="/enviar" className="px-3.5 py-1.5 rounded-full bg-surface border border-border hover:border-accent text-text transition-colors">
               + Enviar plan
             </Link>
           </nav>
 
           <ThemeToggle />
           <Link 
-            href="/explorar?search=true" 
+            href="/#buscador" 
             className="w-11 h-11 flex items-center justify-center rounded-full hover:bg-surface text-text transition-colors focus-visible:ring-2 focus-visible:ring-text" 
             aria-label="Buscar eventos"
             title="Buscar eventos"

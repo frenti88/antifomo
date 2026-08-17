@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { DEMO_EVENTS } from '@/data/events';
 import { useFilters } from '@/hooks/useFilters';
+import { SearchBar } from '@/components/filters/SearchBar';
 import { DateTabs } from '@/components/filters/DateTabs';
 import { FilterChip } from '@/components/filters/FilterChip';
 import { FilterSheet } from '@/components/filters/FilterSheet';
@@ -53,10 +54,19 @@ export default function HomePage() {
       <h1 className="sr-only">AntiFOMO — Radar cultural de Medellín</h1>
 
       <section className="pt-6 pb-4">
-        <div className="px-4 max-w-3xl mx-auto mb-4">
+        <div className="px-4 max-w-3xl mx-auto mb-3">
           <h2 className="text-2xl font-bold tracking-tight text-text">
             ¿Qué está pasando?
           </h2>
+        </div>
+
+        {/* Integrated Search Bar */}
+        <div id="buscador" className="px-4 max-w-3xl mx-auto mb-4 scroll-mt-20">
+          <SearchBar 
+            query={filters.query || ''} 
+            onQueryChange={(q) => setFilter({ query: q })}
+            placeholder="Busca por plan, artista, lugar o categoría..."
+          />
         </div>
 
         <div className="max-w-3xl mx-auto space-y-2">
