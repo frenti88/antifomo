@@ -20300,5 +20300,1924 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
       "eventario"
     ],
     "score": 89
+  },
+  {
+    "id": "compas-25641",
+    "slug": "compas-feria-de-las-flores-en-el-tesoro-2026-colombia-pais-de-las-aves",
+    "title": "Feria De Las Flores En El Tesoro 2026 - Colombia, País De Las Aves",
+    "shortDescription": "La Feria de las Flores se toma El Tesoro con una programación pensada para disfrutar en familia. Tradición, cultura y experiencias que celeb...",
+    "longDescription": "La Feria de las Flores se toma El Tesoro con una programación pensada para disfrutar en familia. Tradición, cultura y experiencias que celebran lo mejor de nuestra ciudad. Bajo el lema \"Colombia, país de las aves\", el evento ofrecerá comidas tradicionales, artesanías y experiencias familiares.",
+    "startDate": "2026-08-17",
+    "startTime": "19:00",
+    "venue": "El Tesoro Parque Comercial",
+    "neighborhood": "El Poblado",
+    "city": "Medellín",
+    "latitude": 6.197298399999999,
+    "longitude": -75.5582293,
+    "category": "arte",
+    "priceType": "free",
+    "priceMin": 0,
+    "priceMax": 0,
+    "currency": "COP",
+    "organizer": "El Tesoro Parque Comercial",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Compás Urbano Medellín",
+        "url": "https://www.compasurbano.com/eventos"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:05:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:05:00-05:00",
+    "tags": [
+      "arte",
+      "el poblado",
+      "compas urbano"
+    ],
+    "score": 90
+  },
+  {
+    "id": "compas-25916",
+    "slug": "compas-raices-el-tesoro",
+    "title": "Raíces El Tesoro",
+    "shortDescription": "Raíces es la feria de artesanías de El Tesoro que celebra el patrimonio cultural y el trabajo hecho a mano en alianza con la Fundación Crean...",
+    "longDescription": "Raíces es la feria de artesanías de El Tesoro que celebra el patrimonio cultural y el trabajo hecho a mano en alianza con la Fundación Creando Artes y Oficios. En esta edición reúne 56 expositores: 50 de Colombia, 4 de México, 1 de Guatemala y 1 de Ecuador, en un recorrido por técnicas ancestrales, diseño contemporáneo e historias que mantienen vivos los oficios tradicionales. Podrás descubrir piezas elaboradas en madera, cerámica, barro, textiles, palma de iraca, caña flecha, lana, filigrana, orfebrería, vitral, cuero y fibras naturales, creadas por artesanos provenientes de las regiones Andina, Caribe, Pacífica y Amazónica de Colombia. México es el país invitado, con una muestra que honra el legado de sus pueblos originarios a través de alebrijes, cerámica, barro, textiles bordados, joyería, cuarzos y accesorios. Además, contará con el Museo Comunitario Étnico de los Andes – MUJAY, una experiencia cultural y pedagógica que invita a conocer la cosmovisión de los pueblos indígenas andinos y amazónicos a través del arte, la espiritualidad y la memoria ancestral.",
+    "startDate": "2026-08-17",
+    "startTime": "19:00",
+    "venue": "El Tesoro Parque Comercial",
+    "neighborhood": "El Poblado",
+    "city": "Medellín",
+    "latitude": 6.1975462,
+    "longitude": -75.5593292,
+    "category": "cine",
+    "priceType": "free",
+    "priceMin": 0,
+    "priceMax": 0,
+    "currency": "COP",
+    "organizer": "El Tesoro Parque Comercial",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Compás Urbano Medellín",
+        "url": "https://www.compasurbano.com/eventos"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": false,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:05:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:05:00-05:00",
+    "tags": [
+      "cine",
+      "el poblado",
+      "compas urbano"
+    ],
+    "score": 91
+  },
+  {
+    "id": "compas-26326",
+    "slug": "compas-tango-en-diluvio",
+    "title": "Tango En Diluvio",
+    "shortDescription": "Evento cultural organizado por la Cámara de Comercio de Medellín para Antioquia en su sede de El Poblado....",
+    "longDescription": "Evento cultural organizado por la Cámara de Comercio de Medellín para Antioquia en su sede de El Poblado.",
+    "startDate": "2026-08-18",
+    "startTime": "19:00",
+    "venue": "Cámara de Comercio Poblado",
+    "neighborhood": "El Poblado",
+    "city": "Medellín",
+    "latitude": 6.188329,
+    "longitude": -75.5778969,
+    "category": "comunidad",
+    "priceType": "free",
+    "priceMin": 0,
+    "priceMax": 0,
+    "currency": "COP",
+    "organizer": "Cámara de Comercio",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Compás Urbano Medellín",
+        "url": "https://www.compasurbano.com/eventos"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": false,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:05:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:05:00-05:00",
+    "tags": [
+      "comunidad",
+      "el poblado",
+      "compas urbano"
+    ],
+    "score": 88
+  },
+  {
+    "id": "compas-25918",
+    "slug": "compas-noche-de-jazz-blues-y-soul-en-el-tesoro",
+    "title": "Noche De Jazz, Blues Y Soul En El Tesoro",
+    "shortDescription": "El Colombo Americano de Medellín y el Teatro El Tesoro presentan una noche de blues y soul en El Tesoro. ¡Pura Alegría! celebra el poder de ...",
+    "longDescription": "El Colombo Americano de Medellín y el Teatro El Tesoro presentan una noche de blues y soul en El Tesoro. ¡Pura Alegría! celebra el poder de la música para elevar el espíritu humano, inspirar el corazón y unir a las personas a través de culturas y generaciones. A través de entrañables clásicos del jazz y el blues, como \"Misty\", \"How High the Moon\", \"Green Dolphin Street\" y muchas otras melodías inolvidables, el público disfrutará de una velada llena de sensibilidad, calidez y esperanza. Artista principal: Jillian Harrison-Jones (USA), reconocida vocalista, directora de coro, educadora y embajadora cultural. Artista invitada: Sandy Lomax (USA), reconocida vocalista de jazz de prestigio internacional. Orquesta invitada: Big Band de Medellín (COL), fundada en 1988, que incluye en su repertorio temas clásicos de Jazz de las grandes bandas de los años 40 y 50, arreglos contemporáneos, obras de Latin Jazz y música colombiana. Edad recomendada: mayores de 6 años. Evento accesible. Prohibido el ingreso de mascotas.",
+    "startDate": "2026-09-04",
+    "startTime": "19:00",
+    "venue": "Teatro El Tesoro",
+    "neighborhood": "El Poblado",
+    "city": "Medellín",
+    "latitude": 6.1975488,
+    "longitude": -75.5596772,
+    "category": "música",
+    "priceType": "paid",
+    "priceMin": 25000,
+    "priceMax": 25000,
+    "currency": "COP",
+    "organizer": "Teatro El Tesoro",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Compás Urbano Medellín",
+        "url": "https://www.compasurbano.com/eventos"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:05:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:05:00-05:00",
+    "tags": [
+      "música",
+      "el poblado",
+      "compas urbano"
+    ],
+    "score": 90
+  },
+  {
+    "id": "compas-25980",
+    "slug": "compas-club-de-caminantes",
+    "title": "Club De Caminantes",
+    "shortDescription": "¡Empieza tu día con pasos que te hacen bien! Actívate caminando por los corredores del Parque Comercial, sin exposición a vehículos, contami...",
+    "longDescription": "¡Empieza tu día con pasos que te hacen bien! Actívate caminando por los corredores del Parque Comercial, sin exposición a vehículos, contaminación o lluvia. Una manera segura y tranquila de ejercitarte cada mañana. Recuerda hidratarte antes, durante y después de la actividad. Recomendamos usar ropa cómoda. Entrada libre desde las 5:30 a.m. con inscripción previa. Para más información: servicios@eltesoro.com.co Ver reglamento",
+    "startDate": "2026-08-17",
+    "startTime": "05:30",
+    "endTime": "10:00",
+    "venue": "El Tesoro Parque Comercial",
+    "neighborhood": "El Poblado",
+    "city": "Medellín",
+    "latitude": 6.197312,
+    "longitude": -75.55893600000002,
+    "category": "talleres",
+    "priceType": "free",
+    "priceMin": 0,
+    "priceMax": 0,
+    "currency": "COP",
+    "organizer": "Parque Comercial El Tesoro",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Compás Urbano Medellín",
+        "url": "https://www.compasurbano.com/eventos"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": false,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:05:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:05:00-05:00",
+    "tags": [
+      "talleres",
+      "el poblado",
+      "compas urbano"
+    ],
+    "score": 90
+  },
+  {
+    "id": "compas-25981",
+    "slug": "compas-rumba",
+    "title": "Rumba",
+    "shortDescription": "Activa tu semana con energía, ritmo y movimiento. ¡Mueve tu cuerpo al ritmo de la música! Disfruta de una hora llena de movimiento y energía...",
+    "longDescription": "Activa tu semana con energía, ritmo y movimiento. ¡Mueve tu cuerpo al ritmo de la música! Disfruta de una hora llena de movimiento y energía en un espacio seguro. Ten en cuenta Recuerda hidratarte antes, durante y después de la actividad. Recomendamos usar ropa deportiva y tenis con suela antideslizante. Sobre la profesora: Lina María Zuluaga Instructora certificada de baile. Ha dedicado sus días a dar clases de este y otros entrenamientos aeróbicos. Horarios: Lunes y viernes de 8:30 a.m. – 9:30 a.m. Entrada libre con inscripción previa Para más información: servicios@eltesoro.com.co Ver reglamento",
+    "startDate": "2026-08-17",
+    "startTime": "08:30",
+    "endTime": "09:30",
+    "venue": "El Tesoro Parque Comercial",
+    "neighborhood": "El Poblado",
+    "city": "Medellín",
+    "latitude": 6.197312,
+    "longitude": -75.55893600000002,
+    "category": "música",
+    "priceType": "free",
+    "priceMin": 0,
+    "priceMax": 0,
+    "currency": "COP",
+    "organizer": "Parque Comercial El Tesoro",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Compás Urbano Medellín",
+        "url": "https://www.compasurbano.com/eventos"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:05:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:05:00-05:00",
+    "tags": [
+      "música",
+      "el poblado",
+      "compas urbano"
+    ],
+    "score": 88
+  },
+  {
+    "id": "compas-26340",
+    "slug": "compas-mercado-parisino-en-el-castillo-2026",
+    "title": "Mercado Parisino En El Castillo 2026",
+    "shortDescription": "El Mercado Parisino transforma el Museo El Castillo y Jardines en un rincón de Francia con una experiencia inspirada en los tradicionales me...",
+    "longDescription": "El Mercado Parisino transforma el Museo El Castillo y Jardines en un rincón de Francia con una experiencia inspirada en los tradicionales mercados callejeros europeos. Durante cuatro días, los visitantes podrán disfrutar de gastronomía francesa, música en vivo, catas de vino, tardes de té, pintura al aire libre, actividades para niños y adultos, además de recorrer los jardines y la exposición Decorarte. Un plan para compartir en familia, en pareja o con amigos y vivir una propuesta cultural diferente en Medellín. ¡Reserva la fecha y disfruta el encanto francés!",
+    "startDate": "2026-08-17",
+    "startTime": "19:00",
+    "venue": "Museo El Castillo Medellín",
+    "neighborhood": "Medellín",
+    "city": "Medellín",
+    "latitude": 6.1901037,
+    "longitude": -75.56945759999999,
+    "category": "música",
+    "priceType": "paid",
+    "priceMin": 25000,
+    "priceMax": 25000,
+    "currency": "COP",
+    "organizer": "Museo El Castillo",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Compás Urbano Medellín",
+        "url": "https://www.compasurbano.com/eventos"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:05:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:05:00-05:00",
+    "tags": [
+      "música",
+      "medellín",
+      "compas urbano"
+    ],
+    "score": 93
+  },
+  {
+    "id": "compas-26205",
+    "slug": "compas-tango-en-diluvio-y-el-perfume",
+    "title": "Tango En Diluvio Y El Perfume",
+    "shortDescription": "Protagonizada por seis parejas de bailarines y cuatro músicos, la obra utiliza el tango y la tormenta como metáforas de resistencia, unión c...",
+    "longDescription": "Protagonizada por seis parejas de bailarines y cuatro músicos, la obra utiliza el tango y la tormenta como metáforas de resistencia, unión comunitaria y esperanza.",
+    "startDate": "2026-08-18",
+    "startTime": "19:00",
+    "venue": "Cámara de Comercio Centro Empresarial El Poblado",
+    "neighborhood": "El Poblado",
+    "city": "Medellín",
+    "latitude": 6.1880665,
+    "longitude": 75.57793219999999,
+    "category": "teatro",
+    "priceType": "free",
+    "priceMin": 0,
+    "priceMax": 0,
+    "currency": "COP",
+    "organizer": "Cámara de Comercio de Medellín para Antioquia",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Compás Urbano Medellín",
+        "url": "https://www.compasurbano.com/eventos"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:05:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:05:00-05:00",
+    "tags": [
+      "teatro",
+      "el poblado",
+      "compas urbano"
+    ],
+    "score": 91
+  },
+  {
+    "id": "compas-26267",
+    "slug": "compas-lectura-para-jovenes-el-ser-bajo-la-luz-de-la-luna-de-h-p-lovecraft",
+    "title": "Lectura Para Jóvenes: El Ser Bajo La Luz De La Luna De H. P. Lovecraft",
+    "shortDescription": "La Luna no produce luz propia; el brillo que vemos es luz solar reflejada en su superficie. A diferencia de otras fuentes de luz, su ilumina...",
+    "longDescription": "La Luna no produce luz propia; el brillo que vemos es luz solar reflejada en su superficie. A diferencia de otras fuentes de luz, su iluminación es tenue, dejando siluetas incompletas, sombras alargadas y formas abiertas a interpretación. El cerebro es un simulador y, muy a menudo, un escritor de ficciones. Estas ilusiones visuales aparecen porque el cerebro intenta distinguir caras en escenas abarrotadas de objetos. A este fenómeno lo llamamos pareidolia, y explica por qué vemos rostros en las nubes, animales en las montañas o figuras familiares en la superficie de la Luna. Algunas culturas han visto en sus manchas un conejo, un rostro humano, una mujer o incluso un sapo. \"El ser bajo la luz de la luna\", de H. P. Lovecraft, explora esa frontera entre percepción, sombra y monstruosidad. El terror no nace únicamente de lo desconocido, sino también de la sospecha de que quizás nunca vemos la realidad de forma completa. Pero pronto podríamos hacernos una pregunta nueva: cuando las misiones Artemis lleven nuevamente seres humanos a la Luna, ¿qué criaturas imaginarán bajo la luz de una Tierra llena? Desde la superficie lunar, la Tierra se vería casi cuatro veces más grande que la Luna en nuestro cielo y podría iluminar el paisaje con una intensidad muy superior a la de una noche de luna llena en la Tierra. También habría tierra creciente, tierra llena y hasta tierra nueva, siempre en oposición a las fases que observamos desde aquí. Pero hay algo aún más fascinante: debido a que la Luna siempre da la misma cara hacia la Tierra, un astronauta en la cara visible vería a nuestro planeta suspendido casi inmóvil en el cielo, cambiando lentamente de fase sin salir ni ocultarse jamás. En cambio, para alguien en la cara oculta, la Tierra no existiría en el cielo lunar: nunca vería su luz. Podríamos descubrir que los monstruos nunca pertenecieron realmente a la Tierra o a la Luna, sino a nuestra forma profundamente humana de mirar, interpretar y llenar de sentido las sombras. En este encuentro de Astrolibros en Órbita, leeremos la obra de Lovecraft y hablaremos sobre la Luna. Además, si las condiciones climáticas lo permiten, observaremos con instrumentos especializados tanto al Sol como a la luna menguante compartiendo el cielo de la mañana, una escena que nos recuerda que nuestro satélite no pertenece únicamente a la noche.",
+    "startDate": "2026-08-18",
+    "startTime": "10:00",
+    "venue": "Planetario de Medellín",
+    "neighborhood": "Aranjuez",
+    "city": "Medellín",
+    "latitude": 6.270803,
+    "longitude": -75.5678857,
+    "category": "teatro",
+    "priceType": "free",
+    "priceMin": 0,
+    "priceMax": 0,
+    "currency": "COP",
+    "organizer": "Planetario de Medellín",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Compás Urbano Medellín",
+        "url": "https://www.compasurbano.com/eventos"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:05:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:05:00-05:00",
+    "tags": [
+      "teatro",
+      "aranjuez",
+      "compas urbano"
+    ],
+    "score": 97
+  },
+  {
+    "id": "compas-26384",
+    "slug": "compas-lectura-infantil-diez-lunas-para-una-espera-de-velia-vidal",
+    "title": "Lectura Infantil: Diez Lunas Para Una Espera De Velia Vidal",
+    "shortDescription": "Velia Vidal es una escritora y gestora cultural del Chocó, Colombia, cuya obra explora la identidad, la maternidad y la cultura del Pacífico...",
+    "longDescription": "Velia Vidal es una escritora y gestora cultural del Chocó, Colombia, cuya obra explora la identidad, la maternidad y la cultura del Pacífico. Es directora de Motete, un proyecto de promoción de la lectura en comunidades afrodescendientes. En *Diez lunas para una espera*, nos invita a recorrer el ciclo de la gestación a través del simbolismo de la luna, cuyos cambios marcan el ritmo del tiempo y la espera. Esta obra habla de la maternidad y también del cielo que cobija y guía a quienes esperan. La prosa y poética intachable de Vidal relaciona la luna con la cultura del Pacífico colombiano, donde el firmamento ha sido testigo de historias, cantos y tradiciones, a través de imágenes y palabras que evocan los paisajes costeros y la cosmovisión de esta región. Medir el tiempo en relación con la Luna es algo que la humanidad ha hecho desde hace muchos años. El concepto de mes se basa en la órbita de la Luna en torno a la Tierra. Durante cada una de las órbitas de la Luna, el ángulo entre la Tierra, la Luna y el Sol va cambiando, y así se originan las distintas fases lunares. La Luna tarda 29,5 días en completar su ciclo, y ello define el mes lunar. La Tierra no siempre tuvo a la Luna como compañera; tuvo que esperar a su formación e incluso tuvo que ceder una parte de sí para que esta se formara. La mayoría de los astrónomos aceptan la teoría del gran impacto, según la cual el proceso comenzó hace 4,500 millones de años, cuando un enorme cuerpo sólido (del tamaño de Marte) golpeó la Tierra; la mayor parte del material proyectado entró en una órbita circular alrededor de la Tierra y formó un denso anillo (ajá, la Tierra aceptó la joya y se comprometió); las rocas que componían el anillo se fueron agregando hasta recogerse todo el material en un único cuerpo: la Luna. Repicaron las campanas de una boda cósmica, y la Luna y nuestro planeta se hicieron compañeros permanentes. En este encuentro, leeremos la obra de Velia Vidal, conversaremos sobre la luna, tejeremos una manilla lunar y, si las condiciones climáticas lo permiten, haremos observación, con instrumentos, del Sol y la Luna.",
+    "startDate": "2026-08-18",
+    "startTime": "14:00",
+    "venue": "Planetario de Medellín",
+    "neighborhood": "Aranjuez",
+    "city": "Medellín",
+    "latitude": 6.270803,
+    "longitude": -75.5678857,
+    "category": "teatro",
+    "priceType": "free",
+    "priceMin": 0,
+    "priceMax": 0,
+    "currency": "COP",
+    "organizer": "Planetario de Medellín",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Compás Urbano Medellín",
+        "url": "https://www.compasurbano.com/eventos"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:05:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:05:00-05:00",
+    "tags": [
+      "teatro",
+      "aranjuez",
+      "compas urbano"
+    ],
+    "score": 89
+  },
+  {
+    "id": "compas-26398",
+    "slug": "compas-concierto-de-aniversario-de-la-oda-un-ano-de-suenos-realizados",
+    "title": "Concierto De Aniversario De La Oda: Un Año De Sueños Realizados",
+    "shortDescription": "Un concierto para celebrar un año de la Orquesta Departamental de Antioquia. Obras: Curramba - Héctor González, Concierto para violín en re ...",
+    "longDescription": "Un concierto para celebrar un año de la Orquesta Departamental de Antioquia. Obras: Curramba - Héctor González, Concierto para violín en re mayor, op. 61 - Beethoven, Sinfonía n.º 5 en mi menor, op. 64 - Tchaikovsky.",
+    "startDate": "2026-08-18",
+    "startTime": "19:00",
+    "venue": "Teatro Metropolitano",
+    "neighborhood": "Centro",
+    "city": "Medellín",
+    "latitude": 6.242964094124441,
+    "longitude": -75.57755011715926,
+    "category": "música",
+    "priceType": "paid",
+    "priceMin": 25000,
+    "priceMax": 25000,
+    "currency": "COP",
+    "organizer": "Teatro Metropolitano",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Compás Urbano Medellín",
+        "url": "https://www.compasurbano.com/eventos"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:05:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:05:00-05:00",
+    "tags": [
+      "música",
+      "centro",
+      "compas urbano"
+    ],
+    "score": 93
+  },
+  {
+    "id": "compas-17819",
+    "slug": "compas-decoarte",
+    "title": "DecoARTE",
+    "shortDescription": "Feria de diseño y arte decorativo contemporáneo que reúne a diseñadores, artistas y marcas independientes para presentar piezas únicas que c...",
+    "longDescription": "Feria de diseño y arte decorativo contemporáneo que reúne a diseñadores, artistas y marcas independientes para presentar piezas únicas que combinan tradición e innovación. Una experiencia cultural que invita a recorrer espacios expositivos y descubrir propuestas creativas con identidad y valor artesanal.",
+    "startDate": "2026-08-17",
+    "startTime": "19:00",
+    "venue": "Museo El Castillo",
+    "neighborhood": "El Poblado",
+    "city": "Medellín",
+    "latitude": 6.1901037,
+    "longitude": -75.5716463,
+    "category": "arte",
+    "priceType": "paid",
+    "priceMin": 25000,
+    "priceMax": 25000,
+    "currency": "COP",
+    "organizer": "Museo El Castillo",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Compás Urbano Medellín",
+        "url": "https://www.compasurbano.com/eventos"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:05:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:05:00-05:00",
+    "tags": [
+      "arte",
+      "el poblado",
+      "compas urbano"
+    ],
+    "score": 93
+  },
+  {
+    "id": "compas-8218",
+    "slug": "compas-fiestas-de-la-industria-el-comercio-y-la-cultura",
+    "title": "Fiestas de la Industria, el Comercio y la Cultura",
+    "shortDescription": "Las 35.ª Fiestas de la Industria, el Comercio y la Cultura de Itagüí se celebran del 8 al 17 de agosto de 2026 con una programación que reún...",
+    "longDescription": "Las 35.ª Fiestas de la Industria, el Comercio y la Cultura de Itagüí se celebran del 8 al 17 de agosto de 2026 con una programación que reúne conciertos, expresiones artísticas, ferias comerciales, muestras culturales y actividades para todas las edades. Esta tradicional festividad resalta la identidad, el talento y el dinamismo del municipio, convirtiéndose en un espacio de encuentro para residentes y visitantes. ¡Anímate a vivir la alegría de Itagüí y disfruta de su programación oficial!",
+    "startDate": "2026-08-17",
+    "startTime": "19:00",
+    "venue": "Itagüí",
+    "neighborhood": "Itagüí",
+    "city": "Itagüí",
+    "latitude": 6.168183200000001,
+    "longitude": -75.61903239999998,
+    "category": "música",
+    "priceType": "paid",
+    "priceMin": 25000,
+    "priceMax": 25000,
+    "currency": "COP",
+    "organizer": "null",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Compás Urbano Medellín",
+        "url": "https://www.compasurbano.com/eventos"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:05:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:05:00-05:00",
+    "tags": [
+      "música",
+      "itagüí",
+      "compas urbano"
+    ],
+    "score": 88
+  },
+  {
+    "id": "compas-8338",
+    "slug": "compas-fiestas-del-atardecer",
+    "title": "Fiestas del Atardecer",
+    "shortDescription": "Las XXIX Fiestas del Artadecer se celebrarán en Santa Rosa de Osos del 8 al 17 de agosto de 2026, bajo el lema \"Cuando el sol se oculta, se ...",
+    "longDescription": "Las XXIX Fiestas del Artadecer se celebrarán en Santa Rosa de Osos del 8 al 17 de agosto de 2026, bajo el lema \"Cuando el sol se oculta, se revive la tradición de un pueblo\". El sábado 8 de agosto se realizará el Desfile a Caballo, con salida desde el Completo de la Virgen a las 5:00 p. m. y llegada al Parque Principal. A las 7:00 p. m. se llevará a cabo la Raspa en el Camellón. Las fiestas incluyen eventos de cultura, música, tradición y actividades para toda la familia.",
+    "startDate": "2026-08-17",
+    "startTime": "19:00",
+    "venue": "Santa Rosa de Osos",
+    "neighborhood": "Medellín",
+    "city": "Medellín",
+    "latitude": 6.648270999999999,
+    "longitude": -75.46090099999998,
+    "category": "música",
+    "priceType": "paid",
+    "priceMin": 25000,
+    "priceMax": 25000,
+    "currency": "COP",
+    "organizer": "Alcaldía de Santa Rosa de Osos",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Compás Urbano Medellín",
+        "url": "https://www.compasurbano.com/eventos"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:05:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:05:00-05:00",
+    "tags": [
+      "música",
+      "medellín",
+      "compas urbano"
+    ],
+    "score": 92
+  },
+  {
+    "id": "compas-13576",
+    "slug": "compas-fiestas-del-maiz",
+    "title": "Fiestas del Maíz",
+    "shortDescription": "Las Fiestas del Maíz 2026 en Sonsón se celebrarán oficialmente del 13 al 17 de agosto (durante el puente festivo de la Asunción). Este gran ...",
+    "longDescription": "Las Fiestas del Maíz 2026 en Sonsón se celebrarán oficialmente del 13 al 17 de agosto (durante el puente festivo de la Asunción). Este gran evento, recientemente declarado Patrimonio Cultural Inmaterial de Antioquia, contará con las presentaciones estelares de los artistas de música popular colombiana Luis Alfonso y Jhonny Rivera, quienes encabezarán una cartelera artística de alto nivel. La Administración Municipal anunció que en los próximos días se darán a conocer nuevos nombres que complementarán la programación, diseñada para consolidar a Sonsón como epicentro de la cultura, la música y la celebración en Antioquia.",
+    "startDate": "2026-08-17",
+    "startTime": "19:00",
+    "venue": "Sonsón",
+    "neighborhood": "Medellín",
+    "city": "Medellín",
+    "latitude": 5.712002,
+    "longitude": -75.309798,
+    "category": "música",
+    "priceType": "paid",
+    "priceMin": 25000,
+    "priceMax": 25000,
+    "currency": "COP",
+    "organizer": "Alcaldía de Sonsón",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Compás Urbano Medellín",
+        "url": "https://www.compasurbano.com/eventos"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:05:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:05:00-05:00",
+    "tags": [
+      "música",
+      "medellín",
+      "compas urbano"
+    ],
+    "score": 88
+  },
+  {
+    "id": "compas-1416",
+    "slug": "compas-festival-buen-comienzo",
+    "title": "Festival Buen Comienzo",
+    "shortDescription": "El Festival Buen Comienzo 2026 es el encuentro más grande de Latinoamérica dedicado a las niñas, los niños y sus familias. Durante cuatro dí...",
+    "longDescription": "El Festival Buen Comienzo 2026 es el encuentro más grande de Latinoamérica dedicado a las niñas, los niños y sus familias. Durante cuatro días, Plaza Mayor Medellín se transforma en un universo de experiencias donde el juego, el arte, la ciencia, la creatividad y el asombro cobran vida. Más de 20.000 m² y cuatro pabellones se convierten en escenarios para explorar, aprender, compartir y crear recuerdos inolvidables. Cada espacio está diseñado para que las niñas y los niños sean protagonistas de una experiencia única, en un entorno seguro, inspirador y lleno de posibilidades. Dirigido a niñas y niños de 0 a 10 años, sus familias, cuidadores, mujeres gestantes y lactantes. En la administración del Alcalde Federico Gutiérrez, el Festival ha superado los 200.000 participantes en dos años consecutivos, gracias a la articulación entre la Alcaldía de Medellín, instituciones educativas, organizaciones sociales y empresas privadas que creen en la infancia como prioridad de ciudad. En 2026, el Festival celebra su edición XVI con una propuesta que invita a soñar más lejos que nunca.",
+    "startDate": "2026-08-17",
+    "startTime": "19:00",
+    "venue": "Plaza Mayor",
+    "neighborhood": "Centro",
+    "city": "Medellín",
+    "latitude": 6.243841729806327,
+    "longitude": -75.57606624479126,
+    "category": "teatro",
+    "priceType": "paid",
+    "priceMin": 25000,
+    "priceMax": 25000,
+    "currency": "COP",
+    "organizer": "Alcaldía de Medellín",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Compás Urbano Medellín",
+        "url": "https://www.compasurbano.com/eventos"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:05:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:05:00-05:00",
+    "tags": [
+      "teatro",
+      "centro",
+      "compas urbano"
+    ],
+    "score": 97
+  },
+  {
+    "id": "compas-13665",
+    "slug": "compas-fiestas-del-riel-y-la-antioquenidad",
+    "title": "Fiestas del Riel y la Antioqueñidad",
+    "shortDescription": "Las XXXIX Fiestas del Riel y la Antioqueñidad 2026 se perfilan como uno de los eventos culturales más importantes del Nordeste antioqueño. L...",
+    "longDescription": "Las XXXIX Fiestas del Riel y la Antioqueñidad 2026 se perfilan como uno de los eventos culturales más importantes del Nordeste antioqueño. La celebración principal se concentrará durante el puente festivo del viernes 14 al lunes 17 de agosto de 2026, aunque la agenda de la Alcaldía de Cisneros suele extenderse con actividades culturales previas y posteriores. Artistas confirmados: Daniel Calderón y Los Gigantes del Vallenato (noche de vallenato romántico y parrandero), Alexis Escobar (artista cisnereño con sus mejores éxitos de música popular) y orquestas de música tropical con agrupaciones y DJs invitados para las noches de conciertos 'crossover' en la Avenida Principal.",
+    "startDate": "2026-08-17",
+    "startTime": "19:00",
+    "venue": "Cisneros",
+    "neighborhood": "Medellín",
+    "city": "Medellín",
+    "latitude": 6.538376,
+    "longitude": -75.08706699999999,
+    "category": "música",
+    "priceType": "paid",
+    "priceMin": 25000,
+    "priceMax": 25000,
+    "currency": "COP",
+    "organizer": "Alcaldía de Cisneros",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Compás Urbano Medellín",
+        "url": "https://www.compasurbano.com/eventos"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:05:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:05:00-05:00",
+    "tags": [
+      "música",
+      "medellín",
+      "compas urbano"
+    ],
+    "score": 94
+  },
+  {
+    "id": "compas-22073",
+    "slug": "compas-fiestas-del-oro-y-la-mineria",
+    "title": "Fiestas del Oro y la Minería",
+    "shortDescription": "Llegan las fiestas tradicionales y con ellas los eventos de cultura, deportivos, musicales y de tradición como: desfile de Carrozas, compete...",
+    "longDescription": "Llegan las fiestas tradicionales y con ellas los eventos de cultura, deportivos, musicales y de tradición como: desfile de Carrozas, competencias de Catangueros, de Arrieros, Chatarreras, Precarnaval y Carnaval de la Gigantona. Una celebración que honra a la Virgen del Carmen, el oro y la minería, con una programación variada para toda la familia.",
+    "startDate": "2026-08-17",
+    "startTime": "19:00",
+    "venue": "Municipio de Segovia, Antioquia",
+    "neighborhood": "Medellín",
+    "city": "Medellín",
+    "latitude": 7.079743499999999,
+    "longitude": -74.7004374,
+    "category": "música",
+    "priceType": "paid",
+    "priceMin": 25000,
+    "priceMax": 25000,
+    "currency": "COP",
+    "organizer": "Alcaldía de Segovia",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Compás Urbano Medellín",
+        "url": "https://www.compasurbano.com/eventos"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:05:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:05:00-05:00",
+    "tags": [
+      "música",
+      "medellín",
+      "compas urbano"
+    ],
+    "score": 96
+  },
+  {
+    "id": "compas-22448",
+    "slug": "compas-ii-festival-fotografico-de-medellin",
+    "title": "II Festival Fotográfico de Medellín",
+    "shortDescription": "El III Festival Fotográfico de Medellín, bajo el lema \"La imagen después de las imágenes\", se tomará la Biblioteca Pública Piloto durante ci...",
+    "longDescription": "El III Festival Fotográfico de Medellín, bajo el lema \"La imagen después de las imágenes\", se tomará la Biblioteca Pública Piloto durante cinco días con una amplia agenda de actividades y encuentros para pensar la fotografía, la memoria y las posibilidades de resignificar aquello que alguna vez decidimos mirar. El festival contará con más de 30 invitados, 20 charlas, 15 talleres, 3 exposiciones y sesiones de revisión de portafolios. Una invitación a reconocer las huellas de lo visual y a descubrir aquello que permanece, incluso después de las imágenes.",
+    "startDate": "2026-08-18",
+    "startTime": "19:00",
+    "venue": "Medellín",
+    "neighborhood": "Medellín",
+    "city": "Medellín",
+    "latitude": 6.2559194,
+    "longitude": -75.5774332,
+    "category": "talleres",
+    "priceType": "paid",
+    "priceMin": 25000,
+    "priceMax": 25000,
+    "currency": "COP",
+    "organizer": "Biblioteca Pública Piloto",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Compás Urbano Medellín",
+        "url": "https://www.compasurbano.com/eventos"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:05:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:05:00-05:00",
+    "tags": [
+      "talleres",
+      "medellín",
+      "compas urbano"
+    ],
+    "score": 90
+  },
+  {
+    "id": "compas-17834",
+    "slug": "compas-vartex-muestra-de-video-y-experimental",
+    "title": "Vartex Muestra de Video y Experimental",
+    "shortDescription": "La muestra de video y experimental más esperada de Medellín regresa en su decimocuarta edición. VARTEX 14 es un espacio dedicado a la explor...",
+    "longDescription": "La muestra de video y experimental más esperada de Medellín regresa en su decimocuarta edición. VARTEX 14 es un espacio dedicado a la exploración audiovisual, el videoarte y las expresiones experimentales, que convoca a creadores locales a mostrar sus obras. 🔗 Link: https://forms.gle/RAtosHmaWTsbyBPr9 (convocatoria cerrada)",
+    "startDate": "2026-08-19",
+    "startTime": "09:00",
+    "endTime": "13:00",
+    "venue": "Medellin",
+    "neighborhood": "Medellín",
+    "city": "Medellín",
+    "latitude": 6.2476376,
+    "longitude": -75.56581530000001,
+    "category": "teatro",
+    "priceType": "paid",
+    "priceMin": 25000,
+    "priceMax": 25000,
+    "currency": "COP",
+    "organizer": "Cinéfagos",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Compás Urbano Medellín",
+        "url": "https://www.compasurbano.com/eventos"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:05:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:05:00-05:00",
+    "tags": [
+      "teatro",
+      "medellín",
+      "compas urbano"
+    ],
+    "score": 94
+  },
+  {
+    "id": "compas-4151",
+    "slug": "compas-fiesta-de-las-artes-escenicas",
+    "title": "Fiesta de las Artes Escénicas",
+    "shortDescription": "Medellín en Escena, Asociación de Salas de Artes Escénicas, presenta la 22 Fiesta de las Artes Escénicas, un certamen que convoca las distin...",
+    "longDescription": "Medellín en Escena, Asociación de Salas de Artes Escénicas, presenta la 22 Fiesta de las Artes Escénicas, un certamen que convoca las distintas áreas del sector escénico local con conexiones nacionales e internacionales. Será un verdadero encuentro incluyente, amplio y diverso, con presentaciones de teatro, danza, música y otras expresiones artísticas.",
+    "startDate": "2026-08-21",
+    "startTime": "19:00",
+    "venue": "Diferentes lugares de la ciudad",
+    "neighborhood": "Medellín",
+    "city": "Medellín",
+    "latitude": 6.247637600000001,
+    "longitude": -75.5658153,
+    "category": "música",
+    "priceType": "paid",
+    "priceMin": 25000,
+    "priceMax": 25000,
+    "currency": "COP",
+    "organizer": "Medellín en Escena",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Compás Urbano Medellín",
+        "url": "https://www.compasurbano.com/eventos"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:05:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:05:00-05:00",
+    "tags": [
+      "música",
+      "medellín",
+      "compas urbano"
+    ],
+    "score": 94
+  },
+  {
+    "id": "compas-26211",
+    "slug": "compas-22-fiesta-de-las-artes-escenicas",
+    "title": "22ª Fiesta De Las Artes Escénicas",
+    "shortDescription": "¡Llegó la Fiesta teatral que hace vibrar a Medellín y Colombia! Del 21 al 29 de agosto de 2026, Medellín será una sola fiesta. La Fiesta de ...",
+    "longDescription": "¡Llegó la Fiesta teatral que hace vibrar a Medellín y Colombia! Del 21 al 29 de agosto de 2026, Medellín será una sola fiesta. La Fiesta de las Artes Escénicas de Medellín llega a su versión número veintidós, con 20 grupos seleccionados, 23 salas de teatro, 150 funciones, 6 eventos especiales, funciones en regiones, más de 1.000 artistas en escena y 9 días de puro teatro. Participan grupos de Argentina, Ecuador, Bogotá, Cali, Barranquilla, Villa de Leyva, Pasto, Manizales y Medellín. Más de 80 grupos locales serán parte de la programación de salas y eventos especiales. Regresan los eventos especiales de la Fiesta: Molienda de Teatro, Teatro y Cocina, Molienda de Danza, Molienda de Cuentería, Piñata de la Fiesta y la Fiesta Clown. Ilustración: Ana María Giraldo.",
+    "startDate": "2026-08-21",
+    "startTime": "19:00",
+    "venue": "Medellín (23 salas de teatro y diferentes espacios de la ciudad)",
+    "neighborhood": "Medellín",
+    "city": "Medellín",
+    "latitude": 6.2442,
+    "longitude": -75.5812,
+    "category": "teatro",
+    "priceType": "paid",
+    "priceMin": 25000,
+    "priceMax": 25000,
+    "currency": "COP",
+    "organizer": "Alcaldía de Medellín",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Compás Urbano Medellín",
+        "url": "https://www.compasurbano.com/eventos"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:05:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:05:00-05:00",
+    "tags": [
+      "teatro",
+      "medellín",
+      "compas urbano"
+    ],
+    "score": 94
+  },
+  {
+    "id": "compas-14727",
+    "slug": "compas-expocamacol",
+    "title": "Expocamacol",
+    "shortDescription": "Es el evento estratégico que reúne a líderes, empresas y profesionales de la cadena productiva de la construcción. Una feria internacional d...",
+    "longDescription": "Es el evento estratégico que reúne a líderes, empresas y profesionales de la cadena productiva de la construcción. Una feria internacional donde se construyen negocios, se exploran las últimas tendencias y se crean alianzas que impulsan el crecimiento del sector. Una vitrina de oportunidades donde el networking, la innovación, la actualización y el conocimiento son los protagonistas. EN EXPOCAMACOL 2026 encontrará: Muestra comercial nacional e internacional +500 expositores de 20 países 24.000 m² de exhibición Visitantes de 60 países Ruedas de negocios Agenda académica, conocimiento y tendencias Demostraciones de productos Lanzamientos de productos y servicios Networking Vitrina de la Innovación Hall del Diseño",
+    "startDate": "2026-08-26",
+    "startTime": "19:00",
+    "venue": "Plaza Mayor",
+    "neighborhood": "Centro",
+    "city": "Medellín",
+    "latitude": 6.2424658,
+    "longitude": -75.5767372,
+    "category": "música",
+    "priceType": "paid",
+    "priceMin": 25000,
+    "priceMax": 25000,
+    "currency": "COP",
+    "organizer": "Ferias Camacol",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Compás Urbano Medellín",
+        "url": "https://www.compasurbano.com/eventos"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:05:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:05:00-05:00",
+    "tags": [
+      "música",
+      "centro",
+      "compas urbano"
+    ],
+    "score": 88
+  },
+  {
+    "id": "compas-4244",
+    "slug": "compas-dulcemania",
+    "title": "Dulcemanía",
+    "shortDescription": "Este festival reúne a las mejores pastelerías, panaderías y reposterías en una celebración de dos semanas que endulza la ciudad . Los visita...",
+    "longDescription": "Este festival reúne a las mejores pastelerías, panaderías y reposterías en una celebración de dos semanas que endulza la ciudad . Los visitantes pueden descubrir y degustar una amplia variedad de productos que van desde postres tradicionales hasta creaciones artesanales. Además, el evento incluye una promoción donde los asistentes pueden inscribirse para participar por premios por un valor total de $1.200.000 COP",
+    "startDate": "2026-08-28",
+    "startTime": "19:00",
+    "venue": "Varias reposterías",
+    "neighborhood": "El Poblado",
+    "city": "Medellín",
+    "latitude": 6.2442,
+    "longitude": -75.5812,
+    "category": "arte",
+    "priceType": "free",
+    "priceMin": 0,
+    "priceMax": 0,
+    "currency": "COP",
+    "organizer": "Medellín Gourmet",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Compás Urbano Medellín",
+        "url": "https://www.compasurbano.com/eventos"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:05:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:05:00-05:00",
+    "tags": [
+      "arte",
+      "el poblado",
+      "compas urbano"
+    ],
+    "score": 91
+  },
+  {
+    "id": "compas-13987",
+    "slug": "compas-feria-empresarial-y-del-emprendimiento-hecho-en-medellin",
+    "title": "Feria Empresarial y del Emprendimiento Hecho en Medellín",
+    "shortDescription": "La Feria Empresarial y del Emprendimiento Hecho en Medellín se realizará en Plaza Mayor Medellín. El evento contará con entrada libre, más d...",
+    "longDescription": "La Feria Empresarial y del Emprendimiento Hecho en Medellín se realizará en Plaza Mayor Medellín. El evento contará con entrada libre, más de 300 marcas expositoras y espacios dedicados a la cultura, el arte, la gastronomía y la innovación local. Esta iniciativa busca promover la compra de productos locales y así incentivar la reactivación económica, generando cientos de empleos y sostén económico a familias medellinenses . Los visitantes podrán explorar una oferta que incluye sectores como el cafetero, cervecero e infantil, además de muestras artísticas y charlas.",
+    "startDate": "2026-08-29",
+    "startTime": "08:00",
+    "endTime": "18:00",
+    "venue": "Plaza Mayor Medellín",
+    "neighborhood": "Centro",
+    "city": "Medellín",
+    "latitude": 6.242609475744016,
+    "longitude": -75.57610988616943,
+    "category": "arte",
+    "priceType": "paid",
+    "priceMin": 25000,
+    "priceMax": 25000,
+    "currency": "COP",
+    "organizer": "Plaza Mayor Medellín",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Compás Urbano Medellín",
+        "url": "https://www.compasurbano.com/eventos"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:05:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:05:00-05:00",
+    "tags": [
+      "arte",
+      "centro",
+      "compas urbano"
+    ],
+    "score": 92
+  },
+  {
+    "id": "compas-1283",
+    "slug": "compas-10-festival-internacional-de-cine-afro-comunitario-kunta-kinte-2026",
+    "title": "10.° Festival Internacional De Cine Afro Comunitario Kunta Kinte 2026",
+    "shortDescription": "El 10.° Festival Internacional de Cine Afro Comunitario Kunta Kinte se llevará a cabo del 2 al 6 de septiembre de 2026 en la ciudad de Medel...",
+    "longDescription": "El 10.° Festival Internacional de Cine Afro Comunitario Kunta Kinte se llevará a cabo del 2 al 6 de septiembre de 2026 en la ciudad de Medellín, Colombia. Este año, el tema central del festival es \"Resistencia y creatividad de los pueblos afrodescendientes\". El festival busca rescatar y valorar las historias de resistencia, resiliencia y creatividad que han definido la experiencia afrodescendiente a través del cine. La programación será variada, abarcando todas las edades y temáticas, con el objetivo de acercar a toda la población a una cultura audiovisual con identidad. El festival incluirá exhibiciones, conversatorios y actividades de formación, todo de manera presencial, y fomentará la interacción entre realizadores, fotógrafos/as, productores y artistas afrodescendientes con el público. La convocatoria para inscripción de obras está abierta hasta el 30 de julio de 2026. Las inscripciones son gratuitas a través de la plataforma Festhome o vía correo electrónico. Podrán participar obras colombianas y extranjeras con temática afro, negras, palanqueras y raizales, producidas a partir del 1 de enero de 2020. Se otorgarán premios a las mejores producciones en las diferentes categorías, incluyendo un premio del público.",
+    "startDate": "2026-09-02",
+    "startTime": "19:00",
+    "venue": "Varios escenarios",
+    "neighborhood": "Medellín",
+    "city": "Medellín",
+    "latitude": 6.247637600000001,
+    "longitude": -75.5658153,
+    "category": "música",
+    "priceType": "paid",
+    "priceMin": 25000,
+    "priceMax": 25000,
+    "currency": "COP",
+    "organizer": "FICCA K.K.",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Compás Urbano Medellín",
+        "url": "https://www.compasurbano.com/eventos"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:05:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:05:00-05:00",
+    "tags": [
+      "música",
+      "medellín",
+      "compas urbano"
+    ],
+    "score": 97
+  },
+  {
+    "id": "compas-539",
+    "slug": "compas-maraton-medellin",
+    "title": "Maratón Medellín",
+    "shortDescription": "Descripción: El Maratón Medellín Sistecrédito 2026 es el evento deportivo que recorre las calles de Medellín y ofrece distancias para todos ...",
+    "longDescription": "Descripción: El Maratón Medellín Sistecrédito 2026 es el evento deportivo que recorre las calles de Medellín y ofrece distancias para todos los niveles. El domingo 6 de septiembre se correrán las distancias de 42K, 21K y 10K. El sábado 5 de septiembre se realizará la distancia de 5K. Una oportunidad para correr entre montañas y vivir la experiencia del running en la ciudad de la eterna primavera.",
+    "startDate": "2026-09-05",
+    "startTime": "19:00",
+    "venue": "Parques del Río",
+    "neighborhood": "Laureles",
+    "city": "Medellín",
+    "latitude": 6.243595699999999,
+    "longitude": -75.5795253,
+    "category": "comunidad",
+    "priceType": "paid",
+    "priceMin": 25000,
+    "priceMax": 25000,
+    "currency": "COP",
+    "organizer": "MCM Operador de Eventos",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Compás Urbano Medellín",
+        "url": "https://www.compasurbano.com/eventos"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": false,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:05:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:05:00-05:00",
+    "tags": [
+      "comunidad",
+      "laureles",
+      "compas urbano"
+    ],
+    "score": 96
+  },
+  {
+    "id": "compas-13133",
+    "slug": "compas-medejazz",
+    "title": "Medejazz",
+    "shortDescription": "El Festival Internacional Medejazz celebra 30 años con un concierto especial en el Gran Salón de Plaza Mayor, que reunirá a grandes figuras ...",
+    "longDescription": "El Festival Internacional Medejazz celebra 30 años con un concierto especial en el Gran Salón de Plaza Mayor, que reunirá a grandes figuras de la música. El evento contará con la presentación de Joseph Amado (El Cantante de Cuba) y su orquesta, Andrésito Hernández y su orquesta, y un homenaje a Son 14. Acompañados por la Orquesta Sinfónica EAFIT en una experiencia sinfónica única. ¡Una noche imperdible para celebrar tres décadas de jazz en Medellín!",
+    "startDate": "2026-09-05",
+    "startTime": "19:00",
+    "venue": "Plaza Mayor",
+    "neighborhood": "Centro",
+    "city": "Medellín",
+    "latitude": 6.2442,
+    "longitude": -75.5812,
+    "category": "música",
+    "priceType": "paid",
+    "priceMin": 25000,
+    "priceMax": 25000,
+    "currency": "COP",
+    "organizer": "Medejazz",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Compás Urbano Medellín",
+        "url": "https://www.compasurbano.com/eventos"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:05:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:05:00-05:00",
+    "tags": [
+      "música",
+      "centro",
+      "compas urbano"
+    ],
+    "score": 94
+  },
+  {
+    "id": "compas-13134",
+    "slug": "compas-tedxmedellin",
+    "title": "TEDxMedellín",
+    "shortDescription": "El 5 de septiembre, el Teatro Metropolitano se convierte en el laboratorio de ideas más grande de la ciudad. Únete a una jornada donde cient...",
+    "longDescription": "El 5 de septiembre, el Teatro Metropolitano se convierte en el laboratorio de ideas más grande de la ciudad. Únete a una jornada donde científicos, empresarios, líderes, artistas y emprendedores comparten visiones que desafían el presente. Porque en Medellín, el futuro se escribe en plural. ¡Ven a crear con nosotros! TEDxMedellín 2026 - Creando Juntos",
+    "startDate": "2026-09-05",
+    "startTime": "19:00",
+    "venue": "Centro de Eventos UPB, Medellín",
+    "neighborhood": "Laureles",
+    "city": "Medellín",
+    "latitude": 6.241143,
+    "longitude": -75.5907313,
+    "category": "teatro",
+    "priceType": "paid",
+    "priceMin": 25000,
+    "priceMax": 25000,
+    "currency": "COP",
+    "organizer": "TEDx Medellín",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Compás Urbano Medellín",
+        "url": "https://www.compasurbano.com/eventos"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:05:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:05:00-05:00",
+    "tags": [
+      "teatro",
+      "laureles",
+      "compas urbano"
+    ],
+    "score": 96
+  },
+  {
+    "id": "compas-13939",
+    "slug": "compas-festival-coral-internacional-de-medellin",
+    "title": "Festival Coral Internacional de Medellín",
+    "shortDescription": "Frente a lo artificial, vibramos con el canto de los seres vivos. Del 8 al 13 de septiembre de 2026, Medellín y Antioquia celebrarán la edic...",
+    "longDescription": "Frente a lo artificial, vibramos con el canto de los seres vivos. Del 8 al 13 de septiembre de 2026, Medellín y Antioquia celebrarán la edición número 25 del Encuentro Internacional de Coros, con seis días de conciertos, talleres y encuentros corales con agrupaciones nacionales e internacionales, con entrada libre para todo el público. El festival contará con la participación de 38 coros, 32 conciertos y 7 talleres. Los asistentes podrán disfrutar de una programación que reúne voces de diferentes partes del mundo en un ambiente de fraternidad y expresión artística, con el canto como herramienta de conexión y transformación social.",
+    "startDate": "2026-09-08",
+    "startTime": "19:00",
+    "venue": "Teatro Metropolitano José Gutiérrez Gómez",
+    "neighborhood": "Centro",
+    "city": "Medellín",
+    "latitude": 6.242964094124441,
+    "longitude": -75.57755011715926,
+    "category": "música",
+    "priceType": "paid",
+    "priceMin": 25000,
+    "priceMax": 25000,
+    "currency": "COP",
+    "organizer": "Corporación Ensamble Vocal de Medellín",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Compás Urbano Medellín",
+        "url": "https://www.compasurbano.com/eventos"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:05:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:05:00-05:00",
+    "tags": [
+      "música",
+      "centro",
+      "compas urbano"
+    ],
+    "score": 89
+  },
+  {
+    "id": "compas-13020",
+    "slug": "compas-fiesta-del-libro-y-la-cultura-de-medellin",
+    "title": "Fiesta del Libro y la Cultura de Medellín",
+    "shortDescription": "La 20.ª Fiesta del Libro y la Cultura de Medellín se celebrará del 11 al 20 de septiembre de 2026, con Corea del Sur como invitado de honor ...",
+    "longDescription": "La 20.ª Fiesta del Libro y la Cultura de Medellín se celebrará del 11 al 20 de septiembre de 2026, con Corea del Sur como invitado de honor y bajo el lema \"Las travesías de la lectura\". Este evento conmemora los 20 años de historia de la Fiesta, un espacio que ha consolidado a Medellín como un referente cultural en el país y el mundo. La programación incluirá una variada oferta de actividades como conversatorios, presentaciones de libros, talleres, música, danza y actividades para niños y jóvenes. Los invitados principales incluyen a Corea del Sur como invitado de honor, El Quijote como personaje universal y la editorial Almadía como internacional invitada.",
+    "startDate": "2026-09-11",
+    "startTime": "19:00",
+    "venue": "Jardín Botanico de Medellín",
+    "neighborhood": "Aranjuez",
+    "city": "Medellín",
+    "latitude": 6.2704739,
+    "longitude": -75.56356459999999,
+    "category": "música",
+    "priceType": "free",
+    "priceMin": 0,
+    "priceMax": 0,
+    "currency": "COP",
+    "organizer": "Alcaldía de Medellín",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Compás Urbano Medellín",
+        "url": "https://www.compasurbano.com/eventos"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:05:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:05:00-05:00",
+    "tags": [
+      "música",
+      "aranjuez",
+      "compas urbano"
+    ],
+    "score": 97
+  },
+  {
+    "id": "compas-2445",
+    "slug": "compas-festival-de-cine-de-jardin",
+    "title": "Festival de Cine de Jardín",
+    "shortDescription": "El 11° Festival de Cine de Jardín se celebrará en el municipio de Jardín, Antioquia, ofreciendo una programación que incluye proyecciones de...",
+    "longDescription": "El 11° Festival de Cine de Jardín se celebrará en el municipio de Jardín, Antioquia, ofreciendo una programación que incluye proyecciones de cine nacional e internacional, encuentros académicos y actividades de formación de públicos . El festival está organizado por la Corporación Antioquia Audiovisual y cuenta con la dirección del reconocido cineasta Víctor Gaviria . Incluirá la competencia de cortometrajes \"Caleidoscopio\" y busca consolidarse como un espacio de exhibición cinematográfica, debate académico y construcción de comunidad en la región .",
+    "startDate": "2026-09-24",
+    "startTime": "19:00",
+    "venue": "Jardín",
+    "neighborhood": "Jardín",
+    "city": "Jardín",
+    "latitude": 5.598672000000001,
+    "longitude": -75.81977990000001,
+    "category": "cine",
+    "priceType": "paid",
+    "priceMin": 25000,
+    "priceMax": 25000,
+    "currency": "COP",
+    "organizer": "Alcaldía de Jardín",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Compás Urbano Medellín",
+        "url": "https://www.compasurbano.com/eventos"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:05:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:05:00-05:00",
+    "tags": [
+      "cine",
+      "jardín",
+      "compas urbano"
+    ],
+    "score": 97
+  },
+  {
+    "id": "compas-13979",
+    "slug": "compas-festival-de-cine-verde-de-barichara",
+    "title": "Festival de Cine Verde de Barichara",
+    "shortDescription": "La 16ª edición del Festival de Cine Verde de Barichara (Festiver) se realizará en el municipio de Barichara, Santander. Este evento competit...",
+    "longDescription": "La 16ª edición del Festival de Cine Verde de Barichara (Festiver) se realizará en el municipio de Barichara, Santander. Este evento competitivo promueve la conciencia ambiental a través del cine y los medios audiovisuales, ofreciendo una variada programación de participación gratuita . Fundado por los actores colombianos Toto Vega (fallecido) y Nórida Rodríguez, el festival busca inspirar a una nueva generación de realizadores y público comprometido con la defensa del medio ambiente . Bajo el lema \"Lo que cuidemos hoy, lo tendremos mañana\", la edición 2026 incluye competencias nacionales e internacionales en categorías como largometraje, cortometraje y la nueva categoría de videoclip musical ambiental . Las obras seleccionadas serán anunciadas el 21 de agosto de 2026 .",
+    "startDate": "2026-09-24",
+    "startTime": "19:00",
+    "venue": "Barichara",
+    "neighborhood": "Medellín",
+    "city": "Medellín",
+    "latitude": 6.635848999999999,
+    "longitude": -73.223409,
+    "category": "música",
+    "priceType": "paid",
+    "priceMin": 25000,
+    "priceMax": 25000,
+    "currency": "COP",
+    "organizer": "Fundación Festival de Cine Verde Festiver",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Compás Urbano Medellín",
+        "url": "https://www.compasurbano.com/eventos"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:05:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:05:00-05:00",
+    "tags": [
+      "música",
+      "medellín",
+      "compas urbano"
+    ],
+    "score": 96
+  },
+  {
+    "id": "compas-13988",
+    "slug": "compas-feria-de-la-vivienda",
+    "title": "Feria de la Vivienda",
+    "shortDescription": "La Feria de la Vivienda Medellín 2026 se llevará a cabo en el Centro de Convenciones Plaza Mayor. Organizado tradicionalmente por La Lonja: ...",
+    "longDescription": "La Feria de la Vivienda Medellín 2026 se llevará a cabo en el Centro de Convenciones Plaza Mayor. Organizado tradicionalmente por La Lonja: El Gremio Inmobiliario, este evento es el principal escaparate para conocer la oferta habitacional de Medellín, el Valle de Aburrá y el Oriente cercano. Los asistentes podrán conocer proyectos de vivienda, opciones de financiamiento y recibir orientación de asesores especializados en el sector inmobiliario.",
+    "startDate": "2026-09-25",
+    "startTime": "19:00",
+    "venue": "Plaza Mayor Medellín",
+    "neighborhood": "Centro",
+    "city": "Medellín",
+    "latitude": 6.242609475744016,
+    "longitude": -75.57610988616943,
+    "category": "mercados",
+    "priceType": "paid",
+    "priceMin": 25000,
+    "priceMax": 25000,
+    "currency": "COP",
+    "organizer": "La Lonja",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Compás Urbano Medellín",
+        "url": "https://www.compasurbano.com/eventos"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": false,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:05:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:05:00-05:00",
+    "tags": [
+      "mercados",
+      "centro",
+      "compas urbano"
+    ],
+    "score": 91
+  },
+  {
+    "id": "compas-13993",
+    "slug": "compas-continental-stars",
+    "title": "Continental Stars",
+    "shortDescription": "Continental Stars es un campeonato de entretenimiento que se llevará a cabo en el Gran Salón de Plaza Mayor. Durante tres días, el público p...",
+    "longDescription": "Continental Stars es un campeonato de entretenimiento que se llevará a cabo en el Gran Salón de Plaza Mayor. Durante tres días, el público podrá disfrutar de un espectáculo de alto nivel. El evento cuenta con un aforo VIP de 300 personas y un aforo General de 700 personas. Las entradas estarán disponibles para la venta online a partir de abril de 2026.",
+    "startDate": "2026-09-25",
+    "startTime": "19:00",
+    "venue": "Plaza Mayor Medellín",
+    "neighborhood": "Centro",
+    "city": "Medellín",
+    "latitude": 6.242609475744016,
+    "longitude": -75.57610988616943,
+    "category": "música",
+    "priceType": "paid",
+    "priceMin": 25000,
+    "priceMax": 25000,
+    "currency": "COP",
+    "organizer": "LÖND Photography",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Compás Urbano Medellín",
+        "url": "https://www.compasurbano.com/eventos"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:05:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:05:00-05:00",
+    "tags": [
+      "música",
+      "centro",
+      "compas urbano"
+    ],
+    "score": 94
+  },
+  {
+    "id": "compas-4426",
+    "slug": "compas-festiteatro-envigado",
+    "title": "Festiteatro Envigado",
+    "shortDescription": "Para 2026 aún no tenemos información. ⚠️ Quédate pendiente de nuestras actualizaciones, te mantendremos informado....",
+    "longDescription": "Para 2026 aún no tenemos información. ⚠️ Quédate pendiente de nuestras actualizaciones, te mantendremos informado.",
+    "startDate": "2026-09-26",
+    "startTime": "16:00",
+    "endTime": "21:30",
+    "venue": "Varios escenarios de Envigado",
+    "neighborhood": "Envigado",
+    "city": "Envigado",
+    "latitude": 6.1697969,
+    "longitude": -75.5880813,
+    "category": "teatro",
+    "priceType": "free",
+    "priceMin": 0,
+    "priceMax": 0,
+    "currency": "COP",
+    "organizer": "Corporación Otraparte",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Compás Urbano Medellín",
+        "url": "https://www.compasurbano.com/eventos"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:05:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:05:00-05:00",
+    "tags": [
+      "teatro",
+      "envigado",
+      "compas urbano"
+    ],
+    "score": 96
+  },
+  {
+    "id": "compas-23092",
+    "slug": "compas-carrera-de-las-rosas",
+    "title": "Carrera de las Rosas",
+    "shortDescription": "Evento deportivo con sentido social que promueve la prevención del cáncer de mama a través del deporte, con recorridos para todas las edades...",
+    "longDescription": "Evento deportivo con sentido social que promueve la prevención del cáncer de mama a través del deporte, con recorridos para todas las edades y niveles.",
+    "startDate": "2026-09-27",
+    "startTime": "17:00",
+    "venue": "Parque de las Luces",
+    "neighborhood": "Medellín",
+    "city": "Medellín",
+    "latitude": 6.246051,
+    "longitude": -75.5722248,
+    "category": "comunidad",
+    "priceType": "paid",
+    "priceMin": 25000,
+    "priceMax": 25000,
+    "currency": "COP",
+    "organizer": "NA",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Compás Urbano Medellín",
+        "url": "https://www.compasurbano.com/eventos"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": false,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:05:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:05:00-05:00",
+    "tags": [
+      "comunidad",
+      "medellín",
+      "compas urbano"
+    ],
+    "score": 89
+  },
+  {
+    "id": "compas-20081",
+    "slug": "compas-exponails",
+    "title": "Exponails",
+    "shortDescription": "Principal feria de la industria de las uñas en Colombia, dedicada a profesionales y marcas del cuidado, decoración y tendencias en uñas . El...",
+    "longDescription": "Principal feria de la industria de las uñas en Colombia, dedicada a profesionales y marcas del cuidado, decoración y tendencias en uñas . El evento reúne expositores nacionales e internacionales con lanzamientos de productos, demostraciones en vivo y espacios de aprendizaje para quienes trabajan o están interesados en este sector de la belleza . La feria se estructura en tres grandes componentes: un área comercial activa para la venta y prueba de productos; un congreso internacional con sesiones educativas a cargo de instructores nacionales e internacionales; y un escenario competitivo para el reconocimiento del talento . Los niños mayores de 12 años deben adquirir su entrada .",
+    "startDate": "2026-10-03",
+    "startTime": "19:00",
+    "venue": "Plaza Mayor Medellín",
+    "neighborhood": "Centro",
+    "city": "Medellín",
+    "latitude": 6.242609475744016,
+    "longitude": -75.57610988616943,
+    "category": "mercados",
+    "priceType": "paid",
+    "priceMin": 25000,
+    "priceMax": 25000,
+    "currency": "COP",
+    "organizer": "Plaza Mayor Medellín",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Compás Urbano Medellín",
+        "url": "https://www.compasurbano.com/eventos"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": false,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:05:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:05:00-05:00",
+    "tags": [
+      "mercados",
+      "centro",
+      "compas urbano"
+    ],
+    "score": 95
+  },
+  {
+    "id": "compas-22494",
+    "slug": "compas-festival-el-perpetuo-socorro",
+    "title": "Festival El Perpetuo Socorro",
+    "shortDescription": "La edición 2026 del Festival El Perpetuo Socorro se celebrará el sábado 3 de octubre de 2026. Organizado por la Corporación Perpetuo Socorro...",
+    "longDescription": "La edición 2026 del Festival El Perpetuo Socorro se celebrará el sábado 3 de octubre de 2026. Organizado por la Corporación Perpetuo Socorro junto a aliados locales, este gran festival urbano y cultural transformará por completo las calles del primer Distrito Creativo de Medellín. El festival ofrece una programación variada que incluye actividades culturales, artísticas y recreativas para toda la familia, convirtiendo el sector en un epicentro de creatividad y encuentro comunitario. En ediciones anteriores, el festival ha contado con escenarios para bandas locales y nacionales, zona de emprendimiento, gastronomía y talleres.",
+    "startDate": "2026-10-03",
+    "startTime": "11:00",
+    "endTime": "22:00",
+    "venue": "El Perpetuo Socorro, Distrito Creativo de Medellín",
+    "neighborhood": "El Poblado",
+    "city": "Medellín",
+    "latitude": 6.2356652,
+    "longitude": -75.5723204,
+    "category": "música",
+    "priceType": "paid",
+    "priceMin": 25000,
+    "priceMax": 25000,
+    "currency": "COP",
+    "organizer": "Corporación Perpetuo Socorro",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Compás Urbano Medellín",
+        "url": "https://www.compasurbano.com/eventos"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:05:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:05:00-05:00",
+    "tags": [
+      "música",
+      "el poblado",
+      "compas urbano"
+    ],
+    "score": 97
+  },
+  {
+    "id": "compas-4565",
+    "slug": "compas-medellin-es-afro",
+    "title": "Medellín es Afro",
+    "shortDescription": "Festiafro es un espacio para reconocer, sentir y celebrar la huella africana en Medellín. Durante dos días el Parque de las Luces se llenará...",
+    "longDescription": "Festiafro es un espacio para reconocer, sentir y celebrar la huella africana en Medellín. Durante dos días el Parque de las Luces se llenará de música, danza y experiencias que invitan a valorar y respetar la herencia afro que hace parte de nuestra historia y cultura.",
+    "startDate": "2026-10-10",
+    "startTime": "10:00",
+    "endTime": "00:00",
+    "venue": "Parque de los Deseos",
+    "neighborhood": "Aranjuez",
+    "city": "Medellín",
+    "latitude": 6.2684353,
+    "longitude": -75.56608549999999,
+    "category": "música",
+    "priceType": "free",
+    "priceMin": 0,
+    "priceMax": 0,
+    "currency": "COP",
+    "organizer": "Alcaldía de Medellín",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Compás Urbano Medellín",
+        "url": "https://www.compasurbano.com/eventos"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:05:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:05:00-05:00",
+    "tags": [
+      "música",
+      "aranjuez",
+      "compas urbano"
+    ],
+    "score": 93
+  },
+  {
+    "id": "compas-12827",
+    "slug": "compas-altavoz",
+    "title": "Altavoz",
+    "shortDescription": "El Festival Internacional Altavoz 2026 reúne bandas emergentes seleccionadas en Ciudad Altavoz , junto con agrupaciones nacionales e interna...",
+    "longDescription": "El Festival Internacional Altavoz 2026 reúne bandas emergentes seleccionadas en Ciudad Altavoz , junto con agrupaciones nacionales e internacionales, consolidándose como una de las plataformas más importantes de música alternativa en Medellín. Durante tres días, el festival ofrece conciertos en diversos géneros, talleres, conversatorios y espacios de encuentro con la industria musical, fomentando la conexión entre artistas y público y promoviendo la proyección artística local e internacional.",
+    "startDate": "2026-10-10",
+    "startTime": "19:00",
+    "venue": "Estadio Cincuentenario",
+    "neighborhood": "Laureles",
+    "city": "Medellín",
+    "latitude": 6.2442,
+    "longitude": -75.5812,
+    "category": "música",
+    "priceType": "free",
+    "priceMin": 0,
+    "priceMax": 0,
+    "currency": "COP",
+    "organizer": "Alcaldía de Medellín",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Compás Urbano Medellín",
+        "url": "https://www.compasurbano.com/eventos"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:05:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:05:00-05:00",
+    "tags": [
+      "música",
+      "laureles",
+      "compas urbano"
+    ],
+    "score": 95
+  },
+  {
+    "id": "compas-544",
+    "slug": "compas-festival-de-cine-y-video-comuna-13-la-otra-historia",
+    "title": "Festival de Cine y Video Comuna 13 - La Otra Historia",
+    "shortDescription": "El 16º Festival de Cine y Video Comuna 13, La Otra Historia, se realizará en Medellín, Colombia, enfocado en el cine comunitario como genera...",
+    "longDescription": "El 16º Festival de Cine y Video Comuna 13, La Otra Historia, se realizará en Medellín, Colombia, enfocado en el cine comunitario como generador de cambio social [Tu texto]. La convocatoria está abierta en la plataforma Festhome sin costo de inscripción para cortometrajes de menos de 30 minutos [Tu texto]. El tema central de esta edición es \"El Cine Comunitario como generador de Cambio y Progreso Social\", priorizando contenido con este enfoque, aunque se aceptan otros tipos de obras . Las categorías del festival incluyen documental, ficción, video clip/experimental, video universitario con comunidades y contenido infantil (para niños de 8 a 14 años) . Se reciben obras realizadas a partir de 2023 . Los ganadores recibirán una estatuilla en la ceremonia de clausura y podrán participar en otros eventos nacionales .",
+    "startDate": "2026-10-20",
+    "startTime": "19:00",
+    "venue": "Comuna 13",
+    "neighborhood": "Medellín",
+    "city": "Medellín",
+    "latitude": 6.257155395936606,
+    "longitude": -75.6144172751566,
+    "category": "teatro",
+    "priceType": "paid",
+    "priceMin": 25000,
+    "priceMax": 25000,
+    "currency": "COP",
+    "organizer": "Full Producciones",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Compás Urbano Medellín",
+        "url": "https://www.compasurbano.com/eventos"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:05:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:05:00-05:00",
+    "tags": [
+      "teatro",
+      "medellín",
+      "compas urbano"
+    ],
+    "score": 93
+  },
+  {
+    "id": "compas-560",
+    "slug": "compas-test-drive-by-expocar",
+    "title": "Test Drive by Expocar",
+    "shortDescription": "Evento automotriz que une AutoShow Colombia y Expocar en una sola experiencia, reuniendo marcas, concesionarios, expertos y fanáticos del mu...",
+    "longDescription": "Evento automotriz que une AutoShow Colombia y Expocar en una sola experiencia, reuniendo marcas, concesionarios, expertos y fanáticos del mundo motor. Una vitrina para conocer vehículos nuevos, tendencias e innovación en la industria, con actividades para toda la familia.",
+    "startDate": "2026-10-23",
+    "startTime": "10:00",
+    "endTime": "20:00",
+    "venue": "Plaza Mayor",
+    "neighborhood": "Centro",
+    "city": "Medellín",
+    "latitude": 6.243839899999999,
+    "longitude": -75.57589999999999,
+    "category": "comunidad",
+    "priceType": "paid",
+    "priceMin": 25000,
+    "priceMax": 25000,
+    "currency": "COP",
+    "organizer": "Expo Car Medellín - Fenalco Antioquia",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Compás Urbano Medellín",
+        "url": "https://www.compasurbano.com/eventos"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": false,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:05:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:05:00-05:00",
+    "tags": [
+      "comunidad",
+      "centro",
+      "compas urbano"
+    ],
+    "score": 96
+  },
+  {
+    "id": "compas-1613",
+    "slug": "compas-fiesta-de-la-diversidad",
+    "title": "Fiesta de la Diversidad",
+    "shortDescription": "Celebración de la diversidad con actividades culturales, artísticas y comunitarias....",
+    "longDescription": "Celebración de la diversidad con actividades culturales, artísticas y comunitarias.",
+    "startDate": "2026-10-24",
+    "startTime": "19:00",
+    "venue": "Parque de los Deseos",
+    "neighborhood": "Aranjuez",
+    "city": "Medellín",
+    "latitude": 6.2684353,
+    "longitude": -75.56608549999999,
+    "category": "fiesta",
+    "priceType": "paid",
+    "priceMin": 25000,
+    "priceMax": 25000,
+    "currency": "COP",
+    "organizer": "Alcaldía de Medellín",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Compás Urbano Medellín",
+        "url": "https://www.compasurbano.com/eventos"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": false,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:05:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:05:00-05:00",
+    "tags": [
+      "fiesta",
+      "aranjuez",
+      "compas urbano"
+    ],
+    "score": 92
+  },
+  {
+    "id": "compas-4601",
+    "slug": "compas-miradas-medellin",
+    "title": "Miradas Medellín",
+    "shortDescription": "Miradas Medellín celebra su edición 2025 con el concepto Geografías Creativas , una invitación a recorrer los barrios, comunas y corregimien...",
+    "longDescription": "Miradas Medellín celebra su edición 2025 con el concepto Geografías Creativas , una invitación a recorrer los barrios, comunas y corregimientos de la ciudad a través del cine. Durante seis días, el evento ofrecerá proyecciones, laboratorios, talleres y espacios de encuentro entre creadores, productores e inversionistas. Organizado por la Alcaldía de Medellín, la Cinemateca Distrital y la Comisión Fílmica de Medellín, el festival reafirma su espíritu abierto e incluyente, llevando el cine a los territorios y conectando las historias que habitan la ciudad.",
+    "startDate": "2026-11-03",
+    "startTime": "19:00",
+    "venue": "alcaldía de medellín",
+    "neighborhood": "Medellín",
+    "city": "Medellín",
+    "latitude": 6.2442,
+    "longitude": -75.5812,
+    "category": "cine",
+    "priceType": "free",
+    "priceMin": 0,
+    "priceMax": 0,
+    "currency": "COP",
+    "organizer": "Alcaldía de Medellín",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Compás Urbano Medellín",
+        "url": "https://www.compasurbano.com/eventos"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": false,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:05:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:05:00-05:00",
+    "tags": [
+      "cine",
+      "medellín",
+      "compas urbano"
+    ],
+    "score": 90
+  },
+  {
+    "id": "compas-4418",
+    "slug": "compas-danzamed",
+    "title": "DanzaMed",
+    "shortDescription": "Evento dedicado a la danza con presentaciones y encuentros artísticos....",
+    "longDescription": "Evento dedicado a la danza con presentaciones y encuentros artísticos.",
+    "startDate": "2026-11-18",
+    "startTime": "19:00",
+    "venue": "En linea",
+    "neighborhood": "Medellín",
+    "city": "Medellín",
+    "latitude": 6.2442,
+    "longitude": -75.5812,
+    "category": "teatro",
+    "priceType": "free",
+    "priceMin": 0,
+    "priceMax": 0,
+    "currency": "COP",
+    "organizer": "Secretaría de Cultura Ciudadana",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Compás Urbano Medellín",
+        "url": "https://www.compasurbano.com/eventos"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:05:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:05:00-05:00",
+    "tags": [
+      "teatro",
+      "medellín",
+      "compas urbano"
+    ],
+    "score": 93
+  },
+  {
+    "id": "compas-24898",
+    "slug": "compas-festival-de-navidad-medellin-te-quiere-2026",
+    "title": "Festival De Navidad Medellín Te Quiere 2026",
+    "shortDescription": "Celebración navideña con actividades culturales, luces y programación para toda la familia....",
+    "longDescription": "Celebración navideña con actividades culturales, luces y programación para toda la familia.",
+    "startDate": "2026-11-27",
+    "startTime": "19:00",
+    "venue": "Medellín",
+    "neighborhood": "Medellín",
+    "city": "Medellín",
+    "latitude": 6.2476376,
+    "longitude": -75.56581530000001,
+    "category": "comunidad",
+    "priceType": "paid",
+    "priceMin": 25000,
+    "priceMax": 25000,
+    "currency": "COP",
+    "organizer": "Alcaldía de Medellín",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Compás Urbano Medellín",
+        "url": "https://www.compasurbano.com/eventos"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:05:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:05:00-05:00",
+    "tags": [
+      "comunidad",
+      "medellín",
+      "compas urbano"
+    ],
+    "score": 89
+  },
+  {
+    "id": "compas-24897",
+    "slug": "compas-festival-internacional-de-bandas-musicomarciales-medellin-marcha-musical",
+    "title": "Festival Internacional De Bandas Musicomarciales Medellín Marcha Musical",
+    "shortDescription": "Encuentro de bandas musicales que promueve la cultura y el talento en formatos musicomarciales....",
+    "longDescription": "Encuentro de bandas musicales que promueve la cultura y el talento en formatos musicomarciales.",
+    "startDate": "2026-11-28",
+    "startTime": "19:00",
+    "venue": "Medellín",
+    "neighborhood": "Medellín",
+    "city": "Medellín",
+    "latitude": 6.2476376,
+    "longitude": -75.56581530000001,
+    "category": "música",
+    "priceType": "paid",
+    "priceMin": 25000,
+    "priceMax": 25000,
+    "currency": "COP",
+    "organizer": "Alcaldía de Medellín",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Compás Urbano Medellín",
+        "url": "https://www.compasurbano.com/eventos"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:05:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:05:00-05:00",
+    "tags": [
+      "música",
+      "medellín",
+      "compas urbano"
+    ],
+    "score": 91
+  },
+  {
+    "id": "compas-8384",
+    "slug": "compas-f-air-colombia",
+    "title": "F-AIR Colombia",
+    "shortDescription": "La Feria Internacional Aeronáutica y Espacial (F-AIR Colombia) se celebrará del 7 al 11 de julio de 2027 en el Aeropuerto Internacional José...",
+    "longDescription": "La Feria Internacional Aeronáutica y Espacial (F-AIR Colombia) se celebrará del 7 al 11 de julio de 2027 en el Aeropuerto Internacional José María Córdova, ubicado en Rionegro, Antioquia. La feria incluye espectáculos aéreos (shows aéreos), exposiciones de aeronaves (civiles y militares), agenda académica y ruedas de negocios aeroespaciales. Nota: La edición 2026 no se llevará a cabo. Se recomienda seguir las actualizaciones oficiales en el sitio web de F-AIR Colombia.",
+    "startDate": "2027-07-07",
+    "startTime": "19:00",
+    "venue": "Aeropuerto Internacional José María Córdova, Rionegro",
+    "neighborhood": "Oriente",
+    "city": "Oriente",
+    "latitude": 6.170561,
+    "longitude": -75.42719360000001,
+    "category": "mercados",
+    "priceType": "paid",
+    "priceMin": 25000,
+    "priceMax": 25000,
+    "currency": "COP",
+    "organizer": "NA",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Compás Urbano Medellín",
+        "url": "https://www.compasurbano.com/eventos"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": false,
+    "isNewlyFound": true,
+    "detectedAt": "2026-08-17T16:05:00-05:00",
+    "lastCheckedAt": "2026-08-17T16:05:00-05:00",
+    "tags": [
+      "mercados",
+      "oriente",
+      "compas urbano"
+    ],
+    "score": 97
   }
 ];
