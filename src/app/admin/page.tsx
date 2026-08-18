@@ -45,6 +45,8 @@ interface PublishedEvent {
 
 export default function SuperAdminPage() {
   const [token, setToken] = useState<string | null>(null);
+  const [usernameInput, setUsernameInput] = useState('frenti');
+  const [adminUser, setAdminUser] = useState<{ username: string; name: string; role?: string } | null>(null);
   const [passwordInput, setPasswordInput] = useState('');
   const [authError, setAuthError] = useState('');
   const [isLoggingIn, setIsLoggingIn] = useState(false);
@@ -82,8 +84,18 @@ export default function SuperAdminPage() {
   // Check saved token on mount
   useEffect(() => {
     const saved = localStorage.getItem('antifomo_admin_token');
+    const savedUser = localStorage.getItem('antifomo_admin_user');
     if (saved) {
       setToken(saved);
+      if (savedUser) {
+        try {
+          setAdminUser(JSON.parse(savedUser));
+        } catch {
+          setAdminUser({ username: 'frenti', name: 'Fredy (frenti)' });
+        }
+      } else {
+        setAdminUser({ username: 'frenti', name: 'Fredy (frenti)' });
+      }
     }
   }, []);
 
@@ -99,8 +111,10 @@ export default function SuperAdminPage() {
 
       if (res.status === 401) {
         setToken(null);
+        setAdminUser(null);
         localStorage.removeItem('antifomo_admin_token');
-        setAuthError('Sesión expirada o contraseña inválida.');
+        localStorage.removeItem('antifomo_admin_user');
+        setAuthError('Sesión expirada o credenciales inválidas.');
         return;
       }
 
@@ -142,16 +156,23 @@ export default function SuperAdminPage() {
       const res = await fetch('/api/admin/events', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ action: 'login', password: passwordInput.trim() }),
+        body: JSON.stringify({
+          action: 'login',
+          username: usernameInput.trim(),
+          password: passwordInput.trim(),
+        }),
       });
 
       const data = await res.json();
       if (data.success && data.token) {
         setToken(data.token);
+        const userObj = data.user || { username: 'frenti', name: 'Fredy (frenti)' };
+        setAdminUser(userObj);
         localStorage.setItem('antifomo_admin_token', data.token);
+        localStorage.setItem('antifomo_admin_user', JSON.stringify(userObj));
         setPasswordInput('');
       } else {
-        setAuthError(data.error || 'Contraseña incorrecta');
+        setAuthError(data.error || 'Credenciales incorrectas');
       }
     } catch (err) {
       setAuthError('Error de conexión al servidor');
@@ -162,7 +183,9 @@ export default function SuperAdminPage() {
 
   const handleLogout = () => {
     setToken(null);
+    setAdminUser(null);
     localStorage.removeItem('antifomo_admin_token');
+    localStorage.removeItem('antifomo_admin_user');
   };
 
   // Open Approval Modal
@@ -403,13 +426,27 @@ export default function SuperAdminPage() {
           <form onSubmit={handleLogin} className="space-y-4">
             <div>
               <label className="block text-xs font-bold uppercase tracking-wider text-secondary mb-2">
-                Clave Maestra de Administrador
+                Usuario Super Admin
+              </label>
+              <input
+                type="text"
+                value={usernameInput}
+                onChange={(e) => setUsernameInput(e.target.value)}
+                placeholder="frenti"
+                required
+                className="w-full bg-surface border border-border text-text rounded-2xl px-4 py-3 outline-none focus:ring-2 focus:ring-accent focus:border-accent text-sm font-semibold"
+              />
+            </div>
+
+            <div>
+              <label className="block text-xs font-bold uppercase tracking-wider text-secondary mb-2">
+                Contraseña de Administrador
               </label>
               <input
                 type="password"
                 value={passwordInput}
                 onChange={(e) => setPasswordInput(e.target.value)}
-                placeholder="Ingresa tu clave de admin"
+                placeholder="Ingresa tu contraseña"
                 required
                 autoFocus
                 className="w-full bg-surface border border-border text-text rounded-2xl px-4 py-3 outline-none focus:ring-2 focus:ring-accent focus:border-accent text-sm"
@@ -430,7 +467,7 @@ export default function SuperAdminPage() {
               {isLoggingIn ? (
                 <span>Verificando acceso...</span>
               ) : (
-                <span>Acceder al Panel Admin →</span>
+                <span>Acceder como @{usernameInput || 'frenti'} →</span>
               )}
             </button>
           </form>
@@ -471,13 +508,16 @@ export default function SuperAdminPage() {
       {/* Top Header */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-border/80">
         <div>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 flex-wrap">
             <h1 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-text">
               Panel Super Admin
             </h1>
             <span className="relative flex h-3 w-3">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
               <span className="relative inline-flex rounded-full h-3 w-3 bg-accent"></span>
+            </span>
+            <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-accent/20 border border-accent/40 text-text font-extrabold text-xs">
+              👤 @{adminUser?.username || 'frenti'}
             </span>
           </div>
           <p className="text-xs uppercase tracking-wider text-secondary font-bold mt-1">

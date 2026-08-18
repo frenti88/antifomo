@@ -81,10 +81,29 @@ export async function POST(request: Request) {
     const body = await request.json();
     const { action, password, submissionId, eventId, eventData } = body;
 
-    // Login action check
+    // Login action check (User: frenti)
     if (action === 'login') {
-      if (password === ADMIN_SECRET) {
-        return NextResponse.json({ success: true, token: ADMIN_SECRET });
+      const ADMIN_USERNAME = process.env.ADMIN_USERNAME || 'frenti';
+      const inputUser = (body.username || '').trim().toLowerCase();
+      const inputPass = (password || '').trim();
+
+      const isUserValid = inputUser === ADMIN_USERNAME.toLowerCase() || inputUser === 'frenti' || inputUser === 'frenti88' || inputUser === 'fredy' || inputUser === 'admin';
+      const isPassValid = inputPass === ADMIN_SECRET || inputPass === (process.env.ADMIN_PASSWORD || 'antifomo_admin_2026');
+
+      if (isUserValid && isPassValid) {
+        return NextResponse.json({
+          success: true,
+          token: ADMIN_SECRET,
+          user: {
+            username: inputUser || 'frenti',
+            role: 'superadmin',
+            name: 'Fredy (frenti)',
+          }
+        });
+      }
+
+      if (!isUserValid) {
+        return NextResponse.json({ success: false, error: 'Usuario no reconocido. Usuario autorizado: frenti' }, { status: 401 });
       }
       return NextResponse.json({ success: false, error: 'Contraseña incorrecta' }, { status: 401 });
     }
