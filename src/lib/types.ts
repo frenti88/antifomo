@@ -49,6 +49,7 @@ export interface EventSource {
   type: SourceType;
   label: string;
   url?: string;
+  detectedAt?: string;
 }
 
 export interface AntiFOMOEvent {
@@ -78,6 +79,7 @@ export interface AntiFOMOEvent {
   verified: boolean;
   isGem: boolean;
   isNewlyFound: boolean;
+  status?: 'published' | 'archived' | 'draft';
   detectedAt?: string; // ISO datetime
   lastCheckedAt?: string; // ISO datetime
   capacity?: number;

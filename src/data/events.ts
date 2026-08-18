@@ -24,7 +24,7 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     "organizer": "Planetario de Medellín / Parque Explora",
     "sources": [
       {
-        "name": "Planetario de Medellín (Oficial)",
+        "label": "Planetario de Medellín (Oficial)",
         "url": "https://www.planetariomedellin.org/programate/inauguracion-medellin-estelar",
         "type": "web",
         "detectedAt": "2026-08-17T23:50:00.000Z"
@@ -72,7 +72,7 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     "organizer": "Planetario de Medellín",
     "sources": [
       {
-        "name": "Planetario de Medellín — Shows",
+        "label": "Planetario de Medellín — Shows",
         "url": "https://www.planetariomedellin.org/shows",
         "type": "web",
         "detectedAt": "2026-08-17T23:50:00.000Z"
@@ -118,7 +118,7 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     "organizer": "Planetario de Medellín",
     "sources": [
       {
-        "name": "Planetario de Medellín — Programación",
+        "label": "Planetario de Medellín — Programación",
         "url": "https://www.planetariomedellin.org/programate",
         "type": "web",
         "detectedAt": "2026-08-17T23:50:00.000Z"
@@ -163,7 +163,7 @@ export const DEMO_EVENTS: AntiFOMOEvent[] = [
     "organizer": "Planetario de Medellín",
     "sources": [
       {
-        "name": "Planetario de Medellín — Shows",
+        "label": "Planetario de Medellín — Shows",
         "url": "https://www.planetariomedellin.org/shows",
         "type": "web",
         "detectedAt": "2026-08-17T23:50:00.000Z"
