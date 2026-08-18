@@ -3,6 +3,7 @@
 // ─────────────────────────────────────────────
 
 import { Category } from './types';
+import { summarizeEventDescription } from './ai-summarizer';
 
 export interface ExtractedEventData {
   title: string;
@@ -108,10 +109,11 @@ export async function extractEventFromUrl(targetUrl: string): Promise<ExtractedE
             
             const category = inferCategory(data.title, cleanDesc, specificVenue);
             const imageUrl = data.banner?.imgix_url || data.banner?.url || undefined;
+            const finalDescription = await summarizeEventDescription(data.title, cleanDesc, category);
 
             return {
               title: decodeHtmlEntities(data.title.trim()),
-              description: cleanDesc.slice(0, 320).trim(),
+              description: finalDescription.slice(0, 300).trim(),
               date: eventDate,
               time: eventTime,
               venue: specificVenue,
@@ -220,10 +222,11 @@ export async function extractEventFromUrl(targetUrl: string): Promise<ExtractedE
         }
 
         const category = inferCategory(title, description, venue);
+        const finalDescription = await summarizeEventDescription(title, description, category);
 
         return {
           title: decodeHtmlEntities(title),
-          description: description.slice(0, 320).trim(),
+          description: finalDescription.slice(0, 300).trim(),
           date,
           time,
           venue,
@@ -421,10 +424,11 @@ export async function extractEventFromUrl(targetUrl: string): Promise<ExtractedE
   }
 
   const category = inferCategory(title, description, venue);
+  const finalDescription = await summarizeEventDescription(title, description, category);
 
   return {
     title,
-    description: description.slice(0, 300).trim(),
+    description: finalDescription.slice(0, 300).trim(),
     date: extractedDate,
     time: extractedTime,
     venue,

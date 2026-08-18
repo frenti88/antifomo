@@ -10,6 +10,7 @@ export function SubmitEventForm() {
   const [step, setStep] = useState<Step>('method');
   const [url, setUrl] = useState('');
   const [isAnalyzing, setIsAnalyzing] = useState(false);
+  const [isSummarizingAi, setIsSummarizingAi] = useState(false);
   const [errorMsg, setErrorMsg] = useState('');
   const [isExtractedFromUrl, setIsExtractedFromUrl] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -35,6 +36,33 @@ export function SubmitEventForm() {
     }
   }, [step]);
 
+  const handleSummarizeWithAi = async () => {
+    if (!formData.description) return;
+    setIsSummarizingAi(true);
+    try {
+      const res = await fetch('/api/events/summarize', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          title: formData.title,
+          description: formData.description,
+          category: formData.category,
+        }),
+      });
+      const data = await res.json();
+      if (res.ok && data.success && data.summary) {
+        setFormData(prev => ({
+          ...prev,
+          description: data.summary.slice(0, 300),
+        }));
+      }
+    } catch (err) {
+      console.error('Error summarizing with AI:', err);
+    } finally {
+      setIsSummarizingAi(false);
+    }
+  };
+
   const handleUrlSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!url.startsWith('http')) {
@@ -55,9 +83,11 @@ export function SubmitEventForm() {
 
       if (res.ok && json.success && json.data) {
         const d = json.data;
+        const initialDesc = (d.description || '').slice(0, 300);
+
         setFormData({
           title: d.title || '',
-          description: d.description || '',
+          description: initialDesc,
           date: d.date || new Date().toISOString().split('T')[0],
           time: d.time || '19:00',
           venue: d.venue || 'Medellín',
@@ -67,7 +97,6 @@ export function SubmitEventForm() {
         setIsExtractedFromUrl(true);
         setStep('review');
       } else {
-        // Partial fallback
         setErrorMsg(json.error || 'No pudimos extraer todos los datos automáticamente, pero puedes completarlos a continuación.');
         setFormData({
           title: '',
@@ -106,7 +135,7 @@ export function SubmitEventForm() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           title: formData.title,
-          description: formData.description,
+          description: formData.description.slice(0, 300),
           sourceUrl: url || undefined,
           date: formData.date,
           time: formData.time,
@@ -150,7 +179,7 @@ export function SubmitEventForm() {
               <h2 className="font-bold text-text text-lg flex items-center gap-2">
                 <span>Pegar enlace</span>
                 <span className="text-[10px] uppercase font-extrabold px-2 py-0.5 rounded-full bg-accent text-black">
-                  Auto Escáner
+                  Auto Escáner + IA
                 </span>
               </h2>
               <p className="text-xs text-secondary mt-1">
@@ -203,7 +232,7 @@ export function SubmitEventForm() {
             Pega el enlace del evento
           </h2>
           <p className="text-xs text-secondary mb-6 font-semibold">
-            Nuestro escáner leerá automáticamente el título, fecha, hora, lugar, categoría y precio.
+            Nuestro escáner con IA leerá los datos y generará un resumen de máximo 300 caracteres.
           </p>
           
           {isAnalyzing ? (
@@ -213,8 +242,8 @@ export function SubmitEventForm() {
                 <span className="relative inline-flex rounded-full h-8 w-8 bg-accent items-center justify-center text-black font-black text-sm">◉</span>
               </span>
               <div>
-                <p className="text-text font-bold text-lg">Escaneando enlace y analizando detalles...</p>
-                <p className="text-xs text-secondary mt-1">Extrayendo OpenGraph, Schema.org y metadatos del evento</p>
+                <p className="text-text font-bold text-lg">Escaneando y resumiendo con IA...</p>
+                <p className="text-xs text-secondary mt-1">Extrayendo fecha, hora, lugar y destilando resumen corto</p>
               </div>
             </div>
           ) : (
@@ -227,7 +256,7 @@ export function SubmitEventForm() {
                   id="url"
                   type="url"
                   required
-                  placeholder="https://teatropablotobon.com/evento/... o https://planetariomedellin.org/..."
+                  placeholder="https://planetariomedellin.org/... o https://teatropablotobon.com/..."
                   value={url}
                   onChange={(e) => setUrl(e.target.value)}
                   className="w-full bg-surface border border-border rounded-2xl px-4 py-3.5 focus:ring-2 focus:ring-accent outline-none text-text text-sm min-h-[44px]"
@@ -243,7 +272,7 @@ export function SubmitEventForm() {
                 type="submit"
                 className="w-full bg-accent text-black font-bold py-3.5 px-6 rounded-2xl hover:opacity-90 active:scale-[0.98] transition-all min-h-[44px] cursor-pointer shadow-xs flex items-center justify-center gap-2"
               >
-                <span>⚡ Escanear y Extraer Información</span>
+                <span>⚡ Escanear y Resumir con IA</span>
               </button>
             </form>
           )}
@@ -283,16 +312,34 @@ export function SubmitEventForm() {
             </div>
             
             <div>
-              <label htmlFor="description" className="block text-xs font-bold uppercase tracking-wider text-secondary mb-1">
-                Descripción
-              </label>
+              <div className="flex items-center justify-between mb-1">
+                <label htmlFor="description" className="text-xs font-bold uppercase tracking-wider text-secondary">
+                  Descripción (Máx 300 caracteres)
+                </label>
+                <div className="flex items-center gap-2">
+                  <span className={`text-[11px] font-mono ${formData.description.length >= 280 ? 'text-amber-400 font-bold' : 'text-secondary'}`}>
+                    {formData.description.length}/300
+                  </span>
+                  {formData.description.length > 30 && (
+                    <button
+                      type="button"
+                      onClick={handleSummarizeWithAi}
+                      disabled={isSummarizingAi}
+                      className="text-[10px] font-extrabold px-2 py-0.5 rounded-full bg-accent/20 border border-accent/40 text-text hover:bg-accent hover:text-black transition-colors cursor-pointer"
+                    >
+                      {isSummarizingAi ? 'Resumiendo...' : '✨ Resumir con IA'}
+                    </button>
+                  )}
+                </div>
+              </div>
               <textarea
                 id="description"
                 rows={3}
+                maxLength={300}
                 value={formData.description}
                 onChange={e => setFormData({...formData, description: e.target.value})}
                 className="w-full bg-surface border border-border rounded-xl p-3 focus:ring-2 focus:ring-accent outline-none text-text text-sm resize-none"
-                placeholder="¿De qué se trata el plan? Artistas, temática, experiencia..."
+                placeholder="¿De qué se trata el plan? (Máximo 300 caracteres para la card)"
               />
             </div>
 
@@ -404,7 +451,7 @@ export function SubmitEventForm() {
             <div className="p-3.5 rounded-2xl bg-accent/15 border border-accent/40 text-xs text-text font-semibold flex items-center gap-2.5">
               <span className="text-base">✨</span>
               <div className="flex-1 truncate">
-                <strong className="text-accent font-bold">Información extraída con éxito de la URL: </strong>
+                <strong className="text-accent font-bold">Datos extraídos y resumidos con IA desde: </strong>
                 <span className="font-mono text-secondary truncate">{url}</span>
               </div>
             </div>
@@ -425,12 +472,30 @@ export function SubmitEventForm() {
             </div>
             
             <div>
-              <label htmlFor="rev-description" className="block text-xs font-bold uppercase tracking-wider text-secondary mb-1">
-                Descripción
-              </label>
+              <div className="flex items-center justify-between mb-1">
+                <label htmlFor="rev-description" className="text-xs font-bold uppercase tracking-wider text-secondary">
+                  Descripción Corta para la Card (Máx 300 caracteres)
+                </label>
+                <div className="flex items-center gap-2">
+                  <span className={`text-[11px] font-mono ${formData.description.length >= 280 ? 'text-amber-400 font-bold' : 'text-secondary'}`}>
+                    {formData.description.length}/300
+                  </span>
+                  {formData.description.length > 30 && (
+                    <button
+                      type="button"
+                      onClick={handleSummarizeWithAi}
+                      disabled={isSummarizingAi}
+                      className="text-[10px] font-extrabold px-2 py-0.5 rounded-full bg-accent/20 border border-accent/40 text-text hover:bg-accent hover:text-black transition-colors cursor-pointer"
+                    >
+                      {isSummarizingAi ? 'Resumiendo...' : '✨ Regenerar Resumen IA'}
+                    </button>
+                  )}
+                </div>
+              </div>
               <textarea
                 id="rev-description"
                 rows={3}
+                maxLength={300}
                 value={formData.description}
                 onChange={e => setFormData({...formData, description: e.target.value})}
                 className="w-full bg-surface border border-border rounded-xl p-3 focus:ring-2 focus:ring-accent outline-none text-text text-sm resize-none"
