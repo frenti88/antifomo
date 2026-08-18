@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────
-// AntiFOMO — Smart URL Event Extractor Engine (High-Precision v2)
+// AntiFOMO — Smart URL Event Extractor Engine (v4 Ultra-Precision)
 // ─────────────────────────────────────────────
 
 import { Category } from './types';
@@ -58,7 +58,189 @@ const KNOWN_VENUES = [
 
 export async function extractEventFromUrl(targetUrl: string): Promise<ExtractedEventData> {
   const urlObj = new URL(targetUrl);
-  
+  const hostname = urlObj.hostname.toLowerCase();
+  const pathname = urlObj.pathname;
+
+  // ─────────────────────────────────────────────────────────
+  // 1. SPECIALIZED PARSER: Planetario de Medellín API
+  // ─────────────────────────────────────────────────────────
+  if (hostname.includes('planetariomedellin.org')) {
+    const slugMatch = pathname.match(/\/(?:programate|shows)\/([^\/\?#]+)/);
+    if (slugMatch) {
+      const slug = slugMatch[1];
+      const isShow = pathname.includes('/shows');
+      const apiEndpoint = isShow 
+        ? `https://www.planetariomedellin.org/api/shows/${slug}`
+        : `https://www.planetariomedellin.org/api/programate/${slug}`;
+
+      try {
+        const apiRes = await fetch(apiEndpoint, {
+          headers: { 'User-Agent': 'Mozilla/5.0' },
+          redirect: 'follow'
+        });
+
+        if (apiRes.ok) {
+          const data = await apiRes.json();
+          if (data && data.title) {
+            const rawDesc = data.content || data.description || data.metadatos_seo?.description_seo || '';
+            const cleanDesc = cleanHtmlText(rawDesc);
+            
+            const eventDate = data.date || new Date().toISOString().split('T')[0];
+            const eventTime = data.hour ? parseTimeString(data.hour) : '19:00';
+            
+            let specificVenue = 'Planetario de Medellín';
+            if (data.location && Array.isArray(data.location) && data.location.length > 0) {
+              const loc = data.location[0];
+              if (loc.toLowerCase().includes('planetario')) {
+                specificVenue = 'Planetario de Medellín';
+              } else {
+                specificVenue = `${loc} (Planetario de Medellín)`;
+              }
+            } else if (cleanDesc.includes('biblioteca') || cleanDesc.includes('Biblioteca')) {
+              const bibMatch = cleanDesc.match(/biblioteca\s+[^,\.\n]+/i);
+              if (bibMatch) {
+                specificVenue = `${bibMatch[0]} (Planetario de Medellín)`;
+              }
+            }
+
+            const isFree = data.price_check === 'Sin costo' || data.price_check === 'Entrada libre' || !data.price;
+            const price = isFree ? 'Gratis (Entrada Libre)' : (data.price ? `$${data.price}` : 'Entrada con costo');
+            
+            const category = inferCategory(data.title, cleanDesc, specificVenue);
+            const imageUrl = data.banner?.imgix_url || data.banner?.url || undefined;
+
+            return {
+              title: decodeHtmlEntities(data.title.trim()),
+              description: cleanDesc.slice(0, 320).trim(),
+              date: eventDate,
+              time: eventTime,
+              venue: specificVenue,
+              category,
+              price,
+              organizer: 'Planetario de Medellín',
+              sourceUrl: targetUrl,
+              imageUrl,
+            };
+          }
+        }
+      } catch (err) {
+        console.error('Planetario API extraction fallback:', err);
+      }
+    }
+  }
+
+  // ─────────────────────────────────────────────────────────
+  // 2. SPECIALIZED PARSER: Teatro Pablo Tobón Uribe
+  // ─────────────────────────────────────────────────────────
+  if (hostname.includes('teatropablotobon.com') && pathname.includes('/evento/')) {
+    try {
+      const response = await fetch(targetUrl, {
+        headers: {
+          'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36',
+          'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+        },
+      });
+
+      if (response.ok) {
+        const html = await response.text();
+
+        // 1. Title
+        const h2Match = html.match(/<h2[^>]*class=["'][^"']*card__title[^"']*["'][^>]*>([\s\S]*?)<\/h2>/i) ||
+                        html.match(/<h2[^>]*>([\s\S]*?)<\/h2>/i) ||
+                        html.match(/<title[^>]*>([\s\S]*?)<\/title>/i);
+        
+        let title = h2Match ? cleanHtmlText(h2Match[1]) : '';
+        title = title
+          .replace(/\s*\|\s*Teatro Pablo Tobón Uribe/gi, '')
+          .replace(/\s*-\s*Teatro Pablo Tobon Uribe/gi, '')
+          .trim();
+
+        // 2. Description (first paragraph of main editorial)
+        let description = '';
+        const pMatches = [...html.matchAll(/<p[^>]*>([\s\S]*?)<\/p>/gi)];
+        for (const pm of pMatches) {
+          const cleaned = cleanHtmlText(pm[1]);
+          if (
+            cleaned.length > 25 &&
+            !cleaned.includes('Buscar') &&
+            !cleaned.includes('function') &&
+            !cleaned.includes('Copyright') &&
+            !cleaned.includes('Línea Ética') &&
+            !cleaned.includes('Transparencia') &&
+            !cleaned.includes('Información del evento')
+          ) {
+            description = cleaned;
+            break;
+          }
+        }
+
+        // 3. Exact Date from "Fecha" block
+        let date = new Date().toISOString().split('T')[0];
+        const dateBlockMatch = html.match(/<strong>Fecha<\/strong>[\s\S]*?<p[^>]*>([\s\S]*?)<\/p>/i);
+        const candidateDateText = dateBlockMatch ? cleanHtmlText(dateBlockMatch[1]) : html;
+        
+        const dateMatch = candidateDateText.match(/(\d{1,2})\s+de\s+([a-záéíóú]+)(?:\s+de\s+(\d{4}))?/i);
+        if (dateMatch) {
+          const day = dateMatch[1].padStart(2, '0');
+          const month = monthMap[dateMatch[2].toLowerCase()] || '08';
+          const year = dateMatch[3] || '2026';
+          date = `${year}-${month}-${day}`;
+        }
+
+        // 4. Exact Time from "Hora" block
+        let time = '19:00';
+        const timeBlockMatch = html.match(/<strong>Hora<\/strong>[\s\S]*?<p[^>]*>([\s\S]*?)<\/p>/i);
+        if (timeBlockMatch) {
+          time = parseTimeString(timeBlockMatch[1]);
+        }
+
+        // 5. Venue / Specific Spot
+        let venue = 'Teatro Pablo Tobón Uribe';
+        const spotMatch = html.match(/<strong>Lugar<\/strong>[\s\S]*?<p[^>]*>([\s\S]*?)<\/p>/i);
+        if (spotMatch) {
+          const spot = cleanHtmlText(spotMatch[1]);
+          if (spot && spot !== 'Teatro Pablo Tobón Uribe' && spot.length > 2) {
+            venue = `Teatro Pablo Tobón Uribe (${spot})`;
+          }
+        }
+
+        // 6. Price from "Tipo de evento" block
+        let price = 'Entrada con costo';
+        const typeMatch = html.match(/<strong>Tipo de evento<\/strong>[\s\S]*?<p[^>]*>([\s\S]*?)<\/p>/i);
+        const typeText = typeMatch ? cleanHtmlText(typeMatch[1]) : html;
+        if (/libre|gratis|aporte voluntario/i.test(typeText)) {
+          price = 'Gratis (Entrada Libre)';
+        }
+
+        // 7. Organizer from "Organiza" block
+        let organizer = 'Teatro Pablo Tobón Uribe';
+        const orgMatch = html.match(/<strong>Organiza<\/strong>[\s\S]*?<p[^>]*>([\s\S]*?)<\/p>/i);
+        if (orgMatch) {
+          organizer = cleanHtmlText(orgMatch[1]);
+        }
+
+        const category = inferCategory(title, description, venue);
+
+        return {
+          title: decodeHtmlEntities(title),
+          description: description.slice(0, 320).trim(),
+          date,
+          time,
+          venue,
+          category,
+          price,
+          organizer,
+          sourceUrl: targetUrl,
+        };
+      }
+    } catch (err) {
+      console.error('Pablo Tobon fallback:', err);
+    }
+  }
+
+  // ─────────────────────────────────────────────────────────
+  // 3. GENERAL HIGH-PRECISION SCRAPER ENGINE (Schema.org / OpenGraph / Next.js)
+  // ─────────────────────────────────────────────────────────
   const response = await fetch(targetUrl, {
     headers: {
       'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
@@ -74,7 +256,7 @@ export async function extractEventFromUrl(targetUrl: string): Promise<ExtractedE
 
   const html = await response.text();
 
-  // 1. Try structured JSON-LD (Schema.org)
+  // Structured JSON-LD (Schema.org)
   let structuredData: any = null;
   const jsonLdMatches = [...html.matchAll(/<script[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)];
   for (const m of jsonLdMatches) {
@@ -85,11 +267,11 @@ export async function extractEventFromUrl(targetUrl: string): Promise<ExtractedE
         break;
       }
     } catch {
-      // ignore json parse error
+      // ignore
     }
   }
 
-  // 2. Try Next.js __NEXT_DATA__
+  // Next.js __NEXT_DATA__
   let nextData: any = null;
   const nextDataMatch = html.match(/<script id="__NEXT_DATA__" type="application\/json">([\s\S]*?)<\/script>/i);
   if (nextDataMatch) {
@@ -100,7 +282,7 @@ export async function extractEventFromUrl(targetUrl: string): Promise<ExtractedE
     }
   }
 
-  // 3. Extract Meta Tags
+  // Meta Tags
   const getMeta = (prop: string): string => {
     const r1 = new RegExp(`<meta[^>]+property=["']${prop}["'][^>]+content=["']([^"']+)["']`, 'i');
     const r2 = new RegExp(`<meta[^>]+content=["']([^"']+)["'][^>]+property=["']${prop}["']`, 'i');
@@ -118,26 +300,19 @@ export async function extractEventFromUrl(targetUrl: string): Promise<ExtractedE
   const ogImage = getMeta('og:image') || getMeta('twitter:image');
   const ogSiteName = getMeta('og:site_name');
 
-  // Headings
   const h1Match = html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i);
   const h2Match = html.match(/<h2[^>]*>([\s\S]*?)<\/h2>/i);
   const h1Text = h1Match ? cleanHtmlText(h1Match[1]) : '';
   const h2Text = h2Match ? cleanHtmlText(h2Match[1]) : '';
 
-  // Clean Title candidate
   let title = '';
-
-  // Check Next.js show/page data first if available
   if (nextData?.props?.pageProps) {
     const p = nextData.props.pageProps;
-    if (p.show?.title) title = p.show.title;
-    else if (p.showData?.title) title = p.showData.title;
-    else if (p.pageInfo?.title) title = p.pageInfo.title;
-    else if (p.event?.title) title = p.event.title;
-    else if (p.eventData?.title) title = p.eventData.title;
+    if (p.event?.title || p.event?.name) title = p.event.title || p.event.name;
+    else if (p.show?.title) title = p.show.title;
+    else if (p.data?.title) title = p.data.title;
   }
 
-  // Check Schema.org Event Name
   if (!title && structuredData) {
     const eventObj = structuredData['@type'] === 'Event' 
       ? structuredData 
@@ -146,7 +321,6 @@ export async function extractEventFromUrl(targetUrl: string): Promise<ExtractedE
   }
 
   if (!title) {
-    // If ogTitle is very generic like "Eventos" or "Planetario Medellín", prefer h2 / h1 / slug
     if (h1Text && !isGenericTitle(h1Text)) {
       title = h1Text;
     } else if (ogTitle && !isGenericTitle(ogTitle)) {
@@ -154,10 +328,9 @@ export async function extractEventFromUrl(targetUrl: string): Promise<ExtractedE
     } else if (h2Text && !isGenericTitle(h2Text)) {
       title = h2Text;
     } else {
-      // derive from URL slug if all else failed
-      const pathSegments = urlObj.pathname.split('/').filter(Boolean);
+      const pathSegments = pathname.split('/').filter(Boolean);
       const lastSeg = pathSegments[pathSegments.length - 1];
-      if (lastSeg && lastSeg !== 'eventos' && lastSeg !== 'programate') {
+      if (lastSeg && !isGenericTitle(lastSeg)) {
         title = lastSeg.replace(/[-_]/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
       } else {
         title = ogTitle || 'Evento detectado';
@@ -165,7 +338,6 @@ export async function extractEventFromUrl(targetUrl: string): Promise<ExtractedE
     }
   }
 
-  // Clean brand suffixes from Title
   title = title
     .replace(/\s*\|\s*Teatro Pablo Tobón Uribe/gi, '')
     .replace(/\s*-\s*Teatro Pablo Tobon Uribe/gi, '')
@@ -177,17 +349,8 @@ export async function extractEventFromUrl(targetUrl: string): Promise<ExtractedE
     .replace(/\s*–\s*Teatro Pablo Tobón/gi, '')
     .trim();
 
-  // Clean Description
   let description = ogDesc || '';
-  if (nextData?.props?.pageProps) {
-    const p = nextData.props.pageProps;
-    if (p.show?.content) description = cleanHtmlText(p.show.content);
-    else if (p.show?.description) description = cleanHtmlText(p.show.description);
-    else if (p.pageInfo?.content) description = cleanHtmlText(p.pageInfo.content);
-  }
-
-  if (!description || description.length < 20 || description.toLowerCase().includes('descubre todos los eventos')) {
-    // Search for actual descriptive text in HTML paragraphs
+  if (!description || description.length < 20 || isGenericTitle(description)) {
     const pMatches = [...html.matchAll(/<p[^>]*>([\s\S]*?)<\/p>/gi)];
     for (const pm of pMatches) {
       const cleaned = cleanHtmlText(pm[1]);
@@ -196,10 +359,7 @@ export async function extractEventFromUrl(targetUrl: string): Promise<ExtractedE
         !cleaned.includes('Buscar') &&
         !cleaned.includes('function') &&
         !cleaned.includes('Copyright') &&
-        !cleaned.includes('Todos los derechos') &&
-        !cleaned.includes('JavaScript') &&
-        !cleaned.includes('cookie') &&
-        !cleaned.includes('Descubre todos los eventos')
+        !cleaned.includes('Todos los derechos')
       ) {
         description = cleaned;
         break;
@@ -207,12 +367,9 @@ export async function extractEventFromUrl(targetUrl: string): Promise<ExtractedE
     }
   }
 
-  // 4. High-Precision Date & Time Extraction
   let extractedDate = new Date().toISOString().split('T')[0];
   let extractedTime = '19:00';
-  let dateFound = false;
 
-  // Schema.org date
   if (structuredData) {
     const eventObj = structuredData['@type'] === 'Event' 
       ? structuredData 
@@ -223,86 +380,46 @@ export async function extractEventFromUrl(targetUrl: string): Promise<ExtractedE
       if (!isNaN(parsedDate.getTime())) {
         extractedDate = parsedDate.toISOString().split('T')[0];
         extractedTime = `${String(parsedDate.getHours()).padStart(2, '0')}:${String(parsedDate.getMinutes()).padStart(2, '0')}`;
-        dateFound = true;
       }
     }
   }
 
-  // NextData date
-  if (!dateFound && nextData?.props?.pageProps) {
-    const p = nextData.props.pageProps;
-    const featured = p.pageInfo?.featured?.[0] || p.showData?.featured?.[0] || p.show;
-    if (featured?.metadata?.date || featured?.date) {
-      extractedDate = featured.metadata?.date || featured.date;
-      if (featured?.metadata?.hour || featured?.hour) {
-        extractedTime = parseTimeString(featured.metadata?.hour || featured.hour);
-      }
-      dateFound = true;
-    }
+  const fullContentToSearch = `${title} ${description} ${html.slice(0, 15000)}`;
+  const datePattern = /(\d{1,2})\s+de\s+([a-záéíóú]+)(?:\s+de\s+(\d{4}))?/i;
+  const dateMatch = fullContentToSearch.match(datePattern);
+  if (dateMatch) {
+    const day = dateMatch[1].padStart(2, '0');
+    const month = monthMap[dateMatch[2].toLowerCase()] || '08';
+    const year = dateMatch[3] || '2026';
+    extractedDate = `${year}-${month}-${day}`;
   }
-
-  // Direct HTML search for event details (e.g. "sábado, 22 de agosto de 2026", "22 de agosto", etc.)
-  if (!dateFound) {
-    // Specifically check for eventFecha / Fecha label in HTML
-    const dateBlockMatch = html.match(/(?:Fecha|eventFecha)[^<]*<\/p>\s*<p[^>]*>([a-záéíóú\s,0-9]+)<\/p>/i) ||
-                           html.match(/(?:Fecha|Date|Cuándo|Cuando):\s*<[^>]+>([^<]+)<\/[^>]+>/i);
-    
-    const candidateDateStr = dateBlockMatch ? dateBlockMatch[1] : `${title} ${description} ${html}`;
-    
-    const datePattern = /(\d{1,2})\s+de\s+([a-záéíóú]+)(?:\s+de\s+(\d{4}))?/i;
-    const dateMatch = candidateDateStr.match(datePattern);
-    if (dateMatch) {
-      const day = dateMatch[1].padStart(2, '0');
-      const month = monthMap[dateMatch[2].toLowerCase()] || '08';
-      const year = dateMatch[3] || '2026';
-      extractedDate = `${year}-${month}-${day}`;
-      dateFound = true;
-    }
-  }
-
-  // Time extraction
-  const timeBlockMatch = html.match(/(?:Hora|scheduleHora|Time)[^<]*<\/p>\s*<p[^>]*>([0-9:a-záéíóú\.\s]+)<\/p>/i);
-  const candidateTimeStr = timeBlockMatch ? timeBlockMatch[1] : `${title} ${description} ${html.slice(0, 20000)}`;
 
   const timePattern = /(\d{1,2}:\d{2})\s*([ap]\.?\s*m\.?)/i;
-  const timeMatch = candidateTimeStr.match(timePattern);
+  const timeMatch = fullContentToSearch.match(timePattern);
   if (timeMatch) {
     extractedTime = parseTimeString(`${timeMatch[1]} ${timeMatch[2]}`);
   }
 
-  // 5. Detect Venue / Location
   let venue = 'Medellín';
   for (const v of KNOWN_VENUES) {
-    if (v.match.test(urlObj.hostname) || v.match.test(`${title} ${description} ${html.slice(0, 10000)}`)) {
+    if (v.match.test(hostname) || v.match.test(fullContentToSearch)) {
       venue = v.name;
       break;
     }
   }
 
-  // Check specific location label in HTML
-  const venueBlockMatch = html.match(/(?:Lugar|location_onLugar|Ubicación|Venue)[^<]*<\/p>\s*<p[^>]*>([^<]+)<\/p>/i);
-  if (venueBlockMatch) {
-    const specificSpot = cleanHtmlText(venueBlockMatch[1]);
-    if (specificSpot.length > 3 && !specificSpot.includes('schedule') && !specificSpot.includes('Fecha')) {
-      venue = `${venue} (${specificSpot})`;
-    }
-  }
-
-  // 6. Detect Price
   let price = 'Entrada con costo';
-  const fullText = `${title} ${description} ${html.slice(0, 15000)}`;
   const freeRegex = /gratis|sin costo|entrada libre|aporte voluntario|acceso libre/i;
-  if (freeRegex.test(fullText)) {
+  if (freeRegex.test(fullContentToSearch)) {
     price = 'Gratis (Entrada Libre)';
   } else {
     const priceRegex = /\$\s*([\d\.,]{3,8})/i;
-    const priceMatch = fullText.match(priceRegex);
+    const priceMatch = fullContentToSearch.match(priceRegex);
     if (priceMatch) {
       price = `$${priceMatch[1]}`;
     }
   }
 
-  // 7. Detect Category (Title first priority, then description, then venue)
   const category = inferCategory(title, description, venue);
 
   return {
@@ -339,13 +456,14 @@ function isGenericTitle(str: string): boolean {
 }
 
 function parseTimeString(timeStr: string): string {
-  const m = timeStr.match(/(\d{1,2}):(\d{2})\s*([ap]\.?\s*m\.?)/i);
+  const clean = timeStr.replace(/<[^>]+>/g, ' ').replace(/&nbsp;/g, ' ').trim();
+  const m = clean.match(/(\d{1,2})(?::(\d{2}))?\s*([ap]\.?\s*m\.?|\b(?:am|pm)\b)?/i);
   if (!m) return '19:00';
   let h = parseInt(m[1], 10);
-  const min = m[2];
-  const isPm = m[3].toLowerCase().includes('p');
+  const min = m[2] || '00';
+  const isPm = m[3] ? m[3].toLowerCase().includes('p') : (h >= 1 && h <= 6);
   if (isPm && h < 12) h += 12;
-  if (!isPm && h === 12) h = 0;
+  if (!isPm && m[3] && h === 12) h = 0;
   return `${String(h).padStart(2, '0')}:${min}`;
 }
 
@@ -354,29 +472,19 @@ function inferCategory(title: string, description: string, venue: string): Categ
   const d = description.toLowerCase();
   const all = `${t} ${d} ${venue.toLowerCase()}`;
 
-  // 1. High-priority Title Check
-  if (/orquesta|sinf[oó]nica|concierto|m[uú]sica|jazz|rock|ac[uú]stico|banda|recital|guitarra|cumbia|vinilo|dj|sonoro|canto|ronroco|soda stereo/i.test(t)) return 'música';
-  if (/astronom[ií]a|planetario|telescopio|f[ií]sica|biolog[ií]a|ciencia|c[oó]smic|universo|estelar|galaxia/i.test(t)) return 'ciencia';
-  if (/software|tecnolog[ií]a|inteligencia artificial|\bia\b|hackathon|startup|coding|programaci[oó]n|ciberseguridad/i.test(t)) return 'tecnología';
-  if (/teatro|obra|dramaturgia|puesta en escena|pantolocos|t[ií]teres|actuaci[oó]n|circo/i.test(t)) return 'teatro';
-  if (/danza|baile|ballet|coreograf[ií]a|molienda/i.test(t)) return 'performance';
-  if (/cine|pel[ií]cula|cortometraje|documental|proyecci[oó]n|cineforo/i.test(t)) return 'cine';
-  if (/arte|exposici[oó]n|galer[ií]a|museo|pintura|escultura|artes visuales/i.test(t)) return 'arte';
-  if (/yoga|meditaci[oó]n|bienestar|sound healing|respiraci[oó]n|pilates/i.test(t)) return 'bienestar';
-  if (/stand[\s-]?up|comedia|humor|comediante|risas|chistes|pecado/i.test(t)) return 'comedia';
-  if (/taller|curso|workshop|laboratorio|aprende|clase de/i.test(t)) return 'talleres';
-  if (/fiesta|club|after|dj set|electr[oó]nica|techno|noche/i.test(t)) return 'fiesta';
-  if (/feria|mercado|bazar|artesanal|emprendimiento/i.test(t)) return 'mercados';
-
-  // 2. Full text check
-  if (/orquesta|sinf[oó]nica|concierto|m[uú]sica|jazz|rock|ac[uú]stico/i.test(d)) return 'música';
-  if (/astronom[ií]a|planetario|telescopio|f[ií]sica|biolog[ií]a|ciencia|c[oó]smic/i.test(all)) return 'ciencia';
-  if (/software|tecnolog[ií]a|inteligencia artificial|\bia\b|hackathon/i.test(all)) return 'tecnología';
-  if (/teatro|obra|dramaturgia|pantolocos/i.test(all)) return 'teatro';
-  if (/danza|baile|ballet/i.test(all)) return 'performance';
-  if (/cine|pel[ií]cula|cortometraje|documental/i.test(all)) return 'cine';
-  if (/yoga|meditaci[oó]n|bienestar/i.test(all)) return 'bienestar';
-  if (/stand[\s-]?up|comedia|humor/i.test(all)) return 'comedia';
+  // 1. High-priority Title & Content Check
+  if (/lectura|libro|literatura|cuento|poes[ií]a|autor|escritora|velia vidal|letras como estrellas/i.test(all)) return 'literatura';
+  if (/orquesta|sinf[oó]nica|concierto|m[uú]sica|jazz|rock|ac[uú]stico|banda|recital|guitarra|cumbia|vinilo|dj|sonoro|canto|ronroco|soda stereo/i.test(all)) return 'música';
+  if (/astronom[ií]a|planetario|telescopio|f[ií]sica|biolog[ií]a|ciencia|c[oó]smic|universo|estelar|galaxia/i.test(all)) return 'ciencia';
+  if (/software|tecnolog[ií]a|inteligencia artificial|\bia\b|hackathon|startup|coding|programaci[oó]n|ciberseguridad/i.test(all)) return 'tecnología';
+  if (/teatro|obra|dramaturgia|puesta en escena|pantolocos|t[ií]teres|actuaci[oó]n|circo/i.test(all)) return 'teatro';
+  if (/danza|baile|ballet|coreograf[ií]a|molienda/i.test(all)) return 'performance';
+  if (/cine|pel[ií]cula|cortometraje|documental|proyecci[oó]n|cineforo/i.test(all)) return 'cine';
+  if (/arte|exposici[oó]n|galer[ií]a|museo|pintura|escultura|artes visuales/i.test(all)) return 'arte';
+  if (/yoga|meditaci[oó]n|bienestar|sound healing|respiraci[oó]n|pilates/i.test(all)) return 'bienestar';
+  if (/stand[\s-]?up|comedia|humor|comediante|risas|chistes|pecado/i.test(all)) return 'comedia';
+  if (/taller|curso|workshop|laboratorio|aprende|clase de/i.test(all)) return 'talleres';
+  if (/feria|mercado|bazar|artesanal|emprendimiento/i.test(all)) return 'mercados';
 
   return 'comunidad';
 }
@@ -394,6 +502,8 @@ function decodeHtmlEntities(str: string): string {
     .replace(/&lt;/g, '<')
     .replace(/&gt;/g, '>')
     .replace(/&nbsp;/g, ' ')
+    .replace(/&iquest;/g, '¿')
+    .replace(/&iexcl;/g, '¡')
     .replace(/&aacute;/g, 'á')
     .replace(/&eacute;/g, 'é')
     .replace(/&iacute;/g, 'í')
