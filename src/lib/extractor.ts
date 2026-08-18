@@ -67,13 +67,19 @@ export async function extractEventFromUrl(targetUrl: string): Promise<ExtractedE
   // ─────────────────────────────────────────────────────────
   if (hostname.includes('planetariomedellin.org')) {
     const slugMatch = pathname.match(/\/(?:programate|shows)\/([^\/\?#]+)/);
+    const isShow = pathname.includes('/shows');
+    
+    let apiEndpoint = '';
     if (slugMatch) {
       const slug = slugMatch[1];
-      const isShow = pathname.includes('/shows');
-      const apiEndpoint = isShow 
+      apiEndpoint = isShow 
         ? `https://www.planetariomedellin.org/api/shows/${slug}`
         : `https://www.planetariomedellin.org/api/programate/${slug}`;
+    } else if (pathname.includes('/programate') || pathname === '/' || pathname === '') {
+      apiEndpoint = 'https://www.planetariomedellin.org/api/programate';
+    }
 
+    if (apiEndpoint) {
       try {
         const apiRes = await fetch(apiEndpoint, {
           headers: { 'User-Agent': 'Mozilla/5.0' },
@@ -81,17 +87,21 @@ export async function extractEventFromUrl(targetUrl: string): Promise<ExtractedE
         });
 
         if (apiRes.ok) {
-          const data = await apiRes.json();
+          const rawData = await apiRes.json();
+          const data = rawData.objects ? rawData.objects[0] : rawData;
           if (data && data.title) {
+            const meta = data.metadata || {};
             const rawDesc = data.content || data.description || data.metadatos_seo?.description_seo || '';
             const cleanDesc = cleanHtmlText(rawDesc);
             
-            const eventDate = data.date || new Date().toISOString().split('T')[0];
-            const eventTime = data.hour ? parseTimeString(data.hour) : '19:00';
+            const eventDate = data.date || meta.date || new Date().toISOString().split('T')[0];
+            const rawHour = data.hour || meta.hour || '19:00';
+            const eventTime = parseTimeString(rawHour);
             
             let specificVenue = 'Planetario de Medellín';
-            if (data.location && Array.isArray(data.location) && data.location.length > 0) {
-              const loc = data.location[0];
+            const locList = data.location || meta.location;
+            if (locList && Array.isArray(locList) && locList.length > 0) {
+              const loc = locList[0];
               if (loc.toLowerCase().includes('planetario')) {
                 specificVenue = 'Planetario de Medellín';
               } else {
@@ -104,12 +114,14 @@ export async function extractEventFromUrl(targetUrl: string): Promise<ExtractedE
               }
             }
 
-            const isFree = data.price_check === 'Sin costo' || data.price_check === 'Entrada libre' || !data.price;
-            const price = isFree ? 'Gratis (Entrada Libre)' : (data.price ? `$${data.price}` : 'Entrada con costo');
+            const isFree = data.price_check === 'Sin costo' || data.price_check === 'Entrada libre' || !data.price || meta.price === null || meta.price === 'Sin costo';
+            const price = isFree ? 'Gratis (Entrada Libre)' : (data.price ? `$${data.price}` : (meta.price ? `$${meta.price}` : 'Entrada con costo'));
             
             const category = inferCategory(data.title, cleanDesc, specificVenue);
-            const imageUrl = data.banner?.imgix_url || data.banner?.url || undefined;
+            const imageUrl = data.banner?.imgix_url || data.banner?.url || data.thumbnail || undefined;
             const finalDescription = await summarizeEventDescription(data.title, cleanDesc, category);
+
+            const finalSource = data.slug ? `https://www.planetariomedellin.org/programate/${data.slug}` : targetUrl;
 
             return {
               title: decodeHtmlEntities(data.title.trim()),
@@ -120,7 +132,7 @@ export async function extractEventFromUrl(targetUrl: string): Promise<ExtractedE
               category,
               price,
               organizer: 'Planetario de Medellín',
-              sourceUrl: targetUrl,
+              sourceUrl: finalSource,
               imageUrl,
             };
           }

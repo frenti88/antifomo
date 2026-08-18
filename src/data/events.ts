@@ -2,6 +2,994 @@ import { AntiFOMOEvent } from '@/lib/types';
 
 export const DEMO_EVENTS: AntiFOMOEvent[] = [
   {
+    "id": "lectura-infantil-diez-lunas-para-una-espera-de-velia-vidal-planetario-20260818",
+    "slug": "lectura-infantil-diez-lunas-para-una-espera-de-velia-vidal-planetario-20260818",
+    "title": "Lectura infantil: Diez lunas para una espera de Velia Vidal",
+    "shortDescription": "Velia Vidal es una escritora y gestora cultural del Chocó, Colombia, cuya obra explora la identidad, la maternidad y la cultura del Pacífico. Es directora de Motete, un proyecto de promoción de la lectura en comunidades afrodescendientes.",
+    "longDescription": "Velia Vidal es una escritora y gestora cultural del Chocó, Colombia, cuya obra explora la identidad, la maternidad y la cultura del Pacífico. Es directora de Motete, un proyecto de promoción de la lectura en comunidades afrodescendientes. En Diez lunas para una espera, nos invita a recorrer el ciclo de la gestación a través del simbolismo de la luna, cuyos cambios marcan el ritmo del tiempo y la espera. Esta obra habla de la maternidad y también del cielo que cobija y guía a quienes esperan. La prosa y poética, intachable de Vidal, relaciona la luna con la cultura del Pacífico colombiano, donde el firmamento ha sido testigo de historias, cantos y tradiciones. A través de imágenes y palabras que evocan los paisajes costeros y la cosmovisión de esta región. Medir el tiempo en razón a la Luna es algo que la humanidad ha hecho desde hace muchos años. El concepto de mes se basa en la órbita de la Luna en torno a la Tierra. Durante cada una de las órbitas de la Luna, el ángulo entre la Tierra, la Luna y el Sol va cambiando, y así se originan las distintas fases lunares. La Luna tarda 29,5 días en completar su ciclo y ello define el mes lunar. La Tierra no siempre tuvo a la Luna como compañera; tuvo que esperar a su formación, incluso tuvo que ceder una parte de sí para que esta se formara. La mayoría de los astrónomos aceptan la teoría del gran impacto, según la cual el proceso comenzó hace 4500 millones de años cuando un enorme cuerpo sólido (del tamaño de Marte) golpeó la Tierra; la mayor parte del material proyectado entró en una órbita circular de la Tierra y formó un denso anillo (ajá la Tierra aceptó la joya y se comprometió); las rocas que componían el anillo se fueron agregando hasta recogerse todo el material en un único cuerpo: La Luna; repicaron las campanas de una boda cósmica, se hicieron permanentes compañeros la Luna y nuestro planeta. En este encuentro leeremos la obra de Velia Vidal, conversaremos sobre la luna, tejeremos una manilla lunar y si las condiciones climáticas lo permiten haremos observación, con instrumentos, de Sol y Luna. &iquest;Qué es Letras como estrellas? Letras como estrellas es un programa de la biblioteca del Planetario de Medellín, ubicada en el primer piso de este lugar. Con textos de divulgación científica disponibles en nuestra colección bibliográfica, promovemos la lectura entre niños y niñas. &iquest;Cuándo y dónde es este evento? El evento es el martes 18 de agosto a las 2 de la tarde en la biblioteca Familia Villa Tina, carrera 16 # 56 - 44 en Medellín, Antioquia. &iquest;Tiene costo?, &iquest;necesito inscribirme? Este evento es de entrada libre y no requiere inscripción previa. &iquest;Cómo me entero de la programación del Parque Explora y Planetario de Medellín? Puedes conocerla: - Suscribiéndote a un email semanal - Uniéndote a nuestro canal en Whatsapp - Uniéndote a nuestro canal de Instagram",
+    "startDate": "2026-08-18",
+    "startTime": "14:00",
+    "venue": "Planetario de Medellín",
+    "neighborhood": "Aranjuez / Parque Explora",
+    "city": "Medellín",
+    "category": "literatura",
+    "priceType": "free",
+    "priceMin": 0,
+    "currency": "COP",
+    "organizer": "Planetario de Medellín",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Planetario de Medellín",
+        "url": "https://www.planetariomedellin.org/programate/lectura-infantil-diez-lunas-para-una-espera-de-velia-vidal"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": false,
+    "isNewlyFound": false,
+    "status": "published",
+    "score": 88,
+    "tags": [
+      "literatura",
+      "Planetario",
+      "Gratis",
+      "Medellín"
+    ],
+    "detectedAt": "2026-08-18T00:54:48.695Z",
+    "lastCheckedAt": "2026-08-18T00:54:48.696Z"
+  },
+  {
+    "id": "lectura-para-jovenes-el-ser-bajo-la-luz-de-la-luna-de-h-p-lovecraft-planetario-20260818",
+    "slug": "lectura-para-jovenes-el-ser-bajo-la-luz-de-la-luna-de-h-p-lovecraft-planetario-20260818",
+    "title": "Lectura para jóvenes: El ser bajo la luz de la luna de H. P. Lovecraft",
+    "shortDescription": "La Luna no produce luz propia, el brillo que vemos es luz solar reflejada en su superficie, y a diferencia su iluminación es tenue, deja siluetas incompletas, sombras alargadas y formas abiertas a interpretación.",
+    "longDescription": "La Luna no produce luz propia, el brillo que vemos es luz solar reflejada en su superficie, y a diferencia su iluminación es tenue, deja siluetas incompletas, sombras alargadas y formas abiertas a interpretación. El cerebro es un simulador y, muy a menudo, un escritor de ficciones. Estas ilusiones visuales aparecen porque el cerebro intenta distinguir caras en escenas abarrotadas de objetos, a este fenómeno lo llamamos pareidolia, y explica por qué vemos rostros en las nubes, animales en las montañas o figuras familiares en la superficie de la Luna. Algunas culturas han visto en sus manchas un conejo, un rostro humano, una mujer o incluso, un sapo. El ser bajo la luz de la luna, de H. P. Lovecraft, explora esa frontera entre percepción, sombra y monstruosidad. El terror no nace únicamente de lo desconocido, sino también de la sospecha de que quizá nunca vemos la realidad de forma completa. Pero pronto podríamos hacernos una pregunta nueva. Cuando las misiones Artemis lleven nuevamente seres humanos a la Luna, &iquest;qué criaturas imaginarán bajo la luz de una Tierra llena? Desde la superficie lunar, la Tierra se vería casi cuatro veces más grande que la Luna en nuestro cielo y podría iluminar el paisaje con una intensidad muy superior a la de una noche de luna llena en la Tierra. También habría tierra creciente, tierra llena y hasta tierra nueva, siempre en oposición a las fases que observamos desde aquí. Pero hay algo aún más fascinante: debido a que la Luna siempre da la misma cara hacia la Tierra, un astronauta en la cara visible vería a nuestro planeta suspendido casi inmóvil en el cielo, cambiando lentamente de fase sin salir ni ocultarse jamás. En cambio, para alguien en la cara oculta, la Tierra no existiría en el cielo lunar: nunca vería su luz. Podríamos descubrir que los monstruos nunca pertenecieron realmente a la Tierra o a la Luna, sino a nuestra forma profundamente humana de mirar, interpretar y llenar de sentido las sombras. En este encuentro de Astrolibros en &Oacute;rbita leeremos la obra de Lovecraft, hablaremos sobre la Luna. Además, si las condiciones climáticas lo permiten, observaremos con instrumentos especializados tanto al Sol como a la luna menguante compartiendo el cielo de la mañana, una escena que nos recuerda que nuestro satélite no pertenece únicamente a la noche. &iquest;Quién es Howard Phillips Lovecraft? Fue un escritor estadounidense de relatos y novelas de terror y ciencia ficción. Autor de libros como La llamada de Cthulhu, En las montañas de la locura, La sombra sobre Innsmouth, El horror de Dunwich y El color que cayó del cielo. &iquest;Qué es Astrolibros en órbita? Astrolibros en órbita es un programa de la Biblioteca Planetario en el que se cruzan la literatura y la astronomía: un encuentro itinerante que llega a las instituciones educativas de Medellín y municipios cercanos para hacer promoción de lectura y divulgación de la ciencia. &iquest;Cuándo y dónde es este evento? El evento es el martes 18 de agosto a las 10 de la mañana en la Biblioteca Colegio de la UPB, circular 1 # 70-01, bloque 5. &iquest;Tiene costo?, &iquest;necesito inscribirme? Este evento es de entrada libre y no requiere inscripción previa. &iquest;Cómo me entero de la programación del Parque Explora y Planetario de Medellín? Puedes conocerla: - Suscribiéndote a un email semanal - Uniéndote a nuestro canal en Whatsapp - Uniéndote a nuestro canal de Instagram",
+    "startDate": "2026-08-18",
+    "startTime": "10:00",
+    "venue": "Planetario de Medellín",
+    "neighborhood": "Aranjuez / Parque Explora",
+    "city": "Medellín",
+    "category": "literatura",
+    "priceType": "free",
+    "priceMin": 0,
+    "currency": "COP",
+    "organizer": "Planetario de Medellín",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Planetario de Medellín",
+        "url": "https://www.planetariomedellin.org/programate/lectura-para-jovenes-el-ser-bajo-la-luz-de-la-luna-de-h-p-lovecraft"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": false,
+    "isNewlyFound": false,
+    "status": "published",
+    "score": 88,
+    "tags": [
+      "literatura",
+      "Planetario",
+      "Gratis",
+      "Medellín"
+    ],
+    "detectedAt": "2026-08-18T00:54:48.697Z",
+    "lastCheckedAt": "2026-08-18T00:54:48.697Z"
+  },
+  {
+    "id": "inauguracion-de-medellin-estelar-planetario-20260820",
+    "slug": "inauguracion-de-medellin-estelar-planetario-20260820",
+    "title": "Inauguración de Medellín Estelar",
+    "shortDescription": "Te invitamos a la inauguración de MEDELL&Iacute;N ESTELAR , temporada de eventos de renovación del Planetario de Medellín que incluye la apertura de su exposición &quot;El universo que somos&quot; , un hito en accesibilidad para personas con discapacidad que, además,...",
+    "longDescription": "Te invitamos a la inauguración de MEDELL&Iacute;N ESTELAR , temporada de eventos de renovación del Planetario de Medellín que incluye la apertura de su exposición &quot;El universo que somos&quot; , un hito en accesibilidad para personas con discapacidad que, además, participaron directamente en la construcción de las nuevas salas. En el evento inaugural haremos un recorrido por la exposición y disfrutaremos en el domo del &uml;Viaje a una noche del año 1000&rdquo; , experiencia visual y de escucha contemporánea con instrumentos prehispánicos colombianos, cuerpos de memoria que habían permanecido en silencio por más de mil años, vuelven a sonar en vivo, interpretados por LUIS FERNANDO FRANCO , compositor e investigador de músicas indígenas y fundador del sello Guana Records. Para asistir a la función en el Domo, sugerimos llegar a las 6:15 p.m. y reclamar tu boleta. Se entregará en orden de llegada hasta agotar aforo. MEDELL&Iacute;N ESTELAR tendrá más de 293 episodios públicos para todas las edades, entre viajes, recorridos por el cielo en el domo, talleres, coloquios, una navegación con orquesta y visitas guiadas por la exposición. El Nuevo Planetario nos subraya que todo lo que amamos viene de una estrella. Nos recuerda que, cuando mueren, las estrellas siembran el espacio con los elementos que fabricaron: el carbono de tus huesos, el oxígeno que respiras, el estaño de la lata de galletas, el oro de un anillo de bodas, el platino de un marcapasos. Esa siembra viaja durante miles de millones de años, se enfría, se junta, se convierte en polvo. Y ese polvo, con el tiempo, se convierte en planetas. En tierra. En agua. En algodón. En frijol. Un planetario accesible y participativo, para tocar las estrellas y nombrar el cielo con las manos, para ESCUCHAR CIELOS IND&Iacute;GENAS Y AFROS , para pasar de la noche oscura a la policromía cósmica, para ejercer nuestro derecho a la belleza y para recordar nuestra desconcertante pequeñez y la grandeza de nuestra responsabilidad cósmica. Te invitan el Planetario de Medellín y sus patrocinadores: la Alcaldía de Medellín y Bancolombia.",
+    "startDate": "2026-08-20",
+    "startTime": "18:30",
+    "venue": "Planetario de Medellín",
+    "neighborhood": "Aranjuez / Parque Explora",
+    "city": "Medellín",
+    "category": "ciencia",
+    "priceType": "free",
+    "priceMin": 0,
+    "currency": "COP",
+    "organizer": "Planetario de Medellín",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Planetario de Medellín",
+        "url": "https://www.planetariomedellin.org/programate/inauguracion-medellin-estelar"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": false,
+    "isNewlyFound": false,
+    "status": "published",
+    "score": 88,
+    "tags": [
+      "ciencia",
+      "Planetario",
+      "Gratis",
+      "Medellín"
+    ],
+    "detectedAt": "2026-08-18T00:54:48.698Z",
+    "lastCheckedAt": "2026-08-18T00:54:48.698Z"
+  },
+  {
+    "id": "observacion-por-telescopio-tres-estrellas-para-cruzar-el-verano-planetario-20260821",
+    "slug": "observacion-por-telescopio-tres-estrellas-para-cruzar-el-verano-planetario-20260821",
+    "title": "Observación por telescopio: tres estrellas para cruzar el verano",
+    "shortDescription": "Es común escuchar que las estrellas sirven a los navegantes para guiarse en sus viajes en altamar o en los campos traviesa y no lo consideramos en la cotidianidad.",
+    "longDescription": "Es común escuchar que las estrellas sirven a los navegantes para guiarse en sus viajes en altamar o en los campos traviesa y no lo consideramos en la cotidianidad. En especial en las noches de las ciudades donde el alumbrado y el espectáculo de luces nos han ido arrebatando el cielo estrellado. En noches como las de agosto, el cielo será un mapa claro, basta con encontrar tres puntos muy brillantes para empezar a orientarnos: Vega, Altair y Deneb. Estas estrellas forman el llamado Triángulo de Verano, una figura amplia que en esta temporada aparece hacia el nororiente del cielo de Medellín, acompañado de la Vía Láctea y la Luna. Vega pertenece a la constelación de la Lira; Altair, al &Aacute;guila; y Deneb, al Cisna. Sus nombres reúnen música, vuelo y animales celestes y también convocan a la conversación sobre la manera en que las personas han usado las estrellas para orientarse, contar historias y reconocer los cambios del cielo a lo largo del año. Durante esta noche de observación astronómica, también podremos dirigir la mirada hacia la Luna en gibosa creciente, iluminada en una gran parte de su cara visible, ideal para reconocer algunos de sus mares, cráteres y relieves, tanto a simple vista como con telescopios. Por otro lado, contaremos con Venus brillando después del atardecer hacia el occidente. Si las condiciones atmosféricas lo permiten, la terraza del Planetario será un lugar para recorrer el cielo y aprender a orientarnos. &iexcl;Les esperamos! &iquest;Cuándo y dónde es este evento? El evento es el viernes 21 de agosto a las 7 de la noche en la terraza del Planetario de Medellín. &iquest;Tiene costo?, &iquest;necesito inscribirme? Este evento es de entrada libre y no requiere inscripción previa. &iquest;Cómo me entero de la programación del Parque Explora y Planetario de Medellín? Puedes conocerla: - Suscribiéndote a un email semanal - Uniéndote a nuestro canal en Whatsapp - Uniéndote a nuestro canal de Instagram",
+    "startDate": "2026-08-21",
+    "startTime": "19:00",
+    "venue": "Planetario de Medellín",
+    "neighborhood": "Aranjuez / Parque Explora",
+    "city": "Medellín",
+    "category": "ciencia",
+    "priceType": "free",
+    "priceMin": 0,
+    "currency": "COP",
+    "organizer": "Planetario de Medellín",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Planetario de Medellín",
+        "url": "https://www.planetariomedellin.org/programate/observacion-por-telescopio-tres-estrellas-para-cruzar-el-verano"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": false,
+    "isNewlyFound": false,
+    "status": "published",
+    "score": 88,
+    "tags": [
+      "ciencia",
+      "Planetario",
+      "Gratis",
+      "Medellín"
+    ],
+    "detectedAt": "2026-08-18T00:54:48.698Z",
+    "lastCheckedAt": "2026-08-18T00:54:48.698Z"
+  },
+  {
+    "id": "el-cielo-esta-noche-un-cielo-cantado-para-toto-la-momposina-planetario-20260821",
+    "slug": "el-cielo-esta-noche-un-cielo-cantado-para-toto-la-momposina-planetario-20260821",
+    "title": "El cielo esta noche: un cielo cantado para Totó La Momposina",
+    "shortDescription": "El planeta Venus al compás de la cumbia, la luna gibosa creciente acompañada de bullerengue y gaita, buscar la constelación de Piscis con sones palenqueros.",
+    "longDescription": "El planeta Venus al compás de la cumbia, la luna gibosa creciente acompañada de bullerengue y gaita, buscar la constelación de Piscis con sones palenqueros. Ven este 21 de agosto al Planetario de Medellín para hacer un viaje por los astros visibles del cielo nocturno de Medellín mientras escuchamos la música de la cantante colombiana Totó La Momposina. Podremos ver esa noche, también, a algunos &ldquo;astros errantes&rdquo; &mdash;como llamaron inicialmente a los planetas&mdash; como a Saturno, ese gigante gaseoso que podría flotar en el agua, o Júpiter que tiene más de 150 Lunas orbitándolo, o Marte, el planeta rojo. Te esperamos para viajar por el cielo y, al final, si las condiciones climáticas lo permiten, haremos observación por telescopio en la terraza del Planetario. &iquest;Quién fue Totó La Momposina? Sonia Bazanta Vides (1940-2026), conocida como Totó la Momposina, fue una cantante colombiana de música folclórica tradicional de la región Caribe de Colombia, en su larga trayectoria musical grabó porros de gaita, porros de banda, mapalés, sones de negro, bullerengues, tamboras, puyas de gaita, sones palenqueros y más. Con su trabajo reconoció los ritmos tradicionales y los transformó en nuevas sonoridades. Totó llevó la música, el baile y las costumbres de la ruralidad Caribe al ámbito internacional en numerosos conciertos en Europa, América y Asia. Con una carrera artística de más de seis décadas, fue ganadora de los Congos de Oro en el Festival de Barranquilla en 1999 y 2009, recibió nominaciones al Mejor &Aacute;lbum Folclórico en los Premios Grammy de 2000 y al Mejor &Aacute;lbum Tropical Tradicional en 2002, obtuvo el Premio a la Trayectoria del Festival WOMEX en 2006, el Grammy Latino Especial a la Excelencia Musical en 2013 y el Premio La Mar de Músicas en 2018. &iquest;Qué es El cielo esta noche? Cada viernes de 6:00 a 7:00 de la noche en el Planetario de Medellín tenemos El cielo esta noche, un show en vivo de entrada gratuita en el que hacemos un viaje por los astros visibles en el cielo del Valle de Aburrá desde la noche hasta la madrugada. &iquest;Cuándo y dónde es este evento? El evento es el viernes 21 de agosto a las 6:00 de la tarde en el Domo del Planetario de Medellín. &iquest;Tiene costo?, &iquest;necesito inscribirme? Este evento es de entrada libre y no requiere inscripción previa. Antes de venir ten en cuenta: Los cupos se asignan a partir de las 5:00 p.m. en orden de llegada solamente a quienes estén en la fila hasta completar el cupo del evento (95 personas). Solo se entrega un cupo por persona. El ingreso al Planetario es por la entrada de la avenida Ferrocarril (frente a la Universidad de Antioquia). Las sillas del domo son numeradas, debes respetar la ubicación que se asigna según la disponibilidad de asientos. Este evento solo incluye acceso al domo. &iquest;Cómo me entero de la programación del Parque Explora y Planetario de Medellín? Puedes conocerla: - Suscribiéndote a un email semanal - Uniéndote a nuestro canal en Whatsapp - Uniéndote a nuestro canal de Instagram",
+    "startDate": "2026-08-21",
+    "startTime": "18:00",
+    "venue": "Planetario de Medellín",
+    "neighborhood": "Aranjuez / Parque Explora",
+    "city": "Medellín",
+    "category": "música",
+    "priceType": "free",
+    "priceMin": 0,
+    "currency": "COP",
+    "organizer": "Planetario de Medellín",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Planetario de Medellín",
+        "url": "https://www.planetariomedellin.org/programate/el-cielo-esta-noche-un-cielo-cantado-para-toto-la-momposina"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": false,
+    "status": "published",
+    "score": 95,
+    "tags": [
+      "música",
+      "Planetario",
+      "Gratis",
+      "Medellín"
+    ],
+    "detectedAt": "2026-08-18T00:54:48.698Z",
+    "lastCheckedAt": "2026-08-18T00:54:48.698Z"
+  },
+  {
+    "id": "bar-de-historias-la-vagina-en-una-noche-de-ciencia-para-adultos-planetario-20260821",
+    "slug": "bar-de-historias-la-vagina-en-una-noche-de-ciencia-para-adultos-planetario-20260821",
+    "title": "Bar de historias: la vagina en una noche de ciencia para adultos",
+    "shortDescription": "Un homenaje a la vagina y su fascinante complejidad, soslayada durante siglos, en una noche de ciencia para adultos con la científica colombiana Patricia Brennan, bióloga evolutiva, doctora en Neurobiología y Comportamiento y pionera en el estudio de las vaginas y los...",
+    "longDescription": "Un homenaje a la vagina y su fascinante complejidad, soslayada durante siglos, en una noche de ciencia para adultos con la científica colombiana Patricia Brennan, bióloga evolutiva, doctora en Neurobiología y Comportamiento y pionera en el estudio de las vaginas y los clítoris en la naturaleza. Compra tu boleta y participa el viernes 21 de agosto a las 7 pm en un nuevo episodio de Bar de historias del Parque Explora. Disfruta de música, comida, bebida y narraciones fascinantes sobre uno de los inquietantes silencios de la ciencia: la biología reproductiva de las hembras y la relación entre el placer y su autonomía sexual . Las vaginas no son, como se asumio erróneamente por décadas, simples receptáculos o tubos. Hay vaginas espiraladas y laberínticas que subvierten la idea de que solo los machos eligen. Hay vaginas capaces de sanar las heridas que dejan penes como ganchos rígidos. Hay vaginas que son laboratorio bioquímicos selectores de esperma. Tampoco son predecibles los clítoris: los hay cartilaginosos que se elevan o, como en las hembras de delfines, con cuerpos eréctiles grandes y corpúsculos del placer &mdash;hasta hace poco solos descritos en humanos&mdash; que se han ligado con la autonomía sexual. Conversaremos también sobre esa gran desconocida que es la vagina humana . &ldquo;Sabemos más del impacto del embarazo en la vagina de un tiburón que en la de un humano&rdquo;, dice la doctora Brennan. Solo desde hace pocos años sabemos, por ejemplo, que el microbioma vaginal no solo actúa como una barrera de defensa, sino que, en comunicación con el sistema inmunológico del útero, ayuda a favorecer a ciertos espermatozoides y dificulta el tránsito de otros. Muchas mujeres sufren de disfunción sexual y dolor durante el sexo, o incapacidad de sentir placer, por un prolapso vaginal &mdash;cuando el tejido de la vagina colapsa debido al envejecimiento&mdash; y no son capaces de contárselo a sus médicos porque les da verg&uuml;enza. Y, si lo hacen, no existe información científica suficiente suficiente para ofrecer soluciones, un vacío del cual se aprovecha la industria cosmética para venderles cremas y suplementos de efecto no comprobado y que las mujeres compran fácilmente porque están desesperadas. &quot;Las vaginas no son difíciles de ver ni de estudiar. Sabemos muy poco de ellas, del clítoris y del placer sexual por causa de un sesgo. Hacía falta que las mujeres se ocuparan de esto para hacer las preguntas apropiadas&quot;. Patricia Brennan es una bióloga evolutiva colombiana y una autoridad mundial en la morfología genital de los vertebrados. Estudió Biología Marina en la Universidad de Bogotá Jorge Tadeo Lozano y obtuvo su doctorado en Neurobiología y Comportamiento en la Universidad de Cornell. Actualmente es profesora en Mount Holyoke College y está afiliada a la Universidad de Massachusetts Amherst. Descubrió que las hembras de pato desarrollaron vaginas laberínticas como respuesta evolutiva a la cópula forzada, hallazgo que amplió al estudio de cetáceos, alpacas, serpientes, cocodrilos, murciélagos y tiburones para denunciar el histórico desequilibrio científico que ha privilegiado el estudio del pene sobre el de los genitales femeninos. Su trabajo, ampliamente difundido en medios como The New York Times, National Geographic y The Guardian, le ha valido reconocimientos como la prestigiosa beca CAREER de National Science Foundation en 2021 y su elección como miembro distinguido de la Asociación Estadounidense para el Avance de la Ciencia) (AAAS) en 2023. &iquest;Cuándo y dónde es este evento? El evento es para mayores de 18 años &mdash;no se permite el ingreso de menores de edad&mdash;, el viernes 21 de agosto 2026 de 7:00 p.m. a 10:00 p.m. en la zona de comidas del Parque Explora. &iquest;Tiene costo?, &iquest;necesito inscribirme? El evento tiene un costo de $70.000. Puedes inscribirte haciendo clic aquí. &iquest;Cómo me entero de la programación del Parque Explora y Planetario de Medellín? Puedes conocerla: - Suscribiéndote a un email semanal - Uniéndote a nuestro canal en Whatsapp - Uniéndote a nuestro canal de Instagram No se podrán hacer cambios en la fecha y hora de la hora elegida. No se realizarán devoluciones sobre las boletas adquiridas. Conoce los términos y condiciones de compra. El evento NO incluye comida, pasabocas o cócteles. Sin embargo, se pueden comprar alimentos y bebidas en los locales comerciales. El ingreso a la zona de comidas es por la Tienda del Parque Explora, frente al Exploratorio de Medellín - detrás del dinosaurio gigante. No se permite el ingreso de armas, drogas, alcohol ni reingreso de personas al Planetario una vez abandonen el recinto. Si vienes en tu vehículo puedes utilizar los parqueaderos habilitados de la zona como en el Parque Norte, y Centro Comercial Bosque Plaza.",
+    "startDate": "2026-08-21",
+    "startTime": "19:00",
+    "venue": "Parque Explora (Planetario)",
+    "neighborhood": "Aranjuez / Parque Explora",
+    "city": "Medellín",
+    "category": "comunidad",
+    "priceType": "paid",
+    "priceMin": 70000,
+    "currency": "COP",
+    "organizer": "Planetario de Medellín",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Planetario de Medellín",
+        "url": "https://www.planetariomedellin.org/programate/bar-de-historias-la-vagina-en-una-noche-de-ciencia-para-adultos"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": false,
+    "status": "published",
+    "score": 95,
+    "tags": [
+      "comunidad",
+      "Planetario",
+      "Con Boleta",
+      "Medellín"
+    ],
+    "detectedAt": "2026-08-18T00:54:48.699Z",
+    "lastCheckedAt": "2026-08-18T00:54:48.699Z"
+  },
+  {
+    "id": "explora-en-los-barrios-en-robledo-el-paraiso-planetario-20260822",
+    "slug": "explora-en-los-barrios-en-robledo-el-paraiso-planetario-20260822",
+    "title": "Explora en los barrios en Robledo El Paraíso",
+    "shortDescription": "Hablar de la mente es hablar del cerebro en relación con el cuerpo entero. No somos solo pensamientos abstractos; somos biología, historia y entorno.",
+    "longDescription": "Hablar de la mente es hablar del cerebro en relación con el cuerpo entero. No somos solo pensamientos abstractos; somos biología, historia y entorno. Con esta premisa llega el Exploramóvil del Mundo Mente, una experiencia itinerante que aborda los misterios de nuestra cabeza desde la rigurosidad de la anatomía y las neurociencias, pero también desde la riqueza de la antropología. En este espacio, las percepciones, los sentidos, el razonamiento, las emociones y el aprendizaje dejan de ser conceptos de laboratorio y se convierten en terrenos fértiles de aprendizaje y juego. Preguntarse con asombro sobre el cuerpo &mdash;por sus formas, su disposición y su increíble funcionamiento&mdash; nos lleva a entender que la ciencia no es algo ajeno: es algo que nos habita y nos sorprende a cada segundo. &iquest;Qué es Explora en los barrios? Explora en los barrios es un programa que cree firmemente que el conocimiento no debe quedarse encerrado entre cuatro paredes. Al descentralizar el museo y llevarlo directamente a las plazas, parques y calles de nuestras comunidades, se transforma el espacio público en un gran escenario de experimentación. Es una invitación abierta a habitar el territorio desde la curiosidad, el encuentro con los vecinos y el asombro compartido. &iquest;Cuándo y dónde es este evento? El evento es el sábado 22 de agosto de 10 de la mañana a 2 de la tarde en la Cancha de Robledo Paraíso, curva de Malaquias. &iquest;Tiene costo?, &iquest;necesito inscribirme? Este evento es de entrada libre y no requiere inscripción previa. &iquest;Cómo me entero de la programación del Parque Explora y Planetario de Medellín? Puedes conocerla: - Suscribiéndote a un email semanal - Uniéndote a nuestro canal en Whatsapp - Uniéndote a nuestro canal de Instagram",
+    "startDate": "2026-08-22",
+    "startTime": "10:00",
+    "venue": "Parque Explora (Planetario)",
+    "neighborhood": "Aranjuez / Parque Explora",
+    "city": "Medellín",
+    "category": "ciencia",
+    "priceType": "free",
+    "priceMin": 0,
+    "currency": "COP",
+    "organizer": "Planetario de Medellín",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Planetario de Medellín",
+        "url": "https://www.planetariomedellin.org/programate/explora-en-los-barrios-en-robledo-el-paraiso"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": false,
+    "isNewlyFound": false,
+    "status": "published",
+    "score": 88,
+    "tags": [
+      "ciencia",
+      "Planetario",
+      "Gratis",
+      "Medellín"
+    ],
+    "detectedAt": "2026-08-18T00:54:48.699Z",
+    "lastCheckedAt": "2026-08-18T00:54:48.699Z"
+  },
+  {
+    "id": "literatura-y-astronomia-otras-formas-de-leer-el-cielo-planetario-20260822",
+    "slug": "literatura-y-astronomia-otras-formas-de-leer-el-cielo-planetario-20260822",
+    "title": "Literatura y astronomía: otras formas de leer el cielo",
+    "shortDescription": "[ INSCR&Iacute;BETE HACIENDO CLIC AQU&Iacute; ] Las narraciones han hecho parte fundamental de los procesos de aprendizaje y comprensión del universo.",
+    "longDescription": "[ INSCR&Iacute;BETE HACIENDO CLIC AQU&Iacute; ] Las narraciones han hecho parte fundamental de los procesos de aprendizaje y comprensión del universo. Cuando de niñ@s escuchábamos cuentos como el de Caperucita Roja, no solo aprendíamos sobre su aventura, sino sobre el bosque, los animales y el territorio que habitaban. Un relato sobre una navegación en altamar, la sombra de un árbol o el paso del tiempo puede convertirse en la &ldquo;excusa&rdquo; para hablar sobre las estrellas, el Sol y la inmensidad del universo. En esta primera edición de Encuentros bajo las estrellas, exploraremos cómo la literatura y las diversas formas de narrar se transforman en herramientas pedagógicas para despertar la curiosidad y dinamizar la enseñanza de la astronomía. Contaremos con la participación de Luz &Aacute;ngela Cubides, astrónoma y magíster en Hermenéutica Literaria con amplia experiencia docente en los ámbitos escolar y universitario. Junto a ella, leeremos, escucharemos y descubriremos cómo un libro o un relato oral nos permite llevar el cielo al aula. &iquest;Cuándo y dónde es este evento? El evento es el sábado 22 de agosto a las 10 de la mañana en la sala de reuniones del Planetario de Medellín. Puedes inscribirte haciendo clic aquí &iquest;Tiene costo?, &iquest;necesito inscribirme? Este evento es de entrada libre y requiere inscripción previa. Puedes inscribirte haciendo clic aquí &iquest;Cómo me entero de la programación del Parque Explora y Planetario de Medellín? Puedes conocerla: - Suscribiéndote a un email semanal - Uniéndote a nuestro canal en Whatsapp - Uniéndote a nuestro canal de Instagram",
+    "startDate": "2026-08-22",
+    "startTime": "10:00",
+    "venue": "Planetario de Medellín",
+    "neighborhood": "Aranjuez / Parque Explora",
+    "city": "Medellín",
+    "category": "literatura",
+    "priceType": "free",
+    "priceMin": 0,
+    "currency": "COP",
+    "organizer": "Planetario de Medellín",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Planetario de Medellín",
+        "url": "https://www.planetariomedellin.org/programate/literatura-y-astronomia-otras-formas-de-leer-el-cielo"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": false,
+    "isNewlyFound": false,
+    "status": "published",
+    "score": 88,
+    "tags": [
+      "literatura",
+      "Planetario",
+      "Gratis",
+      "Medellín"
+    ],
+    "detectedAt": "2026-08-18T00:54:48.699Z",
+    "lastCheckedAt": "2026-08-18T00:54:48.699Z"
+  },
+  {
+    "id": "la-vinilada-vol-34-planetario-20260822",
+    "slug": "la-vinilada-vol-34-planetario-20260822",
+    "title": "La Vinilada Vol. 34",
+    "shortDescription": "El sábado 22 de agosto te invitamos a La Vinilada Vol. 34, desde la 12:00 m. en el Exploratorio &mdash;taller público de experimentación del Parque Explora&mdash;. La entrada es libre. &iexcl;Bienvenidxs a esta aventura discófila!",
+    "longDescription": "El sábado 22 de agosto te invitamos a La Vinilada Vol. 34, desde la 12:00 m. en el Exploratorio &mdash;taller público de experimentación del Parque Explora&mdash;. La entrada es libre. &iexcl;Bienvenidxs a esta aventura discófila! Sabemos que las cajas de discos ofrecen innumerables tesoros para quienes disfrutan de escarbar con genuina efusión vinilera, más allá de las modas, las tendencias y el mainstream. Tendremos compra, venta, intercambios y hasta adopción de discos, con la participación de una docena de disquerxs, lanzamientos, muchxs melómanxs y los tradicionales discómanxs, quienes ofrecerán una selección diversa de todos los géneros, todos los estilos. En esta edición estrenamos &ldquo;Músicas de papel&rdquo;, un espacio dedicado a la escritura sobre música. Libros, revistas y fanzines que, desde su origen, han estado cerca del entorno musical alternativo. Además, lanzaremos &quot;El underground no es virtual&quot;, de Giuseppe &quot;Pino&quot; Risica, una coedición en Colombia de Familia subterránea con Cuero Negro (Perú). Un texto que reivindica la historia de la hermandad y las redes del underground latinoamericano, y que retrata cómo se construyeron las escenas independientes en América Latina mucho antes de la llegada de Internet. Desde Brasil nos acompañará DJ Tudo (Alfredo Bello), investigador, DJ, productor, etnomusicólogo y, según las malas lenguas &mdash;que son las que mejor hablan&mdash;, quien atesora una de las colecciones etnomusicológicas más importantes de Brasil. También presentará producciones de su sello MUNDO MELHOR, fundado en 2004, centrado en la música de la tradición oral brasileña, la música experimental y los encuentros entre la música brasileña y las músicas del mundo. &iexcl;Qué giren los discos!",
+    "startDate": "2026-08-22",
+    "startTime": "12:00",
+    "venue": "Exploratorio (Planetario)",
+    "neighborhood": "Aranjuez / Parque Explora",
+    "city": "Medellín",
+    "category": "música",
+    "priceType": "free",
+    "priceMin": 0,
+    "currency": "COP",
+    "organizer": "Planetario de Medellín",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Planetario de Medellín",
+        "url": "https://www.planetariomedellin.org/programate/la-vinilada-vol-34"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": false,
+    "status": "published",
+    "score": 95,
+    "tags": [
+      "música",
+      "Planetario",
+      "Gratis",
+      "Medellín"
+    ],
+    "detectedAt": "2026-08-18T00:54:48.700Z",
+    "lastCheckedAt": "2026-08-18T00:54:48.700Z"
+  },
+  {
+    "id": "taller-saca-de-paseo-tu-telescopio-planetario-20260822",
+    "slug": "taller-saca-de-paseo-tu-telescopio-planetario-20260822",
+    "title": "Taller: saca de paseo tu telescopio",
+    "shortDescription": "&iquest;Te regalaron un telescopio y todavía no sabes usarlo? &iquest;O estás pensando en conseguir uno y quieres sacarle el mayor provecho? Inscríbete en el taller presencial &ldquo;Saca de paseo tu telescopio&rdquo; y descubre el universo en la punta de tus dedos.",
+    "longDescription": "&iquest;Te regalaron un telescopio y todavía no sabes usarlo? &iquest;O estás pensando en conseguir uno y quieres sacarle el mayor provecho? Inscríbete en el taller presencial &ldquo;Saca de paseo tu telescopio&rdquo; y descubre el universo en la punta de tus dedos. En el primer encuentro, aprenderás a manipular tu telescopio y a comprender los conceptos fundamentales relacionados con su funcionamiento. En una charla guiada conocerás las partes del instrumento, los tipos de montura, los oculares y otros accesorios necesarios para preparar una observación astronómica. Luego, utilizando telescopios de los participantes o del Planetario, aplicaremos estos conocimientos mediante ejercicios básicos de puesta en estación, orientación y manejo del equipo. En la segunda sesión, haremos una observación astronómica, subiremos a la terraza del Planetario para poner en práctica lo aprendido: aprenderás a orientar tu telescopio, utilizar diferentes oculares, comprender el funcionamiento de las monturas y hacer observaciones del cielo nocturno acompañado por el equipo del Planetario. &quot;El telescopio es un instrumento de navegación en el tiempo que nos lleva al pasado; en las noches estrelladas, los astrónomos viajan en silencio a tiempos remotos&quot;, decía Alonso Sepúlveda, físico, profesor de la Universidad de Antioquia y amigo del Planetario de Medellín. La luz de las estrellas y galaxias lejanas tardan en viajar desde su origen cósmico hasta nosotros. Por ejemplo, si miramos una estrella que está a 100 años luz de distancia, estamos viendo cómo era esa estrella hace un centenar de años. Al terminar el curso habrás aprendido a utilizar tu telescopio, y llevarás contigo una nueva manera de observar el cielo nocturno. Te esperamos. &iquest;Cuándo y dónde es este evento? El evento es para jóvenes mayores de 15 años y adultos, los sábados 22 y 29 de agosto 2026 en el Auditorio del Planetario de Medellín. Sesión 1: 4:00 p.m. a 8:00 p.m. Sesión 2: 5:30 p.m. a 9:00 p.m. &iquest;Tiene costo?, &iquest;necesito inscribirme? El evento tiene un costo de $170.000. Puedes inscribirte haciendo clic aquí. &iquest;Cómo me entero de la programación del Parque Explora y Planetario de Medellín? Puedes conocerla: - Suscribiéndote a un email semanal - Uniéndote a nuestro canal en Whatsapp - Uniéndote a nuestro canal de Instagram Nota : El costo del curso incluye acceso a telescopios + práctica con jornada de observación. Para este curso no se requieren conocimientos previos. El curso se lleva a cabo con un cupo mínimo de 8 participantes , si no se logra llenar, se realizará la devolución del dinero. La confirmación del curso se realizará el día jueves 13 de agosto del 2026. Conoce los términos y condiciones de compra.",
+    "startDate": "2026-08-22",
+    "startTime": "16:00",
+    "venue": "Planetario de Medellín",
+    "neighborhood": "Aranjuez / Parque Explora",
+    "city": "Medellín",
+    "category": "talleres",
+    "priceType": "paid",
+    "priceMin": 170000,
+    "currency": "COP",
+    "organizer": "Planetario de Medellín",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Planetario de Medellín",
+        "url": "https://www.planetariomedellin.org/programate/taller-saca-de-paseo-tu-telescopio-agosto"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": false,
+    "isNewlyFound": false,
+    "status": "published",
+    "score": 88,
+    "tags": [
+      "talleres",
+      "Planetario",
+      "Con Boleta",
+      "Medellín"
+    ],
+    "detectedAt": "2026-08-18T00:54:48.700Z",
+    "lastCheckedAt": "2026-08-18T00:54:48.700Z"
+  },
+  {
+    "id": "taller-para-familias-bordando-especies-nativas-de-colombia-planetario-20260822",
+    "slug": "taller-para-familias-bordando-especies-nativas-de-colombia-planetario-20260822",
+    "title": "Taller para familias: bordando especies nativas de Colombia",
+    "shortDescription": "[ INSCR&Iacute;BETE HACIENDO CLIC AQU&Iacute; ] Conoce a un conejo silvestre, pequeño y solitario, que pasa las noches comiendo pasto y ramitas.",
+    "longDescription": "[ INSCR&Iacute;BETE HACIENDO CLIC AQU&Iacute; ] Conoce a un conejo silvestre, pequeño y solitario, que pasa las noches comiendo pasto y ramitas. O a un tucancito comefruta de corona, careta y un delgado collar de plumas negras y sus ruidosos cantos en dueto, graznidos que viajan largas distancias para encontrar pareja. En este taller para niños, niñas y familias exploraremos las formas, los colores, las adaptaciones y los modos de vida de diferentes seres vivos y haremos un separador de libros bordado sobre papel, inspirado en la biodiversidad colombiana. Mientras aprendemos técnicas de bordado, dibujaremos con hilo a animales como el osito trueno, pequeño hormiguero de color amarillo pardusco, con reflejos dorados, que se desplaza sobre las ramas y lianas de los árboles y escarba entre los tallos huecos para capturar insectos. Viajaremos, entre puntadas y aleteos rápidos, hasta el bosque nuboso para bordar una joyería emplumada que flota en el aire y entre las flores: COLIBR&Iacute;S que habitan Colombia y que son jardineros de nuevas plantas en sus vuelos en busca de néctar. Como la esmeraldita patiblanca o coqueta maravillosa, llamada también paramero de Munchique. O un colibrí con gargantilla de rubí, el colibrí turmalina, Archilochus colubris, que bate sus alas más de 50 veces por segundo. &iquest;Qué es Familias buscando familias? Familias buscando familias es un programa de talleres con dos episodios al mes en Parque Explora, en el que hacemos actividades para niñas y niños que incluyen el ingreso total a las instalaciones del Parque por un precio menor al de la boleta convencional. &iquest;Cuándo y dónde es este evento? El evento es para niños y niñas entre 7 y 12 años y 1 (un) adulto responsable durante todo el taller, el sábado 22 agosto 2026 de 2:00 p.m. a 3:30 p.m. en el Auditorio 4, 5 y 6 Parque Explora. &iquest;Tiene costo?, &iquest;necesito inscribirme? El evento tiene un costo de $60.000. Tu boleta incluye el ingreso para 2 personas (1 niña o niño + 1 adulto) e incluye el acceso a todas las experiencias del Parque Explora. Puedes inscribirte haciendo clic aquí. &iquest;Cómo me entero de la programación del Parque Explora y Planetario de Medellín? Puedes conocerla: - Suscribiéndote a un email semanal - Uniéndote a nuestro canal en Whatsapp - Uniéndote a nuestro canal de Instagram Recomendamos llegar al menos 15 minutos antes de la hora de inicio del taller para acercarse a taquilla y reclamar las boletas. *** En caso de no poder asistir, puede transferir las boletas a un amigo o familiar pero NO se podrán hacer cambios en la fecha y hora de la funció￳n elegida y tampoco se realizarán devoluciones sobre las boletas adquiridas. *** NO se aceptan pagos en efectivo, ni en taquilla física, solo compras por medio de la página web. *** La NO asistencia al evento por parte del cliente generará el cargo del mismo, de tal manera que no generará ningún tipo de reembolso de dinero , o abono de ese dinero para asistir a otro taller. Conoce más sobre los términos y condiciones de la compra de tus ingresos. Para tener en cuenta: No se permite el ingreso de armas, drogas, alcohol ni reingreso de personas al Parque Explora una vez abandonen el recinto. Si vienes en tu vehículo puedes utilizar los parqueaderos pagos habilitados en zona como Parque Norte y Centro Comercial Bosque Plaza",
+    "startDate": "2026-08-22",
+    "startTime": "14:00",
+    "venue": "Parque Explora (Planetario)",
+    "neighborhood": "Aranjuez / Parque Explora",
+    "city": "Medellín",
+    "category": "talleres",
+    "priceType": "paid",
+    "priceMin": 60000,
+    "currency": "COP",
+    "organizer": "Planetario de Medellín",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Planetario de Medellín",
+        "url": "https://www.planetariomedellin.org/programate/taller-para-familias-bordando-especies-nativas-de-colombia"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": false,
+    "isNewlyFound": false,
+    "status": "published",
+    "score": 88,
+    "tags": [
+      "talleres",
+      "Planetario",
+      "Con Boleta",
+      "Medellín"
+    ],
+    "detectedAt": "2026-08-18T00:54:48.700Z",
+    "lastCheckedAt": "2026-08-18T00:54:48.700Z"
+  },
+  {
+    "id": "cielo-de-mi-barrio-en-la-divisa-planetario-20260826",
+    "slug": "cielo-de-mi-barrio-en-la-divisa-planetario-20260826",
+    "title": "Cielo de mi barrio en La Divisa",
+    "shortDescription": "&iquest;Qué une el vacío del espacio con las calles de nuestra comuna? Más de lo que imaginas. En 1970, la misión Apolo 13 se convirtió en el desafío técnico y humano más grande en la historia de la exploración espacial.",
+    "longDescription": "&iquest;Qué une el vacío del espacio con las calles de nuestra comuna? Más de lo que imaginas. En 1970, la misión Apolo 13 se convirtió en el desafío técnico y humano más grande en la historia de la exploración espacial. A miles de kilómetros de la Tierra, con su nave dañada y los recursos agotándose, los astronautas no sucumbieron ante el miedo. Con el ingenio como única herramienta y la firme voluntad de &quot;regresar a casa&quot; como motor, lograron superar lo que muchos pensaban que sería un desastre inevitable. Esa historia de supervivencia y capacidad de respuesta no nos es ajena. En la Comuna 13, la comunidad ha navegado sus propias crisis, ha enfrentado años de retos profundos que intentaron dividirla, pero, al igual que el equipo del Apolo, eligió el camino del trabajo, el empeño colectivo y la transformación constante. Ante las condiciones más adversas, es posible construir un futuro distinto. Por eso, queremos invitarte a una experiencia diferente. &quot;Cielo de mi Barrio&quot; no es solo una jornada de observación astronómica, es un encuentro para reconocernos a través de las estrellas. Esta noche viviremos el legado de Apolo y descubriremos, de la mano de quienes estudiamos el cosmos, cómo el módulo de comando y servicio fue el corazón de aquella supervivencia. Analizaremos cómo los retos del espacio nos enseñan lecciones valiosas para nuestra vida cotidiana. Conversaremos sobre cómo la resiliencia es un lenguaje universal, desde la órbita lunar hasta nuestras laderas. Reflexionaremos sobre el camino que hemos recorrido como barrio y hacia dónde queremos dirigir nuestra mirada. Además, construiremos un modelo a escala de un transbordador espacial usando una plantilla de papel y pegamento. Mientras lo armamos, conversaremos sobre la historia de estas naves, su importancia en la construcción de la Estación Espacial Internacional y los desafíos de la exploración espacial. Al finalizar, lanzaremos el modelo para observar cómo su forma le permite planear sobre el aire. Finalizamos dirigiendo nuestros telescopios hacia la Luna. Ese mismo objeto que sirvió de guía y refugio a los astronautas del Apolo será nuestro protagonista. Queremos que la veas como nunca antes, detallando sus cráteres, sus mares y su luz, para comprender que, aunque estemos en la Tierra, somos parte de esa inmensa exploración. &iquest;Qué es Cielo de mi barrio? Cielo de mi barrio es un programa del Planetario de Medellín en el que visitamos comunidades de la ciudad. Trabajamos de la mano de aliados y vecinos, como la Red de Bibliotecas Públicas de Medellín, juntas de acción comunal o casas de la cultura, para conversar sobre astronomía, realizar actividades experimentales y hacer observación con telescopios. &iquest;Cuándo y dónde es este evento? El evento es el miércoles 26 de agosto a las 5:30 de la tarde en la Cancha Inder, barrio La Divisa Cl. 49A #99ee-56. &iquest;Tiene costo?, &iquest;necesito inscribirme? Este evento es de entrada libre y no requiere inscripción previa. &iquest;Cómo me entero de la programación del Parque Explora y Planetario de Medellín? Puedes conocerla: - Suscribiéndote a un email semanal - Uniéndote a nuestro canal en Whatsapp - Uniéndote a nuestro canal de Instagram",
+    "startDate": "2026-08-26",
+    "startTime": "17:30",
+    "venue": "Planetario de Medellín",
+    "neighborhood": "Aranjuez / Parque Explora",
+    "city": "Medellín",
+    "category": "ciencia",
+    "priceType": "free",
+    "priceMin": 0,
+    "currency": "COP",
+    "organizer": "Planetario de Medellín",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Planetario de Medellín",
+        "url": "https://www.planetariomedellin.org/programate/cielo-de-mi-barrio-en-la-divisa"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": false,
+    "isNewlyFound": false,
+    "status": "published",
+    "score": 88,
+    "tags": [
+      "ciencia",
+      "Planetario",
+      "Gratis",
+      "Medellín"
+    ],
+    "detectedAt": "2026-08-18T00:54:48.701Z",
+    "lastCheckedAt": "2026-08-18T00:54:48.701Z"
+  },
+  {
+    "id": "orbitas-sonoras-el-gran-silencio-planetario-20260826",
+    "slug": "orbitas-sonoras-el-gran-silencio-planetario-20260826",
+    "title": "Órbitas sonoras: El gran silencio",
+    "shortDescription": "Te invitamos este miércoles 26 de agosto, a las 7:00 p. m., a El gran silencio, concierto de la artista colombiana ross . Nos acompañará en las visuales Doppelg&auml;nger, proyecto del artista colombiano Jorge Cano.",
+    "longDescription": "Te invitamos este miércoles 26 de agosto, a las 7:00 p. m., a El gran silencio, concierto de la artista colombiana ross . Nos acompañará en las visuales Doppelg&auml;nger, proyecto del artista colombiano Jorge Cano. La propuesta sonora de ross es una colección de canciones relacionadas con el bosque que nos recuerdan que, en el sonido, también es posible vivir después de la muerte. Será un vivo que suena a fuego y viento, oleaje y chicharras; un bosque luminoso, íntimo, repleto de seres que brillan, flores que tiemblan y pájaros que se refugian en su nido. Un entrelazamiento entre su último EP &ldquo;canciones del fin&rdquo;, composiciones sin publicar y otras creaciones a partir de paisaje sonoro, síntesis, pequeñas melodías en bucle, y capas de eco y ruido. En diálogo con el universo sonoro de ross tendremos Contemplación, propuesta visual de Doppelg&auml;nger, una invitación a bajar el ritmo, detener la mirada y sumergirse en una experiencia estética en la que los elementos naturales &mdash;con su peso, textura y vibración&mdash; habitan el espacio del domo para revelar la belleza que surge con la observación lenta. En estas épocas apremiantes y vertiginosas, será una oportunidad para honrar la lentitud como camino promisorio del pensamiento y la imaginación. &iquest;Cuándo y dónde es este evento? El evento es para jóvenes mayores a 16 años y adultos, el miercoles 26 Agosto 2026 a las 7:00 p. m. en el Domo del Planetario de Medellín. &iquest;Tiene costo?, &iquest;necesito inscribirme? El evento tiene un costo de $44.900. Puedes inscribirte haciendo clic aquí. &iquest;Cómo me entero de la programación del Parque Explora y Planetario de Medellín? Puedes conocerla: - Suscribiéndote a un email semanal - Uniéndote a nuestro canal en Whatsapp - Uniéndote a nuestro canal de Instagram Recomendamos llegar al menos 15 minutos antes de la hora del show. Una vez inicie la funci￳ón no podrás ingresar al Domo. No se podrán hacer cambios en la fecha y hora de la funció￳n elegida. No se realizarán devoluciones sobre las boletas adquiridas. No se aceptan pagos en efectivo , ni en taquilla física, solo compras por medio de la página web. Conoce los términos y condiciones de compra. No se permite el ingreso de armas, drogas, alcohol ni reingreso de personas al Domo una vez abandonen el recinto. El ingreso al Planetario de Medellín es por la avenida ferrocarril, puerta frente a la Universidad de Antioquia Si vienes en tu vehículo puedes utilizar los parqueaderos pagos habilitados en zona como Parque Norte y Centro Comercial Bosque Plaza.",
+    "startDate": "2026-08-26",
+    "startTime": "19:00",
+    "venue": "Planetario de Medellín",
+    "neighborhood": "Aranjuez / Parque Explora",
+    "city": "Medellín",
+    "category": "música",
+    "priceType": "paid",
+    "priceMin": 44900,
+    "currency": "COP",
+    "organizer": "Planetario de Medellín",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Planetario de Medellín",
+        "url": "https://www.planetariomedellin.org/programate/orbitas-sonoras-el-gran-silencio"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": false,
+    "isNewlyFound": false,
+    "status": "published",
+    "score": 88,
+    "tags": [
+      "música",
+      "Planetario",
+      "Con Boleta",
+      "Medellín"
+    ],
+    "detectedAt": "2026-08-18T00:54:48.701Z",
+    "lastCheckedAt": "2026-08-18T00:54:48.701Z"
+  },
+  {
+    "id": "transmision-en-vivo-eclipse-parcial-de-luna-planetario-20260827",
+    "slug": "transmision-en-vivo-eclipse-parcial-de-luna-planetario-20260827",
+    "title": "Transmisión en vivo: eclipse parcial de Luna",
+    "shortDescription": "La noche del 27 de agosto veremos un eclipse lunar parcial profundo, durante el cual cerca del 93% de la Luna quedará cubierta por la sombra que proyecta la Tierra. En su totalidad, la Luna se verá rojiza.",
+    "longDescription": "La noche del 27 de agosto veremos un eclipse lunar parcial profundo, durante el cual cerca del 93% de la Luna quedará cubierta por la sombra que proyecta la Tierra. En su totalidad, la Luna se verá rojiza. La sombra comenzará a ingresar visiblemente a la Luna a las 9:30 de la noche. A las 11:12 se alcanzará el máximo del eclipse. El fenómeno terminará a las 2 de la madrugada. Durante el eclipse, la Luna llena se encontrará en la constelación de Acuario, mientras continúa su viaje alrededor de nuestro planeta. La observación no requiere ningún tipo de protección para los ojos y podrá seguirse a simple vista, con binoculares o telescopio. Visible en América, &Aacute;frica y Europa. El Planetario de Medellín y Parque Explora te invitan a seguir este acontecimiento en una transmisión especial en vivo comentada por los divulgadores científicos Mauricio Arango y Andrés Ruiz, quienes explicarán qué está ocurriendo en cada etapa del eclipse, por qué la Luna cambia de color, cómo se producen estos alineciones entre el Sol, la Tierra y la Luna, y qué otros detalles podremos descubrir durante la noche. La transmisión se realizará en vivo a través de YouTube y Facebook, entre las 8:30 p.m. y la 1:00 a.m., acompañando el eclipse desde antes de su inicio hasta después de su máximo. Será una oportunidad para observar el cielo con calma, resolver preguntas en tiempo real y compartir, desde cualquier lugar, una de las experiencias astronómicas más hermosas que podremos disfrutar este año. &iquest;Cuándo y dónde es este evento? El evento es el jueves 27 de agosto entre las 8:30 p.m. y la 1:00 a.m. Será un evento virtual con transmisión por el Facebook del Planetario y el YouTube del Parque Explora. &iquest;Tiene costo?, &iquest;necesito inscribirme? Este evento es virtual y no requiere inscripción previa. &iquest;Cómo me entero de la programación del Parque Explora y Planetario de Medellín? Puedes conocerla: - Suscribiéndote a un email semanal - Uniéndote a nuestro canal en Whatsapp - Uniéndote a nuestro canal de Instagram",
+    "startDate": "2026-08-27",
+    "startTime": "20:30",
+    "venue": "Planetario de Medellín",
+    "neighborhood": "Aranjuez / Parque Explora",
+    "city": "Medellín",
+    "category": "ciencia",
+    "priceType": "free",
+    "priceMin": 0,
+    "currency": "COP",
+    "organizer": "Planetario de Medellín",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Planetario de Medellín",
+        "url": "https://www.planetariomedellin.org/programate/transmision-en-vivo-eclipse-parcial-de-luna"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": false,
+    "status": "published",
+    "score": 95,
+    "tags": [
+      "ciencia",
+      "Planetario",
+      "Gratis",
+      "Medellín"
+    ],
+    "detectedAt": "2026-08-18T00:54:48.701Z",
+    "lastCheckedAt": "2026-08-18T00:54:48.701Z"
+  },
+  {
+    "id": "eclipse-lunar-y-concierto-de-marimba-de-chonta-planetario-20260827",
+    "slug": "eclipse-lunar-y-concierto-de-marimba-de-chonta-planetario-20260827",
+    "title": "Eclipse lunar y concierto de marimba de chonta",
+    "shortDescription": "Ven al Planetario el jueves 27 de agosto y pasemos juntos la noche del eclipse lunar parcial hasta la madrugada del viernes 28 de agosto. Comenzaremos bajo el domo con un recorrido guiado por el cielo nocturno de Medellín.",
+    "longDescription": "Ven al Planetario el jueves 27 de agosto y pasemos juntos la noche del eclipse lunar parcial hasta la madrugada del viernes 28 de agosto. Comenzaremos bajo el domo con un recorrido guiado por el cielo nocturno de Medellín. Veremos cómo asciende la Luna sobre el horizonte, reconoceremos algunas de las constelaciones visibles en esta época del año y observaremos, dentro de la cúpula, las fases del eclipse tal como ocurrirán durante la noche. Después emprenderemos un viaje inmersivo con Regreso a la Luna, un show domo sobre la historia de la exploración lunar y los nuevos proyectos científicos que buscan llevar nuevamente seres humanos a la superficie de nuestra roca compañera. Más tarde nos reuniremos en la terraza del Planetario para seguir el eclipse en tiempo real. Si las condiciones atmosféricas lo permiten, observaremos cada una de sus fases a través de nuestros telescopios, también puedes traer el tuyo. Además, proyectaremos el eclipse en una pantalla gigante para no perdernos ningún detalle. Aunque este eclipse no será total, gran parte del disco lunar quedará cubierta por la sombra de la Tierra. La región inmersa en la umbra podrá adquirir tonos cobrizos mientras una franja iluminada permanecerá visible, un recordatorio de que la atmósfera terrestre filtra la luz del Sol y proyecta sobre la Luna los colores de todos los amaneceres y atardeceres que ocurren simultáneamente en nuestro planeta. La experiencia estará acompañada por un concierto de marimba de chonta, instrumento emblemático del Pacífico colombiano. Te esperamos. &iquest;Cuándo y dónde es este evento? El evento es para jóvenes mayores de 15 años y adultos , desde la noche del jueves 27 agosto hasta la madrugada del viernes 28 de agosto del 2026 de 6 de la tarde a 1 de la madrugada. &iquest;Tiene costo?, &iquest;necesito inscribirme? El evento tiene un costo de $90.000. Puedes inscribirte haciendo clic aquí. &iquest;Hay servicio de parqueadero para el evento? En el horario del evento no contamos con servicio de parqueadero. Recomendamos, si vas a asistir al evento, desplazarte en transporte público. &iquest;Cómo me entero de la programación del Parque Explora y Planetario de Medellín? Puedes conocerla: - Suscribiéndote a un email semanal - Uniéndote a nuestro canal en Whatsapp - Uniéndote a nuestro canal de Instagram Programación : GRUPO #1 6:00 p.m. Ingreso al Planetario 6:30 p.m. Show Domo 7:00 p.m. Recorrido por la museografía 8:30 p.m. Observación por telescopios preumbral 9:30 p.m. Observación por telescopios umbral (inicia ocultamiento de la Luna) 10:00 p.m. Concierto de marimba en terraza (sujeta a condiciones climáticas) 11:12 p.m. Observación en terraza (máximo del eclipse) 12:51 p.m. Aclaramiento de la Luna y fin de la fase observacional del eclipse GRUPO #2 6:00 p.m. Ingreso al Planetario 7:30 p.m. Show Domo 8:00 p.m. Recorrido por la museografía 8:30 p.m. Observación por telescopios preumbral 9:30 p.m. Observación por telescopios umbral (inicia ocultamiento de la Luna) 10:00 p.m. Concierto de marimba en terraza (sujeta a condiciones climáticas) 11:12 p.m. Observación en terraza (máximo del eclipse) 12:51 p.m. Aclaramiento de la Luna y fin de la fase observacional del eclipse Recomendaciones: Llevar comida/bebida Llevar su propia sleeping bag Llevar ropa cómoda y abrigada No se podrán hacer cambios en la fecha y hora del evento elegido. No se realizarán devoluciones sobre las boletas adquiridas. Conoce los términos y condiciones de la compra de tus ingresos.",
+    "startDate": "2026-08-27",
+    "startTime": "18:00",
+    "venue": "Planetario de Medellín",
+    "neighborhood": "Aranjuez / Parque Explora",
+    "city": "Medellín",
+    "category": "música",
+    "priceType": "paid",
+    "priceMin": 90000,
+    "currency": "COP",
+    "organizer": "Planetario de Medellín",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Planetario de Medellín",
+        "url": "https://www.planetariomedellin.org/programate/eclipse-lunar-y-concierto-de-marimba-de-chonta-agosto"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": false,
+    "status": "published",
+    "score": 95,
+    "tags": [
+      "música",
+      "Planetario",
+      "Con Boleta",
+      "Medellín"
+    ],
+    "detectedAt": "2026-08-18T00:54:48.701Z",
+    "lastCheckedAt": "2026-08-18T00:54:48.701Z"
+  },
+  {
+    "id": "el-cielo-esta-noche-musica-de-luna-llena-planetario-20260828",
+    "slug": "el-cielo-esta-noche-musica-de-luna-llena-planetario-20260828",
+    "title": "El cielo esta noche: música de luna llena",
+    "shortDescription": "En la madrugada del viernes 28 de agosto, la Luna atravesará la sombra de la Tierra y ocurrirá un eclipse lunar parcial que teñirá parte de su superficie de rojo. Horas después, ya entrada la noche, vuelve a brillar llena en el cielo.",
+    "longDescription": "En la madrugada del viernes 28 de agosto, la Luna atravesará la sombra de la Tierra y ocurrirá un eclipse lunar parcial que teñirá parte de su superficie de rojo. Horas después, ya entrada la noche, vuelve a brillar llena en el cielo. Vemos la luna llena cuando la Tierra se encuentra entre el Sol y la Luna, y el lado iluminado de nuestro satélite queda orientado hacia nosotros. Un eclipse, en cambio, ocurre cuando esa alineación es tan precisa que la Luna atraviesa la sombra proyectada por la Tierra. En El cielo esta noche este viernes escucharemos bajo el domo del Planetario una selección de canciones inspiradas en la Luna y el cielo nocturno. Acompáñanos para revivir el eclipse de la madrugada mientras escuchamos la canción de Jorge Villamil: &quot;Luna roja que iluminas mi camino En las noches, bellas noches araucanas Voy llevando tristezas en el alma Voy buscando un rumbo en mi destino&quot;. &iquest;Qué es El cielo esta noche? Cada viernes de 6:00 a 7:00 de la noche en el Planetario de Medellín tenemos El cielo esta noche, un show en vivo de entrada gratuita en el que hacemos un viaje por los astros visibles en el cielo del Valle de Aburrá desde la noche hasta la madrugada. &iquest;Cuándo y dónde es este evento? El evento es el viernes 28 de agosto a las 6:00 de la tarde en el Domo del Planetario de Medellín. &iquest;Tiene costo?, &iquest;necesito inscribirme? Este evento es de entrada libre y no requiere inscripción previa. Antes de venir ten en cuenta: Los cupos se asignan a partir de las 5:00 p.m. en orden de llegada solamente a quienes estén en la fila hasta completar el cupo del evento (95 personas). Solo se entrega un cupo por persona. El ingreso al Planetario es por la entrada de la avenida Ferrocarril (frente a la Universidad de Antioquia). Las sillas del domo son numeradas, debes respetar la ubicación que se asigna según la disponibilidad de asientos. Este evento solo incluye acceso al domo. &iquest;Cómo me entero de la programación del Parque Explora y Planetario de Medellín? Puedes conocerla: - Suscribiéndote a un email semanal - Uniéndote a nuestro canal en Whatsapp - Uniéndote a nuestro canal de Instagram",
+    "startDate": "2026-08-28",
+    "startTime": "18:00",
+    "venue": "Planetario de Medellín",
+    "neighborhood": "Aranjuez / Parque Explora",
+    "city": "Medellín",
+    "category": "música",
+    "priceType": "free",
+    "priceMin": 0,
+    "currency": "COP",
+    "organizer": "Planetario de Medellín",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Planetario de Medellín",
+        "url": "https://www.planetariomedellin.org/programate/el-cielo-esta-noche-musica-de-luna-llena"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": false,
+    "isNewlyFound": false,
+    "status": "published",
+    "score": 88,
+    "tags": [
+      "música",
+      "Planetario",
+      "Gratis",
+      "Medellín"
+    ],
+    "detectedAt": "2026-08-18T00:54:48.702Z",
+    "lastCheckedAt": "2026-08-18T00:54:48.702Z"
+  },
+  {
+    "id": "astronomia-en-lengua-de-senas-traduccion-de-los-contenidos-del-nuevo-planetario-planetario-20260829",
+    "slug": "astronomia-en-lengua-de-senas-traduccion-de-los-contenidos-del-nuevo-planetario-planetario-20260829",
+    "title": "Astronomía en lengua de señas: traducción de los contenidos del nuevo Planetario",
+    "shortDescription": "[ INSCR&Iacute;BETE HACIENDO CLIC AQU&Iacute; ] Pusimos el universo entre las manos: las nebulosas, las rocas espaciales, las constelaciones, los anillos de los cuatro planetas gigantes y gaseosos de nuestro Sistema Solar &mdash;Júpiter, Saturno, Urano y...",
+    "longDescription": "[ INSCR&Iacute;BETE HACIENDO CLIC AQU&Iacute; ] Pusimos el universo entre las manos: las nebulosas, las rocas espaciales, las constelaciones, los anillos de los cuatro planetas gigantes y gaseosos de nuestro Sistema Solar &mdash;Júpiter, Saturno, Urano y Neptuno&mdash;, la Vía Láctea e, incluso, el Planetario, con las columnas que lo componen y la cúpula de su domo. Nombramos el cielo con los gestos y cada seña inaugura otras maneras de mirar y entender el universo. Durante los últimos meses, un equipo de personas sordas y oyentes del Servicio de Traducción e Interpretación en Lengua de Señas Colombiana de la Escuela de Idiomas de la Universidad de Antioquia y el Planetario de Medellín trabajaron en la traducción a Lengua de señas colombiana de los contenidos de la renovación museográfica del Planetario. Alrededor de 50 personas sordas participaron en la traducción terminológica, la validación, la presentación frente a cámara y la posproducción. Más que crear señas fijas, el equipo se concentró en la aproximación ling&uuml;ística de cada concepto. Conoce más sobre este proceso y sobre las estaciones en Lengua de Señas Colombiana (LSC) creadas para que las personas Sordas y oyentes puedan explorar el universo en Señas el sábado 29 de agosto a la 1:00 p. m. en el auditorio del Planetario. También tendremos transmisión por YouTube. Al final, recorreremos las experiencias del nuevo museo. Democratizar la ciencia exige que todas las personas puedan formarse una opinión informada y deliberante. Y en el caso de las comunidades sordas, exige en particular, pero no exclusivamente, la creación de nuevas señas que permitan el encuentro alrededor del conocimiento sin tener que recurrir a extensas descripciones o definiciones. En el Parque Explora y el Planetario de Medellín celebramos el reconocimiento de la cultura Sorda y, en definitiva, del signo rotundo de la vida: la diversidad. Conversan: Santiago Parra Gil Consultor en traducción, Universidad de Antioquia Vladimir Ruíz Quintana Editor, Universidad de Antioquia Karen Viviana Morales Gordillo Diseño, Universidad de Antioquia Shalem Salef Medina &Aacute;lvares Intérprete/traductora, Universidad de Antioquia Natalia Yarlin Burgos Delgado Intérprete/traductora, Universidad de Antioquia Luis Stiven Forero Urbina Traductor, Universidad de Antioquia Michelle Sofía Mora Astrónoma, Planetario de Medellín María Antonia Soto Profesional de accesibilidad y equidad, Planetario de Medellín &iquest;Qué es El universo en las manos? Es un espacio para personas sordas y oyentes, dedicado a la exploración del universo y las ciencias que se ocupan de estudiarlo, donde las lenguas de señas son protagonistas. Si estás aprendiendo Lengua de Señas Colombiana, este es un espacio para practicar y aprender. &iquest;Cuándo y dónde es este evento? El evento es el sábado 29 de agosto de 1:00 a 4:30 de la tarde en el Auditorio del Planetario de Medellín. Inscríbete haciendo clic aquí . Contará con transmisión en vivo por Facebook del Planetario de Medellín y YouTube del Parque Explora. &iquest;Tiene costo?, &iquest;necesito inscribirme? Este evento es de entrada libre y requiere inscripción previa. Inscríbete haciendo clic aquí &iquest;Cómo me entero de la programación del Parque Explora y Planetario de Medellín? Puedes conocerla: - Suscribiéndote a un email semanal - Uniéndote a nuestro canal en Whatsapp - Uniéndote a nuestro canal de Instagram",
+    "startDate": "2026-08-29",
+    "startTime": "13:00",
+    "venue": "Planetario de Medellín",
+    "neighborhood": "Aranjuez / Parque Explora",
+    "city": "Medellín",
+    "category": "ciencia",
+    "priceType": "free",
+    "priceMin": 0,
+    "currency": "COP",
+    "organizer": "Planetario de Medellín",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Planetario de Medellín",
+        "url": "https://www.planetariomedellin.org/programate/astronomia-en-lengua-de-senas-traduccion-de-los-contenidos-del-nuevo-planetario"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": false,
+    "isNewlyFound": false,
+    "status": "published",
+    "score": 88,
+    "tags": [
+      "ciencia",
+      "Planetario",
+      "Gratis",
+      "Medellín"
+    ],
+    "detectedAt": "2026-08-18T00:54:48.702Z",
+    "lastCheckedAt": "2026-08-18T00:54:48.702Z"
+  },
+  {
+    "id": "comunidad-juegos-de-mesa-pequenas-grandes-galaxias-planetario-20260829",
+    "slug": "comunidad-juegos-de-mesa-pequenas-grandes-galaxias-planetario-20260829",
+    "title": "Comunidad juegos de mesa: Pequeñas grandes galaxias",
+    "shortDescription": "El universo está lleno de escalas difíciles de imaginar: planetas más grandes que Júpiter, estrellas millones de veces más luminosas que el Sol y galaxias separadas por distancias que la luz tarda millones de años en recorrer.",
+    "longDescription": "El universo está lleno de escalas difíciles de imaginar: planetas más grandes que Júpiter, estrellas millones de veces más luminosas que el Sol y galaxias separadas por distancias que la luz tarda millones de años en recorrer. Sin embargo, muchas de las grandes historias de la astronomía comenzaron con algo pequeño: una observación, una pregunta o una idea que alguien decidió seguir. En Pequeñas grandes galaxias , diseñado por Scott Almes, cada jugador dirige una diminuta civilización espacial que busca expandirse, obtener recursos y colonizar nuevos mundos. Con decisiones sencillas pero llenas de posibilidades, el juego convierte una pequeña mesa en un universo en miniatura. &iquest;Qué es la comunidad de juegos de mesa Reino Meeple del Planetario de Medellín? Reino Meeple es un espacio quincenal para el encuentro de aficionados a los juegos de mesa. En cada sesión proponemos una excusa y un juego distinto para reunirnos alrededor de una mesa; pero si tienes tus propios juegos, te invitamos a traerlos y desplegarlos en nuestras mesas. &iquest;Cuándo y dónde es este evento? El evento es el sábado 29 de agosto a las 3 de la tarde en la Biblioteca Planetario. &iquest;Tiene costo?, &iquest;necesito inscribirme? Este evento es de entrada libre y no requiere inscripción previa. &iquest;Cómo me entero de la programación del Parque Explora y Planetario de Medellín? Puedes conocerla: - Suscribiéndote a un email semanal - Uniéndote a nuestro canal en Whatsapp - Uniéndote a nuestro canal de Instagram",
+    "startDate": "2026-08-29",
+    "startTime": "15:00",
+    "venue": "Planetario de Medellín",
+    "neighborhood": "Aranjuez / Parque Explora",
+    "city": "Medellín",
+    "category": "comunidad",
+    "priceType": "free",
+    "priceMin": 0,
+    "currency": "COP",
+    "organizer": "Planetario de Medellín",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Planetario de Medellín",
+        "url": "https://www.planetariomedellin.org/programate/comunidad-juegos-de-mesa-pequenas-grandes-galaxias"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": false,
+    "isNewlyFound": false,
+    "status": "published",
+    "score": 88,
+    "tags": [
+      "comunidad",
+      "Planetario",
+      "Gratis",
+      "Medellín"
+    ],
+    "detectedAt": "2026-08-18T00:54:48.702Z",
+    "lastCheckedAt": "2026-08-18T00:54:48.702Z"
+  },
+  {
+    "id": "taller-para-familias-tortugas-en-la-constelacion-de-orion-planetario-20260829",
+    "slug": "taller-para-familias-tortugas-en-la-constelacion-de-orion-planetario-20260829",
+    "title": "Taller para familias: tortugas en la constelación de Orión",
+    "shortDescription": "[ INSCR&Iacute;BETE HACIENDO CLIC AQU&Iacute; ] &iquest;Por qué tantas culturas vieron figuras diferentes en el mismo grupo de estrellas? &iquest;Qué historias imaginaron al observar el cielo?",
+    "longDescription": "[ INSCR&Iacute;BETE HACIENDO CLIC AQU&Iacute; ] &iquest;Por qué tantas culturas vieron figuras diferentes en el mismo grupo de estrellas? &iquest;Qué historias imaginaron al observar el cielo? En este taller familiar exploraremos a Orión, una de las constelaciones más reconocibles del cielo. Mientras en la tradición griega Orión representa a un gran cazador, los antiguos egipcios lo asociaban con el dios Osiris, los mayas veían en esta región del cielo una tortuga cósmica de la que renacía el dios del maíz, y diferentes pueblos indígenas de Colombia y América la han relacionado con animales, héroes, calendarios agrícolas y seres espirituales que orientan la vida de sus comunidades. Identificaremos las partes que conforman una constelación: su límite oficial, sus estrellas principales, las distancias que nos separan de ellas medidas en años luz, el asterismo o la figura que forman las estrellas. También conoceremos a qué familia de constelaciones pertenece Orión y cuáles son sus vecinas en el firmamento. Más allá de las estrellas visibles, esta región del cielo alberga la Nebulosa de Orión, donde nacen nuevas estrellas o las gigantes Betelgeuse y Rigel. Para terminar, visitaremos la nueva experiencia en gran formato sobre la constelación de Orión. Ubicada en el primer nivel del Planetario, esta estructura luminosa permite observar la posición de las estrellas en tres dimensiones. Además, construiremos nuestro propio modelo de la constelación y aprenderemos sobre la anamorfosis, una técnica que crea figuras ocultas que solo se revelan al mirarlas desde un punto específico. &iquest;Qué es Familias buscando familias? Familias buscando familias es un programa de talleres con dos episodios al mes en Parque Explora, en el que hacemos actividades para niñas y niños que incluyen el ingreso total a las instalaciones del Parque por un precio menor al de la boleta convencional. &iquest;Cuándo y dónde es este evento? El evento es para niños y niñas entre 5 y 11 años y 1 (un) adulto responsable durante todo el taller, el sábado 29 agosto 2026 de 2:00 p.m. a 3:30 p.m. en el Salón de reuniones y Anamorfosis de Orión del Planetario. &iquest;Tiene costo?, &iquest;necesito inscribirme? El evento tiene un costo de $60.000. Tu boleta incluye el ingreso para 2 personas (1 niña o niño + 1 adulto) e incluye el acceso a todas las experiencias del Parque Explora. Puedes inscribirte haciendo clic aquí. &iquest;Cómo me entero de la programación del Parque Explora y Planetario de Medellín? Puedes conocerla: - Suscribiéndote a un email semanal - Uniéndote a nuestro canal en Whatsapp - Uniéndote a nuestro canal de Instagram Recomendamos llegar al menos 15 minutos antes de la hora de inicio del taller para acercarse a taquilla y reclamar las boletas. *** En caso de no poder asistir, puede transferir las boletas a un amigo o familiar pero NO se podrán hacer cambios en la fecha y hora de la funció￳n elegida y tampoco se realizarán devoluciones sobre las boletas adquiridas. *** NO se aceptan pagos en efectivo, ni en taquilla física, solo compras por medio de la página web. *** La NO asistencia al evento por parte del cliente generará el cargo del mismo, de tal manera que no generará ningún tipo de reembolso de dinero , o abono de ese dinero para asistir a otro taller. Conoce más sobre los términos y condiciones de la compra de tus ingresos. Para tener en cuenta: No se permite el ingreso de armas, drogas, alcohol ni reingreso de personas al Parque Explora y Planetario de Medellín una vez abandonen el recinto. Si vienes en tu vehículo puedes utilizar los parqueaderos pagos habilitados en zona como Parque Norte y Centro Comercial Bosque Plaza.",
+    "startDate": "2026-08-29",
+    "startTime": "14:00",
+    "venue": "Planetario de Medellín",
+    "neighborhood": "Aranjuez / Parque Explora",
+    "city": "Medellín",
+    "category": "talleres",
+    "priceType": "paid",
+    "priceMin": 60000,
+    "currency": "COP",
+    "organizer": "Planetario de Medellín",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Planetario de Medellín",
+        "url": "https://www.planetariomedellin.org/programate/taller-para-familias-tortugas-en-la-constelacion-de-orion"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": false,
+    "isNewlyFound": false,
+    "status": "published",
+    "score": 88,
+    "tags": [
+      "talleres",
+      "Planetario",
+      "Con Boleta",
+      "Medellín"
+    ],
+    "detectedAt": "2026-08-18T00:54:48.702Z",
+    "lastCheckedAt": "2026-08-18T00:54:48.702Z"
+  },
+  {
+    "id": "python-para-todos-planetario-20260901",
+    "slug": "python-para-todos-planetario-20260901",
+    "title": "Python para todos",
+    "shortDescription": "Programar empieza mucho antes de abrir una consola o escribir una línea de código. También programamos cuando seguimos una receta, ordenamos una agenda, elegimos una ruta o explicamos paso a paso cómo hacer algo.",
+    "longDescription": "Programar empieza mucho antes de abrir una consola o escribir una línea de código. También programamos cuando seguimos una receta, ordenamos una agenda, elegimos una ruta o explicamos paso a paso cómo hacer algo. En este curso virtual nos acercaremos a Python desde acciones cotidianas para comprender cómo una máquina recibe instrucciones, almacena información, toma decisiones y repite procesos. Durante el curso desarrollaremos un proyecto propio desde la pregunta inicial hasta una versión funcional. Recibiremos acompañamiento para integrar lo aprendido, resolver dificultades y ampliar cada propuesta. En los primeros encuentros nos preguntaremos qué significa programar y cómo convertir un problema en instrucciones claras. Construiremos algoritmos con situaciones cercanas, reconoceremos la diferencia entre una indicación ambigua y una precisa, y daremos los primeros pasos con Python. Aprenderemos a representar datos, guardarlos y recuperarlos; luego escribiremos programas que reciban información, la procesen y produzcan respuestas. Con nuevos retos exploraremos las decisiones y la automatización. Crearemos programas capaces de evaluar una situación y actuar de distintas maneras según los datos recibidos. También aprenderemos a ejecutar una tarea varias veces sin escribir la misma instrucción una y otra vez. Probando alternativas y corrigiendo errores, veremos que cada fallo revela qué entendió la computadora y qué necesita expresarse mejor. A medida que los proyectos crezcan, organizaremos información, la agruparemos, ordenaremos y consultaremos. Dividiremos problemas complejos en tareas más pequeñas y reutilizaremos partes del código para construir programas más claros. Las sesiones combinarán ejemplos guiados, ejercicios individuales y grupales, conversaciones sobre estrategias y pruebas en tiempo real. En el encuentro final presentaremos lo construido y compartiremos las decisiones, los tropiezos y las soluciones del proceso. Sin experiencia previa, bastará un computador con conexión a internet y la disposición para experimentar con una idea hasta convertirla en una herramienta. &iquest;Cuándo y dónde es este evento? El evento es para jóvenes mayores de 15 años y adultos, los martes y jueves 01, 03, 08, 10, 15, 17, 22, 24, 29 de septiembre y 01 de octubre 2026 (diez sesiones), de 5:30 p.m. a 6:30 p.m. Será virtual por la plataforma Teams. &iquest;Tiene costo?, &iquest;necesito inscribirme? El evento tiene un costo de $160.000. Puedes inscribirte haciendo clic aquí. &iquest;Cómo me entero de la programación del Parque Explora y Planetario de Medellín? Puedes conocerla: - Suscribiéndote a un email semanal - Uniéndote a nuestro canal en Whatsapp - Uniéndote a nuestro canal de Instagram Para este curso no se requieren conocimientos previos. Solo contar con computador y conexión a internet estable. El curso se lleva a cabo con un cupo mínimo de 13 participantes , si no se logra llenar, se realizará devolución del dinero. La confirmación del curso se realizará el día lunes 31 de agosto 2026. Conoce los términos y condiciones de compra.",
+    "startDate": "2026-09-01",
+    "startTime": "17:30",
+    "venue": "Planetario de Medellín",
+    "neighborhood": "Aranjuez / Parque Explora",
+    "city": "Medellín",
+    "category": "tecnología",
+    "priceType": "paid",
+    "priceMin": 160000,
+    "currency": "COP",
+    "organizer": "Planetario de Medellín",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Planetario de Medellín",
+        "url": "https://www.planetariomedellin.org/programate/python-para-todos-septiembre"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": false,
+    "isNewlyFound": false,
+    "status": "published",
+    "score": 88,
+    "tags": [
+      "tecnología",
+      "Planetario",
+      "Con Boleta",
+      "Medellín"
+    ],
+    "detectedAt": "2026-08-18T00:54:48.702Z",
+    "lastCheckedAt": "2026-08-18T00:54:48.702Z"
+  },
+  {
+    "id": "club-de-astronomia-en-el-oriente-antioqueno-planetario-20260901",
+    "slug": "club-de-astronomia-en-el-oriente-antioqueno-planetario-20260901",
+    "title": "Club de astronomía en el oriente antioqueño",
+    "shortDescription": "[ INSCR&Iacute;BETE HACIENDO CLIC AQU&Iacute; ] &iquest;Cuántas lunas conocidas tiene Saturno? &iquest;Por qué Plutón dejó de ser un planeta? &iquest;Qué es la radiación cósmica de fondo y por qué marca el límite del universo conocido?",
+    "longDescription": "[ INSCR&Iacute;BETE HACIENDO CLIC AQU&Iacute; ] &iquest;Cuántas lunas conocidas tiene Saturno? &iquest;Por qué Plutón dejó de ser un planeta? &iquest;Qué es la radiación cósmica de fondo y por qué marca el límite del universo conocido? El Club de astronomía del Oriente antioqueño parte de preguntas como estas para construir, sesión a sesión, una comprensión del cosmos que va de lo más cercano a lo más lejano. El curso se desarrolla en doce encuentros de tres horas los miércoles en la sede EAFIT Rionegro, y está dirigido a jóvenes y adultos desde los 15 años. No se requieren conocimientos previos. Es facilitado por Raúl Iván García García, ingeniero electrónico, astrofotógrafo y divulgador de astronomía independiente. El recorrido comienza con el sistema solar: su formación a partir de una nube molecular de gas y polvo, las características de cada uno de sus integrantes &mdash;planetas terrestres y gaseosos, planetas enanos, satélites, asteroides y cometas&mdash;, las leyes de Kepler, las configuraciones planetarias y las mejores épocas para observar cada planeta. También se explica cómo observar el Sol de manera segura y cómo se producen los eclipses. Las sesiones siguientes se adentran en los exoplanetas y sus métodos de detección, y luego en el mundo estelar: la formación de las estrellas en nubes moleculares, su clasificación por tipo espectral, el diagrama de Hertzsprung-Russell y la evolución estelar desde las enanas rojas hasta las supernovas y los agujeros negros. Una parte importante del club está dedicada a las constelaciones: su definición, su historia, los grandes atlas celestes antiguos, las 88 constelaciones aprobadas por la Unión Astronómica Internacional y su relación con la mitología griega. Desde ahí el curso avanza hacia los objetos de espacio profundo &mdash;nebulosas, cúmulos estelares, galaxias, quásares&mdash; y los catálogos que los reúnen, como el de Messier y el Nuevo Catálogo General. El cierre del recorrido llega al universo a gran escala: la organización de las galaxias en grupos, cúmulos y supercúmulos, los filamentos que forman la red cósmica y la radiación cósmica de fondo como frontera del universo observable. A lo largo del curso, los participantes también aprenden a usar binoculares, telescopios de distintos tipos y aplicaciones móviles como Stellarium, Sky Tonight y Star Walk 2 para seguir explorando el cielo por su cuenta. &iquest;Cuándo y dónde es este evento? El evento es los martes de 10 de la mañana a 12 del medio día del primero de septiembre al 17 de noviembre, en la sede EAFIT Llano Grande. Kilómetro tres punto cinco vía Don Diego, Rionegro, Antioquia. Haz clic aquí para ver la ubicación &iquest;Tiene costo?, &iquest;necesito inscribirme? Este evento tiene un costo de $1&#39;340.000 e inscríbete en https://ecommerce.eafit.edu.co/es/saberes-de-vida/club-de-astronomia-del-oriente-antioqueno-llanogrande &iquest;Cómo me entero de la programación del Parque Explora y Planetario de Medellín? Puedes conocerla: - Suscribiéndote a un email semanal - Uniéndote a nuestro canal en Whatsapp - Uniéndote a nuestro canal de Instagram",
+    "startDate": "2026-09-01",
+    "startTime": "09:00",
+    "venue": "Parque Explora (Planetario)",
+    "neighborhood": "Aranjuez / Parque Explora",
+    "city": "Medellín",
+    "category": "ciencia",
+    "priceType": "paid",
+    "priceMin": 1340000,
+    "currency": "COP",
+    "organizer": "Planetario de Medellín",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Planetario de Medellín",
+        "url": "https://www.planetariomedellin.org/programate/club-de-astronomia-en-el-oriente-antioqueno"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": false,
+    "isNewlyFound": false,
+    "status": "published",
+    "score": 88,
+    "tags": [
+      "ciencia",
+      "Planetario",
+      "Con Boleta",
+      "Medellín"
+    ],
+    "detectedAt": "2026-08-18T00:54:48.703Z",
+    "lastCheckedAt": "2026-08-18T00:54:48.703Z"
+  },
+  {
+    "id": "curso-de-astrobiologia-para-ninas-y-ninos-planetario-20260905",
+    "slug": "curso-de-astrobiologia-para-ninas-y-ninos-planetario-20260905",
+    "title": "Curso de astrobiología para niñas y niños",
+    "shortDescription": "En cuatro encuentros presenciales, las niñas y los niños aprenderán haciendo: explorarán con microscopios, harán experimentos, crearán modelos, jugarán, imaginarán y descubrirán que la ciencia es una forma emocionante de hacer preguntas sobre el universo y de...",
+    "longDescription": "En cuatro encuentros presenciales, las niñas y los niños aprenderán haciendo: explorarán con microscopios, harán experimentos, crearán modelos, jugarán, imaginarán y descubrirán que la ciencia es una forma emocionante de hacer preguntas sobre el universo y de comprender el lugar que ocupamos en él. En el primer encuentro viajaremos al origen del cosmos para descubrir cómo, hace 14 mil millones de años, la materia de todo el universo observable estaba infinitamente apretujado y caliente, la colita de tu perro que te saluda jadeando, el planeta Júpiter y sus 95 lunas, la roquita que nació en un volcán y se desmenuzo por millones de años hasta hacerse arena, la galaxia de Andrómeda, el guayacán que tapiza de flores amarillas el pavimento, el mismísimo Sol y, también, la cucaracha que, ajenas a tus ascos y pavores, camina tranquilona por tu casa&hellip; Todo. Conoceremos cómo el Big Bang, es decir, la expansión aceleradísima de esta pelmaza que todo lo contuvo, permitió que se formaran las primeras estrellas, las galaxias y los planetas. Con juegos y retos, aprenderemos cómo, con experimentos, observaciones, conjeturas, inferencias y deducciones, la ciencia pone a prueba la imaginación en este mundo que llamamos &ldquo;la realidad&rdquo;. Crearemos nuestro propio sistema solar, compararemos mundos de diferentes tamaños y entenderemos por qué la Tierra reúne las condiciones necesarias para albergar vida. En la tercera sesión, viajaremos más de 3 mil millones de años al pasado para descubrir cómo aparecieron los primeros seres vivos. Observaremos células al microscopio, estudiaremos el ADN y, en un experimento de microbiología, cultivaremos microorganismos como lo hacen en muchos laboratorios científicos. Finalmente nos convertiremos en cazadores de exoplanetas. Observaremos los resultados de nuestros cultivos, entenderemos qué condiciones hacen posible la vida y diseñaremos un planeta imaginando qué criaturas podrían habitarlo y cómo sería sobrevivir allí. &iquest;Cuándo y dónde es este evento? El evento es para niñas y niños entre 8 y 14 años, los sábados 05, 12, 19, 26 de septiembre de 2026 (cuatro sesiones) en el Laboratorio Sala Tiempo - Parque Explora de 10:00 a.m. a 12:00 p.m. &iquest;Tiene costo?, &iquest;necesito inscribirme? El evento tiene un costo de $255.000. Puedes inscribirte haciendo clic aquí. &iquest;Cómo me entero de la programación del Parque Explora y Planetario de Medellín? Puedes conocerla: - Suscribiéndote a un email semanal - Uniéndote a nuestro canal en Whatsapp - Uniéndote a nuestro canal de Instagram Para este curso no se requieren conocimientos previos. El costo del curso incluye materiales. El curso se lleva a cabo con un cupo mínimo de 8 participantes , si no se logra llenar, se realizará devolución del dinero. La confirmación del curso se realizará el día viernes 04 de septiembre 2026. Conoce los términos y condiciones de compra.",
+    "startDate": "2026-09-05",
+    "startTime": "10:00",
+    "venue": "Planetario de Medellín",
+    "neighborhood": "Aranjuez / Parque Explora",
+    "city": "Medellín",
+    "category": "talleres",
+    "priceType": "paid",
+    "priceMin": 255000,
+    "currency": "COP",
+    "organizer": "Planetario de Medellín",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Planetario de Medellín",
+        "url": "https://www.planetariomedellin.org/programate/curso-de-astrobiologia-para-ninas-y-ninos-septiembre"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": false,
+    "isNewlyFound": false,
+    "status": "published",
+    "score": 88,
+    "tags": [
+      "talleres",
+      "Planetario",
+      "Con Boleta",
+      "Medellín"
+    ],
+    "detectedAt": "2026-08-18T00:54:48.703Z",
+    "lastCheckedAt": "2026-08-18T00:54:48.703Z"
+  },
+  {
+    "id": "curso-de-cosmologia-moderna-planetario-20260905",
+    "slug": "curso-de-cosmologia-moderna-planetario-20260905",
+    "title": "Curso de cosmología moderna",
+    "shortDescription": "Este es un curso para recorrer la historia del universo.",
+    "longDescription": "Este es un curso para recorrer la historia del universo. En seis encuentros virtuales descubriremos cómo la ciencia ha logrado reconstruir el origen, la evolución y el posible destino del cosmos, utilizando observaciones, teorías y algunos de los telescopios más avanzados del mundo. Comenzaremos explorando el papel de las galaxias en la historia del universo. Conoceremos cómo se clasifican, qué ocurre en sus núcleos, cuál es la relación entre los agujeros negros y la evolución galáctica, y entenderemos qué estudia realmente la cosmología, la ciencia que busca explicar el origen y la estructura del universo. En el segundo encuentro ampliaremos la mirada para descubrir cómo están distribuidas las galaxias a gran escala y por qué gran parte de la materia del universo permanece invisible. Exploraremos el concepto de materia oscura y aprenderemos cómo fenómenos como las lentes gravitacionales permiten revelar su presencia. Después profundizaremos en algunas de las herramientas que utilizan los cosmólogos para estudiar el universo. Comprenderemos qué es el espacio-tiempo, cómo la gravedad puede curvar la luz y por qué el corrimiento al rojo se ha convertido en una de las evidencias más importantes para entender que el universo está en constante expansión. La cuarta sesión estará dedicada a comprender cómo evoluciona el cosmos. Hablaremos de la expansión del universo, de las métricas cosmológicas que la describen y del papel de la energía y el vacío en la aceleración de esa expansión. También reflexionaremos sobre la composición del universo y lo que sabemos hoy acerca de la materia y la energía que lo conforman. En la penúltima sesión viajaremos al origen del tiempo para conocer el modelo del Big Bang, la constante cosmológica y la energía oscura, conceptos fundamentales para comprender cómo surgió el universo y cómo ha evolucionado durante miles de millones de años. Finalmente, cerraremos explorando los primeros instantes del universo, cuando se formaron las primeras partículas y los elementos más ligeros. Hablaremos de la nucleosíntesis primordial, la materia y la antimateria, el universo unificado y las hipótesis actuales sobre el futuro del cosmos. También conoceremos algunos de los instrumentos que están revolucionando la cosmología, como el Telescopio Espacial James Webb, el Observatorio Vera C. Rubin y el futuro telescopio Nancy Grace Roman. Este curso está dirigido a estudiantes, docentes, aficionados y cualquier persona interesada en entender el cosmos. &iquest;Cuándo y dónde es este evento? El evento es para jóvenes mayores de 15 años y adultos, los sábados 05, 12, 19, 26 de septiembre y, 03 y 10 de octubre 2026 (seis sesiones) virtual por la plataforma Teams de 10:00 a.m. a 12:00 p.m. &iquest;Tiene costo?, &iquest;necesito inscribirme? El evento tiene un costo de $195.000. Puedes inscribirte haciendo clic aquí. &iquest;Cómo me entero de la programación del Parque Explora y Planetario de Medellín? Puedes conocerla: - Suscribiéndote a un email semanal - Uniéndote a nuestro canal en Whatsapp - Uniéndote a nuestro canal de Instagram Para este curso no se requieren conocimientos previos. &Uacute;nicamente contar con computador y conexión a internet estable. El curso se lleva a cabo con un cupo mínimo de 13 participantes , si no se logra llenar, se realizará devolución del dinero. La confirmación del curso se realizará el día viernes 04 de septiembre 2026. Conoce los términos y condiciones de compra.",
+    "startDate": "2026-09-05",
+    "startTime": "10:00",
+    "venue": "Planetario de Medellín",
+    "neighborhood": "Aranjuez / Parque Explora",
+    "city": "Medellín",
+    "category": "talleres",
+    "priceType": "paid",
+    "priceMin": 195000,
+    "currency": "COP",
+    "organizer": "Planetario de Medellín",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Planetario de Medellín",
+        "url": "https://www.planetariomedellin.org/programate/curso-de-cosmologia-moderna-septiembre"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": false,
+    "isNewlyFound": false,
+    "status": "published",
+    "score": 88,
+    "tags": [
+      "talleres",
+      "Planetario",
+      "Con Boleta",
+      "Medellín"
+    ],
+    "detectedAt": "2026-08-18T00:54:48.703Z",
+    "lastCheckedAt": "2026-08-18T00:54:48.703Z"
+  },
+  {
+    "id": "curso-de-ciencia-en-familia-planetario-20260905",
+    "slug": "curso-de-ciencia-en-familia-planetario-20260905",
+    "title": "Curso de ciencia en familia",
+    "shortDescription": "&iquest;Qué parentesco tiene un perro con una foca?, &iquest;cómo conserva un gato el equilibrio?, &iquest;perciben los mismos sabores, colores y sonidos que nosotros?",
+    "longDescription": "&iquest;Qué parentesco tiene un perro con una foca?, &iquest;cómo conserva un gato el equilibrio?, &iquest;perciben los mismos sabores, colores y sonidos que nosotros? En este curso, niñas y niños de 5 a 10 años participan con una persona adulta en cuatro encuentros para explorar la ciencia de los perros y los gatos. Empezaremos por entender, con juegos de botones y canicas, las relaciones evolutivas entre los seres vivos. Después construiremos el árbol de la vida del grupo &ldquo;Carnivora&rdquo;, ubicaremos allí a perros, gatos y sus parientes, y compararemos semejanzas y diferencias. Haremos un recorrido por el Acuario del Parque Explora para entender los parentescos con los habitantes de ríos y mares. Luego, experimentando con movimientos de nuestro cuerpo, identificaremos el centro de masa y entenderemos cómo cambia la estabilidad entre animales bípedos y cuadrúpedos. Cada familia fabricará un gato equilibrista y probará colas largas o cortas, cabezas livianas o pesadas y distintas inclinaciones. Ajustar, fallar y volver a intentar permitirá observar cómo el peso, los apoyos y la cola intervienen al caminar, saltar o girar. También compararemos nuestra experiencia sensorial con la de perros y gatos. Reconoceremos aromas; probaremos sabores dulces, salados, ácidos, amargos y umami; haremos ejercicios de agudeza visual, visión del color y ese punto del ojo que llaman &ldquo;ciego&rdquo;, y exploraremos frecuencias sonoras con tabletas o celulares. Las pruebas mostrarán que cada especie percibe una versión del entorno según sus sentidos, hábitos e historia evolutiva. Al final, con una fotografía, elaboraremos una antotipia, técnica en la que pigmentos vegetales sensibles a la luz forman imágenes. Pintaremos papel de acuarela con cúrcuma, prepararemos una composición con la silueta, hojas o flores y dejaremos que el sol la revele. Nos llevaremos una pieza hecha en familia y otra forma de mirar a esos animales que creíamos conocer. &iquest;Cuándo y dónde es este evento? El evento es para niñas y niños entre 5 y 10 años y un adulto responsable, los sábados 05, 12, 19, 26 de septiembre de 2026 (diez sesiones), de 09:00 a.m. a 12:00 p.m. en el Laboratorio sala Abierta - Parque Explora. &iquest;Tiene costo?, &iquest;necesito inscribirme? El evento tiene un costo de $390.000. Puedes inscribirte haciendo clic aquí. &iquest;Cómo me entero de la programación del Parque Explora y Planetario de Medellín? Puedes conocerla: - Suscribiéndote a un email semanal - Uniéndote a nuestro canal en Whatsapp - Uniéndote a nuestro canal de Instagram Para este curso no se requieren conocimientos previos. El costo del curso incluye materiales. El curso se lleva a cabo con un cupo mínimo de 7 participantes, si no se logra llenar, se realizará devolución del dinero. La confirmación del curso se realizará el día jueves 27 de agosto 2026. Conoce los términos y condiciones de compra.",
+    "startDate": "2026-09-05",
+    "startTime": "09:00",
+    "venue": "Parque Explora (Planetario)",
+    "neighborhood": "Aranjuez / Parque Explora",
+    "city": "Medellín",
+    "category": "talleres",
+    "priceType": "paid",
+    "priceMin": 390000,
+    "currency": "COP",
+    "organizer": "Planetario de Medellín",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Planetario de Medellín",
+        "url": "https://www.planetariomedellin.org/programate/curso-de-ciencia-en-familia-septiembre"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": false,
+    "isNewlyFound": false,
+    "status": "published",
+    "score": 88,
+    "tags": [
+      "talleres",
+      "Planetario",
+      "Con Boleta",
+      "Medellín"
+    ],
+    "detectedAt": "2026-08-18T00:54:48.704Z",
+    "lastCheckedAt": "2026-08-18T00:54:48.704Z"
+  },
+  {
+    "id": "curso-de-astronomia-observacional-planetario-20260905",
+    "slug": "curso-de-astronomia-observacional-planetario-20260905",
+    "title": "Curso de Astronomía observacional",
+    "shortDescription": "&iquest;Por qué el cielo no es el mismo según el lugar? En el curso de astronomía observacional, descubriremos cómo observar las estrellas, planetas y otros cuerpos celestes, tanto a simple vista como con instrumentos ópticos.",
+    "longDescription": "&iquest;Por qué el cielo no es el mismo según el lugar? En el curso de astronomía observacional, descubriremos cómo observar las estrellas, planetas y otros cuerpos celestes, tanto a simple vista como con instrumentos ópticos. Observaremos el movimiento de los astros, el Sol y la Luna y cómo los planetas se alinean o se agrupan en el cielo. Aprenderemos a usar el sistema de coordenadas geográficas y celestes, ubicando el norte geográfico y el polo norte celeste.Conoceremos por qué el polo norte geográfico no es el mismo que el polo norte magnético de este gran imán que es la Tierra. Analizaremos los husos horarios, esas 24 líneas imaginarias que dividen el planeta en gajos y ayudan a marcar la hora. Estudiaremos conceptos como magnitud, diámetros y separaciones angulares, y exploraremos objetos de espacio profundo usando el catálogo de Messier &mdash;listado de 110 objetos astronómicos publicado originalmente en el siglo XVIII&mdash; y la escala de cielo oscuro de Bortle, que mide el brillo del cielo nocturno. Aprenderemos sobre binoculares y telescopios, incluyendo sus características y criterios de compra, y analizaremos diferentes tipos de monturas y sus ajustes para observación astronómica precisa. &iquest;Cuándo y dónde es este evento? El evento es para jóvenes mayores de 15 años y adultos, los sábados 05, 12, 19, 26 de septiembre de 2026 (cuatro sesiones) en la sala de reuniones del Planetario de Medellín de 09:00 a.m. a 12:00 p.m. &iquest;Tiene costo?, &iquest;necesito inscribirme? El evento tiene un costo de $220.000. Puedes inscribirte haciendo clic aquí. &iquest;Cómo me entero de la programación del Parque Explora y Planetario de Medellín? Puedes conocerla: - Suscribiéndote a un email semanal - Uniéndote a nuestro canal en Whatsapp - Uniéndote a nuestro canal de Instagram Para este curso no se requieren conocimientos previos. El costo del curso incluye carta celeste. El curso se lleva a cabo con un cupo mínimo de 17 participantes , si no se logra llenar, se realizará devolución del dinero. La confirmación del curso se realizará el día viernes 28 de agosto 2026. Conoce los términos y condiciones de compra.",
+    "startDate": "2026-09-05",
+    "startTime": "09:00",
+    "venue": "Planetario de Medellín",
+    "neighborhood": "Aranjuez / Parque Explora",
+    "city": "Medellín",
+    "category": "talleres",
+    "priceType": "paid",
+    "priceMin": 220000,
+    "currency": "COP",
+    "organizer": "Planetario de Medellín",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Planetario de Medellín",
+        "url": "https://www.planetariomedellin.org/programate/curso-de-astronomia-observacional-septiembre"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": false,
+    "isNewlyFound": false,
+    "status": "published",
+    "score": 88,
+    "tags": [
+      "talleres",
+      "Planetario",
+      "Con Boleta",
+      "Medellín"
+    ],
+    "detectedAt": "2026-08-18T00:54:48.704Z",
+    "lastCheckedAt": "2026-08-18T00:54:48.704Z"
+  },
+  {
+    "id": "laboratorio-de-video-ensayo-vertical-planetario-20260917",
+    "slug": "laboratorio-de-video-ensayo-vertical-planetario-20260917",
+    "title": "Laboratorio de video ensayo vertical",
+    "shortDescription": "En este laboratorio nos preguntaremos qué ocurre cuando usamos el formato vertical &mdash;tan ligado al entretenimiento rápido&mdash; para observar, dudar y pensar.",
+    "longDescription": "En este laboratorio nos preguntaremos qué ocurre cuando usamos el formato vertical &mdash;tan ligado al entretenimiento rápido&mdash; para observar, dudar y pensar. Exploraremos el videoensayo breve como una escritura audiovisual en la que imagen, palabra, sonido y montaje abren una pausa en medio del torrente desbordado en la pantalla. Trabajaremos con el celular y aprenderemos recursos básicos de grabación y edición en CapCut. Elegir un encuadre, ordenar fragmentos, superponer imágenes, incorporar la voz o ajustar el ritmo serán decisiones al servicio de una mirada. Leeremos fragmentos de ensayos y veremos reels que hacen de las pantallas pequeñas un lugar para la memoria, la crítica y la imaginación. En el primer encuentro caminaremos por Carabobo Norte atentos a objetos repetidos, conversaciones al pasar, sonidos e imágenes cotidianas. Registraremos notas y materiales con el celular para descubrir cómo una idea avanza por asociaciones, intuiciones y desvíos. A partir de esa deriva escribiremos y montaremos un primer videoensayo de entre treinta y noventa segundos, mientras conocemos las herramientas iniciales de CapCut. Luego revisaremos los primeros cortes en grupo y probaremos planos detalle, recortes, reencuadres, capas, subcuadros y pantallas dentro de otras pantallas. La escritura también se quebrará: frases nominales, enumeraciones y oraciones incompletas. En el cierre trabajaremos con capturas de pantalla, notificaciones, búsquedas, conversaciones y otros rastros de nuestra vida digital. Elegiremos una inquietud del presente &mdash;una tecnología, un hábito, una forma de vigilancia o una transformación política&mdash; y exageraremos su deriva hacia un futuro cercano. Ese texto alimentará la pieza final, en la que archivo personal, voz y montaje construirán una mirada crítica sobre el mundo contemporáneo. No se requieren conocimientos previos: basta un celular capaz de usar CapCut y la disposición para mirar con atención e intención el mundo. &iquest;Cuándo y dónde es este evento? El evento es para jóvenes mayores de 15 años y adultos, los jueves 17 y 24 septiembre y 01 octubre de 2026 (tres sesiones) de 4:00 p.m. a 7:00 p.m. en el Exploratorio de Parque Explora. &iquest;Tiene costo?, &iquest;necesito inscribirme? El evento tiene un costo de $262.000. Puedes inscribirte haciendo clic aquí. &iquest;Cómo me entero de la programación del Parque Explora y Planetario de Medellín? Puedes conocerla: - Suscribiéndote a un email semanal - Uniéndote a nuestro canal en Whatsapp - Uniéndote a nuestro canal de Instagram Para este curso no se requieren conocimientos previos. Cada participante debe contar con un teléfono móvil para todas las sesiones. El curso se lleva a cabo con un cupo mínimo de 8 participantes , si no se logra llenar, se realizará devolución del dinero. La confirmación del curso se realizará el día miércoles 16 de septiembre 2026. Conoce los términos y condiciones de compra.",
+    "startDate": "2026-09-17",
+    "startTime": "16:00",
+    "venue": "Exploratorio (Planetario)",
+    "neighborhood": "Aranjuez / Parque Explora",
+    "city": "Medellín",
+    "category": "talleres",
+    "priceType": "paid",
+    "priceMin": 262000,
+    "currency": "COP",
+    "organizer": "Planetario de Medellín",
+    "sources": [
+      {
+        "type": "web",
+        "label": "Planetario de Medellín",
+        "url": "https://www.planetariomedellin.org/programate/laboratorio-de-video-ensayo-vertical"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": false,
+    "isNewlyFound": false,
+    "status": "published",
+    "score": 88,
+    "tags": [
+      "talleres",
+      "Planetario",
+      "Con Boleta",
+      "Medellín"
+    ],
+    "detectedAt": "2026-08-18T00:54:48.704Z",
+    "lastCheckedAt": "2026-08-18T00:54:48.704Z"
+  },
+  {
     "id": "pablo-tobon-2026-08-18-1",
     "slug": "clases-de-yoga-con-la-fundacion-atman-yoga-tptu-20260818",
     "title": "Clases de yoga con la Fundación Atman Yoga",
