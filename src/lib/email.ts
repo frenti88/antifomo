@@ -4,10 +4,12 @@ import type { AntiFOMOEvent } from './types';
 const resendApiKey = process.env.RESEND_API_KEY;
 const adminEmail = process.env.ADMIN_NOTIFICATION_EMAIL || process.env.ADMIN_EMAIL || 'fredyarroyave88@gmail.com';
 const fromEmail = process.env.FROM_EMAIL || 'AntiFOMO Radar <onboarding@resend.dev>';
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://antifomo-app.vercel.app';
 
 const resend = resendApiKey ? new Resend(resendApiKey) : null;
 
 interface EventEmailPayload {
+  submissionId?: string;
   title: string;
   venue?: string;
   neighborhood?: string;
@@ -23,6 +25,7 @@ interface EventEmailPayload {
 
 export async function sendEventNotificationEmail(payload: EventEmailPayload) {
   const {
+    submissionId,
     title,
     venue = 'Por definir',
     neighborhood = 'Medellín',
@@ -32,12 +35,18 @@ export async function sendEventNotificationEmail(payload: EventEmailPayload) {
     price = 'Por confirmar',
     sourceUrl,
     description,
+    submitterEmail,
     type,
   } = payload;
 
   const subject = type === 'community_submission'
     ? `🚨 Nuevo plan propuesto en Medellín: ${title}`
     : `📡 Radar AntiFOMO: Nuevo evento detectado — ${title}`;
+
+  const adminBaseUrl = `${siteUrl}/admin`;
+  const approveUrl = `${adminBaseUrl}?tab=pending&action=approve${submissionId ? `&id=${encodeURIComponent(submissionId)}` : ''}`;
+  const rejectUrl = `${adminBaseUrl}?tab=pending&action=reject${submissionId ? `&id=${encodeURIComponent(submissionId)}` : ''}`;
+  const pendingUrl = `${adminBaseUrl}?tab=pending${submissionId ? `&id=${encodeURIComponent(submissionId)}` : ''}`;
 
   const htmlContent = `
     <!DOCTYPE html>
@@ -53,19 +62,29 @@ export async function sendEventNotificationEmail(payload: EventEmailPayload) {
         h1 { font-size: 22px; font-weight: 700; color: #FFFFFF; margin: 0 0 12px 0; line-height: 1.3; }
         .desc { font-size: 15px; color: #A2A098; line-height: 1.5; margin-bottom: 20px; }
         .details-grid { background-color: #0D0E11; border: 1px solid #282B33; border-radius: 12px; padding: 16px; margin-bottom: 24px; }
-        .detail-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid #1F2229; font-size: 14px; }
+        .detail-row { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #1F2229; font-size: 14px; }
         .detail-row:last-child { border-bottom: none; }
         .label { color: #A2A098; font-weight: 500; }
         .val { color: #F4F4EE; font-weight: 600; text-align: right; }
-        .btn { display: inline-block; background-color: #FFDE21; color: #000000; font-weight: 800; text-decoration: none; padding: 14px 28px; border-radius: 30px; font-size: 14px; text-align: center; }
+        
+        .admin-box { background-color: #1F2229; border: 1px solid #333842; border-radius: 14px; padding: 20px; margin: 24px 0; }
+        .admin-title { color: #FFDE21; font-size: 13px; font-weight: 800; text-transform: uppercase; margin: 0 0 8px 0; letter-spacing: 0.5px; }
+        .admin-sub { color: #A2A098; font-size: 12px; margin: 0 0 16px 0; line-height: 1.4; }
+        
+        .action-table { width: 100%; border-collapse: separate; border-spacing: 6px 0; margin-bottom: 12px; }
+        .btn-approve { display: block; background-color: #22C55E; color: #000000; font-weight: 800; text-decoration: none; padding: 11px 12px; border-radius: 8px; font-size: 12px; text-align: center; }
+        .btn-pending { display: block; background-color: #EAB308; color: #000000; font-weight: 800; text-decoration: none; padding: 11px 12px; border-radius: 8px; font-size: 12px; text-align: center; }
+        .btn-reject { display: block; background-color: #EF4444; color: #FFFFFF; font-weight: 800; text-decoration: none; padding: 11px 12px; border-radius: 8px; font-size: 12px; text-align: center; }
+        .btn-main { display: block; background-color: #FFDE21; color: #000000; font-weight: 800; text-decoration: none; padding: 12px 20px; border-radius: 10px; font-size: 13px; text-align: center; margin-top: 14px; }
+        
         .footer { font-size: 12px; color: #77756E; margin-top: 24px; text-align: center; }
       </style>
     </head>
     <body>
       <div class="card">
-        <a href="https://antifomo-app.vercel.app" class="logo" target="_blank">ANTIFOMO <span class="dot">◉</span></a>
+        <a href="${siteUrl}" class="logo" target="_blank">ANTIFOMO <span class="dot">◉</span></a>
         <br />
-        <span class="badge">${type === 'community_submission' ? 'Plan Propuesto' : 'Radar AntiFOMO'}</span>
+        <span class="badge">${type === 'community_submission' ? 'Plan Propuesto por Usuario' : 'Radar AntiFOMO'}</span>
         <h1>${title}</h1>
         ${description ? `<p class="desc">${description}</p>` : ''}
         
@@ -86,6 +105,12 @@ export async function sendEventNotificationEmail(payload: EventEmailPayload) {
             <span class="label">💰 Precio</span>
             <span class="val">${price}</span>
           </div>
+          ${submitterEmail ? `
+          <div class="detail-row">
+            <span class="label">👤 Enviado por</span>
+            <span class="val">${submitterEmail}</span>
+          </div>
+          ` : ''}
           ${sourceUrl ? `
           <div class="detail-row">
             <span class="label">🔗 Enlace de Origen</span>
@@ -94,20 +119,44 @@ export async function sendEventNotificationEmail(payload: EventEmailPayload) {
           ` : ''}
         </div>
 
-        <div style="text-align: center; margin-top: 24px;">
-          <a href="https://antifomo-app.vercel.app" class="btn" target="_blank">
-            Ver en el Radar AntiFOMO →
+        <!-- ACCIONES DIRECTAS DE SUPERADMIN -->
+        <div class="admin-box">
+          <div class="admin-title">⚡ Moderación SuperAdmin</div>
+          <p class="admin-sub">Haz clic en una opción para gestionar este evento directamente en el panel:</p>
+          
+          <table class="action-table">
+            <tr>
+              <td style="width: 33%;">
+                <a href="${approveUrl}" class="btn-approve" target="_blank">
+                  🟢 Publicar
+                </a>
+              </td>
+              <td style="width: 34%;">
+                <a href="${pendingUrl}" class="btn-pending" target="_blank">
+                  🟡 En Pendiente
+                </a>
+              </td>
+              <td style="width: 33%;">
+                <a href="${rejectUrl}" class="btn-reject" target="_blank">
+                  🔴 Dar de Baja
+                </a>
+              </td>
+            </tr>
+          </table>
+
+          <a href="${adminBaseUrl}?tab=pending" class="btn-main" target="_blank">
+            🛡️ Abrir Panel SuperAdmin Completo →
           </a>
         </div>
 
-        <p class="footer">El radar de eventos culturales, independientes y alternativos de Medellín.</p>
+        <p class="footer">AntiFOMO Medellín — Panel de Moderación y Curaduría Cultural.</p>
       </div>
     </body>
     </html>
   `;
 
   if (!resend) {
-    console.log(`[Email Notification Log (Resend API Key not set)]\nTo: ${adminEmail}\nSubject: ${subject}\nTitle: ${title}`);
+    console.log(`[Email Notification Log (Resend API Key not set)]\nTo: ${adminEmail}\nSubject: ${subject}\nTitle: ${title}\nApprove: ${approveUrl}\nReject: ${rejectUrl}`);
     return { success: true, simulated: true };
   }
 
@@ -138,77 +187,67 @@ export async function sendWeeklyDigestEmail(events: AntiFOMOEvent[], targetEmail
     
     return `
       <div style="background-color: #17191E; border: 1px solid #282B33; border-radius: 14px; padding: 20px; margin-bottom: 18px;">
-        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px;">
-          <span style="background-color: #FFDE21; color: #000000; font-size: 11px; font-weight: 800; padding: 3px 8px; border-radius: 12px; text-transform: uppercase;">
-            #${index + 1} · ${event.category}
-          </span>
-          ${event.isGem ? '<span style="color: #FFDE21; font-size: 12px; font-weight: 700;">◉ Joyita</span>' : ''}
+        <div style="color: #FFDE21; font-weight: 800; font-size: 12px; text-transform: uppercase; margin-bottom: 6px;">
+          #${index + 1} · ${event.category} · ${priceText}
         </div>
-        
-        <h2 style="font-size: 18px; font-weight: 700; color: #FFFFFF; margin: 0 0 8px 0; line-height: 1.3;">
-          <a href="https://antifomo-app.vercel.app/evento/${event.slug}" style="color: #FFFFFF; text-decoration: none;" target="_blank">
-            ${event.title}
-          </a>
-        </h2>
-        
-        <p style="font-size: 14px; color: #A2A098; line-height: 1.4; margin: 0 0 14px 0;">
+        <h2 style="font-size: 18px; color: #FFFFFF; margin: 0 0 8px 0;">${event.title}</h2>
+        <p style="font-size: 14px; color: #A2A098; line-height: 1.4; margin: 0 0 12px 0;">
           ${event.shortDescription}
         </p>
-
-        <div style="background-color: #0D0E11; border-radius: 8px; padding: 10px 14px; font-size: 13px; color: #D4D0C5; margin-bottom: 14px;">
-          <div>📅 <strong>Fecha:</strong> ${event.startDate} · ${event.startTime}</div>
-          <div style="margin-top: 4px;">📍 <strong>Lugar:</strong> ${event.venue} (${event.neighborhood})</div>
-          <div style="margin-top: 4px;">💰 <strong>Precio:</strong> ${priceText}</div>
+        <div style="font-size: 13px; color: #F4F4EE; font-weight: 600;">
+          📅 ${event.startDate} · 🕐 ${event.startTime} · 📍 ${event.venue}
         </div>
-
-        <a href="https://antifomo-app.vercel.app/evento/${event.slug}" style="display: inline-block; color: #FFDE21; font-size: 13px; font-weight: 700; text-decoration: none;" target="_blank">
-          Ver detalles y mapa →
-        </a>
+        <div style="margin-top: 12px;">
+          <a href="${siteUrl}/evento/${event.slug}" style="color: #FFDE21; font-size: 13px; font-weight: 700; text-decoration: none;" target="_blank">
+            Ver detalles en AntiFOMO →
+          </a>
+        </div>
       </div>
     `;
   }).join('');
 
-  const fullHtml = `
+  const htmlContent = `
     <!DOCTYPE html>
     <html lang="es">
     <head>
       <meta charset="utf-8">
       <style>
         body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: #0D0E11; color: #F4F4EE; margin: 0; padding: 24px; }
-        .container { max-width: 600px; margin: 0 auto; }
-        .header { text-align: center; margin-bottom: 28px; }
-        .logo { font-size: 24px; font-weight: 800; color: #FFFFFF; letter-spacing: 1px; text-decoration: none; }
-        .dot { color: #FFDE21; font-size: 26px; }
-        .subtitle { font-size: 15px; color: #A2A098; margin-top: 6px; }
-        .btn-main { display: block; background-color: #FFDE21; color: #000000; font-weight: 800; text-decoration: none; padding: 16px 28px; border-radius: 30px; font-size: 15px; text-align: center; margin: 28px 0; }
-        .footer { font-size: 12px; color: #666660; text-align: center; margin-top: 32px; border-top: 1px solid #282B33; padding-top: 20px; }
+        .card { background-color: #0D0E11; max-width: 600px; margin: 0 auto; }
+        .logo { font-size: 22px; font-weight: 800; color: #F4F4EE; letter-spacing: 0.5px; margin-bottom: 24px; display: inline-block; text-decoration: none; }
+        .dot { color: #FFDE21; font-size: 24px; }
+        h1 { font-size: 24px; font-weight: 800; color: #FFFFFF; margin: 0 0 8px 0; }
+        .sub { font-size: 15px; color: #A2A098; margin: 0 0 28px 0; line-height: 1.4; }
+        .btn { display: inline-block; background-color: #FFDE21; color: #000000; font-weight: 800; text-decoration: none; padding: 14px 28px; border-radius: 30px; font-size: 14px; text-align: center; }
+        .footer { font-size: 12px; color: #77756E; margin-top: 32px; text-align: center; border-top: 1px solid #1F2229; padding-top: 20px; }
       </style>
     </head>
     <body>
-      <div class="container">
-        <div class="header">
-          <a href="https://antifomo-app.vercel.app" class="logo" target="_blank">ANTIFOMO <span class="dot">◉</span></a>
-          <p class="subtitle">Los 5 planes recomendados de la semana en Medellín</p>
-        </div>
-
+      <div class="card">
+        <a href="${siteUrl}" class="logo" target="_blank">ANTIFOMO <span class="dot">◉</span></a>
+        <h1>Radar Semanal de Medellín</h1>
+        <p class="sub">Aquí tienes 5 planes seleccionados para no perderte lo mejor de la ciudad esta semana.</p>
+        
         ${eventsHtml}
 
-        <a href="https://antifomo-app.vercel.app/explorar" class="btn-main" target="_blank">
-          Explorar todos los 50+ planes de la semana →
-        </a>
-
-        <div class="footer">
-          <p>Radar cultural y de planes independientes de Medellín.</p>
-          <p>Este boletín semanal se envía cada lunes para que no te pierdas lo que está pasando en la ciudad.</p>
+        <div style="text-align: center; margin-top: 28px;">
+          <a href="${siteUrl}" class="btn" target="_blank">
+            Explorar todos los eventos →
+          </a>
         </div>
+
+        <p class="footer">
+          AntiFOMO — Encuentra lo que no sabías que estaba pasando en Medellín.<br/>
+          <a href="${siteUrl}" style="color: #A2A098; text-decoration: underline;">antifomo-app.vercel.app</a>
+        </p>
       </div>
     </body>
     </html>
   `;
 
   if (!resend) {
-    console.log(`[Weekly Digest Simulated]\nTo: ${recipient}\nSubject: ${subject}\nTop Events: ${topEvents.length}`);
-    return { success: true, simulated: true, count: topEvents.length };
+    console.log(`[Weekly Digest Log (Resend API Key not set)]\nTo: ${recipient}\nSubject: ${subject}`);
+    return { success: true, simulated: true };
   }
 
   try {
@@ -216,9 +255,9 @@ export async function sendWeeklyDigestEmail(events: AntiFOMOEvent[], targetEmail
       from: fromEmail,
       to: recipient,
       subject,
-      html: fullHtml,
+      html: htmlContent,
     });
-    return { success: true, data, count: topEvents.length };
+    return { success: true, data };
   } catch (error) {
     console.error('Error sending weekly digest email:', error);
     return { success: false, error: String(error) };

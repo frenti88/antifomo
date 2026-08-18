@@ -1,7 +1,8 @@
 'use client';
 
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, Suspense } from 'react';
 import Link from 'next/link';
+import { useSearchParams } from 'next/navigation';
 import { CATEGORIES, CATEGORY_ICONS } from '@/data/categories';
 import type { Category } from '@/lib/types';
 
@@ -43,7 +44,12 @@ interface PublishedEvent {
   tags?: string[];
 }
 
-export default function SuperAdminPage() {
+function SuperAdminContent() {
+  const searchParams = useSearchParams();
+  const queryTab = searchParams?.get('tab');
+  const queryId = searchParams?.get('id');
+  const queryAction = searchParams?.get('action');
+
   const [token, setToken] = useState<string | null>(null);
   const [usernameInput, setUsernameInput] = useState('frenti');
   const [adminUser, setAdminUser] = useState<{ username: string; name: string; role?: string } | null>(null);
@@ -145,6 +151,27 @@ export default function SuperAdminPage() {
       fetchData(token);
     }
   }, [token, fetchData]);
+
+  // Handle URL query tabs from email links
+  useEffect(() => {
+    if (queryTab === 'pending' || queryTab === 'published' || queryTab === 'archived') {
+      setActiveTab(queryTab);
+    }
+  }, [queryTab]);
+
+  // Handle auto-action from email links (approve / reject specific submission)
+  useEffect(() => {
+    if (pendingSubmissions.length > 0 && queryId) {
+      const found = pendingSubmissions.find(s => s.id === queryId);
+      if (found && !editingSubmission) {
+        if (queryAction === 'approve') {
+          openApproveModal(found);
+        } else if (queryAction === 'reject') {
+          handleRejectSubmission(found.id, found.title);
+        }
+      }
+    }
+  }, [pendingSubmissions, queryId, queryAction, editingSubmission]);
 
   // Login handler
   const handleLogin = async (e: React.FormEvent) => {
@@ -1090,5 +1117,25 @@ export default function SuperAdminPage() {
         </div>
       )}
     </div>
+  );
+}
+
+export default function SuperAdminPage() {
+  return (
+    <Suspense
+      fallback={
+        <div className="min-h-screen bg-bg text-text flex items-center justify-center p-6">
+          <div className="flex items-center gap-3">
+            <span className="relative flex h-4 w-4">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-4 w-4 bg-accent"></span>
+            </span>
+            <span className="text-sm font-bold tracking-tight">Cargando Panel SuperAdmin...</span>
+          </div>
+        </div>
+      }
+    >
+      <SuperAdminContent />
+    </Suspense>
   );
 }

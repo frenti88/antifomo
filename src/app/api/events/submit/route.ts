@@ -15,9 +15,11 @@ export async function POST(request: Request) {
       }, { status: 400 });
     }
 
+    let submissionId: string | undefined = undefined;
+
     // If Supabase is connected, store in submitted_events table for moderation
     if (isSupabaseConfigured && supabase) {
-      const { error } = await supabase
+      const { data, error } = await supabase
         .from('submitted_events')
         .insert([
           {
@@ -32,15 +34,20 @@ export async function POST(request: Request) {
             submitter_email: email || null,
             status: 'pending_review',
           },
-        ]);
+        ])
+        .select('id')
+        .single();
 
       if (error) {
         console.error('Supabase submission error:', error);
+      } else if (data?.id) {
+        submissionId = data.id;
       }
     }
 
-    // Send instant email notification to admin
+    // Send instant email notification to admin with direct moderation action links
     await sendEventNotificationEmail({
+      submissionId,
       title: title || 'Nuevo enlace propuesto',
       description,
       sourceUrl,
@@ -55,9 +62,11 @@ export async function POST(request: Request) {
 
     return NextResponse.json({
       success: true,
+      submissionId,
       message: 'Evento recibido correctamente. Pasará a revisión antes de publicarse en el radar.',
     });
   } catch (error) {
+    console.error('Error in /api/events/submit:', error);
     return NextResponse.json({
       success: false,
       error: String(error),
