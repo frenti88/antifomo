@@ -1,6 +1,190 @@
-import type { AntiFOMOEvent } from '@/lib/types';
+import { AntiFOMOEvent } from '@/lib/types';
 
 export const DEMO_EVENTS: AntiFOMOEvent[] = [
+  {
+    "id": "a1000000-0000-4000-8000-000000000001",
+    "slug": "inauguracion-medellin-estelar-planetario",
+    "title": "Inauguración de Medellín Estelar: El Universo Que Somos",
+    "shortDescription": "Inauguración de la nueva temporada de renovación del Planetario de Medellín y concierto inmersivo en el Domo.",
+    "longDescription": "Te invitamos a la inauguración de MEDELLÍN ESTELAR, temporada de renovación del Planetario de Medellín que incluye la apertura de su exposición \"El universo que somos\", un hito en accesibilidad para personas con discapacidad. En el evento inaugural haremos un recorrido por la exposición y disfrutaremos en el domo del espectáculo inmersivo \"Viaje a una noche del año 1000\", experiencia visual y de escucha contemporánea con instrumentos prehispánicos colombianos interpretados en vivo por Luis Fernando Franco. Entrega de boletas en orden de llegada desde las 6:15 p.m.",
+    "startDate": "2026-08-20",
+    "startTime": "18:30",
+    "endTime": "21:30",
+    "venue": "Planetario de Medellín",
+    "neighborhood": "Aranjuez / Carabobo Norte",
+    "city": "Medellín",
+    "latitude": 6.2711,
+    "longitude": -75.5658,
+    "category": "ciencia",
+    "subcategory": "astronomía",
+    "priceType": "free",
+    "priceMin": 0,
+    "priceMax": 0,
+    "currency": "COP",
+    "organizer": "Planetario de Medellín / Parque Explora",
+    "sources": [
+      {
+        "name": "Planetario de Medellín (Oficial)",
+        "url": "https://www.planetariomedellin.org/programate/inauguracion-medellin-estelar",
+        "type": "web",
+        "detectedAt": "2026-08-17T23:50:00.000Z"
+      }
+    ],
+    "sourceCount": 2,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": true,
+    "status": "published",
+    "score": 99,
+    "tags": [
+      "ciencia",
+      "astronomía",
+      "domo",
+      "música",
+      "planetario",
+      "gratis",
+      "destacado",
+      "estelar"
+    ],
+    "detectedAt": "2026-08-17T23:50:00.000Z",
+    "lastCheckedAt": "2026-08-17T23:50:00.000Z"
+  },
+  {
+    "id": "a1000000-0000-4000-8000-000000000002",
+    "slug": "el-principito-domo-planetario-medellin",
+    "title": "El Principito en el Domo 360°",
+    "shortDescription": "Un viaje poético e inmersivo por la Vía Láctea guiado por las voces de El Principito y La Astronauta.",
+    "longDescription": "En este recorrido fulldome por la Vía Láctea, guiado por las voces de El Principito y su compañera, La Astronauta, los visitantes descubrirán el significado de la palabra casa a través de planetas, estrellas y galaxias enteras. La entrada incluye recorrido libre por las nuevas salas interactivas del Planetario.",
+    "startDate": "2026-08-21",
+    "startTime": "15:00",
+    "endTime": "16:00",
+    "venue": "Planetario de Medellín",
+    "neighborhood": "Aranjuez / Carabobo Norte",
+    "city": "Medellín",
+    "latitude": 6.2711,
+    "longitude": -75.5658,
+    "category": "ciencia",
+    "subcategory": "astronomía",
+    "priceType": "paid",
+    "priceMin": 26000,
+    "priceMax": 26000,
+    "currency": "COP",
+    "organizer": "Planetario de Medellín",
+    "sources": [
+      {
+        "name": "Planetario de Medellín — Shows",
+        "url": "https://www.planetariomedellin.org/shows",
+        "type": "web",
+        "detectedAt": "2026-08-17T23:50:00.000Z"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": false,
+    "status": "published",
+    "score": 95,
+    "tags": [
+      "ciencia",
+      "astronomía",
+      "domo",
+      "familiar",
+      "planetario",
+      "infantil"
+    ],
+    "detectedAt": "2026-08-17T23:50:00.000Z",
+    "lastCheckedAt": "2026-08-17T23:50:00.000Z"
+  },
+  {
+    "id": "a1000000-0000-4000-8000-000000000003",
+    "slug": "helios-relatos-del-vecindario-solar-planetario",
+    "title": "Helios: Relatos del Vecindario Solar",
+    "shortDescription": "Show inmersivo para domo 360° sobre los secretos de nuestra estrella y la física del sistema solar.",
+    "longDescription": "Helios, antiguo Sol de los romanos, viajero del cielo que todo lo ve, protagoniza el nuevo show para domo producido por el Planetario de Medellín. Una inmersión visual y astronómica que revela la dinámica de las tormentas solares, el viento estelar y la formación planetaria.",
+    "startDate": "2026-08-22",
+    "startTime": "16:30",
+    "endTime": "17:30",
+    "venue": "Planetario de Medellín",
+    "neighborhood": "Aranjuez / Carabobo Norte",
+    "city": "Medellín",
+    "latitude": 6.2711,
+    "longitude": -75.5658,
+    "category": "ciencia",
+    "subcategory": "astronomía",
+    "priceType": "paid",
+    "priceMin": 26000,
+    "priceMax": 26000,
+    "currency": "COP",
+    "organizer": "Planetario de Medellín",
+    "sources": [
+      {
+        "name": "Planetario de Medellín — Programación",
+        "url": "https://www.planetariomedellin.org/programate",
+        "type": "web",
+        "detectedAt": "2026-08-17T23:50:00.000Z"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": false,
+    "isNewlyFound": false,
+    "status": "published",
+    "score": 92,
+    "tags": [
+      "ciencia",
+      "astronomía",
+      "sol",
+      "domo",
+      "planetario"
+    ],
+    "detectedAt": "2026-08-17T23:50:00.000Z",
+    "lastCheckedAt": "2026-08-17T23:50:00.000Z"
+  },
+  {
+    "id": "a1000000-0000-4000-8000-000000000004",
+    "slug": "arrecifes-reinos-solares-sumergidos-planetario",
+    "title": "Arrecifes: Reinos Solares Sumergidos",
+    "shortDescription": "Inmersión 360° en los arrecifes de coral y la biodiversidad marina en la cúpula del Planetario.",
+    "longDescription": "Los arrecifes constituyen uno de los ecosistemas más grandes del planeta, capturan más CO2 que los bosques y son reservorios de vida indispensables para nuestra supervivencia y la de millones de especies. Un show visualmente impactante proyectado en resolución 4K sobre la cúpula.",
+    "startDate": "2026-08-23",
+    "startTime": "17:30",
+    "endTime": "18:30",
+    "venue": "Planetario de Medellín",
+    "neighborhood": "Aranjuez / Carabobo Norte",
+    "city": "Medellín",
+    "latitude": 6.2711,
+    "longitude": -75.5658,
+    "category": "ciencia",
+    "subcategory": "biología",
+    "priceType": "paid",
+    "priceMin": 26000,
+    "priceMax": 26000,
+    "currency": "COP",
+    "organizer": "Planetario de Medellín",
+    "sources": [
+      {
+        "name": "Planetario de Medellín — Shows",
+        "url": "https://www.planetariomedellin.org/shows",
+        "type": "web",
+        "detectedAt": "2026-08-17T23:50:00.000Z"
+      }
+    ],
+    "sourceCount": 1,
+    "verified": true,
+    "isGem": true,
+    "isNewlyFound": false,
+    "status": "published",
+    "score": 94,
+    "tags": [
+      "ciencia",
+      "océanos",
+      "biodiversidad",
+      "domo",
+      "planetario"
+    ],
+    "detectedAt": "2026-08-17T23:50:00.000Z",
+    "lastCheckedAt": "2026-08-17T23:50:00.000Z"
+  },
   {
     "id": "ciencia-01",
     "slug": "noche-de-astronomia-y-domo-360-planetario-medellin",
