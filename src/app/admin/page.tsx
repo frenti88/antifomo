@@ -1060,16 +1060,16 @@ function SuperAdminContent() {
                     Descripción Corta (Card)
                   </label>
                   <span className="text-[11px] font-mono text-secondary">
-                    {(approveForm.short_description || '').length}/300
+                    {(approveForm.short_description || '').length}/400
                   </span>
                 </div>
                 <textarea
                   rows={2}
-                  maxLength={300}
+                  maxLength={400}
                   value={approveForm.short_description}
                   onChange={(e) => setApproveForm({ ...approveForm, short_description: e.target.value })}
                   className="w-full bg-surface border border-border text-text rounded-xl p-3 text-sm outline-none focus:ring-2 focus:ring-accent resize-none"
-                  placeholder="Resumen del evento (máx 300 caracteres)"
+                  placeholder="Resumen del evento (máx 400 caracteres)"
                 />
               </div>
 
