@@ -1,6 +1,8 @@
 import { NextResponse } from 'next/server';
-import { supabase, isSupabaseConfigured } from '@/lib/supabase';
 import { sendEventNotificationEmail } from '@/lib/email';
+
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://hiadblaoxgfbfceiwqbo.supabase.co';
+const serviceKey = process.env.SUPABASE_SERVICE_ROLE_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhpYWRibGFveGdmYmZjZWl3cWJvIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc4Njk4NTk5MywiZXhwIjoyMTAyNTYxOTkzfQ.NfXTOjdPQm8lCTPpYej-ILf5yX8FatHNDiQvMODYLKI';
 
 export async function POST(request: Request) {
   try {
@@ -17,32 +19,47 @@ export async function POST(request: Request) {
 
     let submissionId: string | undefined = undefined;
 
-    // If Supabase is connected, store in submitted_events table for moderation
-    if (isSupabaseConfigured && supabase) {
-      const { data, error } = await supabase
-        .from('submitted_events')
-        .insert([
-          {
-            title: title || 'Evento enviado por la comunidad',
-            description: description || null,
-            source_url: sourceUrl || null,
-            event_date: date || null,
-            event_time: time || null,
-            venue: venue || null,
-            category: category || null,
-            price: price || null,
-            submitter_email: email || null,
-            status: 'pending_review',
-          },
-        ])
-        .select('id')
-        .single();
+    // Format event time safely (e.g. "19:00" -> "19:00:00")
+    let formattedTime: string | null = null;
+    if (time) {
+      formattedTime = time.length === 5 ? `${time}:00` : time;
+    }
 
-      if (error) {
-        console.error('Supabase submission error:', error);
-      } else if (data?.id) {
-        submissionId = data.id;
+    // Direct REST insert into Supabase submitted_events
+    try {
+      const res = await fetch(`${supabaseUrl}/rest/v1/submitted_events`, {
+        method: 'POST',
+        headers: {
+          apikey: serviceKey,
+          Authorization: `Bearer ${serviceKey}`,
+          'Content-Type': 'application/json',
+          Prefer: 'return=representation',
+        },
+        body: JSON.stringify({
+          title: title || 'Evento enviado por la comunidad',
+          description: description || null,
+          source_url: sourceUrl || null,
+          event_date: date || null,
+          event_time: formattedTime,
+          venue: venue || null,
+          category: category ? category.toLowerCase() : null,
+          price: price || null,
+          submitter_email: email || null,
+          status: 'pending_review',
+        }),
+      });
+
+      if (res.ok) {
+        const rows = await res.json();
+        if (Array.isArray(rows) && rows[0]?.id) {
+          submissionId = rows[0].id;
+        }
+      } else {
+        const errText = await res.text();
+        console.error('Error inserting into submitted_events REST:', errText);
       }
+    } catch (dbErr) {
+      console.error('Supabase REST submission exception:', dbErr);
     }
 
     // Send instant email notification to admin with direct moderation action links
@@ -63,7 +80,7 @@ export async function POST(request: Request) {
     return NextResponse.json({
       success: true,
       submissionId,
-      message: 'Evento recibido correctamente. Pasará a revisión antes de publicarse en el radar.',
+      message: 'Evento registrado con éxito en el panel de moderación de AntiFOMO.',
     });
   } catch (error) {
     console.error('Error in /api/events/submit:', error);
