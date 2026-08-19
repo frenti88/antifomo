@@ -18,8 +18,8 @@ export default function GuardadosPage() {
         <EmptyState
           title="Todavía no has guardado planes"
           description="Guarda lo que te interese y arma tu próxima salida."
-          actionLabel="Explorar eventos"
-          actionHref="/explorar"
+          actionLabel="Ver qué hay esta noche"
+          actionHref="/"
         />
       )}
     </div>

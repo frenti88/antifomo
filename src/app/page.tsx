@@ -1,197 +1,151 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
+import Link from 'next/link';
 import { DEMO_EVENTS } from '@/data/events';
 import { useFilters } from '@/hooks/useFilters';
-import { SearchBar } from '@/components/filters/SearchBar';
-import { DateTabs } from '@/components/filters/DateTabs';
-import { FilterChip } from '@/components/filters/FilterChip';
 import { FilterSheet } from '@/components/filters/FilterSheet';
-import { EventList } from '@/components/events/EventList';
-import { EventCard } from '@/components/events/EventCard';
-import { EditorialSection } from '@/components/sections/EditorialSection';
-import { GemSection } from '@/components/sections/GemSection';
-import { NewlyFoundSection } from '@/components/sections/NewlyFoundSection';
-import { NearbySection } from '@/components/sections/NearbySection';
-import type { Category, DateFilter } from '@/lib/types';
+import { HomeEventCard } from '@/components/home/HomeEventCard';
+import { HomeTimeTabs } from '@/components/home/HomeTimeTabs';
+import { NearbyBarrioChips } from '@/components/home/NearbyBarrioChips';
+import { getEstaNocheEvents, getJoyitasRadar, getCercaDeTi } from '@/lib/home-selectors';
+import type { HomeTab } from '@/lib/home-selectors';
 
 export default function HomePage() {
-  const { filters, setFilter, clearFilters, filteredEvents, resultCount } = useFilters(DEMO_EVENTS);
+  const { filters, setFilter, filteredEvents, resultCount } = useFilters(DEMO_EVENTS);
   const [isFilterSheetOpen, setIsFilterSheetOpen] = useState(false);
-
-  const isFiltering = 
-    filters.category !== null ||
-    filters.showFree === true ||
-    filters.showGems === true ||
-    filters.zone !== null ||
-    filters.timeOfDay !== null ||
-    filters.priceRange !== null ||
-    (filters.query !== undefined && filters.query !== '');
-
-  const isDefaultView = !isFiltering && filters.date === null;
-
-  // "Para ti" events
-  const paraTiEvents = [...DEMO_EVENTS].sort((a, b) => b.score - a.score).slice(0, 4);
   
-  // "Ciencia" events
-  const cienciaEvents = DEMO_EVENTS.filter(e => e.category === 'ciencia').slice(0, 4);
+  const [activeTab, setActiveTab] = useState<HomeTab>('esta-noche');
+  const [activeBarrio, setActiveBarrio] = useState<string>('');
 
-  // "Tecnología" events
-  const tecnologiaEvents = DEMO_EVENTS.filter(e => e.category === 'tecnología').slice(0, 4);
+  // 1. Esta noche (filtered via useFilters to respect active categories/free filters)
+  const estaNocheEvents = useMemo(() => {
+    return getEstaNocheEvents(filteredEvents, activeTab);
+  }, [filteredEvents, activeTab]);
 
-  // "Esta noche" events
-  const estaNocheEvents = DEMO_EVENTS.filter(e => e.tags?.includes('noche') || (e.startTime >= '18:00')).slice(0, 4);
-  
-  // "Gratis" events
-  const freeEvents = DEMO_EVENTS.filter(e => e.priceType === 'free').slice(0, 4);
+  const excludeSlugs = useMemo(() => new Set(estaNocheEvents.map(e => e.slug)), [estaNocheEvents]);
 
-  const handleDateChange = (date: DateFilter | null) => {
-    setFilter({ date });
-  };
+  // 2. Joyitas del radar
+  const joyitas = useMemo(() => {
+    return getJoyitasRadar(filteredEvents, excludeSlugs);
+  }, [filteredEvents, excludeSlugs]);
+
+  // Exclude joyitas from cerca de ti
+  const excludeSlugsCerca = useMemo(() => {
+    const s = new Set(excludeSlugs);
+    joyitas.forEach(j => s.add(j.slug));
+    return s;
+  }, [excludeSlugs, joyitas]);
+
+  // 3. Cerca de ti
+  const cercaDeTi = useMemo(() => {
+    return getCercaDeTi(filteredEvents, activeBarrio, excludeSlugsCerca);
+  }, [filteredEvents, activeBarrio, excludeSlugsCerca]);
 
   return (
     <div className="pb-24">
-      <h1 className="sr-only">AntiFOMO — Radar cultural de Medellín</h1>
+      {/* ─────────────────────────────────────────────
+          HERO & HEADER CONTROLS
+          ───────────────────────────────────────────── */}
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 pt-8 pb-4">
+        <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-text mb-2">
+          Esta noche en Medellín
+        </h1>
+        <p className="text-secondary text-base sm:text-lg mb-6">
+          Lo que no iba a aparecer en tu feed.
+        </p>
 
-      {/* Heading */}
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 pt-5 pb-2">
-        <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-text">
-          ¿Qué está pasando?
-        </h2>
+        <div className="flex items-center gap-3">
+          <HomeTimeTabs activeTab={activeTab} onTabChange={setActiveTab} />
+          
+          {/* Botón Filtros (remplaza chips primarios) */}
+          <button 
+            onClick={() => setIsFilterSheetOpen(true)}
+            className="ml-auto flex items-center gap-2 px-4 py-2 rounded-full bg-surface border border-border text-sm font-bold text-text hover:border-accent hover:text-accent transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-text whitespace-nowrap"
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
+            </svg>
+            Filtros
+          </button>
+        </div>
       </div>
 
-      {/* Sticky Fixed Filter Control Bar (Search + Dates + Categories) */}
-      <section className="sticky top-14 z-40 bg-bg/95 backdrop-blur-md border-b border-border/80 py-3 mb-6 transition-colors shadow-xs">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 space-y-2.5">
-          {/* Integrated Search Bar */}
-          <div id="buscador" className="w-full">
-            <SearchBar 
-              query={filters.query || ''} 
-              onQueryChange={(q) => setFilter({ query: q })}
-              placeholder="Busca por plan, artista, lugar o categoría..."
-            />
-          </div>
-
-          {/* Date and Category Tabs */}
-          <div className="space-y-1.5">
-            <DateTabs activeDate={filters.date} onDateChange={handleDateChange} />
-            
-            <div className="flex flex-nowrap overflow-x-auto md:flex-wrap md:overflow-visible gap-2 py-1 no-scrollbar w-full">
-              <FilterChip
-                label="Todo"
-                active={!isFiltering}
-                onClick={clearFilters}
-              />
-              <FilterChip
-                label="Gratis"
-                active={filters.showFree}
-                onClick={() => setFilter({ showFree: !filters.showFree })}
-              />
-              <FilterChip
-                label="Joyitas"
-                active={filters.showGems}
-                onClick={() => setFilter({ showGems: !filters.showGems })}
-              />
-              <FilterChip
-                label="Ciencia"
-                active={filters.category === 'ciencia'}
-                onClick={() => setFilter({ category: filters.category === 'ciencia' ? null : 'ciencia' })}
-              />
-              <FilterChip
-                label="Tecnología"
-                active={filters.category === 'tecnología'}
-                onClick={() => setFilter({ category: filters.category === 'tecnología' ? null : 'tecnología' })}
-              />
-              {['música', 'arte', 'cine', 'fiesta', 'talleres'].map(cat => (
-                <FilterChip
-                  key={cat}
-                  label={cat.charAt(0).toUpperCase() + cat.slice(1)}
-                  active={filters.category === cat}
-                  onClick={() => setFilter({ category: filters.category === cat ? null : cat as Category })}
-                />
-              ))}
-              <FilterChip
-                label="+ Filtros"
-                active={isFilterSheetOpen}
-                onClick={() => setIsFilterSheetOpen(true)}
-                className="ml-auto md:ml-0 flex-shrink-0"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 space-y-8">
-        <div className="mb-2 flex items-center gap-2">
-          <span className="relative flex h-2 w-2">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#D7FF3F] opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-[#D7FF3F]"></span>
-          </span>
-          <p className="text-sm font-semibold text-secondary">
-            {resultCount} planes activos{filters.date ? ` para ${filters.date}` : ' rastreados hoy en el radar'}.
-          </p>
-        </div>
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 space-y-12">
         
-        <EventList 
-          events={isDefaultView ? filteredEvents.slice(0, 6) : filteredEvents} 
-          viewMode="explorar" 
-        />
-
-        {isDefaultView && (
-          <div className="space-y-10">
-            <EditorialSection title="Para ti" subtitle="Cosas que creemos que vale la pena mirar.">
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 pt-2">
-                {paraTiEvents.map(event => (
-                  <EventCard key={event.id} event={event} />
-                ))}
-              </div>
-            </EditorialSection>
-
-            <EditorialSection title="Ciencia" subtitle="Astronomía, biotecnología, neurociencias y divulgación científica.">
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 pt-2">
-                {cienciaEvents.map(event => (
-                  <EventCard key={event.id} event={event} />
-                ))}
-              </div>
-            </EditorialSection>
-
-            <EditorialSection title="Tecnología" subtitle="Inteligencia artificial, código abierto, robótica y hardware libre.">
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 pt-2">
-                {tecnologiaEvents.map(event => (
-                  <EventCard key={event.id} event={event} />
-                ))}
-              </div>
-            </EditorialSection>
-
-            <div className="py-2">
-              <GemSection events={DEMO_EVENTS} />
+        {/* ─────────────────────────────────────────────
+            SECCIÓN 1: Esta noche (o mañana / finde)
+            ───────────────────────────────────────────── */}
+        <section>
+          {estaNocheEvents.length > 0 ? (
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {estaNocheEvents.map(event => (
+                <HomeEventCard key={event.id} event={event} />
+              ))}
             </div>
-
-            <div className="py-2">
-              <NewlyFoundSection events={DEMO_EVENTS} />
+          ) : (
+            <div className="py-12 px-6 border border-border border-dashed rounded-2xl bg-surface/30 text-center">
+              <p className="text-lg font-bold text-text mb-2">Poco en el radar para {activeTab === 'esta-noche' ? 'esta noche' : activeTab === 'manana' ? 'mañana' : 'este finde'}.</p>
+              <p className="text-secondary">Ajusta los filtros o mira qué hay para otros días.</p>
             </div>
+          )}
+        </section>
 
-            <EditorialSection title="Esta noche" subtitle="Para los que no quieren dormir.">
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 pt-2">
-                {estaNocheEvents.map(event => (
-                  <EventCard key={event.id} event={event} />
-                ))}
-              </div>
-            </EditorialSection>
+        {/* ─────────────────────────────────────────────
+            SECCIÓN 2: Joyitas del radar
+            ───────────────────────────────────────────── */}
+        {joyitas.length > 0 && (
+          <section>
+            <div className="mb-4">
+              <h2 className="text-2xl font-extrabold tracking-tight text-text">Joyitas del radar</h2>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {joyitas.map(event => (
+                <HomeEventCard key={event.id} event={event} showGemBadge />
+              ))}
+            </div>
+          </section>
+        )}
 
-            <EditorialSection title="Gratis" subtitle="Planes que no cuestan un peso.">
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 pt-2">
-                {freeEvents.map(event => (
-                  <EventCard key={event.id} event={event} />
-                ))}
-              </div>
-            </EditorialSection>
-
-            <div className="py-2">
-              <NearbySection events={DEMO_EVENTS} />
+        {/* ─────────────────────────────────────────────
+            SECCIÓN 3: Cerca de ti
+            ───────────────────────────────────────────── */}
+        <section>
+          <div className="mb-4">
+            <h2 className="text-2xl font-extrabold tracking-tight text-text">Cerca de ti</h2>
+            <p className="text-sm text-secondary mt-1">¿En qué barrio te mueves?</p>
+            <div className="mt-3">
+              <NearbyBarrioChips onBarrioChange={setActiveBarrio} />
             </div>
           </div>
-        )}
+          
+          {activeBarrio && cercaDeTi.length > 0 && (
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+              {cercaDeTi.map(event => (
+                <HomeEventCard key={event.id} event={event} />
+              ))}
+            </div>
+          )}
+          {activeBarrio && cercaDeTi.length === 0 && (
+            <div className="py-6 px-4 border border-border border-dashed rounded-xl bg-surface/30 text-center mt-4">
+              <p className="text-secondary text-sm">No encontramos planes recomendados en {activeBarrio} para los próximos días que no hayas visto ya.</p>
+            </div>
+          )}
+        </section>
+
+        {/* ─────────────────────────────────────────────
+            SECCIÓN 4: Catálogo completo
+            ───────────────────────────────────────────── */}
+        <section className="py-8 text-center border-t border-border mt-8">
+          <h2 className="text-xl font-extrabold tracking-tight text-text mb-2">¿Quieres el catálogo completo?</h2>
+          <Link 
+            href="/explorar"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-text text-bg font-bold hover:bg-secondary hover:scale-105 active:scale-95 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-text mt-4"
+          >
+            Ver los {DEMO_EVENTS.length} planes en Explorar
+          </Link>
+        </section>
+
       </div>
 
       <FilterSheet

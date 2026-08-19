@@ -28,9 +28,6 @@ export default function Header() {
             <Link href="/guardados" className="px-3 py-1.5 rounded-full hover:bg-surface hover:text-text transition-colors">
               Guardados
             </Link>
-            <Link href="/enviar" className="px-3.5 py-1.5 rounded-full bg-surface border border-border hover:border-accent text-text transition-colors">
-              + Enviar plan
-            </Link>
           </nav>
 
           <ThemeToggle />
