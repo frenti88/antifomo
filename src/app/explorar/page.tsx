@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { DEMO_EVENTS } from '@/data/events';
 import { useFilters } from '@/hooks/useFilters';
+import { useLiveEvents } from '@/hooks/useLiveEvents';
 import { useViewMode } from '@/hooks/useViewMode';
 import { SearchBar } from '@/components/filters/SearchBar';
 import { DateTabs } from '@/components/filters/DateTabs';
@@ -12,7 +13,8 @@ import { EventList } from '@/components/events/EventList';
 import type { Category, DateFilter } from '@/lib/types';
 
 export default function ExplorarPage() {
-  const { filters, setFilter, clearFilters, filteredEvents, resultCount } = useFilters(DEMO_EVENTS);
+  const { events } = useLiveEvents(DEMO_EVENTS);
+  const { filters, setFilter, clearFilters, filteredEvents, resultCount } = useFilters(events);
   const { viewMode, setViewMode, isAgenda, isExplorar } = useViewMode();
   const [isFilterSheetOpen, setIsFilterSheetOpen] = useState(false);
 

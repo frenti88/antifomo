@@ -4,9 +4,24 @@
 
 import { DEMO_MODE, DEMO_BASE_DATE } from './constants';
 
-/** Get the current date anchor (August 17, 2026) */
+/** Get current date string in Colombia timezone (YYYY-MM-DD) */
+export function getTodayDateStr(): string {
+  if (DEMO_MODE) {
+    return DEMO_BASE_DATE;
+  }
+  return new Intl.DateTimeFormat('en-CA', {
+    timeZone: 'America/Bogota',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+  }).format(new Date());
+}
+
+/** Get the current date anchor in Colombia (set to midday 12:00 to avoid timezone offset issues) */
 export function getToday(): Date {
-  return new Date('2026-08-17T12:00:00-05:00');
+  const dateStr = getTodayDateStr();
+  const [year, month, day] = dateStr.split('-').map(Number);
+  return new Date(year, month - 1, day, 12, 0, 0);
 }
 
 const DAYS = ['domingo', 'lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado'];
@@ -18,7 +33,7 @@ const MONTHS = [
 /** Parse a date string (YYYY-MM-DD) into a Date object */
 export function parseDate(dateStr: string): Date {
   const [year, month, day] = dateStr.split('-').map(Number);
-  return new Date(year, month - 1, day);
+  return new Date(year, month - 1, day, 12, 0, 0);
 }
 
 /** Format date like "lunes 17 de agosto" */
@@ -48,7 +63,7 @@ export function formatTime(time: string): string {
 
 /** Get relative time like "Encontrado hace 37 min" */
 export function getRelativeDetectedTime(detectedAt: string): string {
-  const now = getToday();
+  const now = new Date();
   const detected = new Date(detectedAt);
   const diffMs = now.getTime() - detected.getTime();
   const diffMin = Math.floor(diffMs / 60000);
@@ -64,13 +79,7 @@ export function getRelativeDetectedTime(detectedAt: string): string {
 
 /** Check if a date string is today */
 export function isToday(dateStr: string): boolean {
-  const today = getToday();
-  const date = parseDate(dateStr);
-  return (
-    date.getDate() === today.getDate() &&
-    date.getMonth() === today.getMonth() &&
-    date.getFullYear() === today.getFullYear()
-  );
+  return dateStr === getTodayDateStr();
 }
 
 /** Check if a date string is tomorrow */
@@ -78,43 +87,47 @@ export function isTomorrow(dateStr: string): boolean {
   const today = getToday();
   const tomorrow = new Date(today);
   tomorrow.setDate(tomorrow.getDate() + 1);
-  const date = parseDate(dateStr);
+  const tomDate = parseDate(dateStr);
   return (
-    date.getDate() === tomorrow.getDate() &&
-    date.getMonth() === tomorrow.getMonth() &&
-    date.getFullYear() === tomorrow.getFullYear()
+    tomDate.getDate() === tomorrow.getDate() &&
+    tomDate.getMonth() === tomorrow.getMonth() &&
+    tomDate.getFullYear() === tomorrow.getFullYear()
   );
 }
 
-/** Check if a date string falls on this weekend (Sat-Sun) */
+/** Check if a date string falls on this weekend (Friday through Sunday) */
 export function isThisWeekend(dateStr: string): boolean {
   const today = getToday();
   const date = parseDate(dateStr);
-  const dayOfWeek = today.getDay();
+  const dayOfWeek = today.getDay(); // 0: Sun, 1: Mon, ..., 5: Fri, 6: Sat
 
-  // Find next Saturday
-  const daysUntilSat = (6 - dayOfWeek + 7) % 7;
-  const saturday = new Date(today);
-  saturday.setDate(today.getDate() + (daysUntilSat === 0 && dayOfWeek === 6 ? 0 : daysUntilSat));
-  saturday.setHours(0, 0, 0, 0);
+  const daysToFriday = dayOfWeek === 0 ? -2 : 5 - dayOfWeek;
+  const friday = new Date(today);
+  friday.setDate(today.getDate() + daysToFriday);
+  friday.setHours(0, 0, 0, 0);
 
-  const sunday = new Date(saturday);
-  sunday.setDate(saturday.getDate() + 1);
+  const sunday = new Date(friday);
+  sunday.setDate(friday.getDate() + 2);
   sunday.setHours(23, 59, 59, 999);
 
-  date.setHours(12, 0, 0, 0);
-
-  return date >= saturday && date <= sunday;
+  return date >= friday && date <= sunday;
 }
 
-/** Check if a date is within the next 7 days */
+/** Check if a date is within the next N days starting from today */
 export function isNextDays(dateStr: string, days: number = 7): boolean {
   const today = getToday();
   today.setHours(0, 0, 0, 0);
   const date = parseDate(dateStr);
   const limit = new Date(today);
   limit.setDate(today.getDate() + days);
+  limit.setHours(23, 59, 59, 999);
   return date >= today && date <= limit;
+}
+
+/** Check if a date is today or in the future */
+export function isUpcoming(dateStr: string): boolean {
+  const todayStr = getTodayDateStr();
+  return dateStr >= todayStr;
 }
 
 /** Check if a time string is evening (after 18:00) */

@@ -4,6 +4,7 @@ import React, { useState, useMemo } from 'react';
 import Link from 'next/link';
 import { DEMO_EVENTS } from '@/data/events';
 import { useFilters } from '@/hooks/useFilters';
+import { useLiveEvents } from '@/hooks/useLiveEvents';
 import { FilterSheet } from '@/components/filters/FilterSheet';
 import { HomeEventCard } from '@/components/home/HomeEventCard';
 import { HomeTimeTabs } from '@/components/home/HomeTimeTabs';
@@ -12,7 +13,8 @@ import { getEstaNocheEvents, getJoyitasRadar, getCercaDeTi } from '@/lib/home-se
 import type { HomeTab } from '@/lib/home-selectors';
 
 export default function HomePage() {
-  const { filters, setFilter, filteredEvents, resultCount } = useFilters(DEMO_EVENTS);
+  const { events } = useLiveEvents(DEMO_EVENTS);
+  const { filters, setFilter, filteredEvents, resultCount } = useFilters(events);
   const [isFilterSheetOpen, setIsFilterSheetOpen] = useState(false);
   
   const [activeTab, setActiveTab] = useState<HomeTab>('esta-noche');
@@ -142,7 +144,7 @@ export default function HomePage() {
             href="/explorar"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-text text-bg font-bold hover:bg-secondary hover:scale-105 active:scale-95 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-text mt-4"
           >
-            Ver los {DEMO_EVENTS.length} planes en Explorar
+            Ver los {events.length} planes en Explorar
           </Link>
         </section>
 

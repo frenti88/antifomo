@@ -1,12 +1,14 @@
 'use client';
 
 import { useSavedEvents } from '@/hooks/useSavedEvents';
+import { useLiveEvents } from '@/hooks/useLiveEvents';
 import { DEMO_EVENTS } from '@/data/events';
 import { EventList } from '@/components/events/EventList';
 import { EmptyState } from '@/components/ui/EmptyState';
 
 export default function GuardadosPage() {
-  const { savedEvents } = useSavedEvents(DEMO_EVENTS);
+  const { events } = useLiveEvents(DEMO_EVENTS);
+  const { savedEvents } = useSavedEvents(events);
 
   return (
     <div className="max-w-2xl mx-auto px-4 pb-24 pt-8">
