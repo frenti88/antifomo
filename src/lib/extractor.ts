@@ -125,7 +125,7 @@ export async function extractEventFromUrl(targetUrl: string): Promise<ExtractedE
 
             return {
               title: decodeHtmlEntities(data.title.trim()),
-              description: finalDescription.slice(0, 400).trim(),
+              description: finalDescription.slice(0, 300).trim(),
               date: eventDate,
               time: eventTime,
               venue: specificVenue,
@@ -238,7 +238,7 @@ export async function extractEventFromUrl(targetUrl: string): Promise<ExtractedE
 
         return {
           title: decodeHtmlEntities(title),
-          description: finalDescription.slice(0, 400).trim(),
+          description: finalDescription.slice(0, 300).trim(),
           date,
           time,
           venue,
@@ -440,7 +440,7 @@ export async function extractEventFromUrl(targetUrl: string): Promise<ExtractedE
 
   return {
     title,
-    description: finalDescription.slice(0, 400).trim(),
+    description: finalDescription.slice(0, 300).trim(),
     date: extractedDate,
     time: extractedTime,
     venue,

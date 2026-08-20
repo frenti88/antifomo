@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────
-// AntiFOMO — AI Event Description Summarizer (Max 400 chars)
+// AntiFOMO — AI Event Description Summarizer (Max 300 chars)
 // ─────────────────────────────────────────────
 
 export async function summarizeEventDescription(
@@ -9,8 +9,8 @@ export async function summarizeEventDescription(
 ): Promise<string> {
   const cleanInput = rawDescription.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
   
-  if (!cleanInput || cleanInput.length <= 120) {
-    return cleanInput.slice(0, 400);
+  if (!cleanInput || cleanInput.length <= 100) {
+    return cleanInput.slice(0, 300);
   }
 
   // 1. Try Gemini API if GEMINI_API_KEY is configured
@@ -18,9 +18,9 @@ export async function summarizeEventDescription(
   if (apiKey) {
     try {
       const prompt = `Actúa como el editor cultural de AntiFOMO en Medellín. 
-Resume la siguiente descripción del evento "${title}" (Categoría: ${category || 'Cultura'}) en un texto conciso, atractivo y directo de MÁXIMO 380 caracteres.
+Resume la siguiente descripción del evento "${title}" (Categoría: ${category || 'Cultura'}) en un texto conciso, atractivo y directo de MÁXIMO 280 caracteres.
 Reglas estrictas:
-- Máximo 380 caracteres en total.
+- Máximo 280 caracteres en total.
 - Tono fresco, editorial y directo en español colombiano.
 - Enfócate en qué va a vivir la persona y quién se presenta.
 - No agregues emojis ni enlaces.
@@ -35,7 +35,7 @@ ${cleanInput.slice(0, 2000)}`;
         body: JSON.stringify({
           contents: [{ parts: [{ text: prompt }] }],
           generationConfig: {
-            maxOutputTokens: 160,
+            maxOutputTokens: 120,
             temperature: 0.4,
           },
         }),
@@ -45,7 +45,7 @@ ${cleanInput.slice(0, 2000)}`;
         const json = await res.json();
         const aiText = json?.candidates?.[0]?.content?.parts?.[0]?.text?.trim();
         if (aiText && aiText.length > 20) {
-          return aiText.length > 400 ? aiText.slice(0, 397) + '...' : aiText;
+          return aiText.length > 300 ? aiText.slice(0, 297) + '...' : aiText;
         }
       }
     } catch (err) {
@@ -53,7 +53,7 @@ ${cleanInput.slice(0, 2000)}`;
     }
   }
 
-  // 2. High-Performance Algorithmic Fallback Summarizer (Max 400 chars)
+  // 2. High-Performance Algorithmic Fallback Summarizer (Max 300 chars)
   return fallbackSummarizer(title, cleanInput);
 }
 
@@ -77,16 +77,16 @@ function fallbackSummarizer(title: string, text: string): string {
 
   for (const sentence of sentences) {
     const candidate = summary ? `${summary} ${sentence}` : sentence;
-    if (candidate.length <= 390) {
+    if (candidate.length <= 285) {
       summary = candidate;
     } else {
       break;
     }
   }
 
-  if (summary.length < 50 && cleaned.length > 0) {
+  if (summary.length < 40 && cleaned.length > 0) {
     // If first sentence was too long, cut at word boundary
-    summary = cleaned.slice(0, 390);
+    summary = cleaned.slice(0, 280);
     const lastSpace = summary.lastIndexOf(' ');
     if (lastSpace > 40) {
       summary = summary.slice(0, lastSpace) + '...';
@@ -95,9 +95,9 @@ function fallbackSummarizer(title: string, text: string): string {
     }
   }
 
-  // Ensure strict <= 400 chars
-  if (summary.length > 400) {
-    summary = summary.slice(0, 397) + '...';
+  // Ensure strict <= 300 chars
+  if (summary.length > 300) {
+    summary = summary.slice(0, 297) + '...';
   }
 
   return summary;

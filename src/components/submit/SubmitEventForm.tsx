@@ -53,7 +53,7 @@ export function SubmitEventForm() {
       if (res.ok && data.success && data.summary) {
         setFormData(prev => ({
           ...prev,
-          description: data.summary.slice(0, 400),
+          description: data.summary.slice(0, 300),
         }));
       }
     } catch (err) {
@@ -83,7 +83,7 @@ export function SubmitEventForm() {
 
       if (res.ok && json.success && json.data) {
         const d = json.data;
-        const initialDesc = (d.description || '').slice(0, 400);
+        const initialDesc = (d.description || '').slice(0, 300);
 
         setFormData({
           title: d.title || '',
@@ -135,7 +135,7 @@ export function SubmitEventForm() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           title: formData.title,
-          description: formData.description.slice(0, 400),
+          description: formData.description.slice(0, 300),
           sourceUrl: url || undefined,
           date: formData.date,
           time: formData.time,
@@ -232,7 +232,7 @@ export function SubmitEventForm() {
             Pega el enlace del evento
           </h2>
           <p className="text-xs text-secondary mb-6 font-semibold">
-            Nuestro escáner con IA leerá los datos y generará un resumen de máximo 400 caracteres.
+            Nuestro escáner con IA leerá los datos y generará un resumen de máximo 300 caracteres.
           </p>
           
           {isAnalyzing ? (
@@ -314,11 +314,11 @@ export function SubmitEventForm() {
             <div>
               <div className="flex items-center justify-between mb-1">
                 <label htmlFor="description" className="text-xs font-bold uppercase tracking-wider text-secondary">
-                  Descripción (Máx 400 caracteres)
+                  Descripción (Máx 300 caracteres)
                 </label>
                 <div className="flex items-center gap-2">
                   <span className={`text-[11px] font-mono ${formData.description.length >= 280 ? 'text-amber-400 font-bold' : 'text-secondary'}`}>
-                    {formData.description.length}/400
+                    {formData.description.length}/300
                   </span>
                   {formData.description.length > 30 && (
                     <button
@@ -335,11 +335,11 @@ export function SubmitEventForm() {
               <textarea
                 id="description"
                 rows={3}
-                maxLength={400}
+                maxLength={300}
                 value={formData.description}
                 onChange={e => setFormData({...formData, description: e.target.value})}
                 className="w-full bg-surface border border-border rounded-xl p-3 focus:ring-2 focus:ring-accent outline-none text-text text-sm resize-none"
-                placeholder="¿De qué se trata el plan? (Máximo 400 caracteres para la card)"
+                placeholder="¿De qué se trata el plan? (Máximo 300 caracteres para la card)"
               />
             </div>
 
@@ -474,11 +474,11 @@ export function SubmitEventForm() {
             <div>
               <div className="flex items-center justify-between mb-1">
                 <label htmlFor="rev-description" className="text-xs font-bold uppercase tracking-wider text-secondary">
-                  Descripción Corta para la Card (Máx 400 caracteres)
+                  Descripción Corta para la Card (Máx 300 caracteres)
                 </label>
                 <div className="flex items-center gap-2">
                   <span className={`text-[11px] font-mono ${formData.description.length >= 280 ? 'text-amber-400 font-bold' : 'text-secondary'}`}>
-                    {formData.description.length}/400
+                    {formData.description.length}/300
                   </span>
                   {formData.description.length > 30 && (
                     <button
@@ -495,7 +495,7 @@ export function SubmitEventForm() {
               <textarea
                 id="rev-description"
                 rows={3}
-                maxLength={400}
+                maxLength={300}
                 value={formData.description}
                 onChange={e => setFormData({...formData, description: e.target.value})}
                 className="w-full bg-surface border border-border rounded-xl p-3 focus:ring-2 focus:ring-accent outline-none text-text text-sm resize-none"
